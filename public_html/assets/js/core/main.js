@@ -34,7 +34,14 @@
     syncBacktop();
 
     if (open && !wasOpen) {
-      requestAnimationFrame(() => nav?.querySelector('a[href], button:not([disabled]), summary')?.focus());
+      const enterNavigation = () => {
+        if (!nav?.classList.contains('open')) return;
+        // The first animation frame can precede the visibility style update.
+        const target = nav.querySelector('a[href], button:not([disabled]), summary');
+        if (target && getComputedStyle(target).visibility !== 'visible') { requestAnimationFrame(enterNavigation); return; }
+        target?.focus();
+      };
+      requestAnimationFrame(enterNavigation);
     } else if (!open && wasOpen && restoreFocus) {
       (menuRestoreFocus || menuBtn)?.focus();
       menuRestoreFocus = null;
@@ -111,7 +118,9 @@
   const footer = document.querySelector('.site-footer');
   if (footer && 'IntersectionObserver' in window) {
     const footerObserver = new IntersectionObserver(entries => {
-      document.body.classList.toggle('footer-visible', entries.some(entry => entry.isIntersecting));
+      const visible = entries.some(entry => entry.isIntersecting);
+      if (visible && document.activeElement?.matches('.whatsapp-chat')) footer.querySelector('a[href^="tel:"]')?.focus({ preventScroll: true });
+      document.body.classList.toggle('footer-visible', visible);
     }, { threshold: 0.08 });
     footerObserver.observe(footer);
   }

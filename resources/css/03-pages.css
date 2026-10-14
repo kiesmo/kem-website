@@ -350,8 +350,8 @@
 .footer-main {
   display: grid;
   grid-template-columns: 1.2fr 1fr .95fr 1fr;
-  gap: 45px;
-  padding: 56px 0;
+  gap: 28px;
+  padding: 40px 0;
 }
 
 .footer-main h2 {
@@ -388,7 +388,7 @@
 
 .footer-logo img {
   width: 100%;
-  max-width: 360px;
+  max-width: 230px;
   height: auto;
   object-fit: contain;
 }
@@ -539,3 +539,6 @@ body.footer-visible .whatsapp-chat {
 .service-overview-group summary h3 { display: inline; }
 .service-overview-group[open] summary { margin-bottom: 18px; }
 .service-overview-group a { color: var(--primary-dark); text-decoration: underline; }
+
+.footer-main>div{min-width:0}
+.footer-main .btn{width:100%;text-align:center;padding-inline:14px}

@@ -3,6 +3,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 $kem = kem_site_config();
 $navActive = $navActive ?? [];
 $servicesCurrent = $servicesCurrent ?? false;
+$pageAction = kem_page_action($pageKey);
 
 if (!is_array($navActive)) {
     $navActive = $navActive === null ? [] : [$navActive];
@@ -15,7 +16,7 @@ if (!function_exists('kem_current_attr')) {
 }
 ?>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<header class="site-header">
+<header class="site-header" data-action-role="<?= kem_h($pageAction['role']) ?>">
 <div class="topbar">
 <div class="container topbar-inner">
 <span>WIR BERATEN SIE GERNE!</span>
@@ -26,6 +27,7 @@ if (!function_exists('kem_current_attr')) {
 <a<?= kem_current_attr($navActive, 'home') ?> aria-label="KEM Gebäudereinigung – Startseite" class="brand" href="/">
 <img alt="KEM Gebäudereinigung" class="brand-logo" height="250" src="/assets/branding/logo-inverted.svg" width="1050"/>
 </a>
+<?php if ($pageAction['compact']): ?><a class="btn compact-header-cta" href="<?= kem_h($pageAction['url']) ?>"><?= $pageAction['role'] === 'apply' ? 'Bewerben' : 'Anfragen' ?></a><?php endif; ?>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Menü öffnen" class="menu-toggle" type="button"><span></span></button>
 <nav aria-label="Hauptnavigation" class="nav" id="main-nav">
 <ul class="nav-list">
@@ -50,9 +52,9 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'faq') ?> href="/faq/">FAQ</a></li>
 <li><a<?= kem_current_attr($navActive, 'jobs') ?> href="/jobs/">Jobs</a></li>
 <li><a<?= kem_current_attr($navActive, 'contact') ?> href="/kontakt/">Kontakt</a></li>
-<li class="mobile-offer-item"><a class="btn mobile-offer-cta" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Kostenloses Angebot anfordern</a></li>
+<?php if ($pageAction['role'] !== 'active'): ?><li class="mobile-offer-item"><a class="btn mobile-offer-cta" href="<?= kem_h($pageAction['url']) ?>"><?= kem_h($pageAction['label']) ?></a></li><?php endif; ?>
 </ul>
 </nav>
-<a<?= kem_current_attr($navActive, 'offer') ?> class="btn header-cta" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot anfordern</a>
+<?php if ($pageAction['role'] !== 'active'): ?><a class="btn header-cta<?= $pageAction['role'] === 'help' ? ' secondary' : '' ?>" href="<?= kem_h($pageAction['url']) ?>"><?= kem_h($pageAction['label']) ?></a><?php endif; ?>
 </div>
 </header>

@@ -488,3 +488,6 @@
 .cta-band h2 {
   font-size: var(--heading-2);
 }
+
+.compact-header-cta{display:none}
+body:has(form:focus-within) .whatsapp-chat,body.menu-lock .whatsapp-chat,body.menu-lock .compact-header-cta{visibility:hidden;pointer-events:none}

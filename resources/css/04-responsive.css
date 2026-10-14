@@ -76,6 +76,7 @@
   }
 
   .nav.open {
+    transition: transform .23s, opacity .23s;
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -344,4 +345,16 @@
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
+}
+
+/* The existing wide logo remains legible; direct compact actions start at tablet width. */
+@media(min-width:560px) and (max-width:1080px){
+  .compact-header-cta{display:inline-flex;margin-left:auto}
+  .menu-toggle{margin-left:0}
+}
+@media(max-width:559px){
+  .brand{flex-basis:215px;width:215px}
+  .header-inner{gap:12px}
+  .footer-main{gap:22px;padding:30px 0}
+  .footer-logo img{max-width:200px}
 }

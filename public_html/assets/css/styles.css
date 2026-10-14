@@ -690,6 +690,9 @@ h3 {
   font-size: var(--heading-2);
 }
 
+.compact-header-cta{display:none}
+body:has(form:focus-within) .whatsapp-chat,body.menu-lock .whatsapp-chat,body.menu-lock .compact-header-cta{visibility:hidden;pointer-events:none}
+
 /* Source: 03-pages.css */
 /* Home page */
 .intro-section {
@@ -1043,8 +1046,8 @@ h3 {
 .footer-main {
   display: grid;
   grid-template-columns: 1.2fr 1fr .95fr 1fr;
-  gap: 45px;
-  padding: 56px 0;
+  gap: 28px;
+  padding: 40px 0;
 }
 
 .footer-main h2 {
@@ -1081,7 +1084,7 @@ h3 {
 
 .footer-logo img {
   width: 100%;
-  max-width: 360px;
+  max-width: 230px;
   height: auto;
   object-fit: contain;
 }
@@ -1233,6 +1236,9 @@ body.footer-visible .whatsapp-chat {
 .service-overview-group[open] summary { margin-bottom: 18px; }
 .service-overview-group a { color: var(--primary-dark); text-decoration: underline; }
 
+.footer-main>div{min-width:0}
+.footer-main .btn{width:100%;text-align:center;padding-inline:14px}
+
 /* Source: 04-responsive.css */
 /* Tablet */
 @media (max-width: 1180px) {
@@ -1312,6 +1318,7 @@ body.footer-visible .whatsapp-chat {
   }
 
   .nav.open {
+    transition: transform .23s, opacity .23s;
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -1580,6 +1587,18 @@ body.footer-visible .whatsapp-chat {
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
+}
+
+/* The existing wide logo remains legible; direct compact actions start at tablet width. */
+@media(min-width:560px) and (max-width:1080px){
+  .compact-header-cta{display:inline-flex;margin-left:auto}
+  .menu-toggle{margin-left:0}
+}
+@media(max-width:559px){
+  .brand{flex-basis:215px;width:215px}
+  .header-inner{gap:12px}
+  .footer-main{gap:22px;padding:30px 0}
+  .footer-logo img{max-width:200px}
 }
 
 /* Source: 05-offer-form.css */
