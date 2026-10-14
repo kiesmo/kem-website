@@ -1,6 +1,6 @@
 <?php
 // Seitenkonfiguration für /faq/
-return array (
+$page = array (
   'title' => 'FAQ zur Gebäudereinigung | KEM',
   'description' => 'Häufige Fragen zu Gebäudereinigung, Ablauf, Reinigungszeiten, Turnus, Angebot und Einsatzgebiet von KEM in Köln, Brühl und Bonn.',
   'path' => '/faq/',
@@ -145,3 +145,7 @@ return array (
     'content' => 'ctas/faq.php',
   ),
 );
+
+$questions = $page['schema_extra'][0]['mainEntity'];
+$page['schema_extra'][0]['mainEntity'] = array_map(static fn($index) => $questions[$index], [0, 8, 5, 7, 4, 9, 6, 1, 2, 3]);
+return $page;
