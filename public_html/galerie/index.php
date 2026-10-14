@@ -78,22 +78,31 @@ $galleryVideos = [
     'service_url' => '/leistungen/grundreinigung/',
     'service_label' => 'Grund- und Spezialreinigung',
   ],
-];
+ ];
+$videoGroups = [];
+foreach ($galleryVideos as $video) {
+    $key = basename(trim($video['service_url'], '/'));
+    $videoGroups[$key]['label'] = $video['service_label'];
+    $videoGroups[$key]['videos'][] = $video;
+}
 ?>
 <main id="main"><?php kem_render_page_hero($pageKey); ?><?php kem_render_breadcrumbs($pageKey); ?>
 <section class="section">
 <div class="container gallery-container">
 <span class="eyebrow">Einblicke in unsere Arbeit</span>
 <h1>Galerie</h1>
-<p class="lead narrow">Videoeinblicke aus verschiedenen Reinigungsleistungen von KEM. Die Aufnahmen zeigen beispielhafte Arbeitssituationen; das konkrete Vorgehen stimmen wir immer auf Objekt, Oberfläche, Verschmutzung und Zugänglichkeit ab.</p>
+<p class="lead narrow">Videoeinblicke aus unseren Reinigungsleistungen.</p>
+<nav class="gallery-nav" aria-label="Videos nach Reinigungsleistung"><?php foreach ($videoGroups as $key => $group): ?><a href="#praxis-<?= kem_h($key) ?>"><?= kem_h(kem_service_catalog()[$group['videos'][0]['service_url']]['short_label'] ?? $group['label']) ?> <span>(<?= count($group['videos']) ?>)</span></a><?php endforeach; ?></nav>
+<?php foreach ($videoGroups as $key => $group): ?><section class="gallery-group" id="praxis-<?= kem_h($key) ?>"><h2><?= kem_h($group['label']) ?></h2>
 <div class="video-gallery-grid" aria-label="Video-Galerie mit Einblicken in verschiedene Reinigungsleistungen">
-<?php foreach ($galleryVideos as $video): ?>
+<?php foreach ($group['videos'] as $video): ?>
 <figure class="service-video-card gallery-video-card">
 <div class="service-video-frame"><video controls playsinline preload="none" poster="<?= htmlspecialchars($video['poster'], ENT_QUOTES, 'UTF-8') ?>" aria-label="<?= htmlspecialchars($video['aria'], ENT_QUOTES, 'UTF-8') ?>"><source src="<?= htmlspecialchars($video['src'], ENT_QUOTES, 'UTF-8') ?>" type="video/mp4">Ihr Browser unterstützt die Videowiedergabe nicht.</video></div>
 <figcaption><strong><?= htmlspecialchars($video['title'], ENT_QUOTES, 'UTF-8') ?></strong><span><?= htmlspecialchars($video['description'], ENT_QUOTES, 'UTF-8') ?></span><a class="gallery-card-link" href="<?= htmlspecialchars($video['service_url'], ENT_QUOTES, 'UTF-8') ?>">Zur Leistung: <?= htmlspecialchars($video['service_label'], ENT_QUOTES, 'UTF-8') ?></a></figcaption>
 </figure>
 <?php endforeach; ?>
-</div>
+</div></section><?php endforeach; ?>
+<p>Die Aufnahmen zeigen beispielhafte Arbeitssituationen; das konkrete Vorgehen stimmen wir immer auf Objekt, Oberfläche, Verschmutzung und Zugänglichkeit ab.</p>
 </div>
 </section>
 <?php kem_render_page_cta($pageKey); ?></main><?php require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/footer.php'; ?></body></html>
