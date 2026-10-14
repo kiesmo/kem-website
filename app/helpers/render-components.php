@@ -1,4 +1,17 @@
 <?php
+function kem_render_service_cards(string $variant = 'icon'): void {
+    foreach (kem_service_catalog() as $route => $item) {
+        $id = 'service-card-' . $variant . '-' . basename(trim($route, '/'));
+        echo '<a class="service-card ' . ($variant === 'photo' ? 'photo-card' : 'icon-card') . '" href="' . kem_h($route) . '" aria-labelledby="' . kem_h($id) . '">';
+        if ($variant === 'photo') {
+            echo '<img alt="" src="' . kem_h($item['image']) . '" width="1200" height="800" loading="lazy">';
+        } else {
+            echo '<div class="service-icon" aria-hidden="true">' . $item['icon'] . '</div>';
+        }
+        echo '<div class="body"><h3 id="' . kem_h($id) . '">' . kem_h($item['short_label']) . '</h3><p>' . kem_h($variant === 'photo' ? $item['photo_description'] : $item['description']) . '</p><span class="more" aria-hidden="true">Leistung ansehen ›</span></div></a>';
+    }
+}
+
 if (!function_exists('kem_render_page_hero')) {
     function kem_render_page_hero(string $pageKey, ?array $intro = null): void {
         $hero = kem_page_data($pageKey)['hero'] ?? null;

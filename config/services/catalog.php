@@ -1,43 +1,76 @@
 <?php
-return array (
-  '/leistungen/buero-und-gewerberaumreinigung/' => 
-  array (
-    'nav_key' => 'service-office',
-    'label' => 'Büro- und Gewerberaumreinigung',
-  ),
-  '/leistungen/glas-und-fensterreinigung/' => 
-  array (
-    'nav_key' => 'service-glass',
-    'label' => 'Glas- und Fensterreinigung',
-  ),
-  '/leistungen/grundreinigung/' => 
-  array (
-    'nav_key' => 'service-basic',
-    'label' => 'Grund- und Spezialreinigung',
-  ),
-  '/leistungen/teppichreinigung/' => 
-  array (
-    'nav_key' => 'service-carpet',
-    'label' => 'Teppichreinigung',
-  ),
-  '/leistungen/polsterreinigung/' => 
-  array (
-    'nav_key' => 'service-upholstery',
-    'label' => 'Polsterreinigung',
-  ),
-  '/leistungen/entruempelung/' => 
-  array (
-    'nav_key' => 'service-clearance',
-    'label' => 'Entrümpelung',
-  ),
-  '/leistungen/fassadenreinigung/' => 
-  array (
-    'nav_key' => 'service-facade',
-    'label' => 'Fassaden- und Graffitireinigung',
-  ),
-  '/leistungen/solaranlagenreinigung/' => 
-  array (
-    'nav_key' => 'service-solar',
-    'label' => 'Solar- und Photovoltaikanlagenreinigung',
-  ),
-);
+// One route catalogue for navigation and both service-card variants.
+return [
+    '/leistungen/buero-und-gewerberaumreinigung/' => [
+        'nav_key' => 'service-office',
+        'label' => 'Büro- und Gewerberaumreinigung',
+        'short_label' => 'Büro & Gewerbe',
+        'description' => 'Regelmäßige Reinigung für Büros und Gewerbeflächen – passend zu Ihren Abläufen.',
+        'photo_description' => 'Regelmäßige Sauberkeit für Büros, Verkaufsflächen, Lager und gemeinsam genutzte Bereiche – abgestimmt auf Ihre Abläufe.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="M4 20V6.8c0-.9.7-1.6 1.6-1.6h8.8c.9 0 1.6.7 1.6 1.6V20"></path><path d="M16 10.5h2.4c.9 0 1.6.7 1.6 1.6V20M8 9h4M8 13h4M8 17h4M2.8 20h18.4"></path></svg>',
+    ],
+    '/leistungen/glas-und-fensterreinigung/' => [
+        'nav_key' => 'service-glass',
+        'label' => 'Glas- und Fensterreinigung',
+        'short_label' => 'Glas & Fenster',
+        'description' => 'Glas, Fenster und Rahmen – sorgfältig und passend zum Objekt gereinigt.',
+        'photo_description' => 'Streifenfreie Reinigung von Glasflächen, Rahmen und schwer erreichbaren Verglasungen – sorgfältig und objektspezifisch geplant.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-02.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><rect height="16.4" rx="1.2" width="13.5" x="4" y="3.8"></rect><path d="M10.75 4v16M4.2 12h13M19.1 4.2l.45 1.2 1.2.45-1.2.45-.45 1.2-.45-1.2-1.2-.45 1.2-.45.45-1.2Z"></path></svg>',
+    ],
+    '/leistungen/grundreinigung/' => [
+        'nav_key' => 'service-basic',
+        'label' => 'Grund- und Spezialreinigung',
+        'short_label' => 'Grund & Spezial',
+        'description' => 'Intensive Reinigung bei Übergaben, Bauarbeiten und hartnäckigen Verschmutzungen.',
+        'photo_description' => 'Intensive Reinigung nach Bauarbeiten, bei Übergaben oder bei besonders hartnäckigen und anspruchsvollen Verschmutzungen.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-03.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="m10.5 3 1.05 3.2L15 7.25l-3.45 1.1-1.05 3.2-1.05-3.2L6 7.25l3.45-1.05L10.5 3Z"></path><path d="m17.8 11.2.7 2.1 2.2.7-2.2.7-.7 2.2-.7-2.2-2.1-.7 2.1-.7.7-2.1ZM6.7 14.2l.75 2.35 2.35.75-2.35.75-.75 2.35-.75-2.35-2.35-.75 2.35-.75.75-2.35Z"></path></svg>',
+    ],
+    '/leistungen/teppichreinigung/' => [
+        'nav_key' => 'service-carpet',
+        'label' => 'Teppichreinigung',
+        'short_label' => 'Teppichreinigung',
+        'description' => 'Materialgerechte Reinigung von Teppichen, Flecken und Laufspuren.',
+        'photo_description' => 'Materialgerechte Reinigung von Teppichböden und textilen Flächen zur Entfernung von Schmutz, Flecken und Laufspuren.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-04.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="M4 6.5h16v11H4z"></path><path d="M7 9h10M7 12h10M7 15h6M4 19.5h16"></path></svg>',
+    ],
+    '/leistungen/polsterreinigung/' => [
+        'nav_key' => 'service-upholstery',
+        'label' => 'Polsterreinigung',
+        'short_label' => 'Polsterreinigung',
+        'description' => 'Schonende Reinigung für Sofas, Sessel, Stühle und weitere Polstermöbel.',
+        'photo_description' => 'Schonende Tiefenreinigung für Sofas, Sessel, Stühle und weitere Polstermöbel – passend zu Material und Nutzung.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-05.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="M6 11V8.5a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3V11"></path><path d="M4 11.5a2 2 0 0 1 2-2h.5A1.5 1.5 0 0 1 8 11v3h8v-3a1.5 1.5 0 0 1 1.5-1.5h.5a2 2 0 0 1 2 2V18H4v-6.5ZM6 18v2M18 18v2"></path></svg>',
+    ],
+    '/leistungen/entruempelung/' => [
+        'nav_key' => 'service-clearance',
+        'label' => 'Entrümpelung',
+        'short_label' => 'Entrümpelung',
+        'description' => 'Geplante Räumung von Wohnungen, Kellern, Büros und Gewerbeflächen.',
+        'photo_description' => 'Geplante Räumung von Wohnungen, Kellern, Büros und Gewerbeflächen einschließlich besenreiner Übergabe nach Absprache.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-06.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="M4 8h16v12H4zM3 8l2-4h14l2 4"></path><path d="M9 12h6M12 12v5"></path></svg>',
+    ],
+    '/leistungen/fassadenreinigung/' => [
+        'nav_key' => 'service-facade',
+        'label' => 'Fassaden- und Graffitireinigung',
+        'short_label' => 'Fassade & Graffiti',
+        'description' => 'Fassadenpflege und Graffitientfernung nach Prüfung des Untergrunds.',
+        'photo_description' => 'Fachgerechte Reinigung von Fassaden und Außenflächen sowie Entfernung störender Graffiti nach Prüfung des Untergrunds.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-07.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><path d="M5 20V5h10v15M8 8h4M8 12h4M8 16h4M3 20h18"></path><path d="m17 7 3-2M17.5 10.5 3.5-.5M17 14l3 2"></path></svg>',
+    ],
+    '/leistungen/solaranlagenreinigung/' => [
+        'nav_key' => 'service-solar',
+        'label' => 'Solar- und Photovoltaikanlagenreinigung',
+        'short_label' => 'Solar & PV',
+        'description' => 'Schonende Reinigung von Solar- und PV-Modulen bei typischen Ablagerungen.',
+        'photo_description' => 'Schonende Reinigung von Solar- und Photovoltaikmodulen zur Entfernung von Staub, Pollen und organischen Ablagerungen.',
+        'image' => '/assets/img/pages/leistungen/leistungen-content-08.webp',
+        'icon' => '<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" viewBox="0 0 24 24"><circle cx="18" cy="6" r="2.5"></circle><path d="M18 1.5v1M18 9.5v1M13.5 6h1M21.5 6h1M5 9h9l2 9H3l2-9ZM4 13h11M8 9l-1 9M12 9l1 9"></path></svg>',
+    ],
+];
