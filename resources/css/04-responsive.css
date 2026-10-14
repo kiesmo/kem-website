@@ -174,29 +174,12 @@
 
 /* Mobile content/layout refinements */
 @media (max-width: 820px) {
-  .hero,
-  .page-hero {
-    height: clamp(390px, calc(85svh - var(--header-height)), 540px);
-  }
 
   /* Keep the cleaning activity visible in portrait crops of left-led motifs. */
   .page-hero.hero-focus-left > .hero-picture > img {
     object-position: 32% 45%;
   }
 
-  .hero-label,
-  .page-hero .hero-tag {
-    left: 12px;
-    right: 12px;
-    bottom: 24px;
-    width: auto;
-    max-width: none;
-    text-align: center;
-    font-size: clamp(1rem, 3.8vw, 1.15rem);
-    padding: 15px 14px;
-    line-height: 1.25;
-    text-transform: none;
-  }
 
   .page-hero .hero-tag-desktop {
     display: none;
@@ -235,18 +218,7 @@
     width: min(calc(100% - 28px), var(--max));
   }
 
-  .hero,
-  .page-hero {
-    height: clamp(350px, calc(80svh - var(--header-height)), 470px);
-  }
 
-  .page-hero .hero-tag {
-    left: 8px;
-    right: 8px;
-    bottom: 18px;
-    padding: 14px 10px;
-    font-size: clamp(1rem, 4.8vw, 1.15rem);
-  }
 
   .page-hero.hero-focus-right > .hero-picture > img {
     object-position: 58% 48%;
@@ -272,9 +244,6 @@
     text-wrap: balance;
   }
 
-  .hero-media img {
-    object-position: 58% center;
-  }
 
   .page-hero > .hero-picture > img {
     object-position: center 45%;

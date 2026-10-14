@@ -1,13 +1,24 @@
 <?php
 if (!function_exists('kem_render_page_hero')) {
-    function kem_render_page_hero(string $pageKey): void {
+    function kem_render_page_hero(string $pageKey, ?array $intro = null): void {
         $hero = kem_page_data($pageKey)['hero'] ?? null;
         if (!$hero) return;
-        $heroClass = trim('page-hero ' . ($hero['class'] ?? ''));
+        if ($intro === null) {
+            static $intros = null;
+            $intros ??= require KEM_CONFIG_DIR . '/page-intros.php';
+            $intro = $intros[$pageKey] ?? null;
+        }
+        $heroClass = trim('page-hero ' . ($intro ? 'page-hero--service ' : 'page-hero--utility ') . ($hero['class'] ?? ''));
         $mobileTag = $hero['mobile_tag'] ?? $hero['tag'] ?? '';
-        echo '<section aria-label="Seitenmotiv" class="' . kem_h($heroClass) . '"><div class="hero-picture">';
+        echo '<section ' . ($intro ? 'aria-labelledby="page-title"' : 'aria-label="Seitenmotiv"') . ' class="' . kem_h($heroClass) . '"><div class="container">';
+        if ($intro) {
+            echo '<div class="page-hero-copy"><span class="eyebrow">' . kem_h($intro['eyebrow'] ?? '') . '</span><h1 id="page-title">' . kem_h($intro['title']) . '</h1><p class="lead">' . kem_h($intro['lead']) . '</p><a class="btn" href="/angebotsanfrage/">Kostenloses Angebot anfordern</a><p class="hero-assurance">Kostenlos und unverbindlich.</p></div>';
+        }
+        echo '<div class="hero-picture">';
         echo '<img alt="' . kem_h($hero['alt'] ?? '') . '" fetchpriority="high" width="' . (int)$hero['width'] . '" height="' . (int)$hero['height'] . '" src="' . kem_h($hero['src']) . '">';
-        echo '</div><div class="container"><div class="hero-tag"><span class="hero-tag-desktop">' . kem_h($hero['tag'] ?? '') . '</span><span class="hero-tag-mobile">' . kem_h($mobileTag) . '</span></div></div></section>';
+        echo '</div>';
+        if (!$intro) echo '<div class="hero-tag"><span class="hero-tag-desktop">' . kem_h($hero['tag'] ?? '') . '</span><span class="hero-tag-mobile">' . kem_h($mobileTag) . '</span></div>';
+        echo '</div></section>';
     }
 }
 if (!function_exists('kem_render_breadcrumbs')) {
