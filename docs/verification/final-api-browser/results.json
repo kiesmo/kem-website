@@ -1,0 +1,458 @@
+{
+  "checks": [
+    {
+      "name": "angebot: no new/unallowed POST names",
+      "pass": true,
+      "data": {
+        "type": "angebot",
+        "names": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_office",
+          "type_window",
+          "type_general",
+          "type_carpet",
+          "type_upholstery",
+          "type_clearance",
+          "type_graffiti",
+          "type_solar",
+          "type_other",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "office_area",
+          "office_frequency",
+          "office_rooms",
+          "office_soiling",
+          "office_notes",
+          "general_area",
+          "general_reason",
+          "general_soiling",
+          "general_notes",
+          "window_sashes",
+          "window_scope",
+          "window_max_height",
+          "window_soiling",
+          "window_notes",
+          "carpet_scope",
+          "carpet_soiling",
+          "carpet_loose_count",
+          "carpet_loose_area",
+          "carpet_fitted_area",
+          "carpet_notes",
+          "upholstery_two_seater",
+          "upholstery_three_seater",
+          "upholstery_corner_small",
+          "upholstery_corner_large",
+          "upholstery_armchair",
+          "upholstery_stool",
+          "upholstery_chair_seat",
+          "upholstery_chair_back",
+          "upholstery_custom_seats",
+          "upholstery_scope",
+          "upholstery_soiling",
+          "upholstery_notes",
+          "graffiti_area",
+          "graffiti_surface",
+          "graffiti_scope",
+          "graffiti_notes",
+          "solar_access",
+          "solar_soiling",
+          "solar_modules",
+          "solar_area",
+          "solar_notes",
+          "clearance_area",
+          "clearance_scope",
+          "clearance_volume",
+          "clearance_floor",
+          "clearance_elevator",
+          "clearance_notes",
+          "other_details",
+          "appointment_preference",
+          "appointment_preference",
+          "appointment_preference",
+          "desired_date",
+          "desired_time",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "files": [
+          "photos[]"
+        ],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone"
+        ],
+        "namelessPicker": "",
+        "duplicateNamed": []
+      }
+    },
+    {
+      "name": "offer: 78 scalar allowlist fields rendered with single photos[] transport",
+      "pass": true,
+      "data": {
+        "allowed": 78,
+        "renderedUnique": 78
+      }
+    },
+    {
+      "name": "kontakt: no new/unallowed POST names",
+      "pass": true,
+      "data": {
+        "type": "kontakt",
+        "names": [
+          "form_type",
+          "website",
+          "name",
+          "email",
+          "phone",
+          "message",
+          "privacy"
+        ],
+        "files": [],
+        "dataNames": [
+          "form_type",
+          "website",
+          "name",
+          "email",
+          "phone",
+          "message"
+        ],
+        "duplicateNamed": []
+      }
+    },
+    {
+      "name": "context whitelist %73ervice=office&service=window",
+      "pass": true,
+      "data": {
+        "checked": [],
+        "city": "",
+        "note": ""
+      }
+    },
+    {
+      "name": "context whitelist city=__proto__",
+      "pass": true,
+      "data": {
+        "checked": [],
+        "city": "",
+        "note": ""
+      }
+    },
+    {
+      "name": "context whitelist service=%3Cscript%3E&city=%22%20onmouseover%3Dalert(1)",
+      "pass": true,
+      "data": {
+        "checked": [],
+        "city": "",
+        "note": ""
+      }
+    },
+    {
+      "name": "context whitelist service=window%00&city=koeln%00",
+      "pass": true,
+      "data": {
+        "checked": [],
+        "city": "",
+        "note": ""
+      }
+    },
+    {
+      "name": "context whitelist city=koeln&%63ity=bonn",
+      "pass": true,
+      "data": {
+        "checked": [],
+        "city": "",
+        "note": ""
+      }
+    },
+    {
+      "name": "estimate is readonly and included in existing POST field",
+      "pass": true,
+      "data": {
+        "value": "Bitte vor Ort einschätzen",
+        "readonly": true,
+        "sent": "Bitte vor Ort einschätzen"
+      }
+    },
+    {
+      "name": "estimate uncheck restores previous real amount",
+      "pass": true
+    },
+    {
+      "name": "exact date requires date and time with focused durable errors",
+      "pass": true,
+      "data": {
+        "current": 2,
+        "date": "true",
+        "time": "true",
+        "focus": "desired_date"
+      }
+    },
+    {
+      "name": "past date rejected at correct step",
+      "pass": true,
+      "data": {
+        "minimum": "2026-10-15",
+        "yesterday": "2026-10-14"
+      }
+    },
+    {
+      "name": "today accepted as backend contract permits",
+      "pass": true
+    },
+    {
+      "name": "flexible appointment retains draft date but disables/excludes date fields",
+      "pass": true,
+      "data": {
+        "dateDisabled": true,
+        "timeDisabled": true,
+        "dateValue": "2026-10-15",
+        "sentDate": false,
+        "sentTime": false
+      }
+    },
+    {
+      "name": "switching back restores exact-date draft",
+      "pass": true
+    },
+    {
+      "name": "server error unlocks form and preserves exact-date/personal data",
+      "pass": true,
+      "data": {
+        "current": 3,
+        "focused": "first_name",
+        "inert": false,
+        "firstName": "Jana",
+        "date": "2026-10-15"
+      }
+    },
+    {
+      "name": "corrected retry sends edited data then resets date/appointment on success",
+      "pass": true,
+      "data": {
+        "visible": true,
+        "date": "",
+        "time": "",
+        "appointment": []
+      }
+    },
+    {
+      "name": "no script errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "forms": [
+    {
+      "route": "/angebotsanfrage/",
+      "type": "angebot",
+      "names": [
+        "form_type",
+        "cleaning_types",
+        "website",
+        "type_office",
+        "type_window",
+        "type_general",
+        "type_carpet",
+        "type_upholstery",
+        "type_clearance",
+        "type_graffiti",
+        "type_solar",
+        "type_other",
+        "cleaning_postcode",
+        "cleaning_city",
+        "object_type",
+        "cleaning_company",
+        "cleaning_street",
+        "floor",
+        "furnishing",
+        "office_area",
+        "office_frequency",
+        "office_rooms",
+        "office_soiling",
+        "office_notes",
+        "general_area",
+        "general_reason",
+        "general_soiling",
+        "general_notes",
+        "window_sashes",
+        "window_scope",
+        "window_max_height",
+        "window_soiling",
+        "window_notes",
+        "carpet_scope",
+        "carpet_soiling",
+        "carpet_loose_count",
+        "carpet_loose_area",
+        "carpet_fitted_area",
+        "carpet_notes",
+        "upholstery_two_seater",
+        "upholstery_three_seater",
+        "upholstery_corner_small",
+        "upholstery_corner_large",
+        "upholstery_armchair",
+        "upholstery_stool",
+        "upholstery_chair_seat",
+        "upholstery_chair_back",
+        "upholstery_custom_seats",
+        "upholstery_scope",
+        "upholstery_soiling",
+        "upholstery_notes",
+        "graffiti_area",
+        "graffiti_surface",
+        "graffiti_scope",
+        "graffiti_notes",
+        "solar_access",
+        "solar_soiling",
+        "solar_modules",
+        "solar_area",
+        "solar_notes",
+        "clearance_area",
+        "clearance_scope",
+        "clearance_volume",
+        "clearance_floor",
+        "clearance_elevator",
+        "clearance_notes",
+        "other_details",
+        "appointment_preference",
+        "appointment_preference",
+        "appointment_preference",
+        "desired_date",
+        "desired_time",
+        "appointment_notes",
+        "photos[]",
+        "salutation",
+        "company",
+        "first_name",
+        "last_name",
+        "email",
+        "phone",
+        "privacy"
+      ],
+      "files": [
+        "photos[]"
+      ],
+      "dataNames": [
+        "form_type",
+        "cleaning_types",
+        "website",
+        "cleaning_postcode",
+        "cleaning_city",
+        "object_type",
+        "cleaning_company",
+        "cleaning_street",
+        "floor",
+        "furnishing",
+        "appointment_notes",
+        "photos[]",
+        "salutation",
+        "company",
+        "first_name",
+        "last_name",
+        "email",
+        "phone"
+      ],
+      "namelessPicker": "",
+      "duplicateNamed": []
+    },
+    {
+      "route": "/kontakt/",
+      "type": "kontakt",
+      "names": [
+        "form_type",
+        "website",
+        "name",
+        "email",
+        "phone",
+        "message",
+        "privacy"
+      ],
+      "files": [],
+      "dataNames": [
+        "form_type",
+        "website",
+        "name",
+        "email",
+        "phone",
+        "message"
+      ],
+      "duplicateNamed": []
+    }
+  ],
+  "contexts": [
+    {
+      "query": "%73ervice=office&service=window",
+      "checked": [],
+      "city": "",
+      "note": ""
+    },
+    {
+      "query": "city=__proto__",
+      "checked": [],
+      "city": "",
+      "note": ""
+    },
+    {
+      "query": "service=%3Cscript%3E&city=%22%20onmouseover%3Dalert(1)",
+      "checked": [],
+      "city": "",
+      "note": ""
+    },
+    {
+      "query": "service=window%00&city=koeln%00",
+      "checked": [],
+      "city": "",
+      "note": ""
+    },
+    {
+      "query": "city=koeln&%63ity=bonn",
+      "checked": [],
+      "city": "",
+      "note": ""
+    }
+  ],
+  "posts": [
+    {
+      "url": "http://127.0.0.1:8080/api/kontakt.php",
+      "bodyBytes": 2980,
+      "editedName": false
+    },
+    {
+      "url": "http://127.0.0.1:8080/api/kontakt.php",
+      "bodyBytes": 2984,
+      "editedName": true
+    }
+  ],
+  "errors": [],
+  "postIntercepts": 2,
+  "failures": []
+}

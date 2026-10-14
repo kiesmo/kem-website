@@ -1,0 +1,364 @@
+{
+    "checks": [
+        {
+            "name": "clean trims whitespace and strips markup",
+            "pass": true,
+            "actual": "A"
+        },
+        {
+            "name": "clean normalizes CRLF",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "today Berlin accepted",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "yesterday Berlin rejected",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "impossible calendar day rejected",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "noncanonical date rejected",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "future leap date accepted",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "unicode textLength with deployed extensions",
+            "pass": true,
+            "actual": {
+                "length": 2,
+                "mbstring": true
+            }
+        },
+        {
+            "name": "unique offer allowlist",
+            "pass": true,
+            "actual": 78
+        },
+        {
+            "name": "offer schema uses established allowlist",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "malformed upload rejected",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "optional no-file upload allowed",
+            "pass": true,
+            "actual": {
+                "attachments": [],
+                "error": null
+            }
+        },
+        {
+            "name": "six uploads rejected before file handling",
+            "pass": true,
+            "actual": {
+                "attachments": [],
+                "error": "Bitte laden Sie höchstens 5 Fotos hoch."
+            }
+        },
+        {
+            "name": "single upload over5MiB rejected",
+            "pass": true,
+            "actual": {
+                "attachments": [],
+                "error": "Jedes Foto darf höchstens 5 MB groß sein."
+            }
+        },
+        {
+            "name": "empty upload rejected",
+            "pass": true,
+            "actual": {
+                "attachments": [],
+                "error": "Jedes Foto darf höchstens 5 MB groß sein."
+            }
+        },
+        {
+            "name": "ordinary filesystem path cannot become uploaded attachment",
+            "pass": true,
+            "actual": {
+                "attachments": [],
+                "error": "Eine hochgeladene Datei konnte nicht verifiziert werden."
+            }
+        },
+        {
+            "name": "context route /leistungen/buero-und-gewerberaumreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/glas-und-fensterreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/grundreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/teppichreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/polsterreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/entruempelung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/fassadenreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "context route /leistungen/solaranlagenreinigung/",
+            "pass": true,
+            "actual": null
+        },
+        {
+            "name": "request whitelist service=window&city=koeln",
+            "pass": true,
+            "actual": {
+                "service": "window",
+                "city": "koeln"
+            }
+        },
+        {
+            "name": "request whitelist service=window&service=office&city=koeln",
+            "pass": true,
+            "actual": {
+                "city": "koeln"
+            }
+        },
+        {
+            "name": "request whitelist %73ervice=window&service=office",
+            "pass": true,
+            "actual": []
+        },
+        {
+            "name": "request whitelist service[]=window&city[]=koeln",
+            "pass": true,
+            "actual": []
+        },
+        {
+            "name": "request whitelist service=bogus&city=__proto__",
+            "pass": true,
+            "actual": []
+        },
+        {
+            "name": "request whitelist service=window&city=koeln&city=bonn",
+            "pass": true,
+            "actual": {
+                "service": "window"
+            }
+        },
+        {
+            "name": "unsafe helper context ignored",
+            "pass": true,
+            "actual": null
+        }
+    ],
+    "assertions": 31,
+    "failures": [],
+    "schema": {
+        "offer_fields": [
+            "form_type",
+            "website",
+            "cleaning_types",
+            "email",
+            "company",
+            "salutation",
+            "first_name",
+            "last_name",
+            "phone",
+            "cleaning_company",
+            "cleaning_street",
+            "cleaning_postcode",
+            "cleaning_city",
+            "object_type",
+            "floor",
+            "furnishing",
+            "type_office",
+            "type_window",
+            "type_general",
+            "type_carpet",
+            "type_upholstery",
+            "type_clearance",
+            "type_graffiti",
+            "type_solar",
+            "type_other",
+            "office_area",
+            "office_frequency",
+            "office_rooms",
+            "office_soiling",
+            "office_notes",
+            "general_area",
+            "general_reason",
+            "general_soiling",
+            "general_notes",
+            "window_max_height",
+            "window_sashes",
+            "window_scope",
+            "window_soiling",
+            "window_notes",
+            "carpet_loose_count",
+            "carpet_loose_area",
+            "carpet_fitted_area",
+            "carpet_scope",
+            "carpet_soiling",
+            "carpet_notes",
+            "upholstery_two_seater",
+            "upholstery_three_seater",
+            "upholstery_corner_small",
+            "upholstery_corner_large",
+            "upholstery_armchair",
+            "upholstery_stool",
+            "upholstery_chair_seat",
+            "upholstery_chair_back",
+            "upholstery_custom_seats",
+            "upholstery_scope",
+            "upholstery_soiling",
+            "upholstery_notes",
+            "graffiti_area",
+            "graffiti_surface",
+            "graffiti_scope",
+            "graffiti_notes",
+            "solar_modules",
+            "solar_area",
+            "solar_access",
+            "solar_soiling",
+            "solar_notes",
+            "clearance_area",
+            "clearance_volume",
+            "clearance_floor",
+            "clearance_elevator",
+            "clearance_scope",
+            "clearance_notes",
+            "other_details",
+            "appointment_preference",
+            "desired_date",
+            "desired_time",
+            "appointment_notes",
+            "privacy"
+        ],
+        "forms": {
+            "kontakt": {
+                "allowed": [
+                    "form_type",
+                    "website",
+                    "name",
+                    "email",
+                    "phone",
+                    "subject",
+                    "message",
+                    "privacy"
+                ]
+            },
+            "angebot": {
+                "allowed": [
+                    "form_type",
+                    "website",
+                    "cleaning_types",
+                    "email",
+                    "company",
+                    "salutation",
+                    "first_name",
+                    "last_name",
+                    "phone",
+                    "cleaning_company",
+                    "cleaning_street",
+                    "cleaning_postcode",
+                    "cleaning_city",
+                    "object_type",
+                    "floor",
+                    "furnishing",
+                    "type_office",
+                    "type_window",
+                    "type_general",
+                    "type_carpet",
+                    "type_upholstery",
+                    "type_clearance",
+                    "type_graffiti",
+                    "type_solar",
+                    "type_other",
+                    "office_area",
+                    "office_frequency",
+                    "office_rooms",
+                    "office_soiling",
+                    "office_notes",
+                    "general_area",
+                    "general_reason",
+                    "general_soiling",
+                    "general_notes",
+                    "window_max_height",
+                    "window_sashes",
+                    "window_scope",
+                    "window_soiling",
+                    "window_notes",
+                    "carpet_loose_count",
+                    "carpet_loose_area",
+                    "carpet_fitted_area",
+                    "carpet_scope",
+                    "carpet_soiling",
+                    "carpet_notes",
+                    "upholstery_two_seater",
+                    "upholstery_three_seater",
+                    "upholstery_corner_small",
+                    "upholstery_corner_large",
+                    "upholstery_armchair",
+                    "upholstery_stool",
+                    "upholstery_chair_seat",
+                    "upholstery_chair_back",
+                    "upholstery_custom_seats",
+                    "upholstery_scope",
+                    "upholstery_soiling",
+                    "upholstery_notes",
+                    "graffiti_area",
+                    "graffiti_surface",
+                    "graffiti_scope",
+                    "graffiti_notes",
+                    "solar_modules",
+                    "solar_area",
+                    "solar_access",
+                    "solar_soiling",
+                    "solar_notes",
+                    "clearance_area",
+                    "clearance_volume",
+                    "clearance_floor",
+                    "clearance_elevator",
+                    "clearance_scope",
+                    "clearance_notes",
+                    "other_details",
+                    "appointment_preference",
+                    "desired_date",
+                    "desired_time",
+                    "appointment_notes",
+                    "privacy"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,1542 @@
+{
+  "date": "2026-10-14T22:12:33.734Z",
+  "base": "http://127.0.0.1:8080",
+  "suite": "forms",
+  "commit": "6597e6b78e860f4fd463ac46ad070de85a4b0a0f",
+  "results": [
+    {
+      "name": "wizard contract office",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_office",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "office_area",
+          "office_frequency",
+          "office_rooms",
+          "office_soiling",
+          "office_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenBüro- und GewerberaumreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungBüro- und GewerberaumreinigungÄndernFläche250 m²TurnusEinmaligTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract window",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_window",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "window_sashes",
+          "window_scope",
+          "window_max_height",
+          "window_soiling",
+          "window_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenGlas- und FensterreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungGlas- und FensterreinigungÄndernFenster / Flügel5ReinigungswunschGlas innenTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract general",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_general",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "general_area",
+          "general_reason",
+          "general_soiling",
+          "general_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenGrund- und SpezialreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungGrund- und SpezialreinigungÄndernFläche70 m²AnlassRegelmäßige UnterhaltsreinigungTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract carpet",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_carpet",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "carpet_scope",
+          "carpet_soiling",
+          "carpet_loose_count",
+          "carpet_loose_area",
+          "carpet_fitted_area",
+          "carpet_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenTeppichreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungTeppichreinigungÄndernReinigungswunschAuffrischungVerschmutzungLeichtTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract upholstery",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_upholstery",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "upholstery_two_seater",
+          "upholstery_three_seater",
+          "upholstery_corner_small",
+          "upholstery_corner_large",
+          "upholstery_armchair",
+          "upholstery_stool",
+          "upholstery_chair_seat",
+          "upholstery_chair_back",
+          "upholstery_custom_seats",
+          "upholstery_scope",
+          "upholstery_soiling",
+          "upholstery_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenPolsterreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungPolsterreinigungÄndernReinigungswunschAuffrischungVerschmutzungLeichtTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract clearance",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_clearance",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "clearance_area",
+          "clearance_scope",
+          "clearance_volume",
+          "clearance_floor",
+          "clearance_elevator",
+          "clearance_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenEntrümpelungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungEntrümpelungÄndernObjektfläche80 m²UmfangAbtransport und EntsorgungTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract graffiti",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_graffiti",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "graffiti_area",
+          "graffiti_surface",
+          "graffiti_scope",
+          "graffiti_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenFassaden- und GraffitireinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungFassaden- und GraffitireinigungÄndernFläche20 m²UntergrundPutzTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract solar",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_solar",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "solar_access",
+          "solar_soiling",
+          "solar_modules",
+          "solar_area",
+          "solar_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenSolar- und PhotovoltaikanlagenreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungSolar- und PhotovoltaikanlagenreinigungÄndernZugänglichkeitFlachdachVerschmutzungLeichtTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract other",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_other",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "other_details",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenSonstige LeistungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungSonstige LeistungÄndernBeschreibungIndividuelle Reinigung eines LagerbereichsTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract office+window",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_office",
+          "type_window",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "office_area",
+          "office_frequency",
+          "office_rooms",
+          "office_soiling",
+          "office_notes",
+          "window_sashes",
+          "window_scope",
+          "window_max_height",
+          "window_soiling",
+          "window_notes",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenBüro- und Gewerberaumreinigung, Glas- und FensterreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungBüro- und GewerberaumreinigungÄndernFläche250 m²TurnusEinmaligGlas- und FensterreinigungÄndernFenster / Flügel5ReinigungswunschGlas innenTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "wizard contract upholstery+solar+other",
+      "checks": [
+        {
+          "name": "reached review",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "valid complete form",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "inactive service controls disabled",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "one current step",
+          "pass": true,
+          "details": [
+            "5Prüfen"
+          ]
+        },
+        {
+          "name": "selected POST checkbox names",
+          "pass": true
+        },
+        {
+          "name": "review has corrected real values",
+          "pass": true
+        },
+        {
+          "name": "no unmocked posts",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "state": {
+        "active": 4,
+        "currentSteps": [
+          "5Prüfen"
+        ],
+        "invalid": [],
+        "inactiveEnabled": [],
+        "dataNames": [
+          "form_type",
+          "cleaning_types",
+          "website",
+          "type_upholstery",
+          "type_solar",
+          "type_other",
+          "cleaning_postcode",
+          "cleaning_city",
+          "object_type",
+          "cleaning_company",
+          "cleaning_street",
+          "floor",
+          "furnishing",
+          "upholstery_two_seater",
+          "upholstery_three_seater",
+          "upholstery_corner_small",
+          "upholstery_corner_large",
+          "upholstery_armchair",
+          "upholstery_stool",
+          "upholstery_chair_seat",
+          "upholstery_chair_back",
+          "upholstery_custom_seats",
+          "upholstery_scope",
+          "upholstery_soiling",
+          "upholstery_notes",
+          "solar_access",
+          "solar_soiling",
+          "solar_modules",
+          "solar_area",
+          "solar_notes",
+          "other_details",
+          "appointment_preference",
+          "appointment_notes",
+          "photos[]",
+          "salutation",
+          "company",
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "privacy"
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenPolsterreinigung, Solar- und Photovoltaikanlagenreinigung, Sonstige LeistungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungPolsterreinigungÄndernReinigungswunschAuffrischungVerschmutzungLeichtSolar- und PhotovoltaikanlagenreinigungÄndernZugänglichkeitFlachdachVerschmutzungLeichtSonstige LeistungÄndernBeschreibungIndividuelle Reinigung eines LagerbereichsTermin und FotosÄndernTerminwunschFlexibelFotosKeine Fotos ausgewähltKontaktÄndernNameJana MusterE-Mailqa@example.invalid"
+      }
+    },
+    {
+      "name": "context service=window&city=koeln",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": [
+            "window"
+          ]
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": "Köln"
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "context city=bruehl",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": "Brühl"
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "context service=office&city=bonn",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": [
+            "office"
+          ]
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": "Bonn"
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "context service=unknown&city=unknown",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": ""
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "context service=window&service=office",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": ""
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "context service[]=window&city[]=koeln",
+      "checks": [
+        {
+          "name": "allowlisted service suggestion",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "allowlisted city suggestion",
+          "pass": true,
+          "details": ""
+        },
+        {
+          "name": "no invented street or postcode",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "local durable validation and completion invalidation",
+      "checks": [
+        {
+          "name": "empty service has durable error",
+          "pass": true
+        },
+        {
+          "name": "short city marked and described",
+          "pass": true,
+          "details": [
+            {
+              "name": "cleaning_city",
+              "error": "Bitte geben Sie mindestens 2 Zeichen ein."
+            },
+            {
+              "name": "other_details",
+              "error": "Bitte geben Sie mindestens 5 Zeichen ein."
+            }
+          ]
+        },
+        {
+          "name": "short other description marked and described",
+          "pass": true,
+          "details": [
+            {
+              "name": "cleaning_city",
+              "error": "Bitte geben Sie mindestens 2 Zeichen ein."
+            },
+            {
+              "name": "other_details",
+              "error": "Bitte geben Sie mindestens 5 Zeichen ein."
+            }
+          ]
+        },
+        {
+          "name": "correction advances",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "transport fields",
+      "checks": [
+        {
+          "name": "data preserved on failed send",
+          "pass": true
+        },
+        {
+          "name": "durable failure text",
+          "pass": true
+        },
+        {
+          "name": "server radio group resolved",
+          "pass": true,
+          "details": {
+            "radios": [
+              "true",
+              "true",
+              "true"
+            ],
+            "radioGroup": null,
+            "photo": "true",
+            "active": 2,
+            "focused": "appointment_preference"
+          }
+        },
+        {
+          "name": "server photos[] resolved",
+          "pass": true,
+          "details": {
+            "radios": [
+              "true",
+              "true",
+              "true"
+            ],
+            "radioGroup": null,
+            "photo": "true",
+            "active": 2,
+            "focused": "appointment_preference"
+          }
+        },
+        {
+          "name": "server error returns to proper step and control",
+          "pass": true,
+          "details": {
+            "radios": [
+              "true",
+              "true",
+              "true"
+            ],
+            "radioGroup": null,
+            "photo": "true",
+            "active": 2,
+            "focused": "appointment_preference"
+          }
+        },
+        {
+          "name": "exactly one intercepted POST",
+          "pass": true,
+          "details": [
+            {
+              "url": "http://127.0.0.1:8080/api/kontakt.php",
+              "bodyBytes": 2754
+            }
+          ]
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "transport non-json",
+      "checks": [
+        {
+          "name": "data preserved on failed send",
+          "pass": true
+        },
+        {
+          "name": "durable failure text",
+          "pass": true
+        },
+        {
+          "name": "exactly one intercepted POST",
+          "pass": true,
+          "details": [
+            {
+              "url": "http://127.0.0.1:8080/api/kontakt.php",
+              "bodyBytes": 2754
+            }
+          ]
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "transport abort",
+      "checks": [
+        {
+          "name": "data preserved on failed send",
+          "pass": true
+        },
+        {
+          "name": "durable failure text",
+          "pass": true
+        },
+        {
+          "name": "exactly one intercepted POST",
+          "pass": true,
+          "details": [
+            {
+              "url": "http://127.0.0.1:8080/api/kontakt.php",
+              "bodyBytes": 2754
+            }
+          ]
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "transport success",
+      "checks": [
+        {
+          "name": "confirmation replaces input steps",
+          "pass": true,
+          "details": 0
+        },
+        {
+          "name": "confirmation visible",
+          "pass": true
+        },
+        {
+          "name": "personal data cleared",
+          "pass": true
+        },
+        {
+          "name": "restart is explicitly empty first step",
+          "pass": true,
+          "details": {
+            "services": 0,
+            "city": "",
+            "active": 0
+          }
+        },
+        {
+          "name": "exactly one intercepted POST",
+          "pass": true,
+          "details": [
+            {
+              "url": "http://127.0.0.1:8080/api/kontakt.php",
+              "bodyBytes": 2754
+            }
+          ]
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "picker/drop upload contract",
+      "checks": [
+        {
+          "name": "six files: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            },
+            "drop": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            }
+          }
+        },
+        {
+          "name": "six files: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            },
+            "drop": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            }
+          }
+        },
+        {
+          "name": "six files: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            },
+            "drop": {
+              "count": 6,
+              "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+            }
+          }
+        },
+        {
+          "name": "single too large: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "single too large: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "single too large: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Jede Datei darf höchstens 5 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "total too large: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            },
+            "drop": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "total too large: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            },
+            "drop": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "total too large: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            },
+            "drop": {
+              "count": 4,
+              "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+            }
+          }
+        },
+        {
+          "name": "empty file: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            }
+          }
+        },
+        {
+          "name": "empty file: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            }
+          }
+        },
+        {
+          "name": "empty file: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+            }
+          }
+        },
+        {
+          "name": "HEIC: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            }
+          }
+        },
+        {
+          "name": "HEIC: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            }
+          }
+        },
+        {
+          "name": "HEIC: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            },
+            "drop": {
+              "count": 1,
+              "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+            }
+          }
+        },
+        {
+          "name": "one valid PNG: same picker/drop selection",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": ""
+            },
+            "drop": {
+              "count": 1,
+              "message": ""
+            }
+          }
+        },
+        {
+          "name": "one valid PNG: same picker/drop validator",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": ""
+            },
+            "drop": {
+              "count": 1,
+              "message": ""
+            }
+          }
+        },
+        {
+          "name": "one valid PNG: expected constraint",
+          "pass": true,
+          "details": {
+            "picker": {
+              "count": 1,
+              "message": ""
+            },
+            "drop": {
+              "count": 1,
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "contact durable validation and successful inline status",
+      "checks": [
+        {
+          "name": "contact local error is durable",
+          "pass": true,
+          "details": 4
+        },
+        {
+          "name": "contact retains inline status",
+          "pass": true
+        },
+        {
+          "name": "contact clears after confirmed success",
+          "pass": true
+        },
+        {
+          "name": "one intercepted contact POST",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "preventedPosts": 5,
+  "realPosts": 0,
+  "worktreeStatus": "M config/pages/faq.php\n M public_html/assets/css/styles.css\n M public_html/datenschutz/index.php\n M public_html/faq/index.php\n M public_html/impressum/index.php\n M public_html/index.php\n M public_html/jobs/index.php\n M public_html/kontakt/index.php\n M resources/css/03-pages.css",
+  "summary": {
+    "scenarios": 24,
+    "checks": 153,
+    "failures": 0,
+    "preventedPosts": 5,
+    "realPosts": 0
+  }
+}

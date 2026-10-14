@@ -1,0 +1,1013 @@
+{
+  "endpoint": "http://127.0.0.1:8082/",
+  "endpointLoadsOnly": "/workspace/kem-website/app/forms/photo-upload.php",
+  "repositoryReadOnly": true,
+  "noContactApiOrMailer": true,
+  "cases": [
+    {
+      "name": "no photos",
+      "status": 200,
+      "declaredMimes": [],
+      "accepted": true,
+      "error": null,
+      "attachments": [],
+      "uploaded": [],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "one actual JPEG",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "qa-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "qa.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "one actual PNG",
+      "status": 200,
+      "declaredMimes": [
+        "image/png"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "qa-1.png",
+          "mime": "image/png"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "qa.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "one original public WebP",
+      "status": 200,
+      "declaredMimes": [
+        "image/webp"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "qa-1.webp",
+          "mime": "image/webp"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "qa.webp",
+          "size": 109370,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "five valid mixed photos",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/jpeg",
+        "image/png"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "one-1.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "two-2.png",
+          "mime": "image/png"
+        },
+        {
+          "name": "three-3.webp",
+          "mime": "image/webp"
+        },
+        {
+          "name": "four-4.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "five-5.png",
+          "mime": "image/png"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "one.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "two.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "three.webp",
+          "size": 109370,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "four.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "five.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "six valid photos",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg"
+      ],
+      "accepted": false,
+      "error": "Bitte laden Sie höchstens 5 Fotos hoch.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "qa-0.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-1.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-2.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-3.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-4.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-5.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "empty photo",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg"
+      ],
+      "accepted": false,
+      "error": "Jedes Foto darf höchstens 5 MB groß sein.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "empty.jpg",
+          "size": 0,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "forged browser MIME with text bytes",
+      "status": 200,
+      "declaredMimes": [
+        "image/png"
+      ],
+      "accepted": false,
+      "error": "Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "fake.png",
+          "size": 36,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "invalid bytes claimed JPEG",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg"
+      ],
+      "accepted": false,
+      "error": "Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "fake.jpg",
+          "size": 6,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "real JPEG mismatched declared PNG",
+      "status": 200,
+      "declaredMimes": [
+        "image/png"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "mismatch-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "mismatch.png",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "real PNG mismatched extension and text MIME",
+      "status": 200,
+      "declaredMimes": [
+        "text/plain"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "mismatch-1.png",
+          "mime": "image/png"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "mismatch.jpg",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "exact5MiB accepted",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "exact5-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "exact5.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "single over5MiB",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg"
+      ],
+      "accepted": false,
+      "error": "Jedes Foto darf höchstens 5 MB groß sein.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "over5.jpg",
+          "size": 5242881,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "exact15MiB total accepted",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg"
+      ],
+      "accepted": true,
+      "error": null,
+      "attachments": [
+        {
+          "name": "exact-0-1.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "exact-1-2.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "exact-2-3.jpg",
+          "mime": "image/jpeg"
+        }
+      ],
+      "uploaded": [
+        {
+          "name": "exact-0.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "exact-1.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "exact-2.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    },
+    {
+      "name": "total over15MiB with each under5MiB",
+      "status": 200,
+      "declaredMimes": [
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg",
+        "image/jpeg"
+      ],
+      "accepted": false,
+      "error": "Die Fotos dürfen zusammen höchstens 15 MB groß sein.",
+      "attachments": [],
+      "uploaded": [
+        {
+          "name": "over-total-0.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-1.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-2.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-3.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ],
+      "runtime": {
+        "php": "8.4.26",
+        "upload_max_filesize": "32M",
+        "post_max_size": "64M",
+        "max_file_uploads": "20"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "no photos: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "no photos: real HTTP upload verified",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "name": "no photos: actual content-derived MIME",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "name": "one actual JPEG: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "one actual JPEG: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "one actual JPEG: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "one actual PNG: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "one actual PNG: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "one actual PNG: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa-1.png",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "one original public WebP: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "one original public WebP: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa.webp",
+          "size": 109370,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "one original public WebP: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa-1.webp",
+          "mime": "image/webp"
+        }
+      ]
+    },
+    {
+      "name": "five valid mixed photos: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "five valid mixed photos: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "one.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "two.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "three.webp",
+          "size": 109370,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "four.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "five.png",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "five valid mixed photos: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "one-1.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "two-2.png",
+          "mime": "image/png"
+        },
+        {
+          "name": "three-3.webp",
+          "mime": "image/webp"
+        },
+        {
+          "name": "four-4.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "five-5.png",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "six valid photos: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Bitte laden Sie höchstens 5 Fotos hoch."
+      }
+    },
+    {
+      "name": "six valid photos: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "qa-0.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-1.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-2.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-3.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-4.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "qa-5.jpg",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "empty photo: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Jedes Foto darf höchstens 5 MB groß sein."
+      }
+    },
+    {
+      "name": "empty photo: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "empty.jpg",
+          "size": 0,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "forged browser MIME with text bytes: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien."
+      }
+    },
+    {
+      "name": "forged browser MIME with text bytes: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "fake.png",
+          "size": 36,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "invalid bytes claimed JPEG: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien."
+      }
+    },
+    {
+      "name": "invalid bytes claimed JPEG: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "fake.jpg",
+          "size": 6,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "real JPEG mismatched declared PNG: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "real JPEG mismatched declared PNG: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "mismatch.png",
+          "size": 109944,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "real JPEG mismatched declared PNG: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "mismatch-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "real PNG mismatched extension and text MIME: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "real PNG mismatched extension and text MIME: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "mismatch.jpg",
+          "size": 817979,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "real PNG mismatched extension and text MIME: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "mismatch-1.png",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "exact5MiB accepted: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "exact5MiB accepted: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "exact5.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "exact5MiB accepted: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "exact5-1.jpg",
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "single over5MiB: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Jedes Foto darf höchstens 5 MB groß sein."
+      }
+    },
+    {
+      "name": "single over5MiB: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "over5.jpg",
+          "size": 5242881,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "exact15MiB total accepted: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": true,
+        "error": null
+      }
+    },
+    {
+      "name": "exact15MiB total accepted: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "exact-0.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "exact-1.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "exact-2.jpg",
+          "size": 5242880,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    },
+    {
+      "name": "exact15MiB total accepted: actual content-derived MIME",
+      "pass": true,
+      "actual": [
+        {
+          "name": "exact-0-1.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "exact-1-2.jpg",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "exact-2-3.jpg",
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "total over15MiB with each under5MiB: expected helper outcome",
+      "pass": true,
+      "actual": {
+        "accepted": false,
+        "error": "Die Fotos dürfen zusammen höchstens 15 MB groß sein."
+      }
+    },
+    {
+      "name": "total over15MiB with each under5MiB: real HTTP upload verified",
+      "pass": true,
+      "actual": [
+        {
+          "name": "over-total-0.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-1.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-2.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        },
+        {
+          "name": "over-total-3.jpg",
+          "size": 4194304,
+          "upload_error": 0,
+          "is_uploaded_file": true
+        }
+      ]
+    }
+  ],
+  "fixturePosts": 15,
+  "productApiPosts": 0,
+  "cleanup": "kem-upload-qa-final2",
+  "failures": []
+}

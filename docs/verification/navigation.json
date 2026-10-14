@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-14T22:11:06.918Z",
+  "base": "http://127.0.0.1:8080",
+  "suite": "navigation",
+  "commit": "6d3d850cf31c91dae957b8a5115668e782b11069",
+  "results": [
+    {
+      "name": "native navigation 390",
+      "checks": [
+        {
+          "name": "menu opened",
+          "pass": true
+        },
+        {
+          "name": "scroll lock set",
+          "pass": true
+        },
+        {
+          "name": "focus enters navigation",
+          "pass": true
+        },
+        {
+          "name": "native dropdown opens",
+          "pass": true
+        },
+        {
+          "name": "first Escape closes dropdown",
+          "pass": true
+        },
+        {
+          "name": "first Escape restores summary focus",
+          "pass": true
+        },
+        {
+          "name": "Tab loops to menu toggle",
+          "pass": true
+        },
+        {
+          "name": "Shift+Tab loops back to final nav link",
+          "pass": true
+        },
+        {
+          "name": "second Escape closes menu",
+          "pass": true
+        },
+        {
+          "name": "scroll lock removed",
+          "pass": true
+        },
+        {
+          "name": "focus restored",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "native navigation 1080",
+      "checks": [
+        {
+          "name": "menu opened",
+          "pass": true
+        },
+        {
+          "name": "scroll lock set",
+          "pass": true
+        },
+        {
+          "name": "focus enters navigation",
+          "pass": true
+        },
+        {
+          "name": "native dropdown opens",
+          "pass": true
+        },
+        {
+          "name": "first Escape closes dropdown",
+          "pass": true
+        },
+        {
+          "name": "first Escape restores summary focus",
+          "pass": true
+        },
+        {
+          "name": "Tab loops to menu toggle",
+          "pass": true
+        },
+        {
+          "name": "Shift+Tab loops back to final nav link",
+          "pass": true
+        },
+        {
+          "name": "second Escape closes menu",
+          "pass": true
+        },
+        {
+          "name": "scroll lock removed",
+          "pass": true
+        },
+        {
+          "name": "focus restored",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "native navigation 1440",
+      "checks": [
+        {
+          "name": "native dropdown opens",
+          "pass": true
+        },
+        {
+          "name": "first Escape closes dropdown",
+          "pass": true
+        },
+        {
+          "name": "first Escape restores summary focus",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "preventedPosts": 0,
+  "realPosts": 0,
+  "worktreeStatus": "M app/helpers/pages.php\n M app/templates/footer.php\n M app/templates/header.php\n M public_html/assets/css/styles.css\n M public_html/assets/js/core/main.js\n M resources/css/02-components.css\n M resources/css/03-pages.css\n M resources/css/04-responsive.css\n?? config/page-actions.php",
+  "summary": {
+    "scenarios": 3,
+    "checks": 25,
+    "failures": 0,
+    "preventedPosts": 0,
+    "realPosts": 0
+  }
+}

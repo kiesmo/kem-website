@@ -3,7 +3,7 @@
 **Planungsstand:** 14. Oktober 2026 · **Repository:** `kiesmo/kem-website`  
 **Arbeitsbranch:** `final2` · **Basis:** `00f1fe3b7750e0315f3ec0224a887f1a0e74b2d1`, identisch mit `origin/final`  
 **Grundlage:** [korrigierter Deep Design Audit](DEEP-DESIGN-AUDIT-final2.md), alle 40 Befunde, Seitentypen/Routen und tatsächlicher Quellcode.  
-**Status:** ausschließlich Planung und Verifikation; keine der folgenden Website-Änderungen wurde ausgeführt.
+**Status:** B01–B11 nacheinander umgesetzt und geprüft. Der ursprüngliche Plan bleibt als Entwurfsgrundlage erhalten; der tatsächliche Stand, Prüfungen und bedingte Medienpunkte stehen in [IMPLEMENTATION-STATUS-final2.md](IMPLEMENTATION-STATUS-final2.md).
 
 ## 1. Ergebnis des Abgleichs und Ziel der Umsetzung
 

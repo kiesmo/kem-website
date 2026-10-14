@@ -1,0 +1,1423 @@
+{
+  "baseline": "00f1fe3b7750e0315f3ec0224a887f1a0e74b2d1",
+  "commit": "6597e6b78e860f4fd463ac46ad070de85a4b0a0f",
+  "base": "http://127.0.0.1:8080",
+  "only": "b10",
+  "date": "2026-10-14T22:13:39.355Z",
+  "checks": [
+    {
+      "name": "/faq/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "FAQ has ten native disclosures and one current navigation item",
+      "pass": true,
+      "data": {
+        "visible": [
+          {
+            "question": "Wie läuft eine Anfrage bei KEM ab?",
+            "answer": "Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot."
+          },
+          {
+            "question": "Ist die Angebotsanfrage kostenlos und unverbindlich?",
+            "answer": "Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab."
+          },
+          {
+            "question": "Welche Angaben helfen bei einer Angebotsanfrage?",
+            "answer": "Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären."
+          },
+          {
+            "question": "Was kostet eine Gebäudereinigung?",
+            "answer": "Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe."
+          },
+          {
+            "question": "Wie wird ein individuelles Angebot erstellt?",
+            "answer": "Für eine sinnvolle Kalkulation berücksichtigen wir unter anderem Objektart, Größe beziehungsweise Umfang, gewünschte Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßigen Arbeiten – den gewünschten Turnus. So entsteht ein Angebot, das zum tatsächlichen Auftrag passt."
+          },
+          {
+            "question": "In welchem Gebiet ist KEM Gebäudereinigung im Einsatz?",
+            "answer": "KEM Gebäudereinigung hat seinen Sitz in Brühl und ist für private und gewerbliche Kunden in Köln, Brühl, Bonn und Umgebung im Einsatz. Wenn Sie unsicher sind, ob Ihr Standort abgedeckt ist, fragen Sie einfach kurz bei uns nach."
+          },
+          {
+            "question": "Sind einmalige und regelmäßige Aufträge möglich?",
+            "answer": "Je nach Leistung sind sowohl einmalige Einsätze als auch regelmäßig vereinbarte Reinigungen möglich. Büro- und Gewerbereinigung wird häufig regelmäßig geplant, während beispielsweise Grundreinigungen oder Entrümpelungen typischerweise als Einzelauftrag erfolgen."
+          },
+          {
+            "question": "Wie häufig kann eine regelmäßige Reinigung stattfinden?",
+            "answer": "Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen."
+          },
+          {
+            "question": "Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?",
+            "answer": "Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen."
+          },
+          {
+            "question": "Kann der vereinbarte Leistungsumfang später angepasst werden?",
+            "answer": "Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden."
+          }
+        ],
+        "schema": [
+          {
+            "question": "Wie läuft eine Anfrage bei KEM ab?",
+            "answer": "Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot."
+          },
+          {
+            "question": "Ist die Angebotsanfrage kostenlos und unverbindlich?",
+            "answer": "Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab."
+          },
+          {
+            "question": "Welche Angaben helfen bei einer Angebotsanfrage?",
+            "answer": "Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären."
+          },
+          {
+            "question": "Was kostet eine Gebäudereinigung?",
+            "answer": "Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe."
+          },
+          {
+            "question": "Wie wird ein individuelles Angebot erstellt?",
+            "answer": "Für eine sinnvolle Kalkulation berücksichtigen wir unter anderem Objektart, Größe beziehungsweise Umfang, gewünschte Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßigen Arbeiten – den gewünschten Turnus. So entsteht ein Angebot, das zum tatsächlichen Auftrag passt."
+          },
+          {
+            "question": "In welchem Gebiet ist KEM Gebäudereinigung im Einsatz?",
+            "answer": "KEM Gebäudereinigung hat seinen Sitz in Brühl und ist für private und gewerbliche Kunden in Köln, Brühl, Bonn und Umgebung im Einsatz. Wenn Sie unsicher sind, ob Ihr Standort abgedeckt ist, fragen Sie einfach kurz bei uns nach."
+          },
+          {
+            "question": "Sind einmalige und regelmäßige Aufträge möglich?",
+            "answer": "Je nach Leistung sind sowohl einmalige Einsätze als auch regelmäßig vereinbarte Reinigungen möglich. Büro- und Gewerbereinigung wird häufig regelmäßig geplant, während beispielsweise Grundreinigungen oder Entrümpelungen typischerweise als Einzelauftrag erfolgen."
+          },
+          {
+            "question": "Wie häufig kann eine regelmäßige Reinigung stattfinden?",
+            "answer": "Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen."
+          },
+          {
+            "question": "Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?",
+            "answer": "Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen."
+          },
+          {
+            "question": "Kann der vereinbarte Leistungsumfang später angepasst werden?",
+            "answer": "Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden."
+          }
+        ],
+        "native": true,
+        "current": 1
+      }
+    },
+    {
+      "name": "FAQ visible questions/answers exactly match schema order",
+      "pass": true,
+      "data": {
+        "visible": [
+          {
+            "question": "Wie läuft eine Anfrage bei KEM ab?",
+            "answer": "Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot."
+          },
+          {
+            "question": "Ist die Angebotsanfrage kostenlos und unverbindlich?",
+            "answer": "Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab."
+          },
+          {
+            "question": "Welche Angaben helfen bei einer Angebotsanfrage?",
+            "answer": "Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären."
+          },
+          {
+            "question": "Was kostet eine Gebäudereinigung?",
+            "answer": "Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe."
+          },
+          {
+            "question": "Wie wird ein individuelles Angebot erstellt?",
+            "answer": "Für eine sinnvolle Kalkulation berücksichtigen wir unter anderem Objektart, Größe beziehungsweise Umfang, gewünschte Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßigen Arbeiten – den gewünschten Turnus. So entsteht ein Angebot, das zum tatsächlichen Auftrag passt."
+          },
+          {
+            "question": "In welchem Gebiet ist KEM Gebäudereinigung im Einsatz?",
+            "answer": "KEM Gebäudereinigung hat seinen Sitz in Brühl und ist für private und gewerbliche Kunden in Köln, Brühl, Bonn und Umgebung im Einsatz. Wenn Sie unsicher sind, ob Ihr Standort abgedeckt ist, fragen Sie einfach kurz bei uns nach."
+          },
+          {
+            "question": "Sind einmalige und regelmäßige Aufträge möglich?",
+            "answer": "Je nach Leistung sind sowohl einmalige Einsätze als auch regelmäßig vereinbarte Reinigungen möglich. Büro- und Gewerbereinigung wird häufig regelmäßig geplant, während beispielsweise Grundreinigungen oder Entrümpelungen typischerweise als Einzelauftrag erfolgen."
+          },
+          {
+            "question": "Wie häufig kann eine regelmäßige Reinigung stattfinden?",
+            "answer": "Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen."
+          },
+          {
+            "question": "Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?",
+            "answer": "Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen."
+          },
+          {
+            "question": "Kann der vereinbarte Leistungsumfang später angepasst werden?",
+            "answer": "Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden."
+          }
+        ],
+        "schema": [
+          {
+            "question": "Wie läuft eine Anfrage bei KEM ab?",
+            "answer": "Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot."
+          },
+          {
+            "question": "Ist die Angebotsanfrage kostenlos und unverbindlich?",
+            "answer": "Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab."
+          },
+          {
+            "question": "Welche Angaben helfen bei einer Angebotsanfrage?",
+            "answer": "Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären."
+          },
+          {
+            "question": "Was kostet eine Gebäudereinigung?",
+            "answer": "Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe."
+          },
+          {
+            "question": "Wie wird ein individuelles Angebot erstellt?",
+            "answer": "Für eine sinnvolle Kalkulation berücksichtigen wir unter anderem Objektart, Größe beziehungsweise Umfang, gewünschte Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßigen Arbeiten – den gewünschten Turnus. So entsteht ein Angebot, das zum tatsächlichen Auftrag passt."
+          },
+          {
+            "question": "In welchem Gebiet ist KEM Gebäudereinigung im Einsatz?",
+            "answer": "KEM Gebäudereinigung hat seinen Sitz in Brühl und ist für private und gewerbliche Kunden in Köln, Brühl, Bonn und Umgebung im Einsatz. Wenn Sie unsicher sind, ob Ihr Standort abgedeckt ist, fragen Sie einfach kurz bei uns nach."
+          },
+          {
+            "question": "Sind einmalige und regelmäßige Aufträge möglich?",
+            "answer": "Je nach Leistung sind sowohl einmalige Einsätze als auch regelmäßig vereinbarte Reinigungen möglich. Büro- und Gewerbereinigung wird häufig regelmäßig geplant, während beispielsweise Grundreinigungen oder Entrümpelungen typischerweise als Einzelauftrag erfolgen."
+          },
+          {
+            "question": "Wie häufig kann eine regelmäßige Reinigung stattfinden?",
+            "answer": "Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen."
+          },
+          {
+            "question": "Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?",
+            "answer": "Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen."
+          },
+          {
+            "question": "Kann der vereinbarte Leistungsumfang später angepasst werden?",
+            "answer": "Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden."
+          }
+        ],
+        "native": true,
+        "current": 1
+      }
+    },
+    {
+      "name": "FAQ prioritizes process, nonbinding request and necessary information",
+      "pass": true,
+      "data": [
+        {
+          "question": "Wie läuft eine Anfrage bei KEM ab?",
+          "answer": "Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot."
+        },
+        {
+          "question": "Ist die Angebotsanfrage kostenlos und unverbindlich?",
+          "answer": "Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab."
+        },
+        {
+          "question": "Welche Angaben helfen bei einer Angebotsanfrage?",
+          "answer": "Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären."
+        }
+      ]
+    },
+    {
+      "name": "FAQ opens with keyboard Enter",
+      "pass": true
+    },
+    {
+      "name": "FAQ closes with keyboard Enter",
+      "pass": true
+    },
+    {
+      "name": "/datenschutz/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "/datenschutz/: original 10 legal headings retained",
+      "pass": true,
+      "data": {
+        "baseline": [
+          "1. Verantwortlicher",
+          "2. Hosting, E-Mail und Server-Logfiles",
+          "3. Cookies und lokale Speicherung",
+          "4. Kontakt- und Angebotsformulare",
+          "5. Kontaktaufnahme und Bewerbungen",
+          "6. WhatsApp-Verlinkung",
+          "7. Lokale Medien und Systemschriften",
+          "8. Ihre Rechte",
+          "9. SSL-/TLS-Verschlüsselung",
+          "10. Änderungen"
+        ],
+        "actual": [
+          "1. Verantwortlicher",
+          "2. Hosting, E-Mail und Server-Logfiles",
+          "3. Cookies und lokale Speicherung",
+          "4. Kontakt- und Angebotsformulare",
+          "5. Kontaktaufnahme und Bewerbungen",
+          "6. WhatsApp-Verlinkung",
+          "7. Lokale Medien und Systemschriften",
+          "8. Ihre Rechte",
+          "9. SSL-/TLS-Verschlüsselung",
+          "10. Änderungen"
+        ]
+      }
+    },
+    {
+      "name": "/datenschutz/: original legal section wording unchanged",
+      "pass": true,
+      "data": {
+        "baseline": [
+          {
+            "tag": "P",
+            "text": "Stand:August2026"
+          },
+          {
+            "tag": "H2",
+            "text": "1.Verantwortlicher"
+          },
+          {
+            "tag": "P",
+            "text": "KEMGebäudereinigungInhaber:KianMotlaghAlteBohle3350321BrühlDeutschlandTelefon:022329488929E-Mail:info@kem-gebaeudereinigung.de"
+          },
+          {
+            "tag": "H2",
+            "text": "2.Hosting,E-MailundServer-Logfiles"
+          },
+          {
+            "tag": "P",
+            "text": "DieseWebsitesowiedasfürKontakt-undFormularnachrichtenverwendeteE-Mail-PostfachwerdenbeiHostingerbetrieben.DienstleisteristHostingerInternationalLtd.,61LordouVironosStreet,6023Larnaca,Zypern."
+          },
+          {
+            "tag": "P",
+            "text": "BeimAufrufderWebsiteverarbeitetderHostingdienstleistertechnischerforderlicheVerbindungsdaten.DazukönneninsbesondereIP-Adresse,ZeitpunktdesZugriffs,aufgerufeneDatei,Referrer,BrowserundBetriebssystemgehören.DieVerarbeitungdientdersicheren,stabilenundfehlerfreienBereitstellungderWebsite.RechtsgrundlageistArt.6Abs.1lit.fDSGVO."
+          },
+          {
+            "tag": "P",
+            "text": "Server-Logdatenwerdennursolangeverarbeitet,wiediesfürdentechnischenBetrieb,dieSicherheitunddieFehleranalyseerforderlichist.EinelängereAufbewahrungerfolgtnur,wenngesetzlichePflichtenbestehenodereinsicherheitsrelevanterVorfallaufgeklärtwerdenmuss."
+          },
+          {
+            "tag": "H2",
+            "text": "3.CookiesundlokaleSpeicherung"
+          },
+          {
+            "tag": "P",
+            "text": "DieseWebsitesetztselbstkeineAnalyse-oderMarketing-Cookiesein.FürNavigationundFormulareistkeinenichtnotwendigelokaleSpeicherungvorgesehen."
+          },
+          {
+            "tag": "H2",
+            "text": "4.Kontakt-undAngebotsformulare"
+          },
+          {
+            "tag": "P",
+            "text": "WennSieunsübereinFormularkontaktieren,verarbeitenwirdievonIhneneingegebenenAngabenzurBearbeitungundBeantwortungIhrerAnfrage.DazukönneninsbesondereName,E-Mail-Adresse,Telefonnummer,EinsatzortsowieAngabenzumgewünschtenAuftraggehören.RechtsgrundlageistArt.6Abs.1lit.bDSGVObeivorvertraglichenAnfragenbeziehungsweiseArt.6Abs.1lit.fDSGVObeiallgemeinenAnliegen."
+          },
+          {
+            "tag": "P",
+            "text": "FormulardatenwerdenserverseitiggeprüftundüberdenbeiHostingerbetriebenenE-Mail-DienstandiefürdieBearbeitungvorgeseheneAdresseübermittelt.EineSpeicherungineinerWebsite-Datenbankistnichtvorgesehen.ZumSchutzvorautomatisiertemMissbrauchkannfürkurzeZeiteineausderIP-AdresseabgeleitetetechnischePrüfsummeverwendetwerden.DieAnfrageangabenwerdengelöscht,sobaldsiefürdieBearbeitungnichtmehrerforderlichsindundkeinegesetzlichenAufbewahrungspflichtenentgegenstehen."
+          },
+          {
+            "tag": "H2",
+            "text": "5.KontaktaufnahmeundBewerbungen"
+          },
+          {
+            "tag": "P",
+            "text": "BeieinerKontaktaufnahmeperE-MailoderTelefonverarbeitenwirdieübermitteltenAngabenzurBearbeitungdesjeweiligenAnliegens."
+          },
+          {
+            "tag": "P",
+            "text": "BeieinerBewerbungverarbeitenwirdieübermitteltenDatenausschließlichzurDurchführungdesBewerbungsverfahrens.RechtsgrundlageistArt.6Abs.1lit.bDSGVOinVerbindungmit§26BDSG.BeieinererfolglosenBewerbungwerdendieUnterlagenspätestensdreiMonatenachAbschlussdesBewerbungsverfahrensgelöscht,sofernkeinegesetzlichenPflichten,dieGeltendmachungoderAbwehrvonRechtsansprüchenodereineausdrücklichvereinbartelängereAufbewahrungentgegenstehen."
+          },
+          {
+            "tag": "H2",
+            "text": "6.WhatsApp-Verlinkung"
+          },
+          {
+            "tag": "P",
+            "text": "DieWebsiteenthälteinenLinkzumexternenNachrichtendienstWhatsApp.ErstwennSiediesenLinkanklicken,verlassenSieunsereWebsiteundeskanneineVerbindungzuWhatsApphergestelltwerden.DabeikönnenDatendurchdenAnbieterdesDienstesverarbeitetwerden.FürdieseVerarbeitunggeltendieDatenschutzinformationenvonWhatsApp."
+          },
+          {
+            "tag": "H2",
+            "text": "7.LokaleMedienundSystemschriften"
+          },
+          {
+            "tag": "P",
+            "text": "Bilder,LogoundIconswerdenvomeigenenWebspacegeladen.DieWebsiteverwendetaufdemEndgerätvorhandeneSystemschriften.EswerdenkeineSchriftdateienvonGoogleFontsoderanderenexternenSchriftanbieterngeladen."
+          },
+          {
+            "tag": "H2",
+            "text": "8.IhreRechte"
+          },
+          {
+            "tag": "P",
+            "text": "BetroffenePersonenhabennachMaßgabedergesetzlichenVoraussetzungenRechteaufAuskunft,Berichtigung,Löschung,EinschränkungderVerarbeitung,DatenübertragbarkeitundWiderspruch.SoweiteineVerarbeitungaufIhrerEinwilligungberuht,könnenSiediesemitWirkungfürdieZukunftwiderrufen.AußerdembestehteinBeschwerderechtbeieinerDatenschutzaufsichtsbehörde."
+          },
+          {
+            "tag": "H2",
+            "text": "9.SSL-/TLS-Verschlüsselung"
+          },
+          {
+            "tag": "P",
+            "text": "FürdieverschlüsselteÜbertragungderWebsiteundderFormularangabenwirdHTTPSeingesetzt."
+          },
+          {
+            "tag": "H2",
+            "text": "10.Änderungen"
+          },
+          {
+            "tag": "P",
+            "text": "DieseDatenschutzerklärungwirdangepasst,wennsichdieeingesetztenFunktionen,DienstleisteroderVerarbeitungsvorgängeändern."
+          }
+        ],
+        "actual": [
+          {
+            "tag": "P",
+            "text": "Stand:August2026"
+          },
+          {
+            "tag": "H2",
+            "text": "1.Verantwortlicher"
+          },
+          {
+            "tag": "P",
+            "text": "KEMGebäudereinigungInhaber:KianMotlaghAlteBohle3350321BrühlDeutschlandTelefon:022329488929E-Mail:info@kem-gebaeudereinigung.de"
+          },
+          {
+            "tag": "H2",
+            "text": "2.Hosting,E-MailundServer-Logfiles"
+          },
+          {
+            "tag": "P",
+            "text": "DieseWebsitesowiedasfürKontakt-undFormularnachrichtenverwendeteE-Mail-PostfachwerdenbeiHostingerbetrieben.DienstleisteristHostingerInternationalLtd.,61LordouVironosStreet,6023Larnaca,Zypern."
+          },
+          {
+            "tag": "P",
+            "text": "BeimAufrufderWebsiteverarbeitetderHostingdienstleistertechnischerforderlicheVerbindungsdaten.DazukönneninsbesondereIP-Adresse,ZeitpunktdesZugriffs,aufgerufeneDatei,Referrer,BrowserundBetriebssystemgehören.DieVerarbeitungdientdersicheren,stabilenundfehlerfreienBereitstellungderWebsite.RechtsgrundlageistArt.6Abs.1lit.fDSGVO."
+          },
+          {
+            "tag": "P",
+            "text": "Server-Logdatenwerdennursolangeverarbeitet,wiediesfürdentechnischenBetrieb,dieSicherheitunddieFehleranalyseerforderlichist.EinelängereAufbewahrungerfolgtnur,wenngesetzlichePflichtenbestehenodereinsicherheitsrelevanterVorfallaufgeklärtwerdenmuss."
+          },
+          {
+            "tag": "H2",
+            "text": "3.CookiesundlokaleSpeicherung"
+          },
+          {
+            "tag": "P",
+            "text": "DieseWebsitesetztselbstkeineAnalyse-oderMarketing-Cookiesein.FürNavigationundFormulareistkeinenichtnotwendigelokaleSpeicherungvorgesehen."
+          },
+          {
+            "tag": "H2",
+            "text": "4.Kontakt-undAngebotsformulare"
+          },
+          {
+            "tag": "P",
+            "text": "WennSieunsübereinFormularkontaktieren,verarbeitenwirdievonIhneneingegebenenAngabenzurBearbeitungundBeantwortungIhrerAnfrage.DazukönneninsbesondereName,E-Mail-Adresse,Telefonnummer,EinsatzortsowieAngabenzumgewünschtenAuftraggehören.RechtsgrundlageistArt.6Abs.1lit.bDSGVObeivorvertraglichenAnfragenbeziehungsweiseArt.6Abs.1lit.fDSGVObeiallgemeinenAnliegen."
+          },
+          {
+            "tag": "P",
+            "text": "FormulardatenwerdenserverseitiggeprüftundüberdenbeiHostingerbetriebenenE-Mail-DienstandiefürdieBearbeitungvorgeseheneAdresseübermittelt.EineSpeicherungineinerWebsite-Datenbankistnichtvorgesehen.ZumSchutzvorautomatisiertemMissbrauchkannfürkurzeZeiteineausderIP-AdresseabgeleitetetechnischePrüfsummeverwendetwerden.DieAnfrageangabenwerdengelöscht,sobaldsiefürdieBearbeitungnichtmehrerforderlichsindundkeinegesetzlichenAufbewahrungspflichtenentgegenstehen."
+          },
+          {
+            "tag": "H2",
+            "text": "5.KontaktaufnahmeundBewerbungen"
+          },
+          {
+            "tag": "P",
+            "text": "BeieinerKontaktaufnahmeperE-MailoderTelefonverarbeitenwirdieübermitteltenAngabenzurBearbeitungdesjeweiligenAnliegens."
+          },
+          {
+            "tag": "P",
+            "text": "BeieinerBewerbungverarbeitenwirdieübermitteltenDatenausschließlichzurDurchführungdesBewerbungsverfahrens.RechtsgrundlageistArt.6Abs.1lit.bDSGVOinVerbindungmit§26BDSG.BeieinererfolglosenBewerbungwerdendieUnterlagenspätestensdreiMonatenachAbschlussdesBewerbungsverfahrensgelöscht,sofernkeinegesetzlichenPflichten,dieGeltendmachungoderAbwehrvonRechtsansprüchenodereineausdrücklichvereinbartelängereAufbewahrungentgegenstehen."
+          },
+          {
+            "tag": "H2",
+            "text": "6.WhatsApp-Verlinkung"
+          },
+          {
+            "tag": "P",
+            "text": "DieWebsiteenthälteinenLinkzumexternenNachrichtendienstWhatsApp.ErstwennSiediesenLinkanklicken,verlassenSieunsereWebsiteundeskanneineVerbindungzuWhatsApphergestelltwerden.DabeikönnenDatendurchdenAnbieterdesDienstesverarbeitetwerden.FürdieseVerarbeitunggeltendieDatenschutzinformationenvonWhatsApp."
+          },
+          {
+            "tag": "H2",
+            "text": "7.LokaleMedienundSystemschriften"
+          },
+          {
+            "tag": "P",
+            "text": "Bilder,LogoundIconswerdenvomeigenenWebspacegeladen.DieWebsiteverwendetaufdemEndgerätvorhandeneSystemschriften.EswerdenkeineSchriftdateienvonGoogleFontsoderanderenexternenSchriftanbieterngeladen."
+          },
+          {
+            "tag": "H2",
+            "text": "8.IhreRechte"
+          },
+          {
+            "tag": "P",
+            "text": "BetroffenePersonenhabennachMaßgabedergesetzlichenVoraussetzungenRechteaufAuskunft,Berichtigung,Löschung,EinschränkungderVerarbeitung,DatenübertragbarkeitundWiderspruch.SoweiteineVerarbeitungaufIhrerEinwilligungberuht,könnenSiediesemitWirkungfürdieZukunftwiderrufen.AußerdembestehteinBeschwerderechtbeieinerDatenschutzaufsichtsbehörde."
+          },
+          {
+            "tag": "H2",
+            "text": "9.SSL-/TLS-Verschlüsselung"
+          },
+          {
+            "tag": "P",
+            "text": "FürdieverschlüsselteÜbertragungderWebsiteundderFormularangabenwirdHTTPSeingesetzt."
+          },
+          {
+            "tag": "H2",
+            "text": "10.Änderungen"
+          },
+          {
+            "tag": "P",
+            "text": "DieseDatenschutzerklärungwirdangepasst,wennsichdieeingesetztenFunktionen,DienstleisteroderVerarbeitungsvorgängeändern."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Privacy table of contents resolves all ten existing headings",
+      "pass": true,
+      "data": [
+        {
+          "href": "#datenschutz-abschnitt-1",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-2",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-3",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-4",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-5",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-6",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-7",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-8",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-9",
+          "target": "H2"
+        },
+        {
+          "href": "#datenschutz-abschnitt-10",
+          "target": "H2"
+        }
+      ]
+    },
+    {
+      "name": "/impressum/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "/impressum/: original 5 legal headings retained",
+      "pass": true,
+      "data": {
+        "baseline": [
+          "Angaben gemäß § 5 DDG",
+          "Kontakt",
+          "Haftung für Inhalte",
+          "Haftung für Links",
+          "Urheberrecht"
+        ],
+        "actual": [
+          "Angaben gemäß § 5 DDG",
+          "Kontakt",
+          "Haftung für Inhalte",
+          "Haftung für Links",
+          "Urheberrecht"
+        ]
+      }
+    },
+    {
+      "name": "/impressum/: original legal section wording unchanged",
+      "pass": true,
+      "data": {
+        "baseline": [
+          {
+            "tag": "H2",
+            "text": "Angabengemäß§5DDG"
+          },
+          {
+            "tag": "P",
+            "text": "KEMGebäudereinigungKianMotlaghAlteBohle3350321BrühlDeutschland"
+          },
+          {
+            "tag": "H2",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "P",
+            "text": "Telefon:022329488929E-Mail:info@kem-gebaeudereinigung.de"
+          },
+          {
+            "tag": "H2",
+            "text": "HaftungfürInhalte"
+          },
+          {
+            "tag": "P",
+            "text": "AlsDiensteanbietersindwirfüreigeneInhalteaufdiesenSeitennachdenallgemeinenGesetzenverantwortlich."
+          },
+          {
+            "tag": "H2",
+            "text": "HaftungfürLinks"
+          },
+          {
+            "tag": "P",
+            "text": "FürInhalteexternerSeitenistderjeweiligeAnbieterverantwortlich.BeiBekanntwerdenvonRechtsverletzungenwerdenentsprechendeLinksentfernt."
+          },
+          {
+            "tag": "H2",
+            "text": "Urheberrecht"
+          },
+          {
+            "tag": "P",
+            "text": "DieInhalteundGestaltungdieserWebsiteunterliegendenjeweilsgeltendenNutzungs-undUrheberrechten."
+          }
+        ],
+        "actual": [
+          {
+            "tag": "H2",
+            "text": "Angabengemäß§5DDG"
+          },
+          {
+            "tag": "P",
+            "text": "KEMGebäudereinigungKianMotlaghAlteBohle3350321BrühlDeutschland"
+          },
+          {
+            "tag": "H2",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "P",
+            "text": "Telefon:022329488929E-Mail:info@kem-gebaeudereinigung.de"
+          },
+          {
+            "tag": "H2",
+            "text": "HaftungfürInhalte"
+          },
+          {
+            "tag": "P",
+            "text": "AlsDiensteanbietersindwirfüreigeneInhalteaufdiesenSeitennachdenallgemeinenGesetzenverantwortlich."
+          },
+          {
+            "tag": "H2",
+            "text": "HaftungfürLinks"
+          },
+          {
+            "tag": "P",
+            "text": "FürInhalteexternerSeitenistderjeweiligeAnbieterverantwortlich.BeiBekanntwerdenvonRechtsverletzungenwerdenentsprechendeLinksentfernt."
+          },
+          {
+            "tag": "H2",
+            "text": "Urheberrecht"
+          },
+          {
+            "tag": "P",
+            "text": "DieInhalteundGestaltungdieserWebsiteunterliegendenjeweilsgeltendenNutzungs-undUrheberrechten."
+          }
+        ]
+      }
+    },
+    {
+      "name": "/jobs/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "JobPosting keeps original posting/expiry dates and visible role",
+      "pass": true,
+      "data": {
+        "job": {
+          "@type": "JobPosting",
+          "@id": "https://www.kem-gebaeudereinigung.de/jobs/#jobposting",
+          "title": "Glas- und Gebäudereiniger (m/w/d)",
+          "description": "Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich. Aufgaben: Gebäudereinigung im privaten und gewerblichen Bereich; Touren zum Kunden werden in der Regel zu zweit ausgeführt. Voraussetzungen: Berufserfahrung im Bereich Reinigung und gültiger Pkw-Führerschein. Wir bieten übertarifliche Bezahlung, einen unbefristeten Arbeitsvertrag und ein gutes Betriebsklima.",
+          "datePosted": "2026-08-12",
+          "validThrough": "2026-11-10T23:59:59+01:00",
+          "url": "https://www.kem-gebaeudereinigung.de/jobs/",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "KEM Gebäudereinigung",
+            "sameAs": "https://www.kem-gebaeudereinigung.de/",
+            "logo": "https://www.kem-gebaeudereinigung.de/assets/branding/logo.svg"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Alte Bohle 33",
+              "postalCode": "50321",
+              "addressLocality": "Brühl",
+              "addressRegion": "Nordrhein-Westfalen",
+              "addressCountry": "DE"
+            }
+          }
+        },
+        "title": "Glas- und Gebäudereiniger (m/w/d)",
+        "action": "mailto:info@kem-gebaeudereinigung.de?subject=Bewerbung%20bei%20KEM%20Geb%C3%A4udereinigung",
+        "actionY": 721.875,
+        "beforeTasks": true,
+        "body": "JobsJobsStartseiteJobsWir suchen zum nächstmöglichen ZeitpunktGlas- und Gebäudereiniger (m/w/d)Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich.Übertarifliche BezahlungUnbefristeter ArbeitsvertragTouren meist zu zweitPer E-Mail bewerbenTelefonische RückfragenIhre AufgabenGebäudereinigung im privaten und gewerblichen BereichTouren zum Kunden werden in der Regel zu zweit ausgeführtWas Sie mitbringenBerufserfahrung im Bereich ReinigungGültiger Pkw-FührerscheinWas wir bietenÜbertarifliche BezahlungUnbefristeter ArbeitsvertragGutes BetriebsklimaFirmensitzKEM GebäudereinigungAlte Bohle 3350321 BrühlJetzt bewerbenInteresse an einer Stelle bei KEM?Senden Sie uns Ihre Bewerbung unkompliziert per E-Mail. Bei Fragen erreichen Sie uns auch telefonisch unter 02232 9488929.Bewerbung per E-Mail senden"
+      }
+    },
+    {
+      "name": "Jobs has an early email application before duties",
+      "pass": true,
+      "data": {
+        "job": {
+          "@type": "JobPosting",
+          "@id": "https://www.kem-gebaeudereinigung.de/jobs/#jobposting",
+          "title": "Glas- und Gebäudereiniger (m/w/d)",
+          "description": "Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich. Aufgaben: Gebäudereinigung im privaten und gewerblichen Bereich; Touren zum Kunden werden in der Regel zu zweit ausgeführt. Voraussetzungen: Berufserfahrung im Bereich Reinigung und gültiger Pkw-Führerschein. Wir bieten übertarifliche Bezahlung, einen unbefristeten Arbeitsvertrag und ein gutes Betriebsklima.",
+          "datePosted": "2026-08-12",
+          "validThrough": "2026-11-10T23:59:59+01:00",
+          "url": "https://www.kem-gebaeudereinigung.de/jobs/",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "KEM Gebäudereinigung",
+            "sameAs": "https://www.kem-gebaeudereinigung.de/",
+            "logo": "https://www.kem-gebaeudereinigung.de/assets/branding/logo.svg"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Alte Bohle 33",
+              "postalCode": "50321",
+              "addressLocality": "Brühl",
+              "addressRegion": "Nordrhein-Westfalen",
+              "addressCountry": "DE"
+            }
+          }
+        },
+        "title": "Glas- und Gebäudereiniger (m/w/d)",
+        "action": "mailto:info@kem-gebaeudereinigung.de?subject=Bewerbung%20bei%20KEM%20Geb%C3%A4udereinigung",
+        "actionY": 721.875,
+        "beforeTasks": true,
+        "body": "JobsJobsStartseiteJobsWir suchen zum nächstmöglichen ZeitpunktGlas- und Gebäudereiniger (m/w/d)Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich.Übertarifliche BezahlungUnbefristeter ArbeitsvertragTouren meist zu zweitPer E-Mail bewerbenTelefonische RückfragenIhre AufgabenGebäudereinigung im privaten und gewerblichen BereichTouren zum Kunden werden in der Regel zu zweit ausgeführtWas Sie mitbringenBerufserfahrung im Bereich ReinigungGültiger Pkw-FührerscheinWas wir bietenÜbertarifliche BezahlungUnbefristeter ArbeitsvertragGutes BetriebsklimaFirmensitzKEM GebäudereinigungAlte Bohle 3350321 BrühlJetzt bewerbenInteresse an einer Stelle bei KEM?Senden Sie uns Ihre Bewerbung unkompliziert per E-Mail. Bei Fragen erreichen Sie uns auch telefonisch unter 02232 9488929.Bewerbung per E-Mail senden"
+      }
+    },
+    {
+      "name": "Jobs retains confirmed offer and requirements",
+      "pass": true,
+      "data": "JobsJobsStartseiteJobsWir suchen zum nächstmöglichen ZeitpunktGlas- und Gebäudereiniger (m/w/d)Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich.Übertarifliche BezahlungUnbefristeter ArbeitsvertragTouren meist zu zweitPer E-Mail bewerbenTelefonische RückfragenIhre AufgabenGebäudereinigung im privaten und gewerblichen BereichTouren zum Kunden werden in der Regel zu zweit ausgeführtWas Sie mitbringenBerufserfahrung im Bereich ReinigungGültiger Pkw-FührerscheinWas wir bietenÜbertarifliche BezahlungUnbefristeter ArbeitsvertragGutes BetriebsklimaFirmensitzKEM GebäudereinigungAlte Bohle 3350321 BrühlJetzt bewerbenInteresse an einer Stelle bei KEM?Senden Sie uns Ihre Bewerbung unkompliziert per E-Mail. Bei Fragen erreichen Sie uns auch telefonisch unter 02232 9488929.Bewerbung per E-Mail senden"
+    },
+    {
+      "name": "/kontakt/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "Contact telephone/email/WhatsApp appear before form",
+      "pass": true,
+      "data": {
+        "telephone": true,
+        "email": true,
+        "whatsapp": true,
+        "offer": [
+          "Angebotsformular"
+        ],
+        "submit": "Nachricht senden"
+      }
+    },
+    {
+      "name": "Contact distinguishes general message and detailed offer",
+      "pass": true,
+      "data": {
+        "telephone": true,
+        "email": true,
+        "whatsapp": true,
+        "offer": [
+          "Angebotsformular"
+        ],
+        "submit": "Nachricht senden"
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "Home explains the three real request steps together",
+      "pass": true,
+      "data": {
+        "steps": [
+          "Eckdaten senden",
+          "Umfang gemeinsam klären",
+          "Individuelles Angebot erhalten"
+        ],
+        "sameSection": true,
+        "processText": "Von der Anfrage zum AngebotSo geht es weiterEckdaten sendenTeilen Sie uns Leistung, Standort, Objektart und den ungefähren Umfang mit.Umfang gemeinsam klärenWir klären offene Angaben und stimmen bei Bedarf eine Besichtigung ab.Individuelles Angebot erhaltenAuf Grundlage der konkreten Aufgabe und des gewünschten Turnus erhalten Sie Ihr Angebot.Kostenloses Angebot anfordern",
+        "videos": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/faq/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /faq/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/kontakt/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /kontakt/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/jobs/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /jobs/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/datenschutz/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /datenschutz/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/impressum/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /impressum/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/404.php returns expected status",
+      "pass": true,
+      "data": 404
+    },
+    {
+      "name": "320px /404.php: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/faq/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /faq/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/kontakt/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /kontakt/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/jobs/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /jobs/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/datenschutz/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /datenschutz/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/impressum/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /impressum/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/404.php returns expected status",
+      "pass": true,
+      "data": 404
+    },
+    {
+      "name": "390px /404.php: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/faq/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /faq/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/kontakt/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /kontakt/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/jobs/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /jobs/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/datenschutz/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /datenschutz/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/impressum/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /impressum/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/404.php returns expected status",
+      "pass": true,
+      "data": 404
+    },
+    {
+      "name": "820px /404.php: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/faq/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /faq/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/kontakt/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /kontakt/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/jobs/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /jobs/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/datenschutz/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /datenschutz/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/impressum/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /impressum/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/404.php returns expected status",
+      "pass": true,
+      "data": 404
+    },
+    {
+      "name": "1440px /404.php: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "No script errors, missing assets or form requests",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failedAssets": [],
+        "preventedPosts": 0
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/faq/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/kontakt/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/jobs/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/datenschutz/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/impressum/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/404.php",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/faq/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/kontakt/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/jobs/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/datenschutz/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/impressum/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/404.php",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/faq/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/kontakt/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/jobs/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/datenschutz/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/impressum/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/404.php",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/faq/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/kontakt/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/jobs/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/datenschutz/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/impressum/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/404.php",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    }
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "preventedPosts": 0,
+  "failures": []
+}

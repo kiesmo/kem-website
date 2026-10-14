@@ -1,0 +1,600 @@
+{
+  "baseline": "00f1fe3b7750e0315f3ec0224a887f1a0e74b2d1",
+  "commit": "38ae3dd8965fa736f4c394841d99cc39e8c8d011",
+  "base": "http://127.0.0.1:8080",
+  "only": "b11",
+  "date": "2026-10-14T22:16:18.961Z",
+  "checks": [
+    {
+      "name": "Baseline contains eight complete original video entries",
+      "pass": true,
+      "data": [
+        {
+          "src": "/assets/video/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-01.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-01-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-02.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-02-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/"
+        },
+        {
+          "src": "/assets/video/services/solaranlagenreinigung/solaranlagenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-praxis-poster.webp",
+          "service": "/leistungen/solaranlagenreinigung/"
+        },
+        {
+          "src": "/assets/video/services/polsterreinigung/polsterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/polsterreinigung/polsterreinigung-praxis-poster.webp",
+          "service": "/leistungen/polsterreinigung/"
+        },
+        {
+          "src": "/assets/video/services/fassadenreinigung/fassadenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/fassadenreinigung/fassadenreinigung-praxis-poster.webp",
+          "service": "/leistungen/fassadenreinigung/"
+        },
+        {
+          "src": "/assets/video/services/teppichreinigung/teppichreinigung-praxis.mp4",
+          "poster": "/assets/img/services/teppichreinigung/teppichreinigung-praxis-poster.webp",
+          "service": "/leistungen/teppichreinigung/"
+        },
+        {
+          "src": "/assets/video/services/grundreinigung/grundreinigung-praxis.mp4",
+          "poster": "/assets/img/services/grundreinigung/grundreinigung-praxis-poster.webp",
+          "service": "/leistungen/grundreinigung/"
+        }
+      ]
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "Home uses existing practice video with manual native playback",
+      "pass": true,
+      "data": [
+        {
+          "src": "/assets/video/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis.mp4",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "poster": "/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis-poster.webp"
+        }
+      ]
+    },
+    {
+      "name": "/galerie/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "Gallery preserves all eight original video/poster/service tuples",
+      "pass": true,
+      "data": [
+        {
+          "src": "/assets/video/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Glas- und Fensterreinigung in der PraxisKurzer Einblick in eine professionelle Fensterreinigung.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-01.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-01-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Dachverglasung in der PraxisReinigung einer Dachverglasung mit einem Teleskopsystem.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-02.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-02-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Glasreinigung mit AbzieherEinblick in die Reinigung einer Glasfläche mit professionellem Abzieher.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/services/solaranlagenreinigung/solaranlagenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-praxis-poster.webp",
+          "service": "/leistungen/solaranlagenreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Solaranlagenreinigung in der PraxisKurzer Einblick in die Reinigung einer Photovoltaikanlage.Zur Leistung: Solar- und Photovoltaikanlagenreinigung"
+        },
+        {
+          "src": "/assets/video/services/polsterreinigung/polsterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/polsterreinigung/polsterreinigung-praxis-poster.webp",
+          "service": "/leistungen/polsterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Polsterreinigung in der PraxisKurzer Einblick in die professionelle Reinigung eines Polsters.Zur Leistung: Polsterreinigung"
+        },
+        {
+          "src": "/assets/video/services/fassadenreinigung/fassadenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/fassadenreinigung/fassadenreinigung-praxis-poster.webp",
+          "service": "/leistungen/fassadenreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Graffitireinigung in der PraxisKurzer Einblick in die Entfernung von Graffiti an einer Außenfläche.Zur Leistung: Fassaden- und Graffitireinigung"
+        },
+        {
+          "src": "/assets/video/services/teppichreinigung/teppichreinigung-praxis.mp4",
+          "poster": "/assets/img/services/teppichreinigung/teppichreinigung-praxis-poster.webp",
+          "service": "/leistungen/teppichreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Teppichreinigung in der PraxisKurzer Einblick in eine professionelle Teppichreinigung.Zur Leistung: Teppichreinigung"
+        },
+        {
+          "src": "/assets/video/services/grundreinigung/grundreinigung-praxis.mp4",
+          "poster": "/assets/img/services/grundreinigung/grundreinigung-praxis-poster.webp",
+          "service": "/leistungen/grundreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Bauendreinigung in der PraxisKurzer Einblick in eine gründliche Reinigung nach Bau- oder Renovierungsarbeiten.Zur Leistung: Grund- und Spezialreinigung"
+        }
+      ]
+    },
+    {
+      "name": "Gallery retains controls, portrait-friendly manual playback and captions",
+      "pass": true,
+      "data": [
+        {
+          "src": "/assets/video/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-praxis-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Glas- und Fensterreinigung in der PraxisKurzer Einblick in eine professionelle Fensterreinigung.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-01.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-01-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Dachverglasung in der PraxisReinigung einer Dachverglasung mit einem Teleskopsystem.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/pages/galerie/galerie-fensterreinigung-02.mp4",
+          "poster": "/assets/img/pages/galerie/galerie-fensterreinigung-02-poster.webp",
+          "service": "/leistungen/glas-und-fensterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Glasreinigung mit AbzieherEinblick in die Reinigung einer Glasfläche mit professionellem Abzieher.Zur Leistung: Glas- und Fensterreinigung"
+        },
+        {
+          "src": "/assets/video/services/solaranlagenreinigung/solaranlagenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-praxis-poster.webp",
+          "service": "/leistungen/solaranlagenreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Solaranlagenreinigung in der PraxisKurzer Einblick in die Reinigung einer Photovoltaikanlage.Zur Leistung: Solar- und Photovoltaikanlagenreinigung"
+        },
+        {
+          "src": "/assets/video/services/polsterreinigung/polsterreinigung-praxis.mp4",
+          "poster": "/assets/img/services/polsterreinigung/polsterreinigung-praxis-poster.webp",
+          "service": "/leistungen/polsterreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Polsterreinigung in der PraxisKurzer Einblick in die professionelle Reinigung eines Polsters.Zur Leistung: Polsterreinigung"
+        },
+        {
+          "src": "/assets/video/services/fassadenreinigung/fassadenreinigung-praxis.mp4",
+          "poster": "/assets/img/services/fassadenreinigung/fassadenreinigung-praxis-poster.webp",
+          "service": "/leistungen/fassadenreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Graffitireinigung in der PraxisKurzer Einblick in die Entfernung von Graffiti an einer Außenfläche.Zur Leistung: Fassaden- und Graffitireinigung"
+        },
+        {
+          "src": "/assets/video/services/teppichreinigung/teppichreinigung-praxis.mp4",
+          "poster": "/assets/img/services/teppichreinigung/teppichreinigung-praxis-poster.webp",
+          "service": "/leistungen/teppichreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Teppichreinigung in der PraxisKurzer Einblick in eine professionelle Teppichreinigung.Zur Leistung: Teppichreinigung"
+        },
+        {
+          "src": "/assets/video/services/grundreinigung/grundreinigung-praxis.mp4",
+          "poster": "/assets/img/services/grundreinigung/grundreinigung-praxis-poster.webp",
+          "service": "/leistungen/grundreinigung/",
+          "controls": true,
+          "autoplay": false,
+          "playsinline": true,
+          "preload": "none",
+          "caption": "Bauendreinigung in der PraxisKurzer Einblick in eine gründliche Reinigung nach Bau- oder Renovierungsarbeiten.Zur Leistung: Grund- und Spezialreinigung"
+        }
+      ]
+    },
+    {
+      "name": "Gallery provides six unique group anchors before video selection",
+      "pass": true,
+      "data": [
+        {
+          "href": "#praxis-glas-und-fensterreinigung",
+          "text": "Glas & Fenster (3)",
+          "target": "SECTION"
+        },
+        {
+          "href": "#praxis-solaranlagenreinigung",
+          "text": "Solar & PV (1)",
+          "target": "SECTION"
+        },
+        {
+          "href": "#praxis-polsterreinigung",
+          "text": "Polsterreinigung (1)",
+          "target": "SECTION"
+        },
+        {
+          "href": "#praxis-fassadenreinigung",
+          "text": "Fassade & Graffiti (1)",
+          "target": "SECTION"
+        },
+        {
+          "href": "#praxis-teppichreinigung",
+          "text": "Teppichreinigung (1)",
+          "target": "SECTION"
+        },
+        {
+          "href": "#praxis-grundreinigung",
+          "text": "Grund & Spezial (1)",
+          "target": "SECTION"
+        }
+      ]
+    },
+    {
+      "name": "Gallery retains three window clips and five other service groups",
+      "pass": true,
+      "data": {
+        "/leistungen/glas-und-fensterreinigung/": 3,
+        "/leistungen/solaranlagenreinigung/": 1,
+        "/leistungen/polsterreinigung/": 1,
+        "/leistungen/fassadenreinigung/": 1,
+        "/leistungen/teppichreinigung/": 1,
+        "/leistungen/grundreinigung/": 1
+      }
+    },
+    {
+      "name": "/ueber-uns/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "About image alt describes depiction without unverified company/team attribution",
+      "pass": true,
+      "data": "Personen mit Reinigungsequipment in einem Eingangsbereich"
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/galerie/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /galerie/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ueber-uns/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "320px /ueber-uns/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/galerie/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /galerie/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ueber-uns/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "390px /ueber-uns/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/galerie/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /galerie/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ueber-uns/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "820px /ueber-uns/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/galerie/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /galerie/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "/ueber-uns/ returns expected status",
+      "pass": true,
+      "data": 200
+    },
+    {
+      "name": "1440px /ueber-uns/: one title, no overflow/broken images/clipped buttons",
+      "pass": true,
+      "data": {
+        "h1": 1,
+        "overflow": 0,
+        "mediaMissing": [],
+        "crampedButtons": []
+      }
+    },
+    {
+      "name": "No script errors, missing assets or form requests",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failedAssets": [],
+        "preventedPosts": 0
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/galerie/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/ueber-uns/",
+      "width": 320,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/galerie/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/ueber-uns/",
+      "width": 390,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/galerie/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/ueber-uns/",
+      "width": 820,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/galerie/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    },
+    {
+      "route": "/ueber-uns/",
+      "width": 1440,
+      "h1": 1,
+      "overflow": 0,
+      "mediaMissing": [],
+      "crampedButtons": []
+    }
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "preventedPosts": 0,
+  "failures": []
+}

@@ -1,0 +1,5638 @@
+{
+  "date": "2026-10-14T22:14:53.736Z",
+  "base": "http://127.0.0.1:8080",
+  "suite": "layout",
+  "commit": "38ae3dd8965fa736f4c394841d99cc39e8c8d011",
+  "results": [
+    {
+      "name": "layout / 320x568",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "home hero offer inside first viewport",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 34,
+              "y": 116,
+              "width": 252,
+              "height": 96.75,
+              "bottom": 212.75
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 320,
+          "height": 445.0625,
+          "bottom": 523.0625
+        },
+        "heroOffer": {
+          "x": 34,
+          "y": 336.75,
+          "width": 252,
+          "height": 76.78125,
+          "bottom": 413.53125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 360x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "home hero offer inside first viewport",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 360,
+        "documentWidth": 360,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 36,
+              "y": 194,
+              "width": 288,
+              "height": 102.140625,
+              "bottom": 296.140625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 360,
+          "height": 490.0625,
+          "bottom": 568.0625
+        },
+        "heroOffer": {
+          "x": 36,
+          "y": 400.140625,
+          "width": 288,
+          "height": 50.390625,
+          "bottom": 450.53125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 390x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "home hero offer inside first viewport",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 36,
+              "y": 194,
+              "width": 318,
+              "height": 68.09375,
+              "bottom": 262.09375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 390,
+          "height": 456.015625,
+          "bottom": 534.015625
+        },
+        "heroOffer": {
+          "x": 36,
+          "y": 366.09375,
+          "width": 318,
+          "height": 50.390625,
+          "bottom": 416.484375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 560x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 560,
+        "documentWidth": 560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 36,
+              "y": 194,
+              "width": 488,
+              "height": 68.09375,
+              "bottom": 262.09375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 560,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 560,
+          "height": 432.015625,
+          "bottom": 510.015625
+        },
+        "heroOffer": {
+          "x": 36,
+          "y": 342.09375,
+          "width": 488,
+          "height": 50.390625,
+          "bottom": 392.484375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 561x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 561,
+        "documentWidth": 561,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 202.3125,
+              "y": 134,
+              "width": 312.6875,
+              "height": 112.875,
+              "bottom": 246.875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 561,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 561,
+          "height": 473.109375,
+          "bottom": 551.109375
+        },
+        "heroOffer": {
+          "x": 202.3125,
+          "y": 369.875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 420.265625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 768x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 264.40625,
+              "y": 144.75,
+              "width": 457.59375,
+              "height": 75.25,
+              "bottom": 220
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 768,
+          "height": 430,
+          "bottom": 508
+        },
+        "heroOffer": {
+          "x": 264.40625,
+          "y": 316,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 366.390625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 820x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 820,
+        "documentWidth": 820,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 280,
+              "y": 164.296875,
+              "width": 494,
+              "height": 75.25,
+              "bottom": 239.546875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 820,
+          "height": 430,
+          "bottom": 508
+        },
+        "heroOffer": {
+          "x": 280,
+          "y": 335.546875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 385.9375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 821x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 821,
+        "documentWidth": 821,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 426.890625,
+              "y": 150,
+              "width": 342.109375,
+              "height": 75.25,
+              "bottom": 225.25
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 821,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 821,
+          "height": 467.484375,
+          "bottom": 545.484375
+        },
+        "heroOffer": {
+          "x": 426.890625,
+          "y": 348.25,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 398.640625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 980x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 980,
+        "documentWidth": 980,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 503.203125,
+              "y": 184.546875,
+              "width": 424.796875,
+              "height": 75.25,
+              "bottom": 259.796875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 980,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 980,
+          "height": 509.59375,
+          "bottom": 587.59375
+        },
+        "heroOffer": {
+          "x": 503.203125,
+          "y": 355.796875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 406.1875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 981x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 981,
+        "documentWidth": 981,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 503.6875,
+              "y": 184.8125,
+              "width": 425.3125,
+              "height": 75.25,
+              "bottom": 260.0625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 981,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 981,
+          "height": 510.109375,
+          "bottom": 588.109375
+        },
+        "heroOffer": {
+          "x": 503.6875,
+          "y": 356.0625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 406.453125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1024x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 524.328125,
+              "y": 194.625,
+              "width": 447.671875,
+              "height": 77.96875,
+              "bottom": 272.59375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 1024,
+          "height": 532.46875,
+          "bottom": 610.46875
+        },
+        "heroOffer": {
+          "x": 524.328125,
+          "y": 368.59375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 418.984375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1080x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1080,
+        "documentWidth": 1080,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 551.203125,
+              "y": 226.59375,
+              "width": 476.796875,
+              "height": 82.25,
+              "bottom": 308.84375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 1080,
+          "height": 561.59375,
+          "bottom": 639.59375
+        },
+        "heroOffer": {
+          "x": 551.203125,
+          "y": 404.84375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 455.234375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1081x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1081,
+        "documentWidth": 1081,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 551.6875,
+              "y": 266.8125,
+              "width": 477.3125,
+              "height": 82.3125,
+              "bottom": 349.125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1081,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1081,
+          "height": 562.109375,
+          "bottom": 680.109375
+        },
+        "heroOffer": {
+          "x": 551.6875,
+          "y": 445.125,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 495.515625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1180x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1180,
+        "documentWidth": 1180,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 599.203125,
+              "y": 288.78125,
+              "width": 528.796875,
+              "height": 89.875,
+              "bottom": 378.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1180,
+          "height": 613.59375,
+          "bottom": 731.59375
+        },
+        "heroOffer": {
+          "x": 599.203125,
+          "y": 474.65625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 525.046875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1365x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1365,
+        "documentWidth": 1365,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 714.5,
+              "y": 289.953125,
+              "width": 556,
+              "height": 103.9375,
+              "bottom": 393.890625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1365,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1365,
+          "height": 630,
+          "bottom": 748
+        },
+        "heroOffer": {
+          "x": 714.5,
+          "y": 489.890625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 540.28125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1366x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1366,
+        "documentWidth": 1366,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 715,
+              "y": 289.921875,
+              "width": 556,
+              "height": 104,
+              "bottom": 393.921875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1366,
+          "height": 630,
+          "bottom": 748
+        },
+        "heroOffer": {
+          "x": 715,
+          "y": 489.921875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 540.3125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1920x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 992,
+              "y": 283.6875,
+              "width": 556,
+              "height": 116.46875,
+              "bottom": 400.15625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1920,
+          "height": 630,
+          "bottom": 748
+        },
+        "heroOffer": {
+          "x": 992,
+          "y": 496.15625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 546.546875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 1921x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "ultrawide hero stays cover",
+          "pass": true,
+          "details": "cover"
+        }
+      ],
+      "layout": {
+        "width": 1921,
+        "documentWidth": 1921,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 992.5,
+              "y": 283.6875,
+              "width": 556,
+              "height": 116.46875,
+              "bottom": 400.15625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1921,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1921,
+          "height": 630,
+          "bottom": 748
+        },
+        "heroOffer": {
+          "x": 992.5,
+          "y": 496.15625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 546.546875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout / 2560x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "ultrawide hero stays cover",
+          "pass": true,
+          "details": "cover"
+        }
+      ],
+      "layout": {
+        "width": 2560,
+        "documentWidth": 2560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 1312,
+              "y": 283.6875,
+              "width": 556,
+              "height": 116.46875,
+              "bottom": 400.15625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 2560,
+          "height": 630,
+          "bottom": 748
+        },
+        "heroOffer": {
+          "x": 1312,
+          "y": 496.15625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 546.546875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "hero continuity /",
+      "checks": [
+        {
+          "name": "1365/1366 height continuity",
+          "pass": true,
+          "details": {
+            "before": 630,
+            "after": 630
+          }
+        },
+        {
+          "name": "1920/1921 height continuity",
+          "pass": true,
+          "details": {
+            "before": 630,
+            "after": 630
+          }
+        }
+      ]
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 320x568",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 14,
+              "y": 139.90625,
+              "width": 292,
+              "height": 71.75,
+              "bottom": 211.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 320,
+          "height": 628.546875,
+          "bottom": 706.546875
+        },
+        "heroOffer": {
+          "x": 14,
+          "y": 412,
+          "width": 292,
+          "height": 76.78125,
+          "bottom": 488.78125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 360x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 360,
+        "documentWidth": 360,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 14,
+              "y": 139.90625,
+              "width": 332,
+              "height": 71.75,
+              "bottom": 211.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 360,
+          "height": 602.15625,
+          "bottom": 680.15625
+        },
+        "heroOffer": {
+          "x": 14,
+          "y": 412,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 462.390625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 390x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 14,
+              "y": 139.90625,
+              "width": 362,
+              "height": 71.75,
+              "bottom": 211.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 390,
+          "height": 575.765625,
+          "bottom": 653.765625
+        },
+        "heroOffer": {
+          "x": 14,
+          "y": 385.609375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 436
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 560x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 560,
+        "documentWidth": 560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 14,
+              "y": 139.90625,
+              "width": 532,
+              "height": 71.75,
+              "bottom": 211.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 560,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 560,
+          "height": 549.375,
+          "bottom": 627.375
+        },
+        "heroOffer": {
+          "x": 14,
+          "y": 359.21875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 409.609375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 561x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 561,
+        "documentWidth": 561,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 139.90625,
+              "width": 521,
+              "height": 71.75,
+              "bottom": 211.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 561,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 561,
+          "height": 594.625,
+          "bottom": 672.625
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 364.46875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 414.859375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 768x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 139.90625,
+              "width": 728,
+              "height": 45.3125,
+              "bottom": 185.21875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 768,
+          "height": 568.1875,
+          "bottom": 646.1875
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 338.03125,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 388.421875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 820x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 820,
+        "documentWidth": 820,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 139.90625,
+              "width": 780,
+              "height": 47.1875,
+              "bottom": 187.09375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 820,
+          "height": 570.0625,
+          "bottom": 648.0625
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 339.90625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 390.296875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 821x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 821,
+        "documentWidth": 821,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 444.59375,
+              "height": 77.5,
+              "bottom": 229.40625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 821,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 821,
+          "height": 430.375,
+          "bottom": 508.375
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 382.21875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 432.609375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 980x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 980,
+        "documentWidth": 980,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 540,
+              "height": 92.5,
+              "bottom": 244.40625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 980,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 980,
+          "height": 445.375,
+          "bottom": 523.375
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 397.21875,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 447.609375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 981x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 981,
+        "documentWidth": 981,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 540.59375,
+              "height": 92.5625,
+              "bottom": 244.46875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 981,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 981,
+          "height": 445.4375,
+          "bottom": 523.4375
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 397.28125,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 447.671875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1024x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 566.390625,
+              "height": 96.625,
+              "bottom": 248.53125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 1024,
+          "height": 449.5,
+          "bottom": 527.5
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 401.34375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 451.734375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1080x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1080,
+        "documentWidth": 1080,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 600,
+              "height": 101.9375,
+              "bottom": 253.84375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 1080,
+          "height": 454.8125,
+          "bottom": 532.8125
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 406.65625,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 457.046875
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1081x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1081,
+        "documentWidth": 1081,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 191.90625,
+              "width": 600.59375,
+              "height": 102.03125,
+              "bottom": 293.9375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1081,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1081,
+          "height": 454.90625,
+          "bottom": 572.90625
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 446.75,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 497.140625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1180x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1180,
+        "documentWidth": 1180,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 191.90625,
+              "width": 660,
+              "height": 111.375,
+              "bottom": 303.28125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1180,
+          "height": 464.25,
+          "bottom": 582.25
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 456.09375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 506.484375
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1365x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1365,
+        "documentWidth": 1365,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 62.5,
+              "y": 191.90625,
+              "width": 720,
+              "height": 122.71875,
+              "bottom": 314.625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1365,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1365,
+          "height": 475.59375,
+          "bottom": 593.59375
+        },
+        "heroOffer": {
+          "x": 62.5,
+          "y": 467.4375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 517.828125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1366x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1366,
+        "documentWidth": 1366,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 63,
+              "y": 191.90625,
+              "width": 720,
+              "height": 122.71875,
+              "bottom": 314.625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1366,
+          "height": 475.59375,
+          "bottom": 593.59375
+        },
+        "heroOffer": {
+          "x": 63,
+          "y": 467.4375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 517.828125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1920x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 340,
+              "y": 191.90625,
+              "width": 720,
+              "height": 122.71875,
+              "bottom": 314.625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1920,
+          "height": 475.59375,
+          "bottom": 593.59375
+        },
+        "heroOffer": {
+          "x": 340,
+          "y": 467.4375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 517.828125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 1921x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "ultrawide hero stays cover",
+          "pass": true,
+          "details": "cover"
+        }
+      ],
+      "layout": {
+        "width": 1921,
+        "documentWidth": 1921,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 340.5,
+              "y": 191.90625,
+              "width": 720,
+              "height": 122.71875,
+              "bottom": 314.625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1921,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 1921,
+          "height": 475.59375,
+          "bottom": 593.59375
+        },
+        "heroOffer": {
+          "x": 340.5,
+          "y": 467.4375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 517.828125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "layout /leistungen/glas-und-fensterreinigung/ 2560x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "ultrawide hero stays cover",
+          "pass": true,
+          "details": "cover"
+        }
+      ],
+      "layout": {
+        "width": 2560,
+        "documentWidth": 2560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 660,
+              "y": 191.90625,
+              "width": 720,
+              "height": 122.71875,
+              "bottom": 314.625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": {
+          "x": 0,
+          "y": 118,
+          "width": 2560,
+          "height": 475.59375,
+          "bottom": 593.59375
+        },
+        "heroOffer": {
+          "x": 660,
+          "y": 467.4375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 517.828125
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "sticky"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "hero continuity /leistungen/glas-und-fensterreinigung/",
+      "checks": [
+        {
+          "name": "1365/1366 height continuity",
+          "pass": true,
+          "details": {
+            "before": 475.59375,
+            "after": 475.59375
+          }
+        },
+        {
+          "name": "1920/1921 height continuity",
+          "pass": true,
+          "details": {
+            "before": 475.59375,
+            "after": 475.59375
+          }
+        }
+      ]
+    },
+    {
+      "name": "layout /angebotsanfrage/ 320x568",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 12,
+              "y": 110,
+              "width": 296,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 29,
+          "y": 468.078125,
+          "width": 262,
+          "height": 99.59375,
+          "bottom": 567.671875
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 360x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 360,
+        "documentWidth": 360,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 12,
+              "y": 110,
+              "width": 336,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 29,
+          "y": 468.078125,
+          "width": 302,
+          "height": 99.59375,
+          "bottom": 567.671875
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 390x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "first service choice inside first viewport",
+          "pass": true
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 12,
+              "y": 110,
+              "width": 366,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 29,
+          "y": 468.078125,
+          "width": 332,
+          "height": 99.59375,
+          "bottom": 567.671875
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 560x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 560,
+        "documentWidth": 560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 12,
+              "y": 110,
+              "width": 536,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 560,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 29,
+          "y": 412.4375,
+          "width": 502,
+          "height": 96,
+          "bottom": 508.4375
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 561x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 561,
+        "documentWidth": 561,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 12,
+              "y": 110,
+              "width": 537,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 561,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 29,
+          "y": 412.4375,
+          "width": 503,
+          "height": 96,
+          "bottom": 508.4375
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 768x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 728,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 51.71875,
+          "y": 431.046875,
+          "width": 325.28125,
+          "height": 99.59375,
+          "bottom": 530.640625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 820x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 820,
+        "documentWidth": 820,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 780,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 53.796875,
+          "y": 433.125,
+          "width": 349.203125,
+          "height": 99.59375,
+          "bottom": 532.71875
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 821x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 821,
+        "documentWidth": 821,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 781,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 821,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 53.828125,
+          "y": 433.15625,
+          "width": 349.671875,
+          "height": 99.59375,
+          "bottom": 532.75
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 980x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 980,
+        "documentWidth": 980,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 790,
+              "height": 34.6875,
+              "bottom": 144.6875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 980,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 60.1875,
+          "y": 445.671875,
+          "width": 422.8125,
+          "height": 99.59375,
+          "bottom": 545.265625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 981x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 981,
+        "documentWidth": 981,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 790,
+              "height": 34.734375,
+              "bottom": 144.734375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 981,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 60.234375,
+          "y": 445.8125,
+          "width": 423.265625,
+          "height": 99.59375,
+          "bottom": 545.40625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1024x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 790,
+              "height": 36.234375,
+              "bottom": 146.234375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 61.953125,
+          "y": 450.53125,
+          "width": 443.046875,
+          "height": 99.59375,
+          "bottom": 550.125
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1080x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1080,
+        "documentWidth": 1080,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 790,
+              "height": 38.234375,
+              "bottom": 148.234375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 64.1875,
+          "y": 456.765625,
+          "width": 468.8125,
+          "height": 96,
+          "bottom": 552.765625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1081x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1081,
+        "documentWidth": 1081,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 150,
+              "width": 790,
+              "height": 38.265625,
+              "bottom": 188.265625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1081,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 64.234375,
+          "y": 496.875,
+          "width": 469.265625,
+          "height": 96,
+          "bottom": 592.875
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1180x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1180,
+        "documentWidth": 1180,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 50,
+              "y": 150,
+              "width": 790,
+              "height": 41.765625,
+              "bottom": 191.765625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 98.1875,
+          "y": 506.65625,
+          "width": 484.8125,
+          "height": 96,
+          "bottom": 602.65625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1365x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1365,
+        "documentWidth": 1365,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 142.5,
+              "y": 150,
+              "width": 790,
+              "height": 47.1875,
+              "bottom": 197.1875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1365,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 191.5,
+          "y": 512.890625,
+          "width": 484,
+          "height": 96,
+          "bottom": 608.890625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1366x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1366,
+        "documentWidth": 1366,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 143,
+              "y": 150,
+              "width": 790,
+              "height": 47.1875,
+              "bottom": 197.1875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 192,
+          "y": 512.890625,
+          "width": 484,
+          "height": 96,
+          "bottom": 608.890625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1920x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 420,
+              "y": 150,
+              "width": 790,
+              "height": 47.1875,
+              "bottom": 197.1875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 469,
+          "y": 512.890625,
+          "width": 484,
+          "height": 96,
+          "bottom": 608.890625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 1921x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 1921,
+        "documentWidth": 1921,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 420.5,
+              "y": 150,
+              "width": 790,
+              "height": 47.1875,
+              "bottom": 197.1875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1921,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 469.5,
+          "y": 512.890625,
+          "width": 484,
+          "height": 96,
+          "bottom": 608.890625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /angebotsanfrage/ 2560x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "service choice horizontal flex",
+          "pass": true,
+          "details": "flex"
+        }
+      ],
+      "layout": {
+        "width": 2560,
+        "documentWidth": 2560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 740,
+              "y": 150,
+              "width": 790,
+              "height": 47.1875,
+              "bottom": 197.1875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 789,
+          "y": 512.890625,
+          "width": 484,
+          "height": 96,
+          "bottom": 608.890625
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "hero continuity /angebotsanfrage/",
+      "checks": []
+    },
+    {
+      "name": "layout /datenschutz/ 320x568",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 128.765625,
+            "width": 320,
+            "height": 5162.875,
+            "bottom": 5291.640625
+          }
+        }
+      ],
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 14,
+              "y": 176.765625,
+              "width": 292,
+              "height": 75.5,
+              "bottom": 252.265625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 128.765625,
+          "width": 320,
+          "height": 5162.875,
+          "bottom": 5291.640625
+        },
+        "legalContainer": {
+          "x": 14,
+          "y": 176.765625,
+          "width": 292,
+          "height": 5050.875,
+          "bottom": 5227.640625
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 360x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 128.765625,
+            "width": 360,
+            "height": 4635.0625,
+            "bottom": 4763.828125
+          }
+        }
+      ],
+      "layout": {
+        "width": 360,
+        "documentWidth": 360,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 14,
+              "y": 176.765625,
+              "width": 332,
+              "height": 75.5,
+              "bottom": 252.265625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 128.765625,
+          "width": 360,
+          "height": 4635.0625,
+          "bottom": 4763.828125
+        },
+        "legalContainer": {
+          "x": 14,
+          "y": 176.765625,
+          "width": 332,
+          "height": 4523.0625,
+          "bottom": 4699.828125
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 390x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 128.765625,
+            "width": 390,
+            "height": 4334.328125,
+            "bottom": 4463.09375
+          }
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 14,
+              "y": 176.765625,
+              "width": 362,
+              "height": 37.75,
+              "bottom": 214.515625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 128.765625,
+          "width": 390,
+          "height": 4334.328125,
+          "bottom": 4463.09375
+        },
+        "legalContainer": {
+          "x": 14,
+          "y": 176.765625,
+          "width": 362,
+          "height": 4222.328125,
+          "bottom": 4399.09375
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 560x844",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 128.765625,
+            "width": 560,
+            "height": 3440.734375,
+            "bottom": 3569.5
+          }
+        }
+      ],
+      "layout": {
+        "width": 560,
+        "documentWidth": 560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 14,
+              "y": 176.765625,
+              "width": 532,
+              "height": 37.75,
+              "bottom": 214.515625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 560,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 128.765625,
+          "width": 560,
+          "height": 3440.734375,
+          "bottom": 3569.5
+        },
+        "legalContainer": {
+          "x": 14,
+          "y": 176.765625,
+          "width": 532,
+          "height": 3328.734375,
+          "bottom": 3505.5
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 561x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 561,
+            "height": 3493.515625,
+            "bottom": 3620.6875
+          }
+        }
+      ],
+      "layout": {
+        "width": 561,
+        "documentWidth": 561,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 20,
+              "y": 175.171875,
+              "width": 521,
+              "height": 37.75,
+              "bottom": 212.921875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 561,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 561,
+          "height": 3493.515625,
+          "bottom": 3620.6875
+        },
+        "legalContainer": {
+          "x": 20,
+          "y": 175.171875,
+          "width": 521,
+          "height": 3381.515625,
+          "bottom": 3556.6875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 768x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 768,
+            "height": 3150.4375,
+            "bottom": 3277.609375
+          }
+        }
+      ],
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 72.828125,
+              "y": 175.171875,
+              "width": 622.328125,
+              "height": 37.75,
+              "bottom": 212.921875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 768,
+          "height": 3150.4375,
+          "bottom": 3277.609375
+        },
+        "legalContainer": {
+          "x": 72.828125,
+          "y": 175.171875,
+          "width": 622.328125,
+          "height": 3038.4375,
+          "bottom": 3213.609375
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 820x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 820,
+            "height": 3153.75,
+            "bottom": 3280.921875
+          }
+        }
+      ],
+      "layout": {
+        "width": 820,
+        "documentWidth": 820,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 98.828125,
+              "y": 176.359375,
+              "width": 622.328125,
+              "height": 38.6875,
+              "bottom": 215.046875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 820,
+          "height": 3153.75,
+          "bottom": 3280.921875
+        },
+        "legalContainer": {
+          "x": 98.828125,
+          "y": 176.359375,
+          "width": 622.328125,
+          "height": 3039.375,
+          "bottom": 3215.734375
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 821x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 821,
+            "height": 3026.765625,
+            "bottom": 3153.9375
+          }
+        }
+      ],
+      "layout": {
+        "width": 821,
+        "documentWidth": 821,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 99.328125,
+              "y": 176.421875,
+              "width": 622.328125,
+              "height": 38.75,
+              "bottom": 215.171875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 821,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 821,
+          "height": 3026.765625,
+          "bottom": 3153.9375
+        },
+        "legalContainer": {
+          "x": 99.328125,
+          "y": 176.421875,
+          "width": 622.328125,
+          "height": 2912.265625,
+          "bottom": 3088.6875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 980x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 980,
+            "height": 3055.609375,
+            "bottom": 3182.78125
+          }
+        }
+      ],
+      "layout": {
+        "width": 980,
+        "documentWidth": 980,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 178.828125,
+              "y": 185.96875,
+              "width": 622.328125,
+              "height": 46.25,
+              "bottom": 232.21875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 980,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 980,
+          "height": 3055.609375,
+          "bottom": 3182.78125
+        },
+        "legalContainer": {
+          "x": 178.828125,
+          "y": 185.96875,
+          "width": 622.328125,
+          "height": 2922.015625,
+          "bottom": 3107.984375
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 981x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 981,
+            "height": 3055.796875,
+            "bottom": 3182.96875
+          }
+        }
+      ],
+      "layout": {
+        "width": 981,
+        "documentWidth": 981,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 179.328125,
+              "y": 186.03125,
+              "width": 622.328125,
+              "height": 46.28125,
+              "bottom": 232.3125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 981,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 981,
+          "height": 3055.796875,
+          "bottom": 3182.96875
+        },
+        "legalContainer": {
+          "x": 179.328125,
+          "y": 186.03125,
+          "width": 622.328125,
+          "height": 2922.078125,
+          "bottom": 3108.109375
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1024x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 1024,
+            "height": 3064.140625,
+            "bottom": 3191.3125
+          }
+        }
+      ],
+      "layout": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 200.828125,
+              "y": 188.609375,
+              "width": 622.328125,
+              "height": 48.3125,
+              "bottom": 236.921875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 1024,
+          "height": 3064.140625,
+          "bottom": 3191.3125
+        },
+        "legalContainer": {
+          "x": 200.828125,
+          "y": 188.609375,
+          "width": 622.328125,
+          "height": 2925.265625,
+          "bottom": 3113.875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1080x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 127.171875,
+            "width": 1080,
+            "height": 3075.015625,
+            "bottom": 3202.1875
+          }
+        }
+      ],
+      "layout": {
+        "width": 1080,
+        "documentWidth": 1080,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 228.828125,
+              "y": 191.96875,
+              "width": 622.328125,
+              "height": 50.96875,
+              "bottom": 242.9375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 127.171875,
+          "width": 1080,
+          "height": 3075.015625,
+          "bottom": 3202.1875
+        },
+        "legalContainer": {
+          "x": 228.828125,
+          "y": 191.96875,
+          "width": 622.328125,
+          "height": 2929.421875,
+          "bottom": 3121.390625
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1081x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1081,
+            "height": 3075.21875,
+            "bottom": 3242.390625
+          }
+        }
+      ],
+      "layout": {
+        "width": 1081,
+        "documentWidth": 1081,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 229.328125,
+              "y": 232.03125,
+              "width": 622.328125,
+              "height": 51.015625,
+              "bottom": 283.046875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1081,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1081,
+          "height": 3075.21875,
+          "bottom": 3242.390625
+        },
+        "legalContainer": {
+          "x": 229.328125,
+          "y": 232.03125,
+          "width": 622.328125,
+          "height": 2929.5,
+          "bottom": 3161.53125
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1180x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1180,
+            "height": 3094.40625,
+            "bottom": 3261.578125
+          }
+        }
+      ],
+      "layout": {
+        "width": 1180,
+        "documentWidth": 1180,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 278.828125,
+              "y": 237.96875,
+              "width": 622.328125,
+              "height": 55.6875,
+              "bottom": 293.65625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1180,
+          "height": 3094.40625,
+          "bottom": 3261.578125
+        },
+        "legalContainer": {
+          "x": 278.828125,
+          "y": 237.96875,
+          "width": 622.328125,
+          "height": 2936.8125,
+          "bottom": 3174.78125
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1365x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1365,
+            "height": 3125.484375,
+            "bottom": 3292.65625
+          }
+        }
+      ],
+      "layout": {
+        "width": 1365,
+        "documentWidth": 1365,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 371.328125,
+              "y": 249.0625,
+              "width": 622.328125,
+              "height": 61.359375,
+              "bottom": 310.421875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1365,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1365,
+          "height": 3125.484375,
+          "bottom": 3292.65625
+        },
+        "legalContainer": {
+          "x": 371.328125,
+          "y": 249.0625,
+          "width": 622.328125,
+          "height": 2945.703125,
+          "bottom": 3194.765625
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1366x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1366,
+            "height": 3125.609375,
+            "bottom": 3292.78125
+          }
+        }
+      ],
+      "layout": {
+        "width": 1366,
+        "documentWidth": 1366,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 371.828125,
+              "y": 249.125,
+              "width": 622.328125,
+              "height": 61.359375,
+              "bottom": 310.484375
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1366,
+          "height": 3125.609375,
+          "bottom": 3292.78125
+        },
+        "legalContainer": {
+          "x": 371.828125,
+          "y": 249.125,
+          "width": 622.328125,
+          "height": 2945.703125,
+          "bottom": 3194.828125
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1920x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1920,
+            "height": 3129.703125,
+            "bottom": 3296.875
+          }
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 648.828125,
+              "y": 251.171875,
+              "width": 622.328125,
+              "height": 61.359375,
+              "bottom": 312.53125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1920,
+          "height": 3129.703125,
+          "bottom": 3296.875
+        },
+        "legalContainer": {
+          "x": 648.828125,
+          "y": 251.171875,
+          "width": 622.328125,
+          "height": 2945.703125,
+          "bottom": 3196.875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 1921x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 1921,
+            "height": 3129.703125,
+            "bottom": 3296.875
+          }
+        }
+      ],
+      "layout": {
+        "width": 1921,
+        "documentWidth": 1921,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 649.328125,
+              "y": 251.171875,
+              "width": 622.328125,
+              "height": 61.359375,
+              "bottom": 312.53125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1921,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 1921,
+          "height": 3129.703125,
+          "bottom": 3296.875
+        },
+        "legalContainer": {
+          "x": 649.328125,
+          "y": 251.171875,
+          "width": 622.328125,
+          "height": 2945.703125,
+          "bottom": 3196.875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "layout /datenschutz/ 2560x900",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "H1 visible",
+          "pass": true
+        },
+        {
+          "name": "no script errors",
+          "pass": true,
+          "details": []
+        },
+        {
+          "name": "legal section full width",
+          "pass": true,
+          "details": {
+            "x": 0,
+            "y": 167.171875,
+            "width": 2560,
+            "height": 3129.703125,
+            "bottom": 3296.875
+          }
+        }
+      ],
+      "layout": {
+        "width": 2560,
+        "documentWidth": 2560,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Datenschutzerklärung",
+            "box": {
+              "x": 968.828125,
+              "y": 251.171875,
+              "width": 622.328125,
+              "height": 61.359375,
+              "bottom": 312.53125
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 118,
+          "bottom": 118
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": {
+          "x": 0,
+          "y": 167.171875,
+          "width": 2560,
+          "height": 3129.703125,
+          "bottom": 3296.875
+        },
+        "legalContainer": {
+          "x": 968.828125,
+          "y": 251.171875,
+          "width": 622.328125,
+          "height": 2945.703125,
+          "bottom": 3196.875
+        },
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    },
+    {
+      "name": "hero continuity /datenschutz/",
+      "checks": []
+    },
+    {
+      "name": "landscape / 844x390",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true
+        },
+        {
+          "name": "hero offer not clipped by hero",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 844,
+        "documentWidth": 844,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Gebäude­reinigung in Köln, Brühl & Bonn",
+            "box": {
+              "x": 425.921875,
+              "y": 116,
+              "width": 378.078125,
+              "height": 64.5,
+              "bottom": 180.5
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 844,
+          "height": 378.734375,
+          "bottom": 456.734375
+        },
+        "heroOffer": {
+          "x": 425.921875,
+          "y": 293.5,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 343.890625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "landscape /leistungen/glas-und-fensterreinigung/ 844x390",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true
+        },
+        {
+          "name": "hero offer not clipped by hero",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 844,
+        "documentWidth": 844,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Glas-, Fenster- und Rahmenreinigung",
+            "box": {
+              "x": 20,
+              "y": 151.90625,
+              "width": 458.390625,
+              "height": 79.65625,
+              "bottom": 231.5625
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": {
+          "x": 0,
+          "y": 78,
+          "width": 844,
+          "height": 432.53125,
+          "bottom": 510.53125
+        },
+        "heroOffer": {
+          "x": 20,
+          "y": 384.375,
+          "width": 296.546875,
+          "height": 50.390625,
+          "bottom": 434.765625
+        },
+        "heroImageFit": "cover",
+        "firstChoice": null,
+        "choiceDisplay": null,
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": true,
+          "position": "static"
+        },
+        "floatingVisible": true
+      }
+    },
+    {
+      "name": "landscape /angebotsanfrage/ 844x390",
+      "checks": [
+        {
+          "name": "no horizontal overflow",
+          "pass": true
+        }
+      ],
+      "layout": {
+        "width": 844,
+        "documentWidth": 844,
+        "overflowing": [],
+        "h1": [
+          {
+            "text": "Reinigung anfragen",
+            "box": {
+              "x": 20,
+              "y": 110,
+              "width": 790,
+              "height": 33.96875,
+              "bottom": 143.96875
+            },
+            "visible": true
+          }
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 78,
+          "bottom": 78
+        },
+        "hero": null,
+        "heroOffer": null,
+        "heroImageFit": null,
+        "firstChoice": {
+          "x": 54.75,
+          "y": 434.6875,
+          "width": 360.25,
+          "height": 99.59375,
+          "bottom": 534.28125
+        },
+        "choiceDisplay": "flex",
+        "legal": null,
+        "legalContainer": null,
+        "summary": {
+          "visible": false,
+          "position": null
+        },
+        "floatingVisible": false
+      }
+    }
+  ],
+  "preventedPosts": 0,
+  "realPosts": 0,
+  "worktreeStatus": "M config/site.php\n M public_html/assets/css/styles.css\n M public_html/galerie/index.php\n M public_html/index.php\n M public_html/ueber-uns/index.php\n M resources/css/07-gallery-faq.css",
+  "summary": {
+    "scenarios": 83,
+    "checks": 283,
+    "failures": 0,
+    "preventedPosts": 0,
+    "realPosts": 0
+  }
+}

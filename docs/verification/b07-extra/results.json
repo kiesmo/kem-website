@@ -1,0 +1,289 @@
+{
+  "checks": [
+    {
+      "name": "office: whitespace-only required free text blocked",
+      "pass": true,
+      "data": {
+        "step": 1,
+        "valid": false,
+        "invalid": "true",
+        "value": "   "
+      }
+    },
+    {
+      "name": "general: whitespace-only required free text blocked",
+      "pass": true,
+      "data": {
+        "step": 1,
+        "valid": false,
+        "invalid": "true",
+        "value": "   "
+      }
+    },
+    {
+      "name": "window: whitespace-only required free text blocked",
+      "pass": true,
+      "data": {
+        "step": 1,
+        "valid": false,
+        "invalid": "true",
+        "value": "   "
+      }
+    },
+    {
+      "name": "graffiti: whitespace-only required free text blocked",
+      "pass": true,
+      "data": {
+        "step": 1,
+        "valid": false,
+        "invalid": "true",
+        "value": "   "
+      }
+    },
+    {
+      "name": "clearance: whitespace-only required free text blocked",
+      "pass": true,
+      "data": {
+        "step": 1,
+        "valid": false,
+        "invalid": "true",
+        "value": "   "
+      }
+    },
+    {
+      "name": "still-invalid city edit retains durable error",
+      "pass": true,
+      "data": {
+        "before": {
+          "invalid": "true",
+          "valid": false,
+          "message": "Bitte geben Sie mindestens 2 Zeichen ein."
+        },
+        "after": {
+          "invalid": "true",
+          "valid": false,
+          "message": "Bitte geben Sie mindestens 2 Zeichen ein."
+        }
+      }
+    },
+    {
+      "name": "ninth quantity 10000",
+      "pass": true,
+      "data": {
+        "value": "10000",
+        "valid": false,
+        "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+        "rule": true
+      }
+    },
+    {
+      "name": "ninth quantity 1e3",
+      "pass": true,
+      "data": {
+        "value": "1e3",
+        "valid": false,
+        "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+        "rule": true
+      }
+    },
+    {
+      "name": "ninth quantity -1",
+      "pass": true,
+      "data": {
+        "value": "-1",
+        "valid": false,
+        "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+        "rule": true
+      }
+    },
+    {
+      "name": "ninth quantity 1.5",
+      "pass": true,
+      "data": {
+        "value": "1.5",
+        "valid": false,
+        "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+        "rule": true
+      }
+    },
+    {
+      "name": "ninth quantity 0",
+      "pass": true,
+      "data": {
+        "value": "0",
+        "valid": true,
+        "message": "",
+        "rule": true
+      }
+    },
+    {
+      "name": "ninth quantity 9999",
+      "pass": true,
+      "data": {
+        "value": "9999",
+        "valid": true,
+        "message": "",
+        "rule": true
+      }
+    },
+    {
+      "name": "upload failure survives locally invalid submit",
+      "pass": true,
+      "data": {
+        "before": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.",
+        "after": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+      }
+    },
+    {
+      "name": "contact trimmed name/message minimum rules match server",
+      "pass": true,
+      "data": {
+        "first": "name",
+        "valid": false,
+        "invalid": [
+          "name",
+          "message"
+        ]
+      }
+    },
+    {
+      "name": "pending send blocks repeated submit and inputs",
+      "pass": true,
+      "data": {
+        "submitting": "true",
+        "busy": "true",
+        "inert": true
+      }
+    },
+    {
+      "name": "success confirmation owns focus and erases personal/upload/estimate data",
+      "pass": true,
+      "data": {
+        "visible": true,
+        "formHidden": true,
+        "focus": "offer-success-title",
+        "firstName": "",
+        "files": 0,
+        "preview": 0,
+        "estimate": false,
+        "area": "",
+        "readOnly": false
+      }
+    },
+    {
+      "name": "delayed three submits produce exactly one intercepted request",
+      "pass": true,
+      "data": {
+        "before": 0,
+        "after": 1
+      }
+    },
+    {
+      "name": "new request remains empty without old URL/estimate/file/error data",
+      "pass": true,
+      "data": {
+        "services": 0,
+        "city": "",
+        "area": "",
+        "files": 0,
+        "invalidVisible": 0,
+        "first": 0,
+        "focus": "Was dürfen wir für Sie reinigen?"
+      }
+    },
+    {
+      "name": "no script errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "trimServices": [
+    {
+      "key": "office",
+      "name": "office_area",
+      "step": 1,
+      "valid": false,
+      "invalid": "true",
+      "value": "   "
+    },
+    {
+      "key": "general",
+      "name": "general_area",
+      "step": 1,
+      "valid": false,
+      "invalid": "true",
+      "value": "   "
+    },
+    {
+      "key": "window",
+      "name": "window_sashes",
+      "step": 1,
+      "valid": false,
+      "invalid": "true",
+      "value": "   "
+    },
+    {
+      "key": "graffiti",
+      "name": "graffiti_area",
+      "step": 1,
+      "valid": false,
+      "invalid": "true",
+      "value": "   "
+    },
+    {
+      "key": "clearance",
+      "name": "clearance_area",
+      "step": 1,
+      "valid": false,
+      "invalid": "true",
+      "value": "   "
+    }
+  ],
+  "counts": [
+    {
+      "input": "10000",
+      "value": "10000",
+      "valid": false,
+      "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+      "rule": true
+    },
+    {
+      "input": "1e3",
+      "value": "1e3",
+      "valid": false,
+      "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+      "rule": true
+    },
+    {
+      "input": "-1",
+      "value": "-1",
+      "valid": false,
+      "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+      "rule": true
+    },
+    {
+      "input": "1.5",
+      "value": "1.5",
+      "valid": false,
+      "message": "Bitte geben Sie eine ganze Anzahl zwischen 0 und 9999 ein.",
+      "rule": true
+    },
+    {
+      "input": "0",
+      "value": "0",
+      "valid": true,
+      "message": "",
+      "rule": true
+    },
+    {
+      "input": "9999",
+      "value": "9999",
+      "valid": true,
+      "message": "",
+      "rule": true
+    }
+  ],
+  "errors": [],
+  "posts": 1,
+  "failures": []
+}

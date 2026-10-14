@@ -1,0 +1,644 @@
+{
+  "checks": [
+    {
+      "name": "collapsed object/service options retain enabled FormData/review/counts",
+      "pass": true,
+      "data": {
+        "objectOpen": false,
+        "serviceOpen": false,
+        "count": "(4 ausgefüllt)",
+        "serviceCount": "(1 ausgefüllt)",
+        "disabled": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "data": {
+          "cleaning_company": "Testobjekt",
+          "cleaning_street": "Musterstraße 7",
+          "floor": "2. OG",
+          "furnishing": "Voll möbliert",
+          "office_notes": "Zugang nach Absprache"
+        },
+        "review": "Gewählte LeistungenÄndernReinigungsartenBüro- und Gewerberaumreinigung, Glas- und FensterreinigungObjekt und EinsatzortÄndernObjekt / FirmaTestobjektAdresseMusterstraße 7, 50667 KölnObjektartWohnungEtage2. OGMöblierungVoll möbliertBüro- und GewerberaumreinigungÄndernFläche250 m²TurnusEinmaligHinweiseZugang nach AbspracheGlas- und FensterreinigungÄndernFenster / Flügel5ReinigungswunschGlas innenTermin und FotosÄndernFotosKeine Fotos ausgewählt"
+      }
+    },
+    {
+      "name": "server error opens collapsed optional area before focus",
+      "pass": true,
+      "data": {
+        "open": true,
+        "step": 1,
+        "focus": "cleaning_street",
+        "value": "Musterstraße 7"
+      }
+    },
+    {
+      "name": "all9 unique furniture types retain existing POST names",
+      "pass": true,
+      "data": {
+        "visible": [
+          "upholstery_two_seater",
+          "upholstery_three_seater",
+          "upholstery_corner_small",
+          "upholstery_corner_large",
+          "upholstery_armchair",
+          "upholstery_stool",
+          "upholstery_chair_seat",
+          "upholstery_chair_back",
+          "upholstery_custom_seats"
+        ],
+        "disabledOptions": [
+          "upholstery_two_seater",
+          "upholstery_three_seater",
+          "upholstery_corner_small",
+          "upholstery_corner_large",
+          "upholstery_armchair",
+          "upholstery_stool",
+          "upholstery_chair_seat",
+          "upholstery_chair_back",
+          "upholstery_custom_seats"
+        ],
+        "data": [
+          [
+            "upholstery_two_seater",
+            "1"
+          ],
+          [
+            "upholstery_three_seater",
+            "2"
+          ],
+          [
+            "upholstery_corner_small",
+            "3"
+          ],
+          [
+            "upholstery_corner_large",
+            "4"
+          ],
+          [
+            "upholstery_armchair",
+            "5"
+          ],
+          [
+            "upholstery_stool",
+            "6"
+          ],
+          [
+            "upholstery_chair_seat",
+            "7"
+          ],
+          [
+            "upholstery_chair_back",
+            "8"
+          ],
+          [
+            "upholstery_custom_seats",
+            "9"
+          ]
+        ],
+        "review": "Gewählte LeistungenÄndernReinigungsartenPolsterreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungPolsterreinigungÄndern2-Sitzer13-Sitzer2Ecksofa klein3Ecksofa groß4Sessel5Hocker6Polsterstuhl ohne Lehne7Polsterstuhl mit Lehne8Individuelles Sofa / Sitzflächen9ReinigungswunschAuffrischungVerschmutzungLeichtTermin und FotosÄndernFotosKeine Fotos ausgewählt"
+      }
+    },
+    {
+      "name": "purposeful remove clears only its quantity and restores option/focus",
+      "pass": true,
+      "data": {
+        "value": "",
+        "hidden": true,
+        "other": "1",
+        "enabled": true,
+        "focus": "furniture-kind",
+        "available": true
+      }
+    },
+    {
+      "name": "added quantity10000 blocks next",
+      "pass": true
+    },
+    {
+      "name": "server error reveals hidden existing furniture row and focuses it",
+      "pass": true,
+      "data": {
+        "hidden": false,
+        "focus": "upholstery_armchair",
+        "step": 1
+      }
+    },
+    {
+      "name": "0: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 0,
+          "valid": true,
+          "message": "",
+          "aria": null
+        },
+        "drop": {
+          "count": 0,
+          "valid": true,
+          "message": "",
+          "aria": null
+        }
+      }
+    },
+    {
+      "name": "1 valid: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 1,
+          "valid": true,
+          "message": "",
+          "aria": null
+        },
+        "drop": {
+          "count": 1,
+          "valid": true,
+          "message": "",
+          "aria": null
+        }
+      }
+    },
+    {
+      "name": "5 valid: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 5,
+          "valid": true,
+          "message": "",
+          "aria": null
+        },
+        "drop": {
+          "count": 5,
+          "valid": true,
+          "message": "",
+          "aria": null
+        }
+      }
+    },
+    {
+      "name": "6: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 6,
+          "valid": false,
+          "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.",
+          "aria": "true",
+          "error": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+        },
+        "drop": {
+          "count": 6,
+          "valid": false,
+          "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.",
+          "aria": "true",
+          "error": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+        }
+      }
+    },
+    {
+      "name": "single>5MiB: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 1,
+          "valid": false,
+          "message": "Jede Datei darf höchstens 5 MiB groß sein.",
+          "aria": "true",
+          "error": "Jede Datei darf höchstens 5 MiB groß sein."
+        },
+        "drop": {
+          "count": 1,
+          "valid": false,
+          "message": "Jede Datei darf höchstens 5 MiB groß sein.",
+          "aria": "true",
+          "error": "Jede Datei darf höchstens 5 MiB groß sein."
+        }
+      }
+    },
+    {
+      "name": "total>15MiB: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 4,
+          "valid": false,
+          "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein.",
+          "aria": "true",
+          "error": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+        },
+        "drop": {
+          "count": 4,
+          "valid": false,
+          "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein.",
+          "aria": "true",
+          "error": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+        }
+      }
+    },
+    {
+      "name": "empty: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 1,
+          "valid": false,
+          "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei.",
+          "aria": "true",
+          "error": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+        },
+        "drop": {
+          "count": 1,
+          "valid": false,
+          "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei.",
+          "aria": "true",
+          "error": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+        }
+      }
+    },
+    {
+      "name": "HEIC: picker/drop identical constraints/list",
+      "pass": true,
+      "data": {
+        "picker": {
+          "count": 1,
+          "valid": false,
+          "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um.",
+          "aria": "true",
+          "error": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+        },
+        "drop": {
+          "count": 1,
+          "valid": false,
+          "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um.",
+          "aria": "true",
+          "error": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+        }
+      }
+    },
+    {
+      "name": "removing sixth file repairs count/error",
+      "pass": true,
+      "data": {
+        "count": 5,
+        "valid": true,
+        "error": "",
+        "focus": "BUTTON",
+        "focusClass": "upload-remove",
+        "current": 2
+      }
+    },
+    {
+      "name": "keyboard upload remove retains meaningful focus",
+      "pass": true,
+      "data": {
+        "count": 5,
+        "valid": true,
+        "error": "",
+        "focus": "BUTTON",
+        "focusClass": "upload-remove",
+        "current": 2
+      }
+    },
+    {
+      "name": "drop edit invalidates downstream completion like picker",
+      "pass": true,
+      "data": {
+        "beforeDrop": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "afterDrop": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "upload error remains after invalid submit",
+      "pass": true
+    },
+    {
+      "name": "decode failure: prior object URL released",
+      "pass": true,
+      "data": {
+        "created": 1,
+        "revoked": 1,
+        "allFirstReleased": true,
+        "placeholder": "Keine Bildvorschauqa-0.png1 KBEntfernen",
+        "remainingPreviews": 0
+      }
+    },
+    {
+      "name": "decode failure has honest placeholder",
+      "pass": true,
+      "data": {
+        "created": 1,
+        "revoked": 1,
+        "allFirstReleased": true,
+        "placeholder": "Keine Bildvorschauqa-0.png1 KBEntfernen",
+        "remainingPreviews": 0
+      }
+    },
+    {
+      "name": "new selection: prior object URL released",
+      "pass": true,
+      "data": {
+        "created": 2,
+        "revoked": 2,
+        "allFirstReleased": true,
+        "placeholder": "qa-0.png1 KBEntfernen",
+        "remainingPreviews": 1
+      }
+    },
+    {
+      "name": "removal: prior object URL released",
+      "pass": true,
+      "data": {
+        "created": 1,
+        "revoked": 1,
+        "allFirstReleased": true,
+        "placeholder": "",
+        "remainingPreviews": 0
+      }
+    },
+    {
+      "name": "success: prior object URL released",
+      "pass": true,
+      "data": {
+        "created": 1,
+        "revoked": 1,
+        "allFirstReleased": true,
+        "placeholder": "",
+        "remainingPreviews": 0
+      }
+    },
+    {
+      "name": "no script errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "optional": {
+    "objectOpen": false,
+    "serviceOpen": false,
+    "count": "(4 ausgefüllt)",
+    "serviceCount": "(1 ausgefüllt)",
+    "disabled": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "data": {
+      "cleaning_company": "Testobjekt",
+      "cleaning_street": "Musterstraße 7",
+      "floor": "2. OG",
+      "furnishing": "Voll möbliert",
+      "office_notes": "Zugang nach Absprache"
+    },
+    "review": "Gewählte LeistungenÄndernReinigungsartenBüro- und Gewerberaumreinigung, Glas- und FensterreinigungObjekt und EinsatzortÄndernObjekt / FirmaTestobjektAdresseMusterstraße 7, 50667 KölnObjektartWohnungEtage2. OGMöblierungVoll möbliertBüro- und GewerberaumreinigungÄndernFläche250 m²TurnusEinmaligHinweiseZugang nach AbspracheGlas- und FensterreinigungÄndernFenster / Flügel5ReinigungswunschGlas innenTermin und FotosÄndernFotosKeine Fotos ausgewählt"
+  },
+  "furniture": {
+    "visible": [
+      "upholstery_two_seater",
+      "upholstery_three_seater",
+      "upholstery_corner_small",
+      "upholstery_corner_large",
+      "upholstery_armchair",
+      "upholstery_stool",
+      "upholstery_chair_seat",
+      "upholstery_chair_back",
+      "upholstery_custom_seats"
+    ],
+    "disabledOptions": [
+      "upholstery_two_seater",
+      "upholstery_three_seater",
+      "upholstery_corner_small",
+      "upholstery_corner_large",
+      "upholstery_armchair",
+      "upholstery_stool",
+      "upholstery_chair_seat",
+      "upholstery_chair_back",
+      "upholstery_custom_seats"
+    ],
+    "data": [
+      [
+        "upholstery_two_seater",
+        "1"
+      ],
+      [
+        "upholstery_three_seater",
+        "2"
+      ],
+      [
+        "upholstery_corner_small",
+        "3"
+      ],
+      [
+        "upholstery_corner_large",
+        "4"
+      ],
+      [
+        "upholstery_armchair",
+        "5"
+      ],
+      [
+        "upholstery_stool",
+        "6"
+      ],
+      [
+        "upholstery_chair_seat",
+        "7"
+      ],
+      [
+        "upholstery_chair_back",
+        "8"
+      ],
+      [
+        "upholstery_custom_seats",
+        "9"
+      ]
+    ],
+    "review": "Gewählte LeistungenÄndernReinigungsartenPolsterreinigungObjekt und EinsatzortÄndernAdresse50667 KölnObjektartWohnungPolsterreinigungÄndern2-Sitzer13-Sitzer2Ecksofa klein3Ecksofa groß4Sessel5Hocker6Polsterstuhl ohne Lehne7Polsterstuhl mit Lehne8Individuelles Sofa / Sitzflächen9ReinigungswunschAuffrischungVerschmutzungLeichtTermin und FotosÄndernFotosKeine Fotos ausgewählt"
+  },
+  "uploads": [
+    {
+      "name": "0",
+      "picker": {
+        "count": 0,
+        "valid": true,
+        "message": "",
+        "aria": null
+      },
+      "drop": {
+        "count": 0,
+        "valid": true,
+        "message": "",
+        "aria": null
+      }
+    },
+    {
+      "name": "1 valid",
+      "picker": {
+        "count": 1,
+        "valid": true,
+        "message": "",
+        "aria": null
+      },
+      "drop": {
+        "count": 1,
+        "valid": true,
+        "message": "",
+        "aria": null
+      }
+    },
+    {
+      "name": "5 valid",
+      "picker": {
+        "count": 5,
+        "valid": true,
+        "message": "",
+        "aria": null
+      },
+      "drop": {
+        "count": 5,
+        "valid": true,
+        "message": "",
+        "aria": null
+      }
+    },
+    {
+      "name": "6",
+      "picker": {
+        "count": 6,
+        "valid": false,
+        "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.",
+        "aria": "true",
+        "error": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+      },
+      "drop": {
+        "count": 6,
+        "valid": false,
+        "message": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.",
+        "aria": "true",
+        "error": "Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien."
+      }
+    },
+    {
+      "name": "single>5MiB",
+      "picker": {
+        "count": 1,
+        "valid": false,
+        "message": "Jede Datei darf höchstens 5 MiB groß sein.",
+        "aria": "true",
+        "error": "Jede Datei darf höchstens 5 MiB groß sein."
+      },
+      "drop": {
+        "count": 1,
+        "valid": false,
+        "message": "Jede Datei darf höchstens 5 MiB groß sein.",
+        "aria": "true",
+        "error": "Jede Datei darf höchstens 5 MiB groß sein."
+      }
+    },
+    {
+      "name": "total>15MiB",
+      "picker": {
+        "count": 4,
+        "valid": false,
+        "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein.",
+        "aria": "true",
+        "error": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+      },
+      "drop": {
+        "count": 4,
+        "valid": false,
+        "message": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein.",
+        "aria": "true",
+        "error": "Die Fotos dürfen zusammen höchstens 15 MiB groß sein."
+      }
+    },
+    {
+      "name": "empty",
+      "picker": {
+        "count": 1,
+        "valid": false,
+        "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei.",
+        "aria": "true",
+        "error": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+      },
+      "drop": {
+        "count": 1,
+        "valid": false,
+        "message": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei.",
+        "aria": "true",
+        "error": "Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei."
+      }
+    },
+    {
+      "name": "HEIC",
+      "picker": {
+        "count": 1,
+        "valid": false,
+        "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um.",
+        "aria": "true",
+        "error": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+      },
+      "drop": {
+        "count": 1,
+        "valid": false,
+        "message": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um.",
+        "aria": "true",
+        "error": "Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um."
+      }
+    }
+  ],
+  "urls": [
+    {
+      "kind": "decode failure",
+      "created": 1,
+      "revoked": 1,
+      "allFirstReleased": true,
+      "placeholder": "Keine Bildvorschauqa-0.png1 KBEntfernen",
+      "remainingPreviews": 0
+    },
+    {
+      "kind": "new selection",
+      "created": 2,
+      "revoked": 2,
+      "allFirstReleased": true,
+      "placeholder": "qa-0.png1 KBEntfernen",
+      "remainingPreviews": 1
+    },
+    {
+      "kind": "removal",
+      "created": 1,
+      "revoked": 1,
+      "allFirstReleased": true,
+      "placeholder": "",
+      "remainingPreviews": 0
+    },
+    {
+      "kind": "success",
+      "created": 1,
+      "revoked": 1,
+      "allFirstReleased": true,
+      "placeholder": "",
+      "remainingPreviews": 0
+    }
+  ],
+  "errors": [],
+  "posts": 2,
+  "failures": []
+}

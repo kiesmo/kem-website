@@ -1,0 +1,180 @@
+{
+  "source_commit": "9ddd318fcf5140322b1c36e95e0d61e38ff1d1f0",
+  "source_url": "http://127.0.0.1:8080",
+  "preview_origin": "https://kem-final2-vorschau.kian-motlagh.chatgpt.site",
+  "created_at_utc": "2026-10-14T22:17:24.994866+00:00",
+  "routes": [
+    {
+      "route": "/",
+      "source_status": 200,
+      "output": "index.html",
+      "sha256": "3731809a5e9e15c4d8b3bf3727674cd3be9b345a5bd2340cdbf6503fdbc271cc"
+    },
+    {
+      "route": "/404.php",
+      "source_status": 404,
+      "output": "404.php",
+      "sha256": "28c863a937851f30d51a3d135975a5b9fc19c7ea68d51cce802a90b4e19bda05"
+    },
+    {
+      "route": "/angebotsanfrage/",
+      "source_status": 200,
+      "output": "angebotsanfrage/index.html",
+      "sha256": "dc4327a10d2816da1817bf359e83dd43430a3ee60cd6eb23c766c6d79b135a05"
+    },
+    {
+      "route": "/bueroreinigung-bonn/",
+      "source_status": 200,
+      "output": "bueroreinigung-bonn/index.html",
+      "sha256": "b874760dab4f2da4b27290a5a0b62d3c64a1b3f8aa1d37b0dcffd148e87fe624"
+    },
+    {
+      "route": "/bueroreinigung-bruehl/",
+      "source_status": 200,
+      "output": "bueroreinigung-bruehl/index.html",
+      "sha256": "c52c64544940d04859d6936bffcee05dd1c62db6272c94dd51e9f8f83a425452"
+    },
+    {
+      "route": "/bueroreinigung-koeln/",
+      "source_status": 200,
+      "output": "bueroreinigung-koeln/index.html",
+      "sha256": "85f12231cbef9f11515468d8325f497039c9db7f045a178d4775788fbcaff8e2"
+    },
+    {
+      "route": "/datenschutz/",
+      "source_status": 200,
+      "output": "datenschutz/index.html",
+      "sha256": "3a22cda117e2e082de5a366cf75d64c9e722438adde1d4258cd42186c4b900d8"
+    },
+    {
+      "route": "/faq/",
+      "source_status": 200,
+      "output": "faq/index.html",
+      "sha256": "2e455657c2e9bbc0ac46aa719a38733f999b6da4b36711c7e5646e96ecca110d"
+    },
+    {
+      "route": "/fensterreinigung-bonn/",
+      "source_status": 200,
+      "output": "fensterreinigung-bonn/index.html",
+      "sha256": "d8f78e41abdd2e7fb29a9cb9befed5fc3ff7299284b38f12847f626b2d426021"
+    },
+    {
+      "route": "/fensterreinigung-bruehl/",
+      "source_status": 200,
+      "output": "fensterreinigung-bruehl/index.html",
+      "sha256": "e5741043433f7e5ceceb7d00145426616b86fd29b8bd61a3400b021bdaff4ed7"
+    },
+    {
+      "route": "/fensterreinigung-koeln/",
+      "source_status": 200,
+      "output": "fensterreinigung-koeln/index.html",
+      "sha256": "7ff259cde89f3ae6322ea7a279ca447f0600c3f5fffd18746c76a729e3804165"
+    },
+    {
+      "route": "/galerie/",
+      "source_status": 200,
+      "output": "galerie/index.html",
+      "sha256": "e65511558e5cd5e9869c5c14835270082c39d9422f74ab13744b259ff6fd530e"
+    },
+    {
+      "route": "/gebaeudereinigung-bonn/",
+      "source_status": 200,
+      "output": "gebaeudereinigung-bonn/index.html",
+      "sha256": "12d3975648eb900b976d480b074d6ca1d66088de61779a41f2d0609022dd634a"
+    },
+    {
+      "route": "/gebaeudereinigung-bruehl/",
+      "source_status": 200,
+      "output": "gebaeudereinigung-bruehl/index.html",
+      "sha256": "ced59504feb3c648eafee9fbb9848e83797f645d41ea0bdd0885f5d00b23e5bd"
+    },
+    {
+      "route": "/gebaeudereinigung-koeln/",
+      "source_status": 200,
+      "output": "gebaeudereinigung-koeln/index.html",
+      "sha256": "e5242747428805559ab888bd8e3d4a99c13bc045487f5fbf563335e2be3e45da"
+    },
+    {
+      "route": "/impressum/",
+      "source_status": 200,
+      "output": "impressum/index.html",
+      "sha256": "2141240fbef37aa4be8f9b9f4de8db58827f45d6dd73d1a3876c268ca157f1d7"
+    },
+    {
+      "route": "/jobs/",
+      "source_status": 200,
+      "output": "jobs/index.html",
+      "sha256": "31ae94093c8ca3a177464471bec1ddf0259d1ac8b178736481fa929f6565e5ab"
+    },
+    {
+      "route": "/kontakt/",
+      "source_status": 200,
+      "output": "kontakt/index.html",
+      "sha256": "845de4f485da4a449b5442696450b150c60c574d540de4157761a3fe9be590fb"
+    },
+    {
+      "route": "/leistungen/",
+      "source_status": 200,
+      "output": "leistungen/index.html",
+      "sha256": "995c7f811c0040baa882a4a040d288e770501c6b112735e0a1cb5f675f76e4fc"
+    },
+    {
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "source_status": 200,
+      "output": "leistungen/buero-und-gewerberaumreinigung/index.html",
+      "sha256": "f757480f5e8f79a7feed3434c17416d922ebadc760c7e7abd76c48d8dfb0470d"
+    },
+    {
+      "route": "/leistungen/entruempelung/",
+      "source_status": 200,
+      "output": "leistungen/entruempelung/index.html",
+      "sha256": "f1c8625f7cb2547d5f3628e95e7bade0099353e9ff52e4ce20aa45fc3db17e9a"
+    },
+    {
+      "route": "/leistungen/fassadenreinigung/",
+      "source_status": 200,
+      "output": "leistungen/fassadenreinigung/index.html",
+      "sha256": "3939254c1277af7927f40fbd78f893a4b9f40172466fe9d5c75c44ada2d6e0dc"
+    },
+    {
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "source_status": 200,
+      "output": "leistungen/glas-und-fensterreinigung/index.html",
+      "sha256": "dfe6590e8034c4ceac624f6ff402f42a650e07f725aabf87a611137ae39589a9"
+    },
+    {
+      "route": "/leistungen/grundreinigung/",
+      "source_status": 200,
+      "output": "leistungen/grundreinigung/index.html",
+      "sha256": "a6c771a49eb1b77963e806caf967bc3c2d30ca3e2dc5ff72634ff0523d4b9a89"
+    },
+    {
+      "route": "/leistungen/polsterreinigung/",
+      "source_status": 200,
+      "output": "leistungen/polsterreinigung/index.html",
+      "sha256": "dca7f52fcb8b043a39cee38c6ed0af165d7d8568c8c5049075747dd1069cffcc"
+    },
+    {
+      "route": "/leistungen/solaranlagenreinigung/",
+      "source_status": 200,
+      "output": "leistungen/solaranlagenreinigung/index.html",
+      "sha256": "452c2a70a2e7119d89c559e78fc57956e2944142603c2cddcfe15c0780c41c8c"
+    },
+    {
+      "route": "/leistungen/teppichreinigung/",
+      "source_status": 200,
+      "output": "leistungen/teppichreinigung/index.html",
+      "sha256": "5c8df57109fd319258cb4668d377d3750a8dbb7241b70edeca6528a773c73f89"
+    },
+    {
+      "route": "/ueber-uns/",
+      "source_status": 200,
+      "output": "ueber-uns/index.html",
+      "sha256": "df06334abd4f46fb8cfed5b8bb45cffb29be0784759ebecd4b591fb7e666ff08"
+    }
+  ],
+  "public_asset_count": 75,
+  "public_asset_bytes": 37542433,
+  "hosting_manifest_sha256": "56441771f167209454891a714e18c0d00499be63f7bbcb31e8d7550416017981",
+  "form_delivery": "disabled; validation and clearly labelled simulated success only"
+}

@@ -4,9 +4,11 @@
 
 **Geprüfter Commit:** `00f1fe3b7750e0315f3ec0224a887f1a0e74b2d1`  
 **Repository:** `kiesmo/kem-website`  
-**Quellcode-Abgleich:** 14. Oktober 2026, auf exakt demselben Commit; lokale Arbeitskopie `final2`, identisch mit `origin/final`.  
+**Quellcode-Abgleich:** 14. Oktober 2026, auf exakt demselben Commit; zum Zeitpunkt des Abgleichs war die lokale Arbeitskopie `final2` identisch mit `origin/final`.
 **Bereitstellungsbranch:** `audit/design-final2` – ausschließlich Audit-Dokumentation und Screenshot-Belege.  
-**Auftrag:** Ausführliche Prüfung von Layout, visueller Hierarchie, Typografie, Farben, Inhaltsstruktur, Seitenaufbau, primären und abschließenden CTAs sowie angrenzenden Design- und UX-Themen. Keine Änderung an der Website.
+**Ursprünglicher Audit-Auftrag:** Ausführliche Prüfung von Layout, visueller Hierarchie, Typografie, Farben, Inhaltsstruktur, Seitenaufbau, primären und abschließenden CTAs sowie angrenzenden Design- und UX-Themen. Keine Änderung an der Website.
+
+> **Aktueller Umsetzungsstand:** Die folgenden Befunde und Quellzeilen beschreiben ausdrücklich den geprüften Ausgangscommit `00f1fe3`, nicht den inzwischen überarbeiteten Branch. B01–B11 wurden danach gemäß Nutzerauftrag nacheinander umgesetzt. Der Abgleich enthält 20 Dokumentkorrekturen; die Behebung aller 40 Befunde, Prüfungen und materialabhängigen Punkte sind in [IMPLEMENTATION-STATUS-final2.md](IMPLEMENTATION-STATUS-final2.md) dokumentiert.
 
 > Die Website besitzt eine brauchbare, konsistente gestalterische Grundlage. Der größte Verbesserungsbedarf liegt in der Reihenfolge und Gewichtung der Inhalte: Bilder beanspruchen viel Platz, der Einstieg in eine Angebotsanfrage erscheint häufig spät, und WhatsApp erhält teilweise mehr visuelle Aufmerksamkeit als das als primär angelegte Formular. Die Empfehlung ist eine gezielte Überarbeitung der Hierarchie auf Basis des bestehenden Designs.
 

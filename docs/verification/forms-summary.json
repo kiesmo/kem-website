@@ -1,0 +1,54 @@
+{
+  "suites": [
+    {
+      "file": "final-forms/results.json",
+      "assertions": 153,
+      "failures": 0,
+      "postIntercepts": 5
+    },
+    {
+      "file": "b08-extra/results.json",
+      "assertions": 24,
+      "failures": 0,
+      "postIntercepts": 2
+    },
+    {
+      "file": "b07-extra/results.json",
+      "assertions": 19,
+      "failures": 0,
+      "postIntercepts": 1
+    },
+    {
+      "file": "backend-contract.json",
+      "assertions": 31,
+      "failures": 0,
+      "postIntercepts": 0
+    },
+    {
+      "file": "final-api-browser/results.json",
+      "assertions": 18,
+      "failures": 0,
+      "postIntercepts": 2
+    }
+  ],
+  "assertions": 245,
+  "failures": 0,
+  "postIntercepts": 10,
+  "realPosts": 0,
+  "existingRepositoryTestsFound": false,
+  "serverSchemaUnchangedFromAuditCommit": true,
+  "notTested": [
+    "physical iPhone/Android file picker/camera/keyboard",
+    "actual SMTP delivery"
+  ],
+  "isolatedUpload": {
+    "scenarios": 15,
+    "assertions": 39,
+    "failures": 0,
+    "fixturePosts": 15,
+    "productApiPosts": 0,
+    "containerRemoved": "kem-upload-qa-final2",
+    "report": "upload-multipart-results.json"
+  },
+  "assertionsIncludingIsolatedUpload": 284
+}
