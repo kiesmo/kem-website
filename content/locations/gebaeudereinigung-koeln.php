@@ -1,7 +1,13 @@
 <section class="section">
-<div class="container content-grid">
-<article class="service-detail">
-<?php kem_render_mobile_offer_cta('Kostenloses Angebot anfordern', $pageKey); ?>
+<div class="container content-grid service-content-grid">
+<aside class="content-card service-summary-card">
+<img alt="Professionelles Reinigungsequipment in einem modernen Gewerbeobjekt" height="800" loading="lazy" src="/assets/img/locations/gebaeudereinigung-koeln/gebaeudereinigung-koeln-content.webp" width="1200">
+<span class="eyebrow">KEM Gebäudereinigung</span>
+<h2>Reinigungsservice in Köln</h2>
+<ul class="service-facts"><li>Private und gewerbliche Objekte</li><li>Flexible Reinigungsintervalle</li><li>Einmalige Einsätze möglich</li><li>Individuelle Angebotskalkulation</li></ul>
+<a class="btn" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot für Köln anfragen</a>
+</aside><article class="service-detail">
+
 <h2>Gebäudereinigung für unterschiedlich genutzte Objekte in Köln</h2>
 <p>Bei gewerblich genutzten Räumen stehen häufig wiederkehrende Abläufe, sensible Arbeitszeiten und stark beanspruchte Bereiche im Mittelpunkt. In privaten Objekten sind dagegen oft einzelne Leistungen oder konkrete Räume gefragt. Vor Beginn stimmen wir deshalb ab, welche Flächen berücksichtigt werden und zu welchem Zeitpunkt die Reinigung sinnvoll ausgeführt werden kann.</p>
 <p>Für Büros und Gewerberäume können regelmäßige Reinigungsintervalle vereinbart werden. Ebenso sind je nach Leistung einmalige Einsätze möglich, beispielsweise für eine Grundreinigung, Glasreinigung, Polster- oder Teppichreinigung oder eine Entrümpelung.</p>
@@ -22,13 +28,6 @@
 <h2>Was wir für ein Angebot benötigen</h2>
 <p>Hilfreich sind Angaben zur Objektart, zur gewünschten Leistung, zum ungefähren Umfang und zur Lage des Objekts in Köln. Bei speziellen Verschmutzungen, größeren Flächen oder schwer einschätzbaren Zugängen können Fotos oder eine Besichtigung sinnvoll sein. Auf dieser Grundlage lässt sich der Auftrag nachvollziehbar planen.</p>
 </article>
-<aside class="content-card service-summary-card">
-<img alt="Professionelles Reinigungsequipment in einem modernen Gewerbeobjekt" height="800" loading="lazy" src="/assets/img/locations/gebaeudereinigung-koeln/gebaeudereinigung-koeln-content.webp" width="1200">
-<span class="eyebrow">KEM Gebäudereinigung</span>
-<h2>Reinigungsservice in Köln</h2>
-<ul class="service-facts"><li>Private und gewerbliche Objekte</li><li>Flexible Reinigungsintervalle</li><li>Einmalige Einsätze möglich</li><li>Individuelle Angebotskalkulation</li></ul>
-<a class="btn" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot für Köln anfragen</a>
-</aside>
 </div>
 </section>
 <section class="section soft local-faq-section">

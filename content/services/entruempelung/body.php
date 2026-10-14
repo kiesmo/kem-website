@@ -3,7 +3,4 @@
 <p>Bei einer Entrümpelung können Menge, Zugangswege und betroffene Räume den Aufwand stark beeinflussen. Deshalb klären wir vorab, welche Bereiche geräumt werden sollen und welche Leistungen ausdrücklich zum Auftrag gehören. Bei größeren oder schwer einzuschätzenden Objekten kann eine vorherige Besichtigung sinnvoll sein.</p>
 <h2>Besenreine Übergabe nach Vereinbarung</h2>
 <p>Wenn eine besenreine Übergabe gewünscht ist, kann dies bereits bei der Anfrage berücksichtigt werden. Weitergehende Reinigungsarbeiten werden getrennt abgestimmt, damit eindeutig ist, welche Arbeiten nach der Räumung ausgeführt werden sollen.</p>
-</div><div class="service-area-links">
-<h2>Entrümpelung in Köln, Brühl und Bonn</h2>
-<p>Sie suchen diese Leistung gezielt an einem Standort? Auf unseren Einsatzgebietsseiten finden Sie weitere Informationen zur Gebäudereinigung in <a href="/gebaeudereinigung-koeln/">Köln</a>, <a href="/gebaeudereinigung-bruehl/">Brühl</a> und <a href="/gebaeudereinigung-bonn/">Bonn</a>. Den konkreten Leistungsumfang stimmen wir immer auf Ihr Objekt und Ihre Anforderungen ab.</p>
-</div>
+</div><div class="service-area-links"><h2>Einsatzgebiete</h2><nav class="service-nav" aria-label="Gebäudereinigung vor Ort"><a href="/gebaeudereinigung-bruehl/">Brühl</a><a href="/gebaeudereinigung-koeln/">Köln</a><a href="/gebaeudereinigung-bonn/">Bonn</a></nav></div>

@@ -181,3 +181,17 @@
     font-size: .84rem;
   }
 }
+
+.service-content-grid { grid-template-areas: "article aside"; }
+.service-content-grid > .service-detail { grid-area: article; }
+.service-content-grid > .service-summary-card { grid-area: aside; }
+@media (max-width:980px) {
+  .service-content-grid { grid-template-columns: 1fr; grid-template-areas: "aside" "article"; gap: 32px; }
+  .service-summary-card > img, .service-summary-card .eyebrow, .service-summary-card .btn { display: none; }
+  .service-summary-card { padding: 20px; }
+  .service-summary-card h2 { margin: 0 0 12px; font-size: 1.15rem; }
+  .service-summary-card .service-facts { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 20px; margin: 0; }
+  .service-summary-card .service-facts li { font-size: .95rem; }
+}
+@media (max-width:560px) { .service-summary-card .service-facts { grid-template-columns: 1fr; } }
+@media (min-width:981px) and (max-height:700px) { .service-summary-card { position: static; } }

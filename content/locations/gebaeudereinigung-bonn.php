@@ -1,7 +1,13 @@
 <section class="section">
-<div class="container content-grid">
-<article class="service-detail">
-<?php kem_render_mobile_offer_cta('Kostenloses Angebot anfordern', $pageKey); ?>
+<div class="container content-grid service-content-grid">
+<aside class="content-card service-summary-card">
+<img alt="Professionelle Gebäudereinigung in einem modernen Objekt" height="800" loading="lazy" src="/assets/img/locations/gebaeudereinigung-bonn/gebaeudereinigung-bonn-content.webp" width="1200">
+<span class="eyebrow">KEM Gebäudereinigung</span>
+<h2>Reinigungsservice in Bonn</h2>
+<ul class="service-facts"><li>Private und gewerbliche Kunden</li><li>Regelmäßig oder einmalig</li><li>Termine nach Vereinbarung</li><li>Individuell abgestimmter Umfang</li></ul>
+<a class="btn" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot für Bonn anfragen</a>
+</aside><article class="service-detail">
+
 <h2>Reinigungsservice für Büros, Praxen, Wohnobjekte und Gewerbeflächen</h2>
 <p>Je nach Objekt unterscheiden sich Anforderungen deutlich. In einem Büro können regelmäßige Boden-, Sanitär- und Oberflächenreinigungen im Vordergrund stehen, während bei einem privaten Auftrag beispielsweise Fenster, Polster oder eine intensive Grundreinigung gefragt sind. Deshalb wird jede Anfrage zunächst nach dem konkreten Bedarf eingeordnet.</p>
 <p>Auch bei einmaligen Einsätzen legen wir vorab fest, welche Bereiche zum Auftrag gehören. So bleiben Leistungsumfang, Termin und Kalkulation nachvollziehbar und lassen sich an die tatsächliche Situation im Objekt anpassen.</p>
@@ -22,13 +28,6 @@
 <h2>Unverbindliche Anfrage für Bonn</h2>
 <p>Für die erste Einschätzung helfen Standort, Objektart, gewünschte Leistung und ungefährer Umfang. Je genauer diese Angaben sind, desto gezielter können wir Rückfragen stellen. Anschließend erhalten Sie ein individuelles Angebot für den konkret vereinbarten Leistungsumfang.</p>
 </article>
-<aside class="content-card service-summary-card">
-<img alt="Professionelle Gebäudereinigung in einem modernen Objekt" height="800" loading="lazy" src="/assets/img/locations/gebaeudereinigung-bonn/gebaeudereinigung-bonn-content.webp" width="1200">
-<span class="eyebrow">KEM Gebäudereinigung</span>
-<h2>Reinigungsservice in Bonn</h2>
-<ul class="service-facts"><li>Private und gewerbliche Kunden</li><li>Regelmäßig oder einmalig</li><li>Termine nach Vereinbarung</li><li>Individuell abgestimmter Umfang</li></ul>
-<a class="btn" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot für Bonn anfragen</a>
-</aside>
 </div>
 </section>
 <section class="section soft local-faq-section">
