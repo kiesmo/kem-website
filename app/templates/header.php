@@ -1,11 +1,9 @@
 <?php
 require_once dirname(__DIR__) . '/bootstrap.php';
 $kem = kem_site_config();
-$headerMode = $headerMode ?? 'opaque';
 $navActive = $navActive ?? [];
 $servicesCurrent = $servicesCurrent ?? false;
 $hiddenNavItems = $hiddenNavItems ?? [];
-$headerClass = $headerMode === 'overlay' ? 'site-header is-overlay' : 'site-header is-opaque';
 
 if (!is_array($navActive)) {
     $navActive = $navActive === null ? [] : [$navActive];
@@ -18,7 +16,7 @@ if (!function_exists('kem_current_attr')) {
 }
 ?>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<header class="<?= htmlspecialchars($headerClass, ENT_QUOTES, 'UTF-8') ?>">
+<header class="site-header">
 <div class="topbar">
 <div class="container topbar-inner">
 <span>WIR BERATEN SIE GERNE!</span>
@@ -27,8 +25,7 @@ if (!function_exists('kem_current_attr')) {
 </div>
 <div class="container header-inner">
 <a<?= kem_current_attr($navActive, 'home') ?> aria-label="KEM Gebäudereinigung – Startseite" class="brand" href="/">
-<img alt="KEM Gebäudereinigung" class="brand-logo brand-logo--solid" height="250" src="/assets/branding/logo.svg" width="1050"/>
-<img alt="" aria-hidden="true" class="brand-logo brand-logo--overlay" height="250" src="/assets/branding/logo-inverted.svg" width="1050"/>
+<img alt="KEM Gebäudereinigung" class="brand-logo" height="250" src="/assets/branding/logo-inverted.svg" width="1050"/>
 </a>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Menü öffnen" class="menu-toggle" type="button"><span></span></button>
 <nav aria-label="Hauptnavigation" class="nav" id="main-nav">

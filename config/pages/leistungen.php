@@ -23,6 +23,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-right',
     'src' => '/assets/img/pages/leistungen/leistungen-hero.webp',
     'width' => 1920,
     'height' => 870,

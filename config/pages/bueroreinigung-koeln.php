@@ -51,7 +51,7 @@ return array (
     'height' => 870,
     'alt' => '',
     'tag' => 'Büroreinigung Köln',
-    'class' => 'hero-focus-right',
+    'class' => 'hero-focus-left',
   ),
   'cta' => 
   array (

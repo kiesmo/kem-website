@@ -263,14 +263,12 @@
   text-align: center;
 }
 
-/* Hero image ratio v6.0.0: match 1920x870 source on desktop.
-   This prevents the cover-based "zoom" when the browser becomes wider.
-   On ultra-wide screens the image is not enlarged beyond its native 1920px width;
-   it is centered with the existing hero background visible at the sides. */
+/* Wide-screen heroes follow the source ratio up to a generous 680px height.
+   Ultra-wide screens contain the image to preserve the full source composition. */
 @media (min-width: 1366px) {
   .hero,
   .page-hero {
-    height: min(45.3125vw, 870px);
+    height: min(45.3125vw, 680px);
   }
 
   .hero-media .hero-picture > img,

@@ -47,6 +47,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-right',
     'src' => '/assets/img/services/polsterreinigung/polsterreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,

@@ -47,6 +47,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-left',
     'src' => '/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,

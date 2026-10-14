@@ -46,6 +46,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-left',
     'src' => '/assets/img/locations/fensterreinigung-bonn/fensterreinigung-bonn-hero.webp',
     'width' => 1920,
     'height' => 870,

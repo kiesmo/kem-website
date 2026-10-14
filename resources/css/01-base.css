@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 112px;
+  scroll-padding-top: calc(var(--header-height) + 8px);
 }
 
 body {
@@ -16,10 +16,6 @@ body {
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-}
-
-body:not(.has-hero) main {
-  padding-top: var(--header-solid-height);
 }
 
 body.menu-lock {

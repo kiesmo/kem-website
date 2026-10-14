@@ -12,7 +12,9 @@
   --surface-soft: #eef2f5;
   --max: 1240px;
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
-  --header-solid-height: 104px;
-  --hero-height: clamp(620px, 76vh, 760px);
+  --header-solid-height: 84px;
+  --header-topbar-height: 34px;
+  --header-height: calc(var(--header-solid-height) + var(--header-topbar-height));
+  --hero-height: clamp(440px, calc(100svh - var(--header-height)), 680px);
 }
 

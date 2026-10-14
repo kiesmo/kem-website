@@ -1,21 +1,8 @@
 (() => {
   const header = document.querySelector('.site-header');
-  const hero = document.querySelector('.hero, .page-hero');
   const topBtn = document.querySelector('.backtop');
-  const isOverlayPage = Boolean(header?.classList.contains('is-overlay') && hero);
-
   const syncHeader = () => {
-    const y = window.scrollY;
-    if (header) {
-      const menuOpen = header.classList.contains('is-menu-open');
-      const heroMidpoint = hero ? hero.offsetTop + (hero.offsetHeight / 2) : 0;
-      const reachedHeroMidpoint = isOverlayPage && y >= heroMidpoint;
-      const opaque = !isOverlayPage || reachedHeroMidpoint || menuOpen;
-
-      header.classList.toggle('is-opaque', opaque);
-      header.classList.toggle('scrolled', isOverlayPage ? reachedHeroMidpoint : y > 10);
-    }
-    topBtn?.classList.toggle('show', y > 650);
+    topBtn?.classList.toggle('show', window.scrollY > 650);
   };
 
   addEventListener('resize', syncHeader, { passive: true });

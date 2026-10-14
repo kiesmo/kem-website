@@ -41,6 +41,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-right',
     'src' => '/assets/img/locations/gebaeudereinigung-bruehl/gebaeudereinigung-bruehl-hero.webp',
     'width' => 1920,
     'height' => 870,

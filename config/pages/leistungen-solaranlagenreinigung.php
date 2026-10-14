@@ -47,6 +47,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-left',
     'src' => '/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,

@@ -47,6 +47,7 @@ return array (
   ),
   'hero' => 
   array (
+    'class' => 'hero-focus-right',
     'src' => '/assets/img/services/grundreinigung/grundreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
