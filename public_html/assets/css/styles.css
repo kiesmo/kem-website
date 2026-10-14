@@ -2134,6 +2134,14 @@ body.footer-visible .whatsapp-chat {
 .offer-help a { color: var(--primary-dark); text-decoration: underline; text-underline-offset: .2em; }
 @media (max-width:760px) { .offer-builder { padding: 20px 16px; } .offer-steps { margin-bottom: 20px; } }
 
+[data-offer-form][hidden], .offer-success[hidden], .form-error-summary[hidden] { display: none; }
+.offer-success { padding: clamp(24px,4vw,44px); border-radius: var(--radius-card); border: 1px solid var(--control-border); background: #fff; }
+.offer-success h2 { margin-bottom: 20px; scroll-margin-top: calc(var(--header-height) + 20px); }
+.offer-success p { max-width: var(--read-width); }
+.offer-success a { color: var(--primary-dark); text-decoration: underline; }
+.form-error-summary { padding: 12px 16px; color: #9b001b; background: #fff0f1; border-left: 3px solid #9b001b; }
+.field input, .field select, .field textarea { scroll-margin-top: calc(var(--header-height) + 24px); }
+
 /* Source: 06-service-pages.css */
 /* Detailed service landing pages */
 .service-video-card {

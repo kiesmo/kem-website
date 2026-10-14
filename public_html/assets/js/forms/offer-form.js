@@ -62,7 +62,20 @@
     };
     form.addEventListener('input', invalidate);
     form.addEventListener('change', invalidate);
-    form.addEventListener('form:success', () => { completed.clear(); index = 0; paint(); });
+    const confirmation = form.parentElement.querySelector('[data-offer-success]');
+    form.addEventListener('form:success', event => {
+      completed.clear(); index = 0; paint();
+      if (confirmation) {
+        form.hidden = true;
+        confirmation.hidden = false;
+        confirmation.querySelector('[data-success-message]').textContent = event.detail?.message || 'Ihre Anfrage wurde übermittelt.';
+        confirmation.querySelector('h2')?.focus();
+      }
+    });
+    confirmation?.querySelector('[data-new-offer]')?.addEventListener('click', () => {
+      confirmation.hidden = true; form.hidden = false;
+      form.dispatchEvent(new CustomEvent('form:restart'));
+    });
     form.addEventListener('form:restart', () => { completed.clear(); index = 0; paint({ focus: true }); });
     paint();
   });

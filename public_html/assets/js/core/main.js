@@ -116,127 +116,60 @@
     footerObserver.observe(footer);
   }
 
-  const ensureFieldError = field => {
-    if (!field.name || field.type === 'hidden') return null;
-    if (!field.id) {
-      const baseId = `field-${field.name.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
-      let fieldId = baseId;
-      let suffix = 2;
-      while (document.getElementById(fieldId)) fieldId = `${baseId}-${suffix++}`;
-      field.id = fieldId;
-    }
-
-    const errorId = `${field.id}-error`;
-    let error = document.getElementById(errorId);
-    if (!error) {
-      error = document.createElement('p');
-      error.id = errorId;
-      error.className = 'field-error';
-      error.setAttribute('aria-live', 'polite');
-      const wrapper = field.closest('.field');
-      (wrapper || field.parentElement)?.append(error);
-    }
-
-    const describedBy = new Set((field.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean));
-    describedBy.add(errorId);
-    field.setAttribute('aria-describedby', [...describedBy].join(' '));
-    return error;
-  };
-
-  const clearFieldError = field => {
-    field.removeAttribute('aria-invalid');
-    const error = field.id ? document.getElementById(`${field.id}-error`) : null;
-    if (error) error.textContent = '';
-  };
-
-  const clearFormErrors = form => {
-    form.querySelectorAll('[aria-invalid="true"]').forEach(clearFieldError);
-    form.querySelectorAll('.field-error').forEach(error => { error.textContent = ''; });
-  };
-
-  const showFieldError = (field, message) => {
-    const error = ensureFieldError(field);
-    field.setAttribute('aria-invalid', 'true');
-    if (error) error.textContent = message;
-  };
-
   const setStatus = (form, message, type = '') => {
     const status = form.querySelector('.form-status');
-    if (!status) return;
+    if (!status) return null;
     status.textContent = message;
     status.className = `form-status${type ? ` ${type}` : ''}${message ? ' is-visible' : ''}`;
-    status.setAttribute('tabindex', '-1');
+    status.tabIndex = -1;
+    return status;
   };
 
-  document.querySelectorAll('form[data-ajax] input, form[data-ajax] select, form[data-ajax] textarea').forEach(field => {
-    ensureFieldError(field);
-    field.addEventListener('input', () => clearFieldError(field));
-    field.addEventListener('change', () => clearFieldError(field));
-  });
-
-  document.querySelectorAll('form[data-ajax]').forEach(form => form.addEventListener('submit', async event => {
-    event.preventDefault();
-    clearFormErrors(form);
-
-    if (!form.checkValidity()) {
-      const firstInvalid = form.querySelector(':invalid');
-      if (firstInvalid) {
-        form.dispatchEvent(new CustomEvent('form:show-field', { detail: { field: firstInvalid } }));
-        firstInvalid.reportValidity();
-      }
-      setStatus(form, 'Bitte prüfen Sie die markierten Pflichtfelder.', 'error');
-      return;
-    }
-
-    const submit = form.querySelector('[type="submit"]');
-    const originalLabel = submit?.textContent || '';
-    if (submit) {
-      submit.disabled = true;
-      submit.textContent = 'Wird gesendet …';
-    }
-    setStatus(form, 'Ihre Anfrage wird gesendet …');
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-      });
-
-      const contentType = response.headers.get('content-type') || '';
-      if (!contentType.includes('application/json')) {
-        throw new Error('Der Server hat eine unerwartete Antwort geliefert. Bitte versuchen Sie es später erneut.');
-      }
-
-      const data = await response.json();
-      if (!response.ok || !data.ok) {
-        const errors = data.errors && typeof data.errors === 'object' ? data.errors : {};
-        let firstField = null;
-        Object.entries(errors).forEach(([name, message]) => {
-          const field = form.elements.namedItem(name);
-          if (field instanceof HTMLElement) {
-            showFieldError(field, String(message));
-            if (!firstField) firstField = field;
-          }
-        });
-        if (firstField) {
-          form.dispatchEvent(new CustomEvent('form:show-field', { detail: { field: firstField } }));
+  document.querySelectorAll('form[data-ajax]').forEach(form => {
+    window.KEMForms.init(form);
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (form.dataset.submitting === 'true') return;
+      const invalid = window.KEMForms.validate(form);
+      if (invalid) { setStatus(form, 'Bitte prüfen Sie die markierten Angaben.', 'error'); window.KEMForms.focus(form, invalid); return; }
+      const body = new FormData(form);
+      const submit = form.querySelector('[type="submit"]');
+      const originalLabel = submit?.textContent || '';
+      const locked = [...form.querySelectorAll('.form-step, .field, .form-actions')].map(node => [node, node.inert]);
+      form.dataset.submitting = 'true';
+      form.setAttribute('aria-busy', 'true');
+      locked.forEach(([node]) => { node.inert = true; });
+      if (submit) { submit.disabled = true; submit.textContent = 'Wird gesendet …'; }
+      setStatus(form, 'Ihre Anfrage wird gesendet …');
+      let focusTarget = null;
+      try {
+        const response = await fetch(form.action, { method: 'POST', body, headers: { Accept: 'application/json' } });
+        if (!(response.headers.get('content-type') || '').includes('application/json')) throw new Error('Der Server hat eine unerwartete Antwort geliefert. Bitte versuchen Sie es später erneut.');
+        const data = await response.json();
+        if (!data || typeof data !== 'object') throw new Error('Die Antwort konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.');
+        if (!response.ok || data.ok !== true) {
+          const errors = data.errors && typeof data.errors === 'object' ? data.errors : {};
+          Object.entries(errors).forEach(([name, message]) => {
+            const field = window.KEMForms.resolve(form, name);
+            if (field) { window.KEMForms.showError(field, String(message)); focusTarget ||= field; }
+          });
+          const status = setStatus(form, typeof data.message === 'string' ? data.message : 'Die Anfrage konnte nicht gesendet werden.', 'error');
+          focusTarget ||= status;
+        } else {
+          const message = typeof data.message === 'string' && data.message ? data.message : 'Vielen Dank! Ihre Anfrage wurde übermittelt.';
+          window.KEMForms.reset(form);
+          form.dispatchEvent(new CustomEvent('form:success', { detail: { message } }));
+          if (!form.hasAttribute('data-offer-form')) focusTarget = setStatus(form, message, 'ok');
         }
-        throw new Error(data.message || 'Die Anfrage konnte nicht gesendet werden.');
+      } catch (error) {
+        focusTarget = setStatus(form, error instanceof Error ? error.message : 'Beim Senden ist ein Fehler aufgetreten.', 'error');
+      } finally {
+        delete form.dataset.submitting;
+        form.removeAttribute('aria-busy');
+        locked.forEach(([node, inert]) => { node.inert = inert; });
+        if (submit) { submit.disabled = false; submit.textContent = originalLabel; }
+        if (focusTarget) window.KEMForms.focus(form, focusTarget);
       }
-
-      form.reset();
-      form.dispatchEvent(new CustomEvent('form:success'));
-      setStatus(form, data.message, 'ok');
-      form.querySelector('.form-status')?.focus();
-    } catch (error) {
-      setStatus(form, error instanceof Error ? error.message : 'Beim Senden ist ein Fehler aufgetreten.', 'error');
-    } finally {
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = originalLabel;
-      }
-    }
-  }));
+    });
+  });
 })();
-
