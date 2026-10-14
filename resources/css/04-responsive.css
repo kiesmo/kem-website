@@ -1,14 +1,8 @@
-/* Tablet */
+/* Compact desktop navigation */
 @media (max-width: 1180px) {
   .brand {
-    flex-basis: 280px;
-    width: 280px;
-  }
-
-  .site-header.is-opaque .brand,
-  .site-header.is-menu-open .brand {
-    flex-basis: 280px;
-    width: 280px;
+    flex-basis: 230px;
+    width: 230px;
   }
 
   .header-inner {
@@ -16,17 +10,17 @@
   }
 
   .nav-list {
-    gap: 15px;
+    gap: 14px;
   }
 
   .nav a,
   .drop-toggle {
-    font-size: .86rem;
+    font-size: .82rem;
   }
 
   .header-cta {
     padding-inline: 18px;
-    font-size: .85rem;
+    font-size: .82rem;
   }
 
   .services-kem > .container {
@@ -36,43 +30,30 @@
   .services-kem .service-card .body {
     padding-inline: 30px;
   }
-
 }
 
-/* Compact header navigation: switch to the existing mobile menu before
-   the full desktop navigation becomes cramped. Content/layout breakpoints
-   stay unchanged at 820px. */
+/* The mobile navigation stays inside the header flow. Its own scroll area
+   keeps every link reachable in landscape and with enlarged text. */
 @media (max-width: 1080px) {
   :root {
-    --header-solid-height: 78px;
-  }
-
-  html {
-    scroll-padding-top: 86px;
+    --header-row-height: 78px;
+    --header-height: 78px;
   }
 
   .topbar {
     display: none;
   }
 
-  .header-inner,
-  .site-header.is-opaque .header-inner,
-  .site-header.is-menu-open .header-inner {
-    height: 78px;
+  .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
   }
 
-  .brand,
-  .site-header.is-opaque .brand,
-  .site-header.is-menu-open .brand {
+  .brand {
     flex-basis: 240px;
     width: 240px;
-    height: 68px;
-  }
-
-  .brand-logo,
-  .site-header.is-opaque .brand-logo,
-  .site-header.is-menu-open .brand-logo {
-    max-height: 68px;
+    min-height: 58px;
   }
 
   .menu-toggle {
@@ -85,29 +66,26 @@
   }
 
   .nav {
-    position: fixed;
-    inset: 78px 0 auto;
-    margin: 0;
-    max-height: calc(100vh - 78px);
-    overflow: auto;
-    background: var(--surface);
-    border-top: 1px solid #eee;
-    box-shadow: 0 18px 35px rgba(0, 0, 0, .15);
-    transform: translateY(-120%);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform .23s, opacity .23s, visibility .23s;
+    display: none;
+    order: 3;
+    flex-basis: 100%;
+    width: 100%;
+    margin: 10px 0 0;
+    max-height: calc(100vh - var(--header-row-height) - 10px);
+    max-height: calc(100svh - var(--header-row-height) - 10px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--navy);
+    border-top: 1px solid rgba(255, 255, 255, .2);
   }
 
   .nav.open {
-    transform: none;
-    opacity: 1;
-    visibility: visible;
+    display: block;
   }
 
   .nav-list {
     display: block;
-    padding: 12px 24px 25px;
+    padding: 8px 4px 16px;
   }
 
   .mobile-offer-item {
@@ -115,69 +93,46 @@
     margin-top: 10px;
   }
 
-  .nav .mobile-offer-cta,
-  .site-header .nav .mobile-offer-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .nav a,
+  .drop-toggle {
     width: 100%;
+    padding: 12px 0;
+    font-size: .98rem;
+    justify-content: space-between;
+  }
+
+  .nav .mobile-offer-cta {
+    justify-content: center;
     padding: 14px 18px;
-    border-radius: 999px;
     background: var(--primary);
-    color: #fff;
     font-weight: 700;
     text-align: center;
-    text-shadow: none;
   }
 
   .nav .mobile-offer-cta:hover,
   .nav .mobile-offer-cta:focus-visible {
     background: var(--primary-dark);
-    color: #fff;
   }
 
   .nav .mobile-offer-cta::after {
     display: none;
   }
 
-  .nav a,
-  .drop-toggle,
-  .site-header .nav a,
-  .site-header .drop-toggle {
-    width: 100%;
-    padding: 15px 0;
-    color: var(--navy);
-    text-shadow: none;
-    font-size: .98rem;
-    justify-content: space-between;
-  }
-
-  .nav a::after,
-  .drop-toggle::after {
-    bottom: 8px;
-    background: var(--primary);
-  }
-
   .dropdown {
-    position: static;
-    transform: none !important;
-    box-shadow: none;
-    border-top: 0;
+    max-height: none;
     min-width: 0;
-    padding: 0 0 0 12px;
-    opacity: 1;
-    visibility: visible;
-    display: none;
+    padding: 0 4px 0 12px;
+    margin: 0;
+    border: 0;
   }
 
-  .has-dropdown.open .dropdown {
+  .dropdown.open {
     display: block;
   }
 
-  .dropdown a,
-  .site-header .dropdown a {
-    font-size: .82rem;
-    padding: 12px;
+  .dropdown a {
+    font-size: .85rem;
+    padding: 10px 12px;
   }
 }
 
@@ -202,23 +157,9 @@
 
 /* Mobile content/layout refinements */
 @media (max-width: 820px) {
-  .hero,
-  .page-hero {
-    height: 590px;
-  }
-
-  .hero-label,
-  .page-hero .hero-tag {
-    left: 12px;
-    right: 12px;
-    bottom: 24px;
-    width: auto;
-    max-width: none;
-    text-align: center;
-    font-size: clamp(1rem, 3.8vw, 1.15rem);
-    padding: 15px 14px;
-    line-height: 1.25;
-    text-transform: none;
+  .hero > .container,
+  .page-hero > .container {
+    padding-block: 18px;
   }
 
   .page-hero .hero-tag-desktop {
@@ -262,27 +203,6 @@
     padding: 55px 0;
   }
 
-  .hero,
-  .page-hero {
-    height: 470px;
-  }
-
-  .page-hero .hero-tag {
-    left: 8px;
-    right: 8px;
-    bottom: 18px;
-    padding: 14px 10px;
-    font-size: clamp(1rem, 4.8vw, 1.15rem);
-  }
-
-  .page-hero.hero-focus-right > .hero-picture > img {
-    object-position: 58% 48%;
-  }
-
-  .page-hero.hero-focus-high > .hero-picture > img {
-    object-position: 50% 30%;
-  }
-
   .breadcrumbs {
     font-size: .9rem;
   }
@@ -306,17 +226,7 @@
     text-wrap: balance;
   }
 
-  .hero-media img {
-    object-position: 58% center;
-  }
-
-  .page-hero > .hero-picture > img {
-    object-position: center 45%;
-  }
-
-  .brand,
-  .site-header.is-opaque .brand,
-  .site-header.is-menu-open .brand {
+  .brand {
     flex-basis: 215px;
     width: 215px;
   }

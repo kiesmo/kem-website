@@ -1,38 +1,59 @@
 (() => {
   const header = document.querySelector('.site-header');
-  const hero = document.querySelector('.hero, .page-hero');
   const topBtn = document.querySelector('.backtop');
-  const isOverlayPage = Boolean(header?.classList.contains('is-overlay') && hero);
 
-  const syncHeader = () => {
-    const y = window.scrollY;
-    if (header) {
-      const menuOpen = header.classList.contains('is-menu-open');
-      const heroMidpoint = hero ? hero.offsetTop + (hero.offsetHeight / 2) : 0;
-      const reachedHeroMidpoint = isOverlayPage && y >= heroMidpoint;
-      const opaque = !isOverlayPage || reachedHeroMidpoint || menuOpen;
-
-      header.classList.toggle('is-opaque', opaque);
-      header.classList.toggle('scrolled', isOverlayPage ? reachedHeroMidpoint : y > 10);
-    }
-    topBtn?.classList.toggle('show', y > 650);
+  // This measurement only offsets anchors. Sticky positioning reserves the
+  // header's real height in the layout, including an expanded mobile menu.
+  const measureHeader = () => {
+    if (header) document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
   };
+  measureHeader();
+  if (header && 'ResizeObserver' in window) {
+    new ResizeObserver(measureHeader).observe(header);
+  } else {
+    addEventListener('resize', measureHeader, { passive: true });
+  }
 
-  addEventListener('resize', syncHeader, { passive: true });
-  addEventListener('scroll', syncHeader, { passive: true });
-  syncHeader();
-
+  const syncBacktop = () => topBtn?.classList.toggle('show', window.scrollY > 650);
+  addEventListener('scroll', syncBacktop, { passive: true });
+  syncBacktop();
   topBtn?.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
   const menuBtn = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
   const compactNavQuery = matchMedia('(max-width: 1080px)');
+  const hoverQuery = matchMedia('(hover: hover) and (pointer: fine)');
+  const dropdowns = [...document.querySelectorAll('.has-dropdown')];
   let menuRestoreFocus = null;
+  let navigationHasFocus = false;
+  let menuHasFocus = false;
+  document.addEventListener('focusin', event => {
+    navigationHasFocus = Boolean(nav?.contains(event.target));
+    menuHasFocus = event.target === menuBtn;
+  });
+
+  const dropdownList = item => document.getElementById(item.querySelector('.drop-toggle')?.getAttribute('aria-controls'));
+  const dropdownContains = (item, element) => item.contains(element) || dropdownList(item)?.contains(element);
+  // A desktop disclosure uses the header's second grid row. On compact
+  // layouts its list sits immediately below the controlling button.
+  const placeDropdowns = () => dropdowns.forEach(item => {
+    const list = dropdownList(item);
+    if (list) (compactNavQuery.matches ? item : nav)?.append(list);
+  });
+  placeDropdowns();
+
+  const setDropdownState = (item, open) => {
+    item.classList.toggle('open', open);
+    dropdownList(item)?.classList.toggle('open', open);
+    item.querySelector('.drop-toggle')?.setAttribute('aria-expanded', String(open));
+    measureHeader();
+  };
+  const closeDropdowns = () => dropdowns.forEach(item => setDropdownState(item, false));
 
   const menuFocusables = () => [
     menuBtn,
     ...nav?.querySelectorAll('a[href], button:not([disabled])') || [],
-  ].filter(element => element instanceof HTMLElement && !element.hidden);
+  ].filter(element => element instanceof HTMLElement && element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden');
 
   const setMenuState = (open, restoreFocus = true) => {
     const wasOpen = menuBtn?.getAttribute('aria-expanded') === 'true';
@@ -45,7 +66,8 @@
     nav?.classList.toggle('open', open);
     header?.classList.toggle('is-menu-open', open);
     document.body.classList.toggle('menu-lock', open);
-    syncHeader();
+    if (!open) closeDropdowns();
+    measureHeader();
 
     if (open && !wasOpen) {
       requestAnimationFrame(() => nav?.querySelector('a[href], button:not([disabled])')?.focus());
@@ -59,23 +81,70 @@
   menuBtn?.addEventListener('click', () => {
     setMenuState(menuBtn.getAttribute('aria-expanded') !== 'true');
   });
-  document.querySelectorAll('.drop-toggle').forEach(btn => btn.addEventListener('click', event => {
-    if (compactNavQuery.matches) {
+  dropdowns.forEach(item => {
+    const btn = item.querySelector('.drop-toggle');
+    btn?.addEventListener('click', () => {
+      setDropdownState(item, btn.getAttribute('aria-expanded') !== 'true');
+    });
+    btn?.addEventListener('keydown', event => {
+      if (!compactNavQuery.matches && event.key === 'Tab' && !event.shiftKey && btn.getAttribute('aria-expanded') === 'true') {
+        event.preventDefault();
+        dropdownList(item)?.querySelector('a')?.focus();
+        return;
+      }
+      if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
       event.preventDefault();
-      const item = btn.closest('.has-dropdown');
-      const open = item.classList.toggle('open');
-      btn.setAttribute('aria-expanded', String(open));
-    }
-  }));
+      setDropdownState(item, true);
+      const links = dropdownList(item)?.querySelectorAll('a') || [];
+      (event.key === 'ArrowUp' ? links[links.length - 1] : links[0])?.focus();
+    });
+    item.addEventListener('pointerenter', () => {
+      if (!compactNavQuery.matches && hoverQuery.matches) setDropdownState(item, true);
+    });
+    const onFocusOut = event => {
+      if (!compactNavQuery.matches && !dropdownContains(item, event.relatedTarget)) setDropdownState(item, false);
+    };
+    item.addEventListener('focusout', onFocusOut);
+    dropdownList(item)?.addEventListener('focusout', onFocusOut);
+    dropdownList(item)?.addEventListener('keydown', event => {
+      if (compactNavQuery.matches || event.key !== 'Tab') return;
+      const links = [...dropdownList(item).querySelectorAll('a')];
+      if (event.shiftKey && document.activeElement === links[0]) {
+        event.preventDefault();
+        btn?.focus();
+      } else if (!event.shiftKey && document.activeElement === links[links.length - 1]) {
+        event.preventDefault();
+        item.nextElementSibling?.querySelector('a, button')?.focus();
+      }
+    });
+  });
+  header?.addEventListener('pointerleave', () => {
+    if (!compactNavQuery.matches) dropdowns.forEach(item => {
+      if (!dropdownContains(item, document.activeElement)) setDropdownState(item, false);
+    });
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.has-dropdown, .dropdown')) closeDropdowns();
+  });
   document.addEventListener('keydown', event => {
-    const menuOpen = menuBtn?.getAttribute('aria-expanded') === 'true';
-    if (event.key === 'Escape' && menuOpen) {
-      event.preventDefault();
-      closeMenu();
+    if (event.key === 'Escape') {
+      const activeDropdown = dropdowns.find(item => item.classList.contains('open') && dropdownContains(item, document.activeElement));
+      if (activeDropdown) {
+        event.preventDefault();
+        setDropdownState(activeDropdown, false);
+        activeDropdown.querySelector('.drop-toggle')?.focus();
+        return;
+      }
+      if (menuBtn?.getAttribute('aria-expanded') === 'true') {
+        event.preventDefault();
+        closeMenu();
+      } else {
+        closeDropdowns();
+      }
       return;
     }
 
-    if (event.key !== 'Tab' || !menuOpen || !compactNavQuery.matches) return;
+    if (event.key !== 'Tab' || menuBtn?.getAttribute('aria-expanded') !== 'true' || !compactNavQuery.matches) return;
     const focusables = menuFocusables();
     if (!focusables.length) return;
     const first = focusables[0];
@@ -92,16 +161,17 @@
   });
   document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => {
     if (compactNavQuery.matches) closeMenu();
+    else closeDropdowns();
   }));
 
   compactNavQuery.addEventListener('change', event => {
-    if (!event.matches) {
-      closeMenu(false);
-      document.querySelectorAll('.has-dropdown.open').forEach(item => item.classList.remove('open'));
-      document.querySelectorAll('.drop-toggle[aria-expanded="true"]').forEach(btn => {
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    }
+    const navHadFocus = nav?.contains(document.activeElement) || navigationHasFocus;
+    const menuHadFocus = document.activeElement === menuBtn || menuHasFocus;
+    closeMenu(false);
+    placeDropdowns();
+    if (event.matches && navHadFocus) menuBtn?.focus();
+    else if (!event.matches && menuHadFocus) nav?.querySelector('a[href]')?.focus();
+    measureHeader();
   });
 
   document.querySelectorAll('input[data-min-today]').forEach(input => {

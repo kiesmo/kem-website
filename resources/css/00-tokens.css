@@ -12,7 +12,14 @@
   --surface-soft: #eef2f5;
   --max: 1240px;
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
-  --header-solid-height: 104px;
-  --hero-height: clamp(620px, 76vh, 760px);
+  --header-row-height: 80px;
+  --header-height: 112px;
+  --hero-image-height: min(45.3125vw, 68vh, 720px);
+}
+
+@supports (height: 1svh) {
+  :root {
+    --hero-image-height: min(45.3125vw, 68svh, 720px);
+  }
 }
 

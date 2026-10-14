@@ -95,7 +95,7 @@
 
 .service-summary-card {
   position: sticky;
-  top: 112px;
+  top: calc(var(--header-height) + 8px);
 }
 
 .service-mobile-cta {
