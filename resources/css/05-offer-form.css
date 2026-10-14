@@ -11,8 +11,8 @@
 
 .offer-builder-intro {
   max-width: 790px;
-  margin: 0 auto 34px;
-  text-align: center;
+  margin: 0 0 24px;
+  text-align: left;
 }
 
 .offer-benefits {
@@ -76,7 +76,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0;
-  margin: 0 0 42px;
+  margin: 0 0 24px;
 }
 
 .offer-steps .step-dot {
@@ -138,7 +138,7 @@
 }
 
 .step-heading {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .step-heading > span {
@@ -201,7 +201,7 @@
 .service-choice-fieldset {
   min-width: 0;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 12px 0 0;
   border: 0;
 }
 
@@ -533,3 +533,18 @@
 
 .offer-context-note { margin: 0 0 20px; padding: 12px 16px; border-left: 3px solid var(--primary); background: var(--surface-info); font-size: .95rem; }
 .offer-context-note[hidden] { display: none; }
+
+.offer-builder-section { padding-block: 32px; }
+.offer-builder-intro h1 { margin: 0 0 12px; font-size: clamp(1.8rem,3vw,2.5rem); }
+.offer-builder-intro p { margin: 0; }
+.service-choice { display: flex; font-size: 1rem; font-weight: 400; min-height: 96px; padding: 16px; }
+.service-choice b { font-weight: 700; }
+.service-choice small { font-size: .875rem; }
+.step-heading h2 { scroll-margin-top: calc(var(--header-height) + 20px); }
+.offer-steps .step-dot.complete { color: var(--primary-dark); }
+.offer-steps .step-dot.complete b { background: var(--surface-info); border-color: var(--primary); color: var(--primary-dark); }
+.offer-steps .step-dot.complete::before { background: var(--primary); }
+.offer-steps .step-dot[aria-current="step"] b { box-shadow: 0 0 0 4px var(--surface-info); }
+.offer-help { font-size: .95rem; max-width: var(--read-width); margin: 20px 0 0; }
+.offer-help a { color: var(--primary-dark); text-decoration: underline; text-underline-offset: .2em; }
+@media (max-width:760px) { .offer-builder { padding: 20px 16px; } .offer-steps { margin-bottom: 20px; } }

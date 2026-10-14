@@ -5,18 +5,9 @@ $navActive = ['offer'];
 $servicesCurrent = false;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
-<main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section soft offer-builder-section">
+<main id="main"><section class="section soft offer-builder-section">
 <div class="container offer-builder-shell">
-<div class="offer-builder-intro">
-<span class="eyebrow">Angebotsanfrage</span>
-<h1>Kostenloses Angebot in<br/>wenigen Schritten anfordern</h1>
-<ul aria-label="Vorteile der Angebotsanfrage" class="offer-benefits">
-<li>Kostenlos &amp; unverbindlich</li>
-<li>Fotos direkt mitsenden</li>
-<li>Nur relevante Angaben</li>
-</ul><div class="offer-whatsapp"><p>Gerne können Sie auch ganz bequem per WhatsApp ein unverbindliches Angebot anfordern.</p><a aria-label="WhatsApp-Chat mit KEM Gebäudereinigung öffnen" class="whatsapp-inline" href="<?= kem_h($kem['whatsapp_url']) ?>" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="whatsapp-inline__icon" focusable="false" viewbox="0 0 24 24"><path d="M19.11 4.93A9.77 9.77 0 0 0 12.13 2c-5.41 0-9.8 4.39-9.8 9.8 0 1.73.45 3.43 1.3 4.93L2 22l5.43-1.42A9.77 9.77 0 0 0 12.13 21c5.41 0 9.8-4.39 9.8-9.8a9.77 9.77 0 0 0-2.82-6.27Zm-6.98 14.45c-1.48 0-2.92-.4-4.18-1.15l-.3-.18-3.22.84.86-3.14-.2-.32a7.83 7.83 0 0 1-1.21-4.15c0-4.33 3.52-7.85 7.85-7.85 2.09 0 4.06.81 5.54 2.29a7.78 7.78 0 0 1 2.3 5.56c0 4.33-3.53 7.86-7.44 7.86Zm4.3-5.86c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 1.99s.86 2.31.98 2.47c.12.16 1.68 2.57 4.07 3.61.57.25 1.01.39 1.36.49.57.18 1.09.15 1.5.09.46-.07 1.43-.58 1.63-1.13.2-.55.2-1.03.14-1.13-.06-.1-.22-.16-.46-.28Z" fill="currentColor"></path></svg><span>Anfrage per WhatsApp senden</span></a></div>
-</div>
-<p class="offer-duration"><span aria-hidden="true">◷</span><strong>Dauert ca. 2–3 Minuten</strong></p>
+<div class="offer-builder-intro"><h1>Reinigung anfragen</h1><p>Kostenlos und unverbindlich. Wählen Sie zunächst die passende Leistung.</p></div>
 <form action="/api/kontakt.php" class="offer-builder" data-ajax="" data-multistep="" data-offer-form="" data-offer-context="<?= kem_h(json_encode(kem_offer_request_context())) ?>" data-offer-options="<?= kem_h(json_encode(kem_offer_options())) ?>" enctype="multipart/form-data" method="post" novalidate="">
 <input name="form_type" type="hidden" value="angebot"/>
 <input id="cleaning_types" name="cleaning_types" type="hidden" value=""/>
@@ -30,19 +21,18 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <span class="step-dot" data-step-label="Prüfen" role="listitem"><b>5</b><span>Prüfen</span></span>
 </div>
 <section class="form-step active" data-step-name="Leistung">
-<div class="step-heading"><span>Schritt 1 von 5</span><h2>Was dürfen wir für Sie reinigen?</h2><p>Wählen Sie eine oder mehrere Leistungen aus. Im nächsten Schritt fragen wir nur die dafür relevanten Details ab.</p></div>
+<div class="step-heading"><span>Schritt 1 von 5 – Leistung</span><h2>Was dürfen wir für Sie reinigen?</h2><p>Sie können mehrere Leistungen kombinieren.</p></div>
 <fieldset class="field full service-choice-fieldset" data-service-choice-group="">
-<legend>Welche Art der Reinigung wünschen Sie? *</legend>
-<p class="field-hint">Sie können mehrere Leistungen miteinander kombinieren.</p>
+<legend class="sr-only">Leistungen auswählen (mindestens eine) *</legend>
 <div class="service-choice-grid">
-<label class="service-choice"><input data-cleaning-type="office" name="type_office" type="checkbox" value="1"/><span><b>Büro- und Gewerberaumreinigung</b><small>Regelmäßige oder einmalige Reinigung von Arbeitsflächen</small></span></label>
-<label class="service-choice"><input data-cleaning-type="window" name="type_window" type="checkbox" value="1"/><span><b>Glas- und Fensterreinigung</b><small>Glasflächen, Rahmen und Falze</small></span></label>
-<label class="service-choice"><input data-cleaning-type="general" name="type_general" type="checkbox" value="1"/><span><b>Grund- und Spezialreinigung</b><small>Intensive Reinigung für besondere Anlässe</small></span></label>
+<label class="service-choice"><input data-cleaning-type="office" name="type_office" type="checkbox" value="1"/><span><b>Büro &amp; Gewerbe</b><small>Regelmäßige oder einmalige Reinigung von Arbeitsflächen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="window" name="type_window" type="checkbox" value="1"/><span><b>Glas &amp; Fenster</b><small>Glasflächen, Rahmen und Falze</small></span></label>
+<label class="service-choice"><input data-cleaning-type="general" name="type_general" type="checkbox" value="1"/><span><b>Grund &amp; Spezial</b><small>Intensive Reinigung für besondere Anlässe</small></span></label>
 <label class="service-choice"><input data-cleaning-type="carpet" name="type_carpet" type="checkbox" value="1"/><span><b>Teppichreinigung</b><small>Lose und festverlegte Teppiche</small></span></label>
 <label class="service-choice"><input data-cleaning-type="upholstery" name="type_upholstery" type="checkbox" value="1"/><span><b>Polsterreinigung</b><small>Sofas, Sessel, Stühle und Hocker</small></span></label>
 <label class="service-choice"><input data-cleaning-type="clearance" name="type_clearance" type="checkbox" value="1"/><span><b>Entrümpelung</b><small>Wohnungen, Keller, Büros und Lager</small></span></label>
-<label class="service-choice"><input data-cleaning-type="graffiti" name="type_graffiti" type="checkbox" value="1"/><span><b>Fassaden- und Graffitireinigung</b><small>Graffitientfernung und Außenflächen</small></span></label>
-<label class="service-choice"><input data-cleaning-type="solar" name="type_solar" type="checkbox" value="1"/><span><b>Solar- und Photovoltaikanlagenreinigung</b><small>Module und Solaranlagen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="graffiti" name="type_graffiti" type="checkbox" value="1"/><span><b>Fassade &amp; Graffiti</b><small>Graffitientfernung und Außenflächen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="solar" name="type_solar" type="checkbox" value="1"/><span><b>Solar &amp; PV</b><small>Module und Solaranlagen</small></span></label>
 <label class="service-choice"><input data-cleaning-type="other" name="type_other" type="checkbox" value="1"/><span><b>Sonstige Leistung</b><small>Individuelle Reinigungsanfrage</small></span></label>
 </div>
 <p aria-live="polite" class="field-error" data-service-choice-error=""></p>
@@ -201,6 +191,6 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <div class="form-actions"><button class="btn secondary" data-prev="" type="button">Zurück</button><button class="btn" type="submit">Kostenloses Angebot anfordern</button></div>
 </section>
 <div aria-live="polite" class="form-status" role="status"></div>
-</form>
+</form><p class="offer-help">Fragen zur Anfrage? <a href="tel:<?= kem_h($kem['phone_href']) ?>">Rufen Sie uns an</a> oder <a href="<?= kem_h($kem['whatsapp_url']) ?>" target="_blank" rel="noopener noreferrer">schreiben Sie per WhatsApp</a>.</p>
 </div>
 </section></main><?php require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/footer.php'; ?><script defer="" src="/assets/js/forms/offer-form.js?v=<?= kem_h($kem['asset_version']) ?>"></script></body></html>

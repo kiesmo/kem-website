@@ -2,74 +2,70 @@
   document.querySelectorAll('[data-multistep]').forEach(form => {
     const steps = [...form.querySelectorAll('.form-step')];
     const dots = [...form.querySelectorAll('.step-dot')];
+    const completed = new Set();
     let index = 0;
-
     const stepStatus = document.createElement('p');
     stepStatus.className = 'sr-only';
     stepStatus.setAttribute('aria-live', 'polite');
     form.querySelector('.offer-steps')?.insertAdjacentElement('afterend', stepStatus);
-
-    steps.forEach(step => {
-      const heading = step.querySelector('h2');
-      heading?.setAttribute('tabindex', '-1');
-    });
-
+    steps.forEach(step => step.querySelector('h2')?.setAttribute('tabindex', '-1'));
     const paint = ({ focus = false } = {}) => {
-      steps.forEach((step, stepIndex) => {
-        const active = stepIndex === index;
-        step.classList.toggle('active', active);
-        step.setAttribute('aria-hidden', String(!active));
+      form.dataset.currentStep = String(index);
+      steps.forEach((step, i) => {
+        step.classList.toggle('active', i === index);
+        step.setAttribute('aria-hidden', String(i !== index));
       });
-      dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex <= index));
-
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+        dot.classList.toggle('complete', completed.has(i) && i !== index);
+        if (i === index) dot.setAttribute('aria-current', 'step'); else dot.removeAttribute('aria-current');
+        dot.setAttribute('aria-label', `Schritt ${i + 1}: ${dot.dataset.stepLabel}, ${i === index ? 'aktuell' : completed.has(i) ? 'abgeschlossen' : 'noch offen'}`);
+        const number = dot.querySelector('b');
+        if (number) { number.textContent = completed.has(i) && i !== index ? '✓' : String(i + 1); number.setAttribute('aria-hidden', 'true'); }
+      });
       const heading = steps[index]?.querySelector('h2');
-      const headingText = heading?.textContent?.trim() || `Schritt ${index + 1}`;
-      stepStatus.textContent = `Schritt ${index + 1} von ${steps.length}: ${headingText.replace(/^\d+\.\s*/, '')}`;
+      stepStatus.textContent = `Schritt ${index + 1} von ${steps.length}: ${heading?.textContent?.trim() || ''}`;
       if (focus) heading?.focus();
     };
-
     const showField = (field, focus = true) => {
-      const targetStep = field?.closest('.form-step');
-      const targetIndex = targetStep ? steps.indexOf(targetStep) : -1;
-      if (targetIndex >= 0) {
-        index = targetIndex;
-        paint();
-      }
+      let parent = field?.parentElement;
+      while (parent && parent !== form) { if (parent instanceof HTMLDetailsElement) parent.open = true; parent = parent.parentElement; }
+      const target = steps.indexOf(field?.closest('.form-step'));
+      if (target >= 0) { index = target; paint(); }
       if (focus) field?.focus();
     };
-
+    const validate = step => window.KEMForms
+      ? window.KEMForms.validate(form, step)
+      : [...step.querySelectorAll('input, select, textarea')].filter(field => field.willValidate).find(field => !field.checkValidity());
     form.querySelectorAll('[data-next]').forEach(button => button.addEventListener('click', () => {
-      const fields = [...steps[index].querySelectorAll('input, select, textarea')].filter(field => field.willValidate);
-      const firstInvalid = fields.find(field => !field.checkValidity());
-      if (firstInvalid) {
-        showField(firstInvalid);
-        firstInvalid.reportValidity();
-        return;
-      }
+      const firstInvalid = validate(steps[index]);
+      if (firstInvalid) { showField(firstInvalid); if (!window.KEMForms) firstInvalid.reportValidity(); return; }
+      completed.add(index);
       index = Math.min(index + 1, steps.length - 1);
       paint({ focus: true });
     }));
-
-    form.querySelectorAll('[data-prev]').forEach(button => button.addEventListener('click', () => {
-      index = Math.max(0, index - 1);
-      paint({ focus: true });
-    }));
-
+    form.querySelectorAll('[data-prev]').forEach(button => button.addEventListener('click', () => { index = Math.max(0, index - 1); paint({ focus: true }); }));
     form.addEventListener('form:show-field', event => showField(event.detail?.field));
     form.addEventListener('form:go-step', event => {
-      const nextIndex = Number(event.detail?.index);
-      if (!Number.isInteger(nextIndex) || nextIndex < 0 || nextIndex >= steps.length) return;
-      index = nextIndex;
-      paint({ focus: true });
+      const target = Number(event.detail?.index);
+      if (!Number.isInteger(target) || target < 0 || target >= steps.length) return;
+      if (target > index) {
+        for (let i = index; i < target; i++) { const invalid = validate(steps[i]); if (invalid) { showField(invalid); return; } completed.add(i); }
+      }
+      index = target; paint({ focus: true });
     });
-    form.addEventListener('form:success', () => {
-      index = 0;
-      paint({ focus: true });
-    });
-
+    const invalidate = event => {
+      const from = steps.indexOf(event.target.closest('.form-step'));
+      if (from < 0) return;
+      for (const value of completed) if (value >= from) completed.delete(value);
+      paint();
+    };
+    form.addEventListener('input', invalidate);
+    form.addEventListener('change', invalidate);
+    form.addEventListener('form:success', () => { completed.clear(); index = 0; paint(); });
+    form.addEventListener('form:restart', () => { completed.clear(); index = 0; paint({ focus: true }); });
     paint();
   });
-
 })();
 
 (() => {
