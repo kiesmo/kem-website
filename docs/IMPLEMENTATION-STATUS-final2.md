@@ -84,7 +84,7 @@ Alle Browser-POSTs in der Produkt-QA wurden abgefangen; 15 zusätzliche Upload-P
 
 ## Veröffentlichung zur Ansicht
 
-Der vollständige PHP-Code wird im GitHub-Branch `final2` bereitgestellt. Die separate private Sites-Vorschau enthält gerenderte Seiten und öffentliche Assets; sie führt keinen PHP-Mailhandler aus. Der sichtbare Vorschauhinweis und eine eigene Formularprüfung zeigen ausdrücklich einen Test ohne Versand. Die PHP-Produktstrecke behält ihren bestehenden Mail-/Serververtrag.
+Der vollständige PHP-Code ist im [GitHub-Branch `final2`](https://github.com/kiesmo/kem-website/tree/final2) gepusht. Die [private Vorschau](https://kem-final2-vorschau.kian-motlagh.chatgpt.site) wurde erfolgreich veröffentlicht (Sites-Version 1, Produktcode `9ddd318`). Die separate private Sites-Vorschau enthält gerenderte Seiten und öffentliche Assets; sie führt keinen PHP-Mailhandler aus. Der sichtbare Vorschauhinweis und eine eigene Formularprüfung zeigen ausdrücklich einen Test ohne Versand. Die PHP-Produktstrecke behält ihren bestehenden Mail-/Serververtrag.
 
 Batch-Prüfungen liefen jeweils vor dem zugehörigen Commit am bereits angewandten Arbeitsstand; ihr `commit` bezeichnet deshalb gegebenenfalls den Vorgänger, ergänzt um den geprüften Arbeitsstand. Der Export weist den finalen Produktcommit `9ddd318` aus.
 
