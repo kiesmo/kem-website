@@ -150,6 +150,46 @@
     other: [['Beschreibung', 'other_details']],
   };
 
+  const furnitureRows = [...form.querySelectorAll('[data-furniture-row]')];
+  const furnitureChoice = form.querySelector('#furniture-kind');
+  const furnitureAdd = form.querySelector('[data-furniture-add]');
+  const syncFurniture = () => {
+    if (!furnitureChoice) return;
+    [...furnitureChoice.options].forEach(option => {
+      const row = furnitureRows.find(row => row.dataset.furnitureRow === option.value);
+      option.disabled = Boolean(row && !row.hidden);
+    });
+    furnitureChoice.value = '';
+  };
+  furnitureRows.forEach(row => { row.hidden = !row.querySelector('input').value; });
+  if (furnitureAdd) furnitureAdd.hidden = false;
+  form.querySelector('[data-add-furniture]')?.addEventListener('click', () => {
+    const row = furnitureRows.find(row => row.dataset.furnitureRow === furnitureChoice.value);
+    if (!row || !row.hidden) return;
+    row.hidden = false; syncFurniture(); row.querySelector('input').focus();
+  });
+  form.querySelectorAll('[data-remove-furniture]').forEach(button => button.addEventListener('click', () => {
+    const row = button.closest('[data-furniture-row]'); const field = row.querySelector('input');
+    field.value = ''; field.setCustomValidity(''); window.KEMForms?.clearError(field);
+    row.hidden = true; syncFurniture(); field.dispatchEvent(new Event('input', { bubbles: true })); furnitureChoice.focus();
+  }));
+  form.addEventListener('form:show-field', event => {
+    const row = event.detail?.field?.closest('[data-furniture-row]');
+    if (row) { row.hidden = false; syncFurniture(); }
+  });
+  syncFurniture();
+  const syncExtraLabels = () => form.querySelectorAll('[data-optional-details]').forEach(details => {
+    const filled = [...details.querySelectorAll('input[name],select[name],textarea[name]')].filter(field => !field.disabled && field.value.trim()).length;
+    details.querySelector('[data-extra-count]').textContent = filled ? `(${filled} ausgefüllt)` : '(optional)';
+  });
+  form.addEventListener('input', syncExtraLabels);
+  form.addEventListener('change', syncExtraLabels);
+  form.addEventListener('form:success', () => {
+    furnitureRows.forEach(row => { row.hidden = true; }); syncFurniture();
+    form.querySelectorAll('[data-optional-details]').forEach(details => { details.open = false; });
+    syncExtraLabels();
+  });
+
   const selectedServiceKeys = () => serviceChecks
     .filter(field => field.checked)
     .map(field => field.dataset.cleaningType)
@@ -234,7 +274,7 @@
 
   const formatBytes = bytes => {
     if (bytes < 1024 * 1024) return `${Math.max(1, Math.round(bytes / 1024))} KB`;
-    return `${(bytes / (1024 * 1024)).toFixed(1).replace('.', ',')} MB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1).replace('.', ',')} MiB`;
   };
 
   const removeFileAt = index => {
@@ -244,52 +284,53 @@
       if (fileIndex !== index) transfer.items.add(file);
     });
     fileInput.files = transfer.files;
-    syncFiles();
+    fileInput.dispatchEvent(new Event('change', { bubbles: true }));
+    const remaining = [...fileList.querySelectorAll('.upload-remove')];
+    (remaining[Math.min(index, remaining.length - 1)] || fileInput).focus();
   };
 
+  const previewUrls = new Set();
+  const releasePreviews = () => { previewUrls.forEach(url => URL.revokeObjectURL(url)); previewUrls.clear(); };
   const syncFiles = () => {
     if (!fileInput || !fileList) return;
+    releasePreviews();
     const files = [...fileInput.files];
     const allowed = ['image/jpeg', 'image/png', 'image/webp'];
+    const limit = 5 * 1024 * 1024;
     let error = '';
-    if (files.length > 5) error = 'Bitte wählen Sie höchstens 5 Fotos aus.';
-    if (!error && files.some(file => file.size > 5 * 1024 * 1024)) error = 'Jede Datei darf höchstens 5 MB groß sein.';
-    if (!error && files.reduce((sum, file) => sum + file.size, 0) > 15 * 1024 * 1024) error = 'Die Fotos dürfen zusammen höchstens 15 MB groß sein.';
-    if (!error && files.some(file => !allowed.includes(file.type))) error = 'Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien.';
+    if (files.length > 5) error = 'Bitte wählen Sie höchstens 5 Fotos aus. Entfernen Sie die zusätzlichen Dateien.';
+    if (!error && files.some(file => file.size === 0)) error = 'Leere Dateien können nicht hochgeladen werden. Bitte entfernen Sie diese Datei.';
+    if (!error && files.some(file => file.size > limit)) error = 'Jede Datei darf höchstens 5 MiB groß sein.';
+    if (!error && files.reduce((sum, file) => sum + file.size, 0) > 15 * 1024 * 1024) error = 'Die Fotos dürfen zusammen höchstens 15 MiB groß sein.';
+    if (!error && files.some(file => !allowed.includes(file.type))) error = 'Erlaubt sind JPG, PNG und WebP. Bitte wandeln Sie HEIC oder andere Formate zuerst um.';
     fileInput.setCustomValidity(error);
-
+    if (error) window.KEMForms?.showError(fileInput, error); else window.KEMForms?.clearError(fileInput);
     fileList.replaceChildren();
     files.forEach((file, index) => {
       const item = document.createElement('li');
       item.className = 'upload-preview-item';
-      const image = document.createElement('img');
-      image.alt = '';
-      image.src = URL.createObjectURL(file);
-      image.addEventListener('load', () => URL.revokeObjectURL(image.src), { once: true });
-      const meta = document.createElement('span');
-      meta.className = 'upload-preview-meta';
-      const name = document.createElement('b');
-      name.textContent = file.name;
-      const size = document.createElement('small');
-      size.textContent = formatBytes(file.size);
+      const preview = document.createElement('span');
+      preview.className = 'upload-preview-image';
+      if (allowed.includes(file.type) && file.size > 0 && file.size <= limit) {
+        const image = document.createElement('img'); image.alt = '';
+        const url = URL.createObjectURL(file); previewUrls.add(url);
+        const release = () => { URL.revokeObjectURL(url); previewUrls.delete(url); };
+        image.addEventListener('load', release, { once: true });
+        image.addEventListener('error', () => { release(); preview.textContent = 'Keine Bildvorschau'; }, { once: true });
+        image.src = url; preview.append(image);
+      } else preview.textContent = 'Keine Bildvorschau';
+      const meta = document.createElement('span'); meta.className = 'upload-preview-meta';
+      const name = document.createElement('b'); name.textContent = file.name;
+      const size = document.createElement('small'); size.textContent = formatBytes(file.size);
       meta.append(name, size);
-      const remove = document.createElement('button');
-      remove.type = 'button';
-      remove.className = 'upload-remove';
-      remove.setAttribute('aria-label', `${file.name} entfernen`);
-      remove.textContent = 'Entfernen';
+      const remove = document.createElement('button'); remove.type = 'button'; remove.className = 'upload-remove';
+      remove.setAttribute('aria-label', `${file.name} entfernen`); remove.textContent = 'Entfernen';
       remove.addEventListener('click', () => removeFileAt(index));
-      item.append(image, meta, remove);
-      fileList.append(item);
+      item.append(preview, meta, remove); fileList.append(item);
     });
-    if (error) {
-      const item = document.createElement('li');
-      item.className = 'field-error';
-      item.textContent = error;
-      fileList.append(item);
-    }
     updateReview();
   };
+  window.addEventListener('pagehide', releasePreviews);
 
   fileInput?.addEventListener('change', syncFiles);
   if (dropzone && fileInput) {
@@ -304,9 +345,9 @@
     dropzone.addEventListener('drop', event => {
       if (!event.dataTransfer?.files?.length) return;
       const transfer = new DataTransfer();
-      [...event.dataTransfer.files].slice(0, 5).forEach(file => transfer.items.add(file));
+      [...event.dataTransfer.files].forEach(file => transfer.items.add(file));
       fileInput.files = transfer.files;
-      syncFiles();
+      fileInput.dispatchEvent(new Event('change', { bubbles: true }));
     });
   }
 
@@ -441,6 +482,7 @@
   form.addEventListener('form:success', () => { if (contextNote) contextNote.hidden = true; });
 
   syncServicePanels();
+  syncExtraLabels();
   syncAppointment();
   syncFiles();
   updateReview();

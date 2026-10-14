@@ -2142,6 +2142,22 @@ body.footer-visible .whatsapp-chat {
 .form-error-summary { padding: 12px 16px; color: #9b001b; background: #fff0f1; border-left: 3px solid #9b001b; }
 .field input, .field select, .field textarea { scroll-margin-top: calc(var(--header-height) + 24px); }
 
+/* Optional disclosures preserve enabled values and the existing data contract. */
+.optional-details{margin-top:18px;border-top:1px solid var(--border);padding-top:14px}
+.optional-details summary{cursor:pointer;font-weight:600;padding:8px 0;color:var(--primary)}
+.optional-details summary span{font-weight:400;color:var(--text-muted)}
+.optional-details[open]>.form-grid{margin-top:16px}
+.furniture-add{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:16px 0}
+.furniture-add label{width:100%;font-weight:600}
+.furniture-add select{flex:1;min-width:160px;border:1px solid var(--control-border);border-radius:8px;min-height:48px;padding:10px;background:#fff;color:var(--text);font:inherit}
+.furniture-list{display:grid;gap:12px;margin-bottom:18px}
+.furniture-row{display:flex;align-items:end;gap:12px}
+.furniture-row .field{flex:1;margin:0}
+.furniture-row[hidden],.furniture-add[hidden]{display:none}
+.furniture-remove{min-height:48px;padding:8px;color:var(--primary);font:inherit;text-decoration:underline;border:0;background:transparent;cursor:pointer}
+.upload-preview-image{display:flex;align-items:center;justify-content:center;min-width:64px;width:64px;height:64px;font-size:.7rem;text-align:center;background:var(--surface-soft);border-radius:8px;overflow:hidden}
+.upload-preview-image img{width:100%;height:100%;object-fit:cover}
+
 /* Source: 06-service-pages.css */
 /* Detailed service landing pages */
 .service-video-card {
