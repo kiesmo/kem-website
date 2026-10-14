@@ -180,10 +180,3 @@
     height: 50px;
   }
 }
-
-@media (max-width: 700px) {
-  .location-map-section iframe {
-    height: 310px;
-  }
-}
-

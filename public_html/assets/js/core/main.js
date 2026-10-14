@@ -14,12 +14,13 @@
   const menuBtn = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
   const compactNavQuery = matchMedia('(max-width: 1080px)');
+  const navDropdowns = [...nav?.querySelectorAll('.nav-dropdown') || []];
   let menuRestoreFocus = null;
 
   const menuFocusables = () => [
     menuBtn,
-    ...nav?.querySelectorAll('a[href], button:not([disabled])') || [],
-  ].filter(element => element instanceof HTMLElement && !element.hidden);
+    ...nav?.querySelectorAll('a[href], button:not([disabled]), summary') || [],
+  ].filter(element => element instanceof HTMLElement && element.getClientRects().length > 0);
 
   const setMenuState = (open, restoreFocus = true) => {
     const wasOpen = menuBtn?.getAttribute('aria-expanded') === 'true';
@@ -32,10 +33,11 @@
     nav?.classList.toggle('open', open);
     header?.classList.toggle('is-menu-open', open);
     document.body.classList.toggle('menu-lock', open);
+    if (!open) navDropdowns.forEach(dropdown => { dropdown.open = false; });
     syncHeader();
 
     if (open && !wasOpen) {
-      requestAnimationFrame(() => nav?.querySelector('a[href], button:not([disabled])')?.focus());
+      requestAnimationFrame(() => nav?.querySelector('a[href], button:not([disabled]), summary')?.focus());
     } else if (!open && wasOpen && restoreFocus) {
       (menuRestoreFocus || menuBtn)?.focus();
       menuRestoreFocus = null;
@@ -46,16 +48,31 @@
   menuBtn?.addEventListener('click', () => {
     setMenuState(menuBtn.getAttribute('aria-expanded') !== 'true');
   });
-  document.querySelectorAll('.drop-toggle').forEach(btn => btn.addEventListener('click', event => {
-    if (compactNavQuery.matches) {
-      event.preventDefault();
-      const item = btn.closest('.has-dropdown');
-      const open = item.classList.toggle('open');
-      btn.setAttribute('aria-expanded', String(open));
-    }
-  }));
+  // Native details/summary exposes the dropdown state without manual ARIA.
+  navDropdowns.forEach(dropdown => {
+    dropdown.addEventListener('mouseenter', () => {
+      if (!compactNavQuery.matches) dropdown.open = true;
+    });
+    dropdown.addEventListener('mouseleave', () => {
+      if (!compactNavQuery.matches && !dropdown.contains(document.activeElement)) dropdown.open = false;
+    });
+    dropdown.addEventListener('focusout', () => {
+      requestAnimationFrame(() => {
+        if (!compactNavQuery.matches && !dropdown.contains(document.activeElement) && !dropdown.matches(':hover')) {
+          dropdown.open = false;
+        }
+      });
+    });
+  });
   document.addEventListener('keydown', event => {
     const menuOpen = menuBtn?.getAttribute('aria-expanded') === 'true';
+    const activeDropdown = navDropdowns.find(dropdown => dropdown.open && dropdown.contains(document.activeElement));
+    if (event.key === 'Escape' && activeDropdown) {
+      event.preventDefault();
+      activeDropdown.open = false;
+      activeDropdown.querySelector('summary')?.focus();
+      return;
+    }
     if (event.key === 'Escape' && menuOpen) {
       event.preventDefault();
       closeMenu();
@@ -82,12 +99,9 @@
   }));
 
   compactNavQuery.addEventListener('change', event => {
+    navDropdowns.forEach(dropdown => { dropdown.open = false; });
     if (!event.matches) {
       closeMenu(false);
-      document.querySelectorAll('.has-dropdown.open').forEach(item => item.classList.remove('open'));
-      document.querySelectorAll('.drop-toggle[aria-expanded="true"]').forEach(btn => {
-        btn.setAttribute('aria-expanded', 'false');
-      });
     }
   });
 
@@ -97,7 +111,7 @@
     input.min = localDate;
   });
 
-  const footer = document.querySelector('.site-footer-region') || document.querySelector('.site-footer');
+  const footer = document.querySelector('.site-footer');
   if (footer && 'IntersectionObserver' in window) {
     const footerObserver = new IntersectionObserver(entries => {
       document.body.classList.toggle('footer-visible', entries.some(entry => entry.isIntersecting));
@@ -107,7 +121,13 @@
 
   const ensureFieldError = field => {
     if (!field.name || field.type === 'hidden') return null;
-    if (!field.id) field.id = `field-${field.name}`;
+    if (!field.id) {
+      const baseId = `field-${field.name.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+      let fieldId = baseId;
+      let suffix = 2;
+      while (document.getElementById(fieldId)) fieldId = `${baseId}-${suffix++}`;
+      field.id = fieldId;
+    }
 
     const errorId = `${field.id}-error`;
     let error = document.getElementById(errorId);

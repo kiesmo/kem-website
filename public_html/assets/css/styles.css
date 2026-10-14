@@ -298,6 +298,18 @@ h3 {
   position: relative;
 }
 
+.drop-toggle {
+  list-style: none;
+}
+
+.drop-toggle::marker {
+  content: "";
+}
+
+.drop-toggle::-webkit-details-marker {
+  display: none;
+}
+
 .dropdown {
   position: absolute;
   top: calc(100% - 8px);
@@ -316,9 +328,7 @@ h3 {
   transition: opacity .18s, transform .18s, visibility .18s;
 }
 
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown,
-.has-dropdown.open .dropdown {
+.nav-dropdown[open] .dropdown {
   opacity: 1;
   visibility: visible;
   transform: translate(-42%, 0);
@@ -1044,22 +1054,6 @@ h3 {
   object-fit: contain;
 }
 
-/* Standalone Google Maps section below the footer content */
-.location-map-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #e7e7e7;
-  line-height: 0;
-}
-
-.location-map-section iframe {
-  display: block;
-  width: 100%;
-  height: 380px;
-  border: 0;
-}
-
 .site-footer-legal {
   background: var(--navy);
 }
@@ -1356,7 +1350,7 @@ body.footer-visible .whatsapp-chat {
     display: none;
   }
 
-  .has-dropdown.open .dropdown {
+  .nav-dropdown[open] .dropdown {
     display: block;
   }
 
@@ -2640,12 +2634,6 @@ body.footer-visible .whatsapp-chat {
   .upload-preview-item img {
     width: 56px;
     height: 50px;
-  }
-}
-
-@media (max-width: 700px) {
-  .location-map-section iframe {
-    height: 310px;
   }
 }
 

@@ -140,6 +140,18 @@
   position: relative;
 }
 
+.drop-toggle {
+  list-style: none;
+}
+
+.drop-toggle::marker {
+  content: "";
+}
+
+.drop-toggle::-webkit-details-marker {
+  display: none;
+}
+
 .dropdown {
   position: absolute;
   top: calc(100% - 8px);
@@ -158,9 +170,7 @@
   transition: opacity .18s, transform .18s, visibility .18s;
 }
 
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown,
-.has-dropdown.open .dropdown {
+.nav-dropdown[open] .dropdown {
   opacity: 1;
   visibility: visible;
   transform: translate(-42%, 0);

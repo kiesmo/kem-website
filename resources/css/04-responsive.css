@@ -155,7 +155,7 @@
     display: none;
   }
 
-  .has-dropdown.open .dropdown {
+  .nav-dropdown[open] .dropdown {
     display: block;
   }
 

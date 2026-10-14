@@ -32,7 +32,8 @@ if (!function_exists('kem_current_attr')) {
 <ul class="nav-list">
 <li><a<?= kem_current_attr($navActive, 'about') ?> href="/ueber-uns/">Über uns</a></li>
 <li class="has-dropdown">
-<button aria-expanded="false" class="drop-toggle<?= $servicesCurrent ? ' is-current' : '' ?>" type="button">Leistungen <span aria-hidden="true">⌄</span></button>
+<details class="nav-dropdown">
+<summary class="drop-toggle<?= $servicesCurrent ? ' is-current' : '' ?>">Leistungen <span aria-hidden="true">⌄</span></summary>
 <ul class="dropdown">
 <li><a<?= kem_current_attr($navActive, 'services') ?> href="/leistungen/">Alle Leistungen</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-office') ?> href="/leistungen/buero-und-gewerberaumreinigung/">Büro &amp; Gewerbe</a></li>
@@ -44,6 +45,7 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'service-facade') ?> href="/leistungen/fassadenreinigung/">Fassade &amp; Graffiti</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-solar') ?> href="/leistungen/solaranlagenreinigung/">Solar &amp; Photovoltaik</a></li>
 </ul>
+</details>
 </li>
 <li><a<?= kem_current_attr($navActive, 'gallery') ?> href="/galerie/">Galerie</a></li>
 <li><a<?= kem_current_attr($navActive, 'faq') ?> href="/faq/">FAQ</a></li>
