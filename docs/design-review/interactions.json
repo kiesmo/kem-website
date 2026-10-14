@@ -1,0 +1,216 @@
+[
+  {
+    "width": 375,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 240.140625,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 375,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 375,
+    "faq": true
+  },
+  {
+    "width": 375,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 78,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 375,
+    "trap": "menu-toggle"
+  },
+  {
+    "width": 375,
+    "escape": "false"
+  },
+  {
+    "width": 390,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 147.390625,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 390,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 390,
+    "faq": true
+  },
+  {
+    "width": 390,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 78,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 390,
+    "trap": "menu-toggle"
+  },
+  {
+    "width": 390,
+    "escape": "false"
+  },
+  {
+    "width": 768,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 297.609375,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 768,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 768,
+    "faq": true
+  },
+  {
+    "width": 768,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 78,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 768,
+    "trap": "menu-toggle"
+  },
+  {
+    "width": 768,
+    "escape": "false"
+  },
+  {
+    "width": 1024,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 309.40625,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 1024,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 1024,
+    "faq": true
+  },
+  {
+    "width": 1024,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 78,
+      "headerBottom": 78
+    }
+  },
+  {
+    "width": 1024,
+    "trap": "menu-toggle"
+  },
+  {
+    "width": 1024,
+    "escape": "false"
+  },
+  {
+    "width": 1440,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 313.9375,
+      "headerBottom": 118
+    }
+  },
+  {
+    "width": 1440,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 1440,
+    "faq": true
+  },
+  {
+    "width": 1440,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 118,
+      "headerBottom": 118
+    }
+  },
+  {
+    "width": 1920,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 266.9375,
+      "headerBottom": 118
+    }
+  },
+  {
+    "width": 1920,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 1920,
+    "faq": true
+  },
+  {
+    "width": 1920,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 118,
+      "headerBottom": 118
+    }
+  },
+  {
+    "width": 2560,
+    "review": "Gewählte Leistungen\nÄndern\nReinigungsarten\nSonstige Leistung\nObjekt und Einsatzort\nÄndern\nAdresse\n50321 Brühl\nObjektart\nWohnung\nSonstige Leistung\nÄndern\nBeschreibung\nTest der Darstellung, keine Anfrage senden\nTermin und Fotos\nÄndern\nTerminwunsch\nFlexibel\nFotos\nKeine Fotos ausgewählt\nKontakt\nÄndern\nName\nTest Darstellung\nE-Mail\ntest@example.com",
+    "overflow": false,
+    "focus": {
+      "text": "Angaben prüfen und Anfrage senden",
+      "top": 349.9375,
+      "headerBottom": 118
+    }
+  },
+  {
+    "width": 2560,
+    "back": "Kontaktdaten"
+  },
+  {
+    "width": 2560,
+    "faq": true
+  },
+  {
+    "width": 2560,
+    "skipLink": {
+      "hash": "#main",
+      "mainTop": 118,
+      "headerBottom": 118
+    }
+  }
+]

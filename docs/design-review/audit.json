@@ -1,0 +1,7557 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 2496.65625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 2418.65625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5688.484375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5610.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5682.90625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5604.90625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5685.28125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5607.28125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 4522.078125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 4444.078125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2593.765625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 2515.765625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5667.125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5589.125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5640.734375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5562.734375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5755.03125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5677.03125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 7497.5,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 7419.5
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5002.109375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 4924.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4968.40625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 4890.40625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5050.125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 4972.125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1158.109375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 1080.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6703.640625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 6625.640625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2470.078125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 2392.078125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2725.640625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 2647.640625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5358.09375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5280.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5227.65625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5149.65625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6226.109375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 6148.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6208.625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 6130.625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6213.59375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 6135.59375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 8254.53125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 8176.53125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6077.859375,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5999.859375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6279.328125,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 6201.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6005.0625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 5927.0625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2801.1875,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 2723.1875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 504.0625,
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "height": 426.0625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 375,
+      "menu": {
+        "bg": "rgb(13, 43, 69)",
+        "expanded": "true",
+        "overflow": false,
+        "closed": "false"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 2415.3125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 2337.3125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5527.078125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5449.078125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5521.5,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5443.5
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5519.90625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5441.90625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 4416.515625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 4338.515625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2482.3125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 2404.3125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5555.15625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5477.15625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5502.375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5424.375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5616.671875,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5538.671875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 7590.40625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 7512.40625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4833.390625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 4755.390625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4892.359375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 4814.359375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4843.546875,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 4765.546875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1158.109375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 1080.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6630.796875,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 6552.796875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2470.078125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 2392.078125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2694.484375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 2616.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5225.296875,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5147.296875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5154.453125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5076.453125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6179.578125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 6101.578125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6132.34375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 6054.34375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6192.03125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 6114.03125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 8146.3125,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 8068.3125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5942,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5864
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 6192.90625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 6114.90625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5900.359375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 5822.359375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 548,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 470
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2763.4375,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 2685.4375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 504.0625,
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 426.0625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 390,
+      "menu": {
+        "bg": "rgb(13, 43, 69)",
+        "expanded": "true",
+        "overflow": false,
+        "closed": "false"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1748.390625,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 1670.390625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4428.890625,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4350.890625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4397.734375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4319.734375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4402.5,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4324.5
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 2920.484375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 2842.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2167.171875,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 2089.171875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4433.65625,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4355.65625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4402.5,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4324.5
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4486.4375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4408.4375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4424.78125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4346.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3973.875,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 3895.875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3938.75,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 3860.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3969.109375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 3891.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1108.953125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 1030.953125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5213.125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 5135.125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2294.09375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 2216.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2470.21875,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 2392.21875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3976.453125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 3898.453125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4092.75,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4014.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4888.28125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4810.28125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4842.921875,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4764.921875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5000.46875,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4922.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5344.84375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 5266.84375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4882.09375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4804.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4964.59375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4886.59375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4850.9375,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 4772.9375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 618,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 540
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2458.40625,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 2380.40625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 471.53125,
+        "left": 0,
+        "right": 768,
+        "width": 768,
+        "height": 393.53125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 768,
+      "menu": {
+        "bg": "rgb(13, 43, 69)",
+        "expanded": "true",
+        "overflow": false,
+        "closed": "false"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1757.390625,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 1679.390625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3979.375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3901.375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3912.78125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3834.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3916.75,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3838.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 2752.3125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 2674.3125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2303.9375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 2225.9375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3943.140625,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3865.140625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3912.78125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3834.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4042,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3964
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4741.328125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4663.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3536,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3458
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3505.953125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3427.953125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3542.1875,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3464.1875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 1066.734375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 988.734375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4706.5,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4628.5
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2055.453125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 1977.453125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 1944.59375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 1866.59375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3658.96875,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3580.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 3646.5625,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 3568.5625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4685.21875,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4607.21875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4574.28125,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4496.28125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4708.09375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4630.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 5233.96875,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 5155.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4491.140625,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4413.140625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4648.984375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4570.984375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 4501,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 4423
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": {
+        "top": 78,
+        "bottom": 758,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 680
+      },
+      "main": {
+        "top": 78,
+        "bottom": 2055.75,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 1977.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 78,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 78
+      },
+      "hero": null,
+      "main": {
+        "top": 78,
+        "bottom": 488.09375,
+        "left": 0,
+        "right": 1024,
+        "width": 1024,
+        "height": 410.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 78,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1024,
+      "menu": {
+        "bg": "rgb(13, 43, 69)",
+        "expanded": "true",
+        "overflow": false,
+        "closed": "false"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1849.328125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1731.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3967.96875,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3849.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3923.609375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3805.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3923.609375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3805.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 2812.75,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 2694.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2349.921875,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 2231.921875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3923.609375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3805.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3923.609375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3805.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4065.109375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3947.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4749.984375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4631.984375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3516.9375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3398.9375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3468.609375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3350.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3543.328125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3425.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1119.78125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1001.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3827.375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3709.375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2059.828125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1941.828125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 1980.359375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1862.359375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3626.09375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3508.09375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3683.484375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 3565.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4567.96875,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4449.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4462.25,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4344.25
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4543.28125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4425.28125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4532.890625,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4414.890625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4409.46875,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4291.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4582.5625,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4464.5625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4453.828125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 4335.828125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 770.5,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 652.5
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2023.859375,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1905.859375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 548.53125,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 430.53125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1440,
+      "dropdownVisible": true
+    },
+    {
+      "width": 1920,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1849.328125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 1731.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3995.46875,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3877.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 2812.75,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 2694.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2377.421875,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 2259.421875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4092.609375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3974.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4777.484375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4659.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3544.4375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3426.4375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3496.109375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3378.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3570.828125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3452.828125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1119.78125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 1001.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3846.03125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3728.03125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2087.328125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 1969.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2007.859375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 1889.859375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3653.59375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3535.59375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3710.984375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 3592.984375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4595.46875,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4477.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4489.75,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4371.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4570.78125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4452.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4560.390625,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4442.390625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4436.96875,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4318.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4610.0625,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4492.0625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4481.328125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 4363.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2051.359375,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 1933.359375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 548.53125,
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "height": 430.53125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 1920,
+      "dropdownVisible": false
+    },
+    {
+      "width": 2560,
+      "route": "/angebotsanfrage/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1849.328125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 1731.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/bueroreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3995.46875,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3877.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/bueroreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/bueroreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/datenschutz/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 2812.75,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 2694.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/faq/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2377.421875,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 2259.421875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/fensterreinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/fensterreinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3951.109375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3833.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/fensterreinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4092.609375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3974.609375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/galerie/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4777.484375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4659.484375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/gebaeudereinigung-bonn/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3544.4375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3426.4375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/gebaeudereinigung-bruehl/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3496.109375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3378.109375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/gebaeudereinigung-koeln/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3570.828125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3452.828125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/impressum/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 1119.78125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 1001.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3846.03125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3728.03125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/jobs/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2087.328125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 1969.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/kontakt/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2007.859375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 1889.859375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [
+        "hp",
+        "LABEL",
+        "INPUT"
+      ],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/buero-und-gewerberaumreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3653.59375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3535.59375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/entruempelung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 3710.984375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 3592.984375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/fassadenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4595.46875,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4477.46875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/glas-und-fensterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4489.75,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4371.75
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/grundreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4570.78125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4452.78125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4560.390625,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4442.390625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/polsterreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4436.96875,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4318.96875
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/solaranlagenreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4610.0625,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4492.0625
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/leistungen/teppichreinigung/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 4481.328125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 4363.328125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/ueber-uns/",
+      "status": 200,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": {
+        "top": 118,
+        "bottom": 798,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 680
+      },
+      "main": {
+        "top": 118,
+        "bottom": 2051.359375,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 1933.359375
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "route": "/404.php",
+      "status": 404,
+      "header": {
+        "top": 0,
+        "bottom": 118,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 118
+      },
+      "hero": null,
+      "main": {
+        "top": 118,
+        "bottom": 548.53125,
+        "left": 0,
+        "right": 2560,
+        "width": 2560,
+        "height": 430.53125
+      },
+      "bg": "rgb(13, 43, 69)",
+      "overflow": false,
+      "overflowElements": [],
+      "brokenImages": [],
+      "clipped": [],
+      "scrolled": {
+        "top": 0,
+        "height": 118,
+        "bg": "rgb(13, 43, 69)"
+      }
+    },
+    {
+      "width": 2560,
+      "dropdownVisible": true
+    }
+  ],
+  "errors": []
+}

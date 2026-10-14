@@ -1,0 +1,44 @@
+[
+  {
+    "width": 390,
+    "route": "/",
+    "cls": 0,
+    "lcp": 360,
+    "transferBytes": 330089
+  },
+  {
+    "width": 390,
+    "route": "/angebotsanfrage/",
+    "cls": 0,
+    "lcp": 456,
+    "transferBytes": 42681
+  },
+  {
+    "width": 390,
+    "route": "/leistungen/glas-und-fensterreinigung/",
+    "cls": 0,
+    "lcp": 500,
+    "transferBytes": 176539
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "cls": 0,
+    "lcp": 548,
+    "transferBytes": 330089
+  },
+  {
+    "width": 1440,
+    "route": "/angebotsanfrage/",
+    "cls": 0,
+    "lcp": 332,
+    "transferBytes": 42681
+  },
+  {
+    "width": 1440,
+    "route": "/leistungen/glas-und-fensterreinigung/",
+    "cls": 0,
+    "lcp": 336,
+    "transferBytes": 268683
+  }
+]
