@@ -5,11 +5,9 @@ $serviceCatalog = kem_service_catalog();
 $pageKey = $service['route'];
 ?>
 <!DOCTYPE html>
-<html lang="de"><?php require KEM_TEMPLATES_DIR . '/head.php'; ?><body class="has-hero"><?php
-$headerMode = 'overlay';
+<html lang="de"><?php require KEM_TEMPLATES_DIR . '/head.php'; ?><body><?php
 $navActive = [$service['nav_key']];
 $servicesCurrent = true;
-$footerVariant = 'full';
 require KEM_TEMPLATES_DIR . '/header.php';
 ?>
 <main id="main">

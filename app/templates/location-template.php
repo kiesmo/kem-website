@@ -8,11 +8,9 @@ if (!is_file($contentFile)) {
     throw new RuntimeException('Inhalt der Standortseite fehlt: ' . $locationContent);
 }
 ?><!DOCTYPE html>
-<html lang="de"><?php require KEM_TEMPLATES_DIR . '/head.php'; ?><body class="has-hero"><?php
-$headerMode = 'overlay';
+<html lang="de"><?php require KEM_TEMPLATES_DIR . '/head.php'; ?><body><?php
 $navActive = [];
 $servicesCurrent = !str_starts_with($pageKey, '/gebaeudereinigung-');
-$footerVariant = 'full';
 require KEM_TEMPLATES_DIR . '/header.php';
 ?>
 <main id="main">

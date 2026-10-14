@@ -3,7 +3,6 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 $kem = kem_site_config();
 $navActive = $navActive ?? [];
 $servicesCurrent = $servicesCurrent ?? false;
-$hiddenNavItems = $hiddenNavItems ?? [];
 
 if (!is_array($navActive)) {
     $navActive = $navActive === null ? [] : [$navActive];
@@ -39,7 +38,7 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'service-office') ?> href="/leistungen/buero-und-gewerberaumreinigung/">Büro &amp; Gewerbe</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-glass') ?> href="/leistungen/glas-und-fensterreinigung/">Glas &amp; Fenster</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-basic') ?> href="/leistungen/grundreinigung/">Grund &amp; Spezial</a></li>
-<?php if (!in_array('service-carpet', $hiddenNavItems, true)): ?><li><a<?= kem_current_attr($navActive, 'service-carpet') ?> href="/leistungen/teppichreinigung/">Teppichreinigung</a></li><?php endif; ?>
+<li><a<?= kem_current_attr($navActive, 'service-carpet') ?> href="/leistungen/teppichreinigung/">Teppichreinigung</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-upholstery') ?> href="/leistungen/polsterreinigung/">Polsterreinigung</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-clearance') ?> href="/leistungen/entruempelung/">Entrümpelung</a></li>
 <li><a<?= kem_current_attr($navActive, 'service-facade') ?> href="/leistungen/fassadenreinigung/">Fassade &amp; Graffiti</a></li>

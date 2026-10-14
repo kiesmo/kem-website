@@ -5,15 +5,15 @@
   justify-content: center;
   gap: 8px;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-button);
   background: var(--primary);
   color: #fff;
   padding: 12px 22px;
   font-size: .82rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .03em;
-  box-shadow: 0 4px 0 var(--primary-shadow);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: none;
   transition: transform .18s, background-color .18s, box-shadow .18s;
   cursor: pointer;
 }
@@ -213,7 +213,7 @@
   white-space: nowrap;
   padding-inline: 25px;
   font-size: .94rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .menu-toggle {
@@ -329,10 +329,10 @@
   background: var(--primary);
   color: #fff;
   font-size: clamp(1.5rem, 2.35vw, 2.55rem);
-  font-weight: 400;
+  font-weight: 650;
   line-height: 1.25;
-  text-transform: uppercase;
-  letter-spacing: .025em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .hero-label {
@@ -402,7 +402,7 @@
 
 /* Shared content layouts */
 .section {
-  padding: 84px 0;
+  padding: var(--section-space) 0;
 }
 
 .section.soft {
@@ -412,7 +412,7 @@
 .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
-  gap: 55px;
+  gap: var(--layout-gap);
   align-items: start;
 }
 
@@ -423,13 +423,20 @@
 
 .content-card {
   background: var(--surface);
-  border: 1px solid #ddd;
-  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: var(--card-space);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.content-card h2 {
+  font-size: var(--heading-3);
 }
 
 .content-card img {
-  margin: -32px -32px 28px;
-  width: calc(100% + 64px);
+  margin: calc(-1 * var(--card-space)) calc(-1 * var(--card-space)) 24px;
+  width: calc(100% + 2 * var(--card-space));
   max-width: none;
   height: 280px;
   object-fit: cover;
@@ -473,15 +480,17 @@
 }
 
 .service-overview-group {
-  padding: 24px 26px;
-  background: #f7f9fb;
-  border: 1px solid #e1e6ea;
+  padding: var(--card-space);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 
 .service-overview-group h3 {
   margin: 0 0 10px;
   color: var(--primary);
-  font-size: 1.05rem;
+  font-size: var(--heading-3);
 }
 
 .service-overview-group .check-grid {
@@ -491,10 +500,9 @@
 .cta-band {
   text-align: center;
   background: #f7f9fb;
-  padding: 58px 20px;
+  padding: var(--section-space) 20px;
 }
 
 .cta-band h2 {
-  font-size: 1.5rem;
+  font-size: var(--heading-2);
 }
-

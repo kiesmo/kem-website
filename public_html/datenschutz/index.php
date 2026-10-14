@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="de"><?php $pageKey = '/datenschutz/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body ><?php
-$headerMode = 'opaque';
+<html lang="de"><?php $pageKey = '/datenschutz/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
 $navActive = [];
 $servicesCurrent = false;
-$footerVariant = 'full';
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section legal"><div class="container narrow">

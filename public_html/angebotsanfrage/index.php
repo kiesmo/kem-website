@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="de"><?php $pageKey = '/angebotsanfrage/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body ><?php
-$headerMode = 'opaque';
+<html lang="de"><?php $pageKey = '/angebotsanfrage/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
 $navActive = ['offer'];
 $servicesCurrent = false;
-$footerVariant = 'full';
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section soft offer-builder-section">
@@ -23,7 +21,7 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <input name="form_type" type="hidden" value="angebot"/>
 <input id="cleaning_types" name="cleaning_types" type="hidden" value=""/>
 <div aria-hidden="true" class="hp"><label>Website<input autocomplete="off" name="website" tabindex="-1"/></label></div>
-<div aria-label="Formularfortschritt" class="steps offer-steps" role="list">
+<div aria-label="Formularfortschritt" class="offer-steps" role="list">
 <span class="step-dot active" data-step-label="Leistung" role="listitem"><b>1</b><span>Leistung</span></span>
 <span class="step-dot" data-step-label="Objekt" role="listitem"><b>2</b><span>Objekt</span></span>
 <span class="step-dot" data-step-label="Termin" role="listitem"><b>3</b><span>Termin</span></span>

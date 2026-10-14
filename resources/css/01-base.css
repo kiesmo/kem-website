@@ -84,9 +84,9 @@ h3,
 .eyebrow,
 .hero-label,
 .hero-tag {
-  overflow-wrap: normal;
+  overflow-wrap: anywhere;
   word-break: normal;
-  hyphens: manual;
+  hyphens: auto;
 }
 
 h1,
@@ -94,27 +94,28 @@ h2,
 h3 {
   line-height: 1.18;
   margin-top: 0;
+  font-weight: 750;
 }
 
 h1 {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: var(--heading-1);
   letter-spacing: -.025em;
 }
 
 h2 {
   color: var(--primary);
-  font-size: clamp(1.65rem, 3vw, 2.35rem);
-  text-transform: uppercase;
-  letter-spacing: .01em;
+  font-size: var(--heading-2);
+  text-transform: none;
+  letter-spacing: -.015em;
 }
 
 h3 {
-  font-size: 1.16rem;
+  font-size: var(--heading-3);
 }
 
 .lead {
   font-size: 1.15rem;
-  color: #41454a;
+  color: var(--text-muted);
 }
 
 .narrow {
@@ -130,4 +131,3 @@ h3 {
   font-size: .83rem;
   margin-bottom: 12px;
 }
-

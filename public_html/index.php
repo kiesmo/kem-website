@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="de"><?php $pageKey = '/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body class="has-hero"><?php
-$headerMode = 'overlay';
+<html lang="de"><?php $pageKey = '/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
 $navActive = ['home'];
 $servicesCurrent = false;
-$footerVariant = 'legal';
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main">
@@ -44,4 +42,4 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 </div>
 </div>
 </section><?php kem_render_page_cta($pageKey); ?>
-</main><?php $footerVariant = 'full'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/footer.php'; ?></body></html>
+</main><?php require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/footer.php'; ?></body></html>

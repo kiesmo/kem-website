@@ -18,10 +18,11 @@
     display: flex;
     flex-direction: column;
     min-height: 250px;
-    padding: 34px;
-    border: 1px solid #dce3e8;
+    padding: var(--card-space);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
     background: var(--surface);
-    box-shadow: 0 10px 28px rgba(8, 45, 73, .05);
+    box-shadow: var(--shadow-card);
 }
 
 .location-label {
@@ -127,13 +128,13 @@
 
     .location-card {
         min-height: 0;
-        padding: 26px;
+        padding: var(--card-space);
     }
 }
 
 /* Hero focal points are controlled with CSP-safe semantic classes from the modular page configuration. */
 
-/* Home hero conversion refinement — step 1 */
+/* Homepage hero and introduction */
 .hero-panel {
   position: absolute;
   z-index: 2;
@@ -141,6 +142,7 @@
   bottom: 54px;
   width: min(48%, 620px);
   padding: 18px 22px 16px;
+  border-radius: var(--radius-card);
   background: rgba(9, 105, 181, .93);
   color: #fff;
   box-shadow: 0 12px 30px rgba(10, 28, 44, .18);
@@ -184,6 +186,7 @@
   padding: 20px;
   background: #f2f6f9;
   border-top: 3px solid var(--primary);
+  border-radius: var(--radius-card);
 }
 
 .intro-strengths h3 {

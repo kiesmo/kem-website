@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="de"><?php $pageKey = '/leistungen/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body class="has-hero"><?php
-$headerMode = 'overlay';
+<html lang="de"><?php $pageKey = '/leistungen/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
 $navActive = ['services'];
 $servicesCurrent = true;
-$footerVariant = 'full';
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main"><?php kem_render_page_hero($pageKey); ?><?php kem_render_breadcrumbs($pageKey); ?><section class="section"><div class="container"><span class="eyebrow">Unsere Leistungen</span><h1>Reinigungsleistungen in Köln, Brühl, Bonn &amp; Umgebung</h1><p class="lead narrow">KEM übernimmt regelmäßige und einmalige Reinigungsarbeiten für Gewerbe und Privat – von Büro-, Glas- und Grundreinigung bis zu Teppich-, Polster-, Fassaden- und PV-Reinigung sowie Entrümpelung.</p><p class="narrow">Welche Leistungen sinnvoll sind, hängt von Ihrem Objekt, der Nutzung und dem gewünschten Umfang ab. Reinigungsintervalle und Einsatzzeiten stimmen wir vorab mit Ihnen ab. Bei Bedarf sind nach Abstimmung auch kurzfristige Termine möglich.</p><h2>Leistungen auf einen Blick</h2><div class="service-overview-groups">

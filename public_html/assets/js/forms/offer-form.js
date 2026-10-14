@@ -7,7 +7,7 @@
     const stepStatus = document.createElement('p');
     stepStatus.className = 'sr-only';
     stepStatus.setAttribute('aria-live', 'polite');
-    form.querySelector('.steps')?.insertAdjacentElement('afterend', stepStatus);
+    form.querySelector('.offer-steps')?.insertAdjacentElement('afterend', stepStatus);
 
     steps.forEach(step => {
       const heading = step.querySelector('h2');

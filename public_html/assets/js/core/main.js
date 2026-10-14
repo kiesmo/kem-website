@@ -1,13 +1,11 @@
 (() => {
-  const header = document.querySelector('.site-header');
   const topBtn = document.querySelector('.backtop');
-  const syncHeader = () => {
+  const syncBacktop = () => {
     topBtn?.classList.toggle('show', window.scrollY > 650);
   };
 
-  addEventListener('resize', syncHeader, { passive: true });
-  addEventListener('scroll', syncHeader, { passive: true });
-  syncHeader();
+  addEventListener('scroll', syncBacktop, { passive: true });
+  syncBacktop();
 
   topBtn?.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
@@ -31,10 +29,9 @@
     menuBtn?.setAttribute('aria-expanded', String(open));
     menuBtn?.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
     nav?.classList.toggle('open', open);
-    header?.classList.toggle('is-menu-open', open);
     document.body.classList.toggle('menu-lock', open);
     if (!open) navDropdowns.forEach(dropdown => { dropdown.open = false; });
-    syncHeader();
+    syncBacktop();
 
     if (open && !wasOpen) {
       requestAnimationFrame(() => nav?.querySelector('a[href], button:not([disabled]), summary')?.focus());

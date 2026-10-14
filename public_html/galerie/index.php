@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="de"><?php $pageKey = '/galerie/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body class="has-hero"><?php
-$headerMode = 'overlay';
+<html lang="de"><?php $pageKey = '/galerie/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
 $navActive = ['gallery'];
 $servicesCurrent = false;
-$footerVariant = 'full';
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 
 $galleryVideos = [

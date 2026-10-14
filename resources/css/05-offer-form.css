@@ -24,7 +24,7 @@
   margin: 24px 0 0;
   list-style: none;
   font-size: .9rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .offer-benefits li::before {
@@ -67,18 +67,20 @@
   position: relative;
   padding: clamp(24px, 4vw, 48px);
   border: 1px solid rgba(13, 43, 69, .08);
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
 .offer-steps {
+  display: flex;
   align-items: flex-start;
   gap: 0;
   margin: 0 0 42px;
 }
 
 .offer-steps .step-dot {
+  flex: 1;
   position: relative;
   display: grid;
   justify-items: center;
@@ -88,7 +90,7 @@
   background: none;
   text-align: center;
   font-size: .73rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .offer-steps .step-dot::before {
@@ -144,7 +146,7 @@
   margin-bottom: 5px;
   color: var(--primary);
   font-size: .76rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -164,27 +166,6 @@
   color: var(--navy);
 }
 
-.offer-builder .field input:not([type="checkbox"]):not([type="file"]),
-.offer-builder .field textarea,
-.offer-builder .field select {
-  min-height: 50px;
-  padding: 12px 14px;
-  border: 1px solid #cbd5dc;
-  border-radius: 8px;
-  background: #fff;
-}
-
-.offer-builder .field textarea {
-  min-height: 116px;
-}
-
-.offer-builder .field input:not([type="checkbox"]):not([type="file"]):focus,
-.offer-builder .field textarea:focus,
-.offer-builder .field select:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px var(--primary-shadow-soft);
-}
-
 .field-hint {
   margin: -2px 0 16px;
   color: #66737e;
@@ -196,7 +177,7 @@
 .appointment-card,
 .offer-review {
   border: 1px solid #d9e2e8;
-  border-radius: 14px;
+  border-radius: var(--radius-card);
   background: #fff;
 }
 
@@ -228,7 +209,7 @@
   padding: 0;
   margin-bottom: 4px;
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .service-choice-grid {
@@ -245,7 +226,7 @@
   align-items: flex-start;
   padding: 18px;
   border: 1px solid #d4dde3;
-  border-radius: 12px;
+  border-radius: var(--radius-control);
   background: #fff;
   cursor: pointer;
   transition: transform .18s, border-color .18s, box-shadow .18s, background .18s;
@@ -265,7 +246,7 @@
 
 .service-choice input {
   flex: 0 0 auto;
-  width: 20px !important;
+  width: 20px;
   height: 20px;
   margin: 3px 0 0;
   accent-color: var(--primary);
@@ -288,13 +269,13 @@
 .service-choice-fieldset.has-error .service-choice-grid {
   padding: 3px;
   border: 2px solid #9b001b;
-  border-radius: 14px;
+  border-radius: var(--radius-card);
 }
 
 .service-detail-empty {
   padding: 22px;
   border: 1px dashed #b9c6cf;
-  border-radius: 12px;
+  border-radius: var(--radius-control);
   color: #5b6873;
   background: #f7f9fa;
   text-align: center;
@@ -324,7 +305,7 @@
   color: #fff;
   background: var(--primary);
   font-size: .78rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .detail-panel-heading h3 {
@@ -350,7 +331,7 @@
 .appointment-card legend {
   padding: 0 8px;
   color: var(--navy);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .upload-field {
@@ -364,7 +345,7 @@
   gap: 4px;
   padding: 34px 22px;
   border: 2px dashed #9fb5c4;
-  border-radius: 14px;
+  border-radius: var(--radius-card);
   background: #f7fafc;
   text-align: center;
   cursor: pointer;
@@ -480,7 +461,7 @@
 
   .offer-builder {
     padding: 22px 18px 26px;
-    border-radius: 14px;
+    border-radius: var(--radius-card);
   }
 
   .offer-benefits {
@@ -492,6 +473,7 @@
   }
 
   .offer-steps {
+  display: flex;
     margin-bottom: 32px;
   }
 
@@ -541,4 +523,3 @@
     width: 100%;
   }
 }
-
