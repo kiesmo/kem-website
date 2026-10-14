@@ -23,11 +23,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Kontakt zu KEM Gebäudereinigung',
     'src' => '/assets/img/pages/kontakt/kontakt-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Kontakt',
     'class' => 'hero-focus-high',
   ),
   'cta' => NULL,

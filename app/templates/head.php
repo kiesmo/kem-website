@@ -79,7 +79,7 @@ $schema = ['@context'=>'https://schema.org','@graph'=>$graph];
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0969B5">
+<meta name="theme-color" content="#0d2b45">
 <title><?= kem_h($pageData['title']) ?></title>
 <meta name="description" content="<?= kem_h($pageData['description']) ?>">
 <meta name="robots" content="<?= kem_h($pageData['robots'] ?? 'index,follow,max-image-preview:large') ?>">

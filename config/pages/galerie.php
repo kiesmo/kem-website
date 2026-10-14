@@ -23,11 +23,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Galerie',
     'src' => '/assets/img/pages/galerie/galerie-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Galerie',
   ),
   'cta' => 
   array (

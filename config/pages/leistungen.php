@@ -24,11 +24,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-right',
+    'heading' => 'Reinigungsleistungen in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/pages/leistungen/leistungen-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Leistungen',
   ),
   'cta' => 
   array (

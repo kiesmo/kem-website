@@ -132,11 +132,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Häufige Fragen zu Reinigung, Ablauf und Angebot',
     'src' => '/assets/img/pages/faq/faq-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'FAQ',
     'class' => 'hero-focus-high',
   ),
   'cta' => 

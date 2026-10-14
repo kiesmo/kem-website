@@ -48,12 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Fassaden- und Graffitireinigung in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/services/fassadenreinigung/fassadenreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Fassaden- und Graffitireinigung',
-    'mobile_tag' => 'Fassade & Graffiti',
   ),
   'cta' => 
   array (

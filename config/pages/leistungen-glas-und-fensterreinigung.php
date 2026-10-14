@@ -48,12 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Glas-, Fenster- und Rahmenreinigung',
     'src' => '/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Glas- und Fensterreinigung',
-    'mobile_tag' => 'Glas- & Fensterreinigung',
   ),
   'cta' => 
   array (

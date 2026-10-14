@@ -1,361 +1,302 @@
-/* Detailed conditional offer form */
+/* A guided enquiry with a quiet introduction and one active form step. */
 .offer-builder-section {
-  background:
-    radial-gradient(circle at 100% 0, var(--primary-shadow-soft), transparent 34rem),
-    var(--surface-soft);
+  padding-top: 52px;
 }
 
 .offer-builder-shell {
-  width: min(calc(100% - 40px), 1080px);
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.65fr);
+  gap: 56px;
+  align-items: start;
 }
 
 .offer-builder-intro {
-  max-width: 790px;
-  margin: 0 auto 34px;
-  text-align: center;
+  position: sticky;
+  top: calc(var(--header-height) + 32px);
+}
+
+.offer-builder-intro h1 {
+  font-size: clamp(2rem, 3vw, 2.75rem);
 }
 
 .offer-benefits {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 24px;
-  padding: 0;
-  margin: 24px 0 0;
   list-style: none;
+  padding: 0;
+  margin: 28px 0;
   font-size: .9rem;
-  font-weight: 700;
+}
+
+.offer-benefits li {
+  margin: 14px 0;
 }
 
 .offer-benefits li::before {
   content: "✓";
-  display: inline-grid;
-  place-items: center;
-  width: 1.35rem;
-  height: 1.35rem;
-  margin-right: 7px;
-  border-radius: 50%;
-  color: #fff;
-  background: var(--primary);
-  font-size: .76rem;
+  color: var(--primary-dark);
+  margin-right: 12px;
+}
+
+.offer-whatsapp {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  margin-top: 28px;
+}
+
+.offer-whatsapp p {
+  font-size: .88rem;
+  color: var(--text-muted);
 }
 
 .offer-duration {
   display: flex;
-  width: max-content;
-  max-width: 100%;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-  margin: -12px auto 18px;
-  padding: 9px 14px;
-  border: 1px solid #d9e2e8;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--navy);
-  box-shadow: 0 8px 22px rgba(31, 52, 68, .07);
-  font-size: .9rem;
-}
-
-.offer-duration > span {
-  color: var(--primary);
-  font-size: 1.05rem;
-  line-height: 1;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin: 26px 0 0;
 }
 
 .offer-builder {
-  position: relative;
-  padding: clamp(24px, 4vw, 48px);
-  border: 1px solid rgba(13, 43, 69, .08);
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--border);
   border-radius: var(--radius-card);
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  padding: clamp(22px, 3vw, 42px);
 }
 
 .offer-steps {
   display: flex;
-  align-items: flex-start;
-  gap: 0;
-  margin: 0 0 42px;
+  gap: 8px;
+  margin: 0 0 34px;
+  padding: 16px 8px;
+  border-radius: 8px;
+  background: var(--surface-soft);
 }
 
-.offer-steps .step-dot {
+.step-dot {
   flex: 1;
-  position: relative;
+  min-width: 0;
   display: grid;
   justify-items: center;
-  gap: 7px;
-  height: auto;
-  color: #6a7681;
-  background: none;
-  text-align: center;
-  font-size: .73rem;
-  font-weight: 700;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: .65rem;
+  line-height: 1.2;
 }
 
-.offer-steps .step-dot::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 17px;
-  right: 50%;
-  width: 100%;
-  height: 3px;
-  background: #dce3e8;
+.step-dot b {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c8d1d6;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--text-muted);
+  font-size: .75rem;
 }
 
-.offer-steps .step-dot:first-child::before {
+.step-dot.active b {
+  background: var(--primary-soft);
+  border-color: #9fbdd1;
+  color: var(--primary-dark);
+}
+
+.step-dot[aria-current="step"] b {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+.form-step {
   display: none;
 }
 
-.offer-steps .step-dot b {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #cbd5dc;
-  border-radius: 50%;
-  color: #687783;
-  background: var(--surface);
-  transition: border-color .2s, color .2s, background .2s;
-}
-
-.offer-steps .step-dot.active {
-  color: var(--primary-dark);
-  background: none;
-}
-
-.offer-steps .step-dot.active::before {
-  background: var(--primary);
-}
-
-.offer-steps .step-dot.active b {
-  border-color: var(--primary);
-  color: #fff;
-  background: var(--primary);
+.form-step.active {
+  display: block;
 }
 
 .step-heading {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .step-heading > span {
   display: block;
-  margin-bottom: 5px;
-  color: var(--primary);
-  font-size: .76rem;
-  font-weight: 700;
-  letter-spacing: .08em;
+  color: var(--primary-dark);
+  font-size: .68rem;
+  letter-spacing: .1em;
   text-transform: uppercase;
+  font-weight: 650;
+  margin-bottom: 12px;
 }
 
 .step-heading h2 {
-  margin-bottom: 8px;
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  margin-bottom: 14px;
 }
 
 .step-heading p {
-  margin: 0;
-  color: #5c6974;
-}
-
-.offer-builder .field label,
-.offer-builder fieldset legend {
-  color: var(--navy);
+  color: var(--text-muted);
+  font-size: .9rem;
 }
 
 .field-hint {
-  margin: -2px 0 16px;
-  color: #66737e;
-  font-size: .86rem;
-}
-
-.conditional-card,
-.service-detail-panel,
-.appointment-card,
-.offer-review {
-  border: 1px solid #d9e2e8;
-  border-radius: var(--radius-card);
-  background: #fff;
-}
-
-.conditional-card {
-  margin-top: 24px;
-  padding: 24px;
-  background: var(--primary-soft);
-}
-
-.conditional-card h3 {
-  margin-bottom: 18px;
-  font-size: 1.12rem;
-}
-
-.conditional-card[hidden],
-.service-detail-panel[hidden],
-.service-detail-empty[hidden] {
-  display: none !important;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin: 5px 0 16px;
 }
 
 .service-choice-fieldset {
   min-width: 0;
+  margin: 26px 0 0;
   padding: 0;
-  margin: 30px 0 0;
   border: 0;
 }
 
 .service-choice-fieldset legend {
-  padding: 0;
-  margin-bottom: 4px;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: .86rem;
+  font-weight: 650;
+  margin-bottom: 10px;
 }
 
 .service-choice-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 12px;
 }
 
-.service-choice {
-  position: relative;
+.service-choice-fieldset .service-choice {
   display: flex;
-  min-height: 104px;
-  gap: 14px;
-  align-items: flex-start;
+  gap: 12px;
   padding: 18px;
-  border: 1px solid #d4dde3;
-  border-radius: var(--radius-control);
-  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   cursor: pointer;
-  transition: transform .18s, border-color .18s, box-shadow .18s, background .18s;
-}
-
-.service-choice:hover {
-  transform: translateY(-2px);
-  border-color: var(--primary-light);
-  box-shadow: 0 10px 24px rgba(13, 43, 69, .08);
-}
-
-.service-choice:has(input:checked) {
-  border-color: var(--primary);
-  background: var(--primary-soft);
-  box-shadow: 0 0 0 2px var(--primary-shadow-soft);
 }
 
 .service-choice input {
-  flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
   margin: 3px 0 0;
-  accent-color: var(--primary);
+  accent-color: var(--navy);
 }
 
 .service-choice span {
+  min-width: 0;
   display: grid;
-  gap: 5px;
+  gap: 7px;
 }
 
 .service-choice b {
-  line-height: 1.25;
+  font-size: .85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .service-choice small {
-  color: #5d6a75;
-  line-height: 1.45;
+  font-size: .72rem;
+  line-height: 1.5;
+  font-weight: 450;
+  color: var(--text-muted);
+}
+
+.service-choice:hover {
+  border-color: #8ea8b9;
+}
+
+.service-choice:has(input:checked) {
+  background: var(--primary-soft);
+  border-color: var(--primary-dark);
 }
 
 .service-choice-fieldset.has-error .service-choice-grid {
-  padding: 3px;
-  border: 2px solid #9b001b;
-  border-radius: var(--radius-card);
+  border: 1px solid #a12b36;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.conditional-card, .service-detail-panel, .appointment-card {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.conditional-card {
+  background: var(--surface-soft);
+}
+
+.conditional-card h3 {
+  font-size: 1.15rem;
 }
 
 .service-detail-empty {
-  padding: 22px;
-  border: 1px dashed #b9c6cf;
-  border-radius: var(--radius-control);
-  color: #5b6873;
-  background: #f7f9fa;
-  text-align: center;
-}
-
-.service-detail-panel {
-  padding: clamp(20px, 3vw, 30px);
-  margin-bottom: 22px;
-  box-shadow: 0 10px 30px rgba(13, 43, 69, .06);
+  padding: 20px;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  margin-bottom: 24px;
 }
 
 .detail-panel-heading {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   align-items: flex-start;
+  border-bottom: 1px solid var(--border);
   padding-bottom: 18px;
-  margin-bottom: 22px;
-  border-bottom: 1px solid #e2e8ec;
+  margin-bottom: 24px;
 }
 
 .detail-panel-heading > span {
   display: grid;
   place-items: center;
-  flex: 0 0 40px;
-  height: 40px;
-  border-radius: 10px;
-  color: #fff;
-  background: var(--primary);
-  font-size: .78rem;
-  font-weight: 700;
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-size: .72rem;
 }
 
 .detail-panel-heading h3 {
-  margin-bottom: 3px;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  margin-bottom: 7px;
 }
 
 .detail-panel-heading p {
   margin: 0;
-  color: #63707b;
-  font-size: .9rem;
+  color: var(--text-muted);
+  font-size: .8rem;
 }
 
 .compact-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.appointment-card {
-  min-width: 0;
-  padding: 22px;
-}
-
 .appointment-card legend {
+  font-size: .86rem;
+  font-weight: 650;
   padding: 0 8px;
-  color: var(--navy);
-  font-weight: 700;
 }
 
 .upload-field {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .upload-dropzone {
   position: relative;
   display: grid;
   justify-items: center;
-  gap: 4px;
-  padding: 34px 22px;
-  border: 2px dashed #9fb5c4;
-  border-radius: var(--radius-card);
-  background: #f7fafc;
+  gap: 8px;
+  padding: 30px 20px;
+  border: 1px dashed #8ca7b8;
+  border-radius: 8px;
   text-align: center;
+  background: var(--surface-soft);
   cursor: pointer;
-  transition: border-color .2s, background .2s;
-}
-
-.upload-dropzone.is-dragging,
-.upload-dropzone:hover {
-  border-color: var(--primary);
-  background: var(--primary-soft);
 }
 
 .upload-dropzone input[type="file"] {
@@ -367,159 +308,200 @@
   cursor: pointer;
 }
 
+.upload-dropzone:focus-within {
+  outline: 3px solid #e8ad31;
+  outline-offset: 3px;
+}
+
+.upload-dropzone.is-dragging, .upload-dropzone:hover {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+
 .upload-icon {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  margin-bottom: 5px;
-  border-radius: 50%;
-  color: #fff;
-  background: var(--primary);
-  font-size: 1.65rem;
-  line-height: 1;
+  color: var(--primary);
+  font-size: 1.8rem;
 }
 
 .upload-dropzone small {
-  color: #66737e;
+  font-size: .75rem;
+  color: var(--text-muted);
 }
 
 .upload-file-list {
-  display: grid;
-  gap: 5px;
-  padding: 0;
-  margin: 10px 0 0;
   list-style: none;
-  font-size: .86rem;
-}
-
-.upload-file-list li {
-  padding: 7px 10px;
-  border-radius: 6px;
-  background: var(--primary-soft);
+  padding: 0;
+  margin: 14px 0 0;
 }
 
 .offer-review {
-  display: grid;
-  gap: 0;
-  overflow: hidden;
   margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .review-section {
-  padding: 20px 22px;
-  border-bottom: 1px solid #e1e7eb;
+  padding: 22px;
+  border-bottom: 1px solid var(--border);
 }
 
 .review-section:last-child {
   border-bottom: 0;
 }
 
-.review-section h3 {
-  margin-bottom: 12px;
-  font-size: 1rem;
-}
-
 .review-list {
   display: grid;
-  grid-template-columns: minmax(130px, .38fr) 1fr;
-  gap: 6px 18px;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 10px 20px;
   margin: 0;
-  font-size: .9rem;
+  font-size: .83rem;
 }
 
 .review-list dt {
-  color: #63707b;
-  font-weight: 700;
+  color: var(--text-muted);
 }
 
 .review-list dd {
   margin: 0;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .privacy-box {
-  padding: 18px;
-  border: 1px solid #d6e0e6;
-  border-radius: 10px;
-  background: #f7f9fa;
-}
-
-.offer-builder .form-actions {
+  border-top: 1px solid var(--border);
   padding-top: 22px;
-  border-top: 1px solid #e3e8eb;
 }
 
-.offer-builder .form-actions .btn {
-  min-width: 150px;
-}
-
-@media (max-width: 760px) {
-  .offer-builder-shell {
-    width: min(calc(100% - 24px), 1080px);
-  }
-
-  .offer-builder {
-    padding: 22px 18px 26px;
-    border-radius: var(--radius-card);
-  }
-
-  .offer-benefits {
-    display: grid;
-    justify-content: start;
-    max-width: 320px;
-    margin-inline: auto;
-    text-align: left;
-  }
-
-  .offer-steps {
+.form-actions {
   display: flex;
-    margin-bottom: 32px;
+  gap: 14px;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.form-success h2 {
+  font-size: 2rem;
+}
+
+.offer-builder.is-complete .form-step, .offer-builder.is-complete .offer-steps {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .offer-builder-shell {
+    grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
+    gap: 32px;
   }
 
-  .offer-steps .step-dot span {
-    display: none;
-  }
-
-  .offer-steps .step-dot b {
-    width: 32px;
-    height: 32px;
-  }
-
-  .offer-steps .step-dot::before {
-    top: 15px;
-  }
-
-  .service-choice-grid,
-  .compact-grid {
+  .service-choice-grid {
     grid-template-columns: 1fr;
   }
 
-  .service-choice {
-    min-height: 0;
+}
+
+@media (max-width: 820px) {
+  .offer-builder-shell {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .conditional-card,
-  .service-detail-panel,
-  .appointment-card {
+  .offer-builder-intro {
+    position: static;
+  }
+
+  .offer-builder-intro h1 {
+    max-width: 680px;
+  }
+
+  .offer-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    margin: 20px 0;
+  }
+
+  .offer-benefits li {
+    margin: 0;
+    font-size: .82rem;
+  }
+
+  .offer-whatsapp {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+
+  .offer-whatsapp p {
+    margin: 0;
+  }
+
+  .offer-whatsapp > * {
+    flex: 1;
+  }
+
+  .service-choice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 560px) {
+  .offer-builder-section {
+    padding-top: 32px;
+  }
+
+  .offer-builder-intro h1 {
+    font-size: 2rem;
+  }
+
+  .offer-whatsapp {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .offer-duration {
+    margin-top: 16px;
+  }
+
+  .offer-builder {
+    padding: 22px 18px;
+  }
+
+  .offer-steps {
+    padding-inline: 0;
+  }
+
+  .step-dot > span {
+    display: none;
+  }
+
+  .service-choice-grid, .compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conditional-card, .service-detail-panel, .appointment-card {
     padding: 18px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions .btn {
+    width: 100%;
   }
 
   .review-list {
     grid-template-columns: 1fr;
-    gap: 1px;
+    gap: 5px;
   }
 
   .review-list dd + dt {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
-  .offer-builder .form-actions {
-    flex-direction: column-reverse;
-  }
-
-  .offer-builder .form-actions .btn,
-  .offer-builder .form-actions > span {
-    width: 100%;
-  }
 }

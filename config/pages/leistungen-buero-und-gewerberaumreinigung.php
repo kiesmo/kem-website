@@ -48,12 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Büro- und Gewerbe­raumreinigung',
     'src' => '/assets/img/services/buero-und-gewerberaumreinigung/buero-und-gewerberaumreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büro- und Gewerberaumreinigung',
-    'mobile_tag' => 'Büro- & Gewerbereinigung',
   ),
   'cta' => 
   array (

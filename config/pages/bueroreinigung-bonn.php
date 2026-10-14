@@ -46,11 +46,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Büroreinigung in Bonn',
     'src' => '/assets/img/locations/bueroreinigung-bonn/bueroreinigung-bonn-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büroreinigung Bonn',
     'class' => 'hero-focus-left',
   ),
   'cta' => 

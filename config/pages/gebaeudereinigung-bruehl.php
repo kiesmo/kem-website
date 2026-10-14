@@ -42,11 +42,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-right',
+    'heading' => 'Gebäudereinigung in Brühl',
     'src' => '/assets/img/locations/gebaeudereinigung-bruehl/gebaeudereinigung-bruehl-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Gebäudereinigung Brühl',
   ),
   'cta' => 
   array (

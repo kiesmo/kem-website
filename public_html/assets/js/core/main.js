@@ -30,6 +30,7 @@
     menuBtn?.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
     nav?.classList.toggle('open', open);
     document.body.classList.toggle('menu-lock', open);
+    document.querySelectorAll('main, .site-footer, .utility-nav').forEach(region => { region.inert = open; });
     if (!open) navDropdowns.forEach(dropdown => { dropdown.open = false; });
     syncBacktop();
 
@@ -108,14 +109,6 @@
     input.min = localDate;
   });
 
-  const footer = document.querySelector('.site-footer');
-  if (footer && 'IntersectionObserver' in window) {
-    const footerObserver = new IntersectionObserver(entries => {
-      document.body.classList.toggle('footer-visible', entries.some(entry => entry.isIntersecting));
-    }, { threshold: 0.08 });
-    footerObserver.observe(footer);
-  }
-
   const ensureFieldError = field => {
     if (!field.name || field.type === 'hidden') return null;
     if (!field.id) {
@@ -170,8 +163,13 @@
 
   document.querySelectorAll('form[data-ajax] input, form[data-ajax] select, form[data-ajax] textarea').forEach(field => {
     ensureFieldError(field);
-    field.addEventListener('input', () => clearFieldError(field));
-    field.addEventListener('change', () => clearFieldError(field));
+    const clearErrors = () => {
+      if (field.type === 'radio') {
+        [...field.form.elements].filter(element => element.name === field.name).forEach(clearFieldError);
+      } else clearFieldError(field);
+    };
+    field.addEventListener('input', clearErrors);
+    field.addEventListener('change', clearErrors);
   });
 
   document.querySelectorAll('form[data-ajax]').forEach(form => form.addEventListener('submit', async event => {
@@ -213,7 +211,8 @@
         const errors = data.errors && typeof data.errors === 'object' ? data.errors : {};
         let firstField = null;
         Object.entries(errors).forEach(([name, message]) => {
-          const field = form.elements.namedItem(name);
+          const namedField = form.elements.namedItem(name);
+          const field = namedField instanceof RadioNodeList ? [...namedField].find(element => element instanceof HTMLElement) : namedField;
           if (field instanceof HTMLElement) {
             showFieldError(field, String(message));
             if (!firstField) firstField = field;

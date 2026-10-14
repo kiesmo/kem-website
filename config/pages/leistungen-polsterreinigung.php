@@ -48,11 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-right',
+    'heading' => 'Polsterreinigung in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/services/polsterreinigung/polsterreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Polsterreinigung',
   ),
   'cta' => 
   array (

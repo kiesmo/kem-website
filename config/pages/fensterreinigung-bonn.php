@@ -47,11 +47,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Fensterreinigung in Bonn',
     'src' => '/assets/img/locations/fensterreinigung-bonn/fensterreinigung-bonn-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Fensterreinigung Bonn',
   ),
   'cta' => 
   array (

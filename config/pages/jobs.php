@@ -33,11 +33,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Glas- und Gebäudereiniger (m/w/d)',
     'src' => '/assets/img/pages/jobs/jobs-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Jobs',
   ),
   'cta' => 
   array (

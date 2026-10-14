@@ -46,11 +46,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Büroreinigung in Brühl',
     'src' => '/assets/img/locations/bueroreinigung-bruehl/bueroreinigung-bruehl-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büroreinigung Brühl',
     'class' => 'hero-focus-left',
   ),
   'cta' => 

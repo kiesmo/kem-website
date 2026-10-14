@@ -48,12 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Solar- und Photovoltaik­anlagenreinigung in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Solar- und Photovoltaikanlagenreinigung',
-    'mobile_tag' => 'Solar- & PV-Reinigung',
   ),
   'cta' => 
   array (

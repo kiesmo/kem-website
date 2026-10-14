@@ -46,11 +46,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Büroreinigung in Köln',
     'src' => '/assets/img/locations/bueroreinigung-koeln/bueroreinigung-koeln-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büroreinigung Köln',
     'class' => 'hero-focus-left',
   ),
   'cta' => 

@@ -6,7 +6,7 @@ $servicesCurrent = false;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section legal"><div class="container narrow">
-<h1>Datenschutzerklärung</h1>
+<header class="legal-intro"><span class="eyebrow">KEM Gebäudereinigung</span><h1>Datenschutzerklärung</h1></header>
 <p><strong>Stand: August 2026</strong></p>
 <h2>1. Verantwortlicher</h2>
 <p>KEM Gebäudereinigung<br/>Inhaber: Kian Motlagh<br/><?= kem_h($kem['street']) ?><br><?= kem_h($kem['postal_code']) ?> <?= kem_h($kem['city']) ?><br><?= kem_h($kem['country']) ?><br/>Telefon: <a href="tel:<?= kem_h($kem['phone_href']) ?>"><?= kem_h($kem['phone_display']) ?></a><br/>E-Mail: <a href="mailto:<?= kem_h($kem['email']) ?>"><?= kem_h($kem['email']) ?></a></p>

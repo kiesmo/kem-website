@@ -47,11 +47,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Entrümpelung und Haushaltsauflösung in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/services/entruempelung/entruempelung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Entrümpelung',
   ),
   'cta' => 
   array (

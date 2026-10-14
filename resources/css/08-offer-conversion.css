@@ -1,6 +1,6 @@
-/* Offer form conversion improvements */
+/* Conditional choices, photo previews and review controls. */
 .object-location-card {
-  margin: 0 0 26px;
+  margin-bottom: 24px;
 }
 
 .object-basics-new {
@@ -8,175 +8,156 @@
 }
 
 .optional-label {
-  color: #6a7681;
-  font-size: .84em;
-  font-weight: 700;
+  color: var(--text-muted);
+  font-size: .85em;
+  font-weight: 450;
 }
 
-.estimate-option {
+.field label.estimate-option {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  margin: 8px 0 0;
-  color: #5f6c76;
-  font-size: .82rem;
-  font-weight: 700;
-  line-height: 1.35;
-  cursor: pointer;
+  margin: 10px 0 0;
+  font-size: .75rem;
+  font-weight: 450;
+  color: var(--text-muted);
 }
 
 .estimate-option input[type="checkbox"] {
-  width: auto;
+  width: 16px;
+  height: 16px;
   min-height: 0;
+  margin: 3px 0 0;
+  accent-color: var(--navy);
   flex: 0 0 auto;
-  margin: 2px 0 0;
-  accent-color: var(--primary);
 }
 
-.offer-builder input[readonly][data-required-when-active] {
-  background: #f4f8fb;
-  color: #4f5d68;
+.offer-builder input[readonly] {
+  background: var(--surface-soft);
 }
 
 .appointment-choice-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
 }
 
 .appointment-choice {
   display: flex;
-  min-height: 118px;
-  gap: 12px;
+  gap: 14px;
   align-items: flex-start;
-  padding: 16px;
-  border: 1px solid #d4dde3;
-  border-radius: var(--radius-control);
-  background: #fff;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   cursor: pointer;
 }
 
-.appointment-choice:has(input:checked) {
-  border-color: var(--primary);
-  background: var(--primary-soft);
-  box-shadow: 0 0 0 2px var(--primary-shadow-soft);
-}
-
 .appointment-choice input {
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 0;
+  accent-color: var(--navy);
   flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
-  margin: 2px 0 0;
-  accent-color: var(--primary);
 }
 
 .appointment-choice span {
   display: grid;
-  gap: 5px;
+  gap: 6px;
+}
+
+.appointment-choice b {
+  font-size: .87rem;
+  font-weight: 600;
 }
 
 .appointment-choice small {
-  color: #5d6a75;
-  line-height: 1.45;
+  color: var(--text-muted);
+  font-size: .78rem;
+  line-height: 1.5;
 }
 
-.exact-date-card {
-  margin-top: 18px;
+.appointment-choice:has(input:checked) {
+  background: var(--primary-soft);
+  border-color: var(--primary-dark);
 }
 
-.appointment-note-field {
-  margin-top: 22px;
+.appointment-choice:has([aria-invalid="true"]) {
+  border-color: #a12b36;
+}
+
+.exact-date-card, .appointment-note-field {
+  margin-top: 24px;
 }
 
 .contact-hint {
-  margin: 7px 0 0;
+  margin-top: 8px;
 }
 
 .upload-preview-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
-.upload-file-list .upload-preview-item {
+.upload-preview-item {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr) auto;
-  gap: 10px;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  gap: 12px;
   align-items: center;
-  padding: 8px;
-  border: 1px solid #d9e2e8;
-  background: #fff;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .upload-preview-item img {
-  width: 64px;
-  height: 54px;
-  border-radius: var(--radius-control);
+  width: 56px;
+  height: 48px;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .upload-preview-meta {
   display: grid;
+  gap: 4px;
   min-width: 0;
-  gap: 2px;
 }
 
 .upload-preview-meta b {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 600;
+  font-size: .75rem;
 }
 
 .upload-preview-meta small {
-  color: #687783;
+  font-size: .7rem;
+  color: var(--text-muted);
 }
 
-.upload-remove,
-.review-edit {
-  padding: 6px 9px;
-  border: 1px solid #cbd5dc;
-  border-radius: var(--radius-control);
-  color: var(--primary-dark);
+.upload-remove, .review-edit {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 6px;
   background: #fff;
-  font: inherit;
-  font-size: .78rem;
-  font-weight: 800;
+  color: var(--primary-dark);
+  font-size: .74rem;
   cursor: pointer;
 }
 
-.upload-remove:hover,
-.review-edit:hover {
-  border-color: var(--primary);
+.upload-remove:hover, .review-edit:hover {
   background: var(--primary-soft);
 }
 
 .review-section-heading {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
-  align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .review-section-heading h3 {
+  font-size: 1rem;
   margin: 0;
-}
-
-@media (max-width: 760px) {
-  .appointment-choice-grid,
-  .upload-preview-list {
-    grid-template-columns: 1fr;
-  }
-
-  .appointment-choice {
-    min-height: 0;
-  }
-
-  .upload-file-list .upload-preview-item {
-    grid-template-columns: 56px minmax(0, 1fr) auto;
-  }
-
-  .upload-preview-item img {
-    width: 56px;
-    height: 50px;
-  }
 }

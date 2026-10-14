@@ -1,0 +1,44 @@
+{
+  "design": "alternative",
+  "base_branch": "final",
+  "base_commit": "00f1fe3",
+  "viewports": [
+    320,
+    375,
+    390,
+    768,
+    1024,
+    1081,
+    1180,
+    1440,
+    1920,
+    2560
+  ],
+  "pages": 28,
+  "layout_checks": 280,
+  "layout_issues": 0,
+  "functional_checks": 196,
+  "accessibility_checks": 56,
+  "automated_accessibility_violations": 0,
+  "preserved": [
+    "titles",
+    "descriptions",
+    "canonical URLs",
+    "form fields",
+    "public routes"
+  ],
+  "checked": [
+    "navigation hover and keyboard",
+    "mobile navigation and focus",
+    "responsive layout",
+    "service/city preselection",
+    "mocked server errors",
+    "mocked successful enquiry",
+    "new enquiry after success",
+    "internal links"
+  ],
+  "limits": [
+    "Chromium laboratory checks; no physical Safari/iOS devices",
+    "No live SMTP send or production deployment"
+  ]
+}

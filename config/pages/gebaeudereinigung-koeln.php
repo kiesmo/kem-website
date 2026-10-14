@@ -41,11 +41,11 @@ return array (
   ),
   'hero' => 
   array (
+    'heading' => 'Gebäudereinigung in Köln',
     'src' => '/assets/img/locations/gebaeudereinigung-koeln/gebaeudereinigung-koeln-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Gebäudereinigung Köln',
     'class' => 'hero-focus-right',
   ),
   'cta' => 

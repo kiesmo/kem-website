@@ -20,7 +20,11 @@
         step.classList.toggle('active', active);
         step.setAttribute('aria-hidden', String(!active));
       });
-      dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex <= index));
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex <= index);
+        dot.setAttribute('aria-current', dotIndex === index ? 'step' : 'false');
+        dot.setAttribute('aria-label', `Schritt ${dotIndex + 1}: ${dot.dataset.stepLabel}`);
+      });
 
       const heading = steps[index]?.querySelector('h2');
       const headingText = heading?.textContent?.trim() || `Schritt ${index + 1}`;
@@ -64,6 +68,17 @@
     });
     form.addEventListener('form:success', () => {
       index = 0;
+      paint();
+      form.classList.add('is-complete');
+      const success = form.querySelector('.form-success');
+      if (success) success.hidden = false;
+    });
+    form.querySelector('[data-offer-again]')?.addEventListener('click', () => {
+      form.classList.remove('is-complete');
+      form.querySelector('.form-success').hidden = true;
+      const status = form.querySelector('.form-status');
+      status.textContent = '';
+      status.className = 'form-status';
       paint({ focus: true });
     });
 
@@ -409,6 +424,12 @@
     syncFiles();
     updateReview();
   });
+
+  const entry = new URL(location.href).searchParams;
+  const requestedService = serviceChecks.find(check => check.dataset.cleaningType === entry.get('leistung'));
+  if (requestedService) requestedService.checked = true;
+  const requestedCity = entry.get('ort');
+  if (['Brühl', 'Köln', 'Bonn'].includes(requestedCity)) form.elements.namedItem('cleaning_city').value = requestedCity;
 
   syncServicePanels();
   syncAppointment();

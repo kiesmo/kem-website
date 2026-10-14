@@ -48,12 +48,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-right',
+    'heading' => 'Grundreinigung in Köln, Brühl, Bonn & Umgebung',
     'src' => '/assets/img/services/grundreinigung/grundreinigung-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Grund- und Spezialreinigung',
-    'mobile_tag' => 'Grund- & Spezialreinigung',
   ),
   'cta' => 
   array (

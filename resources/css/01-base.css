@@ -1,20 +1,18 @@
-/* Base and accessibility */
+/* Document, type scale and accessibility. */
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 8px);
+  scroll-padding-top: calc(var(--header-height) + 20px);
 }
 
 body {
   margin: 0;
   color: var(--text);
-  background: var(--surface);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
+  background: var(--surface-soft);
+  font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -22,8 +20,7 @@ body.menu-lock {
   overflow: hidden;
 }
 
-img,
-video {
+img, video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -34,36 +31,93 @@ a {
   text-decoration: none;
 }
 
-button,
-input,
-textarea,
-select {
+button, input, textarea, select {
   font: inherit;
 }
 
+button, summary, label[for] {
+  touch-action: manipulation;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .container {
-  width: min(calc(100% - 40px), var(--max));
+  width: min(calc(100% - 64px), var(--max));
   margin-inline: auto;
+}
+
+h1, h2, h3 {
+  margin: 0 0 22px;
+  line-height: 1.12;
+  font-weight: 650;
+  letter-spacing: -.04em;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
+  color: var(--navy);
+}
+
+h3 {
+  font-size: var(--heading-3);
+  letter-spacing: -.025em;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.lead {
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.narrow {
+  max-width: 850px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 18px;
+  font-size: .73rem;
+  line-height: 1.5;
+  font-weight: 750;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+:focus-visible {
+  outline: 3px solid #e8ad31;
+  outline-offset: 4px;
 }
 
 .skip-link {
   position: fixed;
-  z-index: 9999;
-  top: 8px;
-  left: 8px;
-  padding: 10px 14px;
-  background: var(--surface);
-  border: 2px solid var(--primary);
-  transform: translateY(-150%);
+  top: 10px;
+  left: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  color: var(--navy);
+  transform: translateY(-180%);
+  z-index: 2000;
 }
 
 .skip-link:focus {
   transform: none;
-}
-
-:focus-visible {
-  outline: 3px solid #ffbf00;
-  outline-offset: 3px;
 }
 
 .sr-only {
@@ -78,56 +132,16 @@ select {
   border: 0 !important;
 }
 
-h1,
-h2,
-h3,
-.eyebrow,
-.hero-label,
-.hero-tag {
-  overflow-wrap: anywhere;
-  word-break: normal;
-  hyphens: auto;
+main p a:not(.btn):not(.whatsapp-inline), .legal a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.18;
-  margin-top: 0;
-  font-weight: 750;
-}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
 
-h1 {
-  font-size: var(--heading-1);
-  letter-spacing: -.025em;
-}
-
-h2 {
-  color: var(--primary);
-  font-size: var(--heading-2);
-  text-transform: none;
-  letter-spacing: -.015em;
-}
-
-h3 {
-  font-size: var(--heading-3);
-}
-
-.lead {
-  font-size: 1.15rem;
-  color: var(--text-muted);
-}
-
-.narrow {
-  max-width: 870px;
-}
-
-.eyebrow {
-  display: block;
-  color: var(--primary);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .09em;
-  font-size: .83rem;
-  margin-bottom: 12px;
 }

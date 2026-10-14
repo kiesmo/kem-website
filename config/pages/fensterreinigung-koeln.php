@@ -47,11 +47,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Fensterreinigung in Köln',
     'src' => '/assets/img/locations/fensterreinigung-koeln/fensterreinigung-koeln-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Fensterreinigung Köln',
   ),
   'cta' => 
   array (

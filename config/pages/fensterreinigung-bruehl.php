@@ -47,11 +47,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-left',
+    'heading' => 'Fensterreinigung in Brühl',
     'src' => '/assets/img/locations/fensterreinigung-bruehl/fensterreinigung-bruehl-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Fensterreinigung Brühl',
   ),
   'cta' => 
   array (

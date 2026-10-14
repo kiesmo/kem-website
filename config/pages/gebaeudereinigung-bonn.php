@@ -42,11 +42,11 @@ return array (
   'hero' => 
   array (
     'class' => 'hero-focus-right',
+    'heading' => 'Gebäudereinigung in Bonn',
     'src' => '/assets/img/locations/gebaeudereinigung-bonn/gebaeudereinigung-bonn-hero.webp',
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Gebäudereinigung Bonn',
   ),
   'cta' => 
   array (
