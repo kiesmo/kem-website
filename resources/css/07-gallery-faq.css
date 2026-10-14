@@ -78,6 +78,6 @@
 }
 
 .faq-item summary:focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus);
   outline-offset: -3px;
 }

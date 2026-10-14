@@ -9,7 +9,8 @@
   background: var(--primary);
   color: #fff;
   padding: 12px 22px;
-  font-size: .82rem;
+  min-height: 48px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0;
@@ -29,6 +30,14 @@
   background: var(--surface);
   color: var(--primary);
   border: 1px solid currentColor;
+  box-shadow: none;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: .65;
+  transform: none;
   box-shadow: none;
 }
 
@@ -109,7 +118,7 @@
   text-shadow: none;
   font-size: .98rem;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: .028em;
   padding: 31px 0 27px;
   cursor: pointer;
@@ -499,7 +508,7 @@
 
 .cta-band {
   text-align: center;
-  background: #f7f9fb;
+  background: var(--surface-conversion);
   padding: var(--section-space) 20px;
 }
 

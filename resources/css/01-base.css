@@ -62,8 +62,31 @@ select {
 }
 
 :focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible {
+  outline-color: #ffbf00;
+}
+
+.service-detail p a:not(.btn),
+.intro-copy p a:not(.btn),
+.legal a:not(.btn),
+.contact-layout p a:not(.btn),
+.faq-item p a:not(.btn),
+article > p a:not(.btn) {
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+.service-detail > p,
+.intro-copy > p,
+.legal .container,
+article > p {
+  max-width: var(--read-width);
 }
 
 .sr-only {
@@ -94,7 +117,7 @@ h2,
 h3 {
   line-height: 1.18;
   margin-top: 0;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 h1 {
@@ -114,18 +137,19 @@ h3 {
 }
 
 .lead {
+  max-width: var(--lead-width);
   font-size: 1.15rem;
   color: var(--text-muted);
 }
 
 .narrow {
-  max-width: 870px;
+  max-width: var(--read-width);
 }
 
 .eyebrow {
   display: block;
   color: var(--primary);
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .09em;
   font-size: .83rem;

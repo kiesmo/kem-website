@@ -13,6 +13,12 @@
   --max: 1240px;
   --text-muted: #526372;
   --border: #dce5ec;
+  --control-border: #758795;
+  --focus: #074b82;
+  --surface-info: #edf5fa;
+  --surface-conversion: #edf5fa;
+  --read-width: 68ch;
+  --lead-width: 58ch;
   --radius-card: 16px;
   --radius-control: 10px;
   --radius-button: 999px;
@@ -21,7 +27,7 @@
   --layout-gap: clamp(24px, 4vw, 55px);
   --heading-1: clamp(2rem, 4vw, 3.25rem);
   --heading-2: clamp(1.55rem, 2.7vw, 2.25rem);
-  --heading-3: clamp(1.05rem, 1.3vw, 1.2rem);
+  --heading-3: clamp(1.125rem, 1.3vw, 1.3rem);
   --shadow-card: 0 8px 26px rgba(13, 43, 69, .06);
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
   --header-solid-height: 84px;

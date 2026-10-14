@@ -16,6 +16,12 @@
   --max: 1240px;
   --text-muted: #526372;
   --border: #dce5ec;
+  --control-border: #758795;
+  --focus: #074b82;
+  --surface-info: #edf5fa;
+  --surface-conversion: #edf5fa;
+  --read-width: 68ch;
+  --lead-width: 58ch;
   --radius-card: 16px;
   --radius-control: 10px;
   --radius-button: 999px;
@@ -24,7 +30,7 @@
   --layout-gap: clamp(24px, 4vw, 55px);
   --heading-1: clamp(2rem, 4vw, 3.25rem);
   --heading-2: clamp(1.55rem, 2.7vw, 2.25rem);
-  --heading-3: clamp(1.05rem, 1.3vw, 1.2rem);
+  --heading-3: clamp(1.125rem, 1.3vw, 1.3rem);
   --shadow-card: 0 8px 26px rgba(13, 43, 69, .06);
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
   --header-solid-height: 84px;
@@ -98,8 +104,31 @@ select {
 }
 
 :focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible {
+  outline-color: #ffbf00;
+}
+
+.service-detail p a:not(.btn),
+.intro-copy p a:not(.btn),
+.legal a:not(.btn),
+.contact-layout p a:not(.btn),
+.faq-item p a:not(.btn),
+article > p a:not(.btn) {
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+.service-detail > p,
+.intro-copy > p,
+.legal .container,
+article > p {
+  max-width: var(--read-width);
 }
 
 .sr-only {
@@ -130,7 +159,7 @@ h2,
 h3 {
   line-height: 1.18;
   margin-top: 0;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 h1 {
@@ -150,18 +179,19 @@ h3 {
 }
 
 .lead {
+  max-width: var(--lead-width);
   font-size: 1.15rem;
   color: var(--text-muted);
 }
 
 .narrow {
-  max-width: 870px;
+  max-width: var(--read-width);
 }
 
 .eyebrow {
   display: block;
   color: var(--primary);
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .09em;
   font-size: .83rem;
@@ -180,7 +210,8 @@ h3 {
   background: var(--primary);
   color: #fff;
   padding: 12px 22px;
-  font-size: .82rem;
+  min-height: 48px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0;
@@ -200,6 +231,14 @@ h3 {
   background: var(--surface);
   color: var(--primary);
   border: 1px solid currentColor;
+  box-shadow: none;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: .65;
+  transform: none;
   box-shadow: none;
 }
 
@@ -280,7 +319,7 @@ h3 {
   text-shadow: none;
   font-size: .98rem;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: .028em;
   padding: 31px 0 27px;
   cursor: pointer;
@@ -670,7 +709,7 @@ h3 {
 
 .cta-band {
   text-align: center;
-  background: #f7f9fb;
+  background: var(--surface-conversion);
   padding: var(--section-space) 20px;
 }
 
@@ -783,8 +822,8 @@ h3 {
 .service-card .more {
   margin-top: auto;
   color: var(--primary);
-  font-weight: 800;
-  font-size: .82rem;
+  font-weight: 600;
+  font-size: .95rem;
 }
 
 .photo-card img {
@@ -893,10 +932,10 @@ h3 {
   grid-column: 1 / -1;
 }
 
-.field label {
+.field > label:not(.service-choice):not(.estimate-option) {
   display: block;
-  font-size: .86rem;
-  font-weight: 800;
+  font-size: .95rem;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -905,7 +944,7 @@ h3 {
 .field select {
   width: 100%;
   min-height: 50px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: var(--surface);
   padding: 12px 14px;
@@ -921,6 +960,24 @@ h3 {
 .field select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px var(--primary-shadow-soft);
+}
+
+.field input:not([type="checkbox"]):not([type="file"]):hover,
+.field textarea:hover,
+.field select:hover {
+  border-color: var(--primary-dark);
+}
+
+.field input[readonly] {
+  background: var(--surface-info);
+  color: var(--text-muted);
+}
+
+.field input:disabled,
+.field textarea:disabled,
+.field select:disabled {
+  background: var(--surface-soft);
+  color: var(--text-muted);
 }
 
 .checkbox {
@@ -1811,7 +1868,7 @@ body.footer-visible .whatsapp-chat {
   gap: 14px;
   align-items: flex-start;
   padding: 18px;
-  border: 1px solid #d4dde3;
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: #fff;
   cursor: pointer;
@@ -1848,6 +1905,7 @@ body.footer-visible .whatsapp-chat {
 }
 
 .service-choice small {
+  font-weight: 400;
   color: #5d6a75;
   line-height: 1.45;
 }
@@ -1942,6 +2000,12 @@ body.footer-visible .whatsapp-chat {
 .upload-dropzone:hover {
   border-color: var(--primary);
   background: var(--primary-soft);
+}
+
+.upload-dropzone:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  background: var(--surface-info);
 }
 
 .upload-dropzone input[type="file"] {
@@ -2376,7 +2440,7 @@ body.footer-visible .whatsapp-chat {
 }
 
 .faq-item summary:focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus);
   outline-offset: -3px;
 }
 
@@ -2393,7 +2457,7 @@ body.footer-visible .whatsapp-chat {
 .optional-label {
   color: #6a7681;
   font-size: .84em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .estimate-option {
@@ -2433,7 +2497,7 @@ body.footer-visible .whatsapp-chat {
   gap: 12px;
   align-items: flex-start;
   padding: 16px;
-  border: 1px solid #d4dde3;
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: #fff;
   cursor: pointer;

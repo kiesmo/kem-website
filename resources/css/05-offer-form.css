@@ -225,7 +225,7 @@
   gap: 14px;
   align-items: flex-start;
   padding: 18px;
-  border: 1px solid #d4dde3;
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: #fff;
   cursor: pointer;
@@ -262,6 +262,7 @@
 }
 
 .service-choice small {
+  font-weight: 400;
   color: #5d6a75;
   line-height: 1.45;
 }
@@ -356,6 +357,12 @@
 .upload-dropzone:hover {
   border-color: var(--primary);
   background: var(--primary-soft);
+}
+
+.upload-dropzone:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  background: var(--surface-info);
 }
 
 .upload-dropzone input[type="file"] {

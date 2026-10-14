@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="de"><?php $pageKey = '/faq/'; require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/head.php'; ?><body><?php
-$navActive = ['about', 'faq'];
+$navActive = ['faq'];
 $servicesCurrent = false;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>

@@ -10,7 +10,7 @@
 .optional-label {
   color: #6a7681;
   font-size: .84em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .estimate-option {
@@ -50,7 +50,7 @@
   gap: 12px;
   align-items: flex-start;
   padding: 16px;
-  border: 1px solid #d4dde3;
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: #fff;
   cursor: pointer;

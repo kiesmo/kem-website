@@ -102,8 +102,8 @@
 .service-card .more {
   margin-top: auto;
   color: var(--primary);
-  font-weight: 800;
-  font-size: .82rem;
+  font-weight: 600;
+  font-size: .95rem;
 }
 
 .photo-card img {
@@ -212,10 +212,10 @@
   grid-column: 1 / -1;
 }
 
-.field label {
+.field > label:not(.service-choice):not(.estimate-option) {
   display: block;
-  font-size: .86rem;
-  font-weight: 800;
+  font-size: .95rem;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -224,7 +224,7 @@
 .field select {
   width: 100%;
   min-height: 50px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-control);
   background: var(--surface);
   padding: 12px 14px;
@@ -240,6 +240,24 @@
 .field select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px var(--primary-shadow-soft);
+}
+
+.field input:not([type="checkbox"]):not([type="file"]):hover,
+.field textarea:hover,
+.field select:hover {
+  border-color: var(--primary-dark);
+}
+
+.field input[readonly] {
+  background: var(--surface-info);
+  color: var(--text-muted);
+}
+
+.field input:disabled,
+.field textarea:disabled,
+.field select:disabled {
+  background: var(--surface-soft);
+  color: var(--text-muted);
 }
 
 .checkbox {
