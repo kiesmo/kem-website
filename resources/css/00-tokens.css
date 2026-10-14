@@ -1,0 +1,18 @@
+/* Design tokens */
+:root {
+  --primary: #0969b5;
+  --primary-dark: #074b82;
+  --primary-light: #6fa8d1;
+  --primary-soft: #edf5fa;
+  --primary-shadow: rgba(9, 105, 181, .22);
+  --primary-shadow-soft: rgba(9, 105, 181, .10);
+  --navy: #0d2b45;
+  --text: #172534;
+  --surface: #fff;
+  --surface-soft: #eef2f5;
+  --max: 1240px;
+  --shadow: 0 16px 40px rgba(31, 35, 40, .10);
+  --header-solid-height: 104px;
+  --hero-height: clamp(620px, 76vh, 760px);
+}
+

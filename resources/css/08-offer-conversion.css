@@ -1,0 +1,189 @@
+/* Offer form conversion improvements */
+.object-location-card {
+  margin: 0 0 26px;
+}
+
+.object-basics-new {
+  margin-bottom: 28px;
+}
+
+.optional-label {
+  color: #6a7681;
+  font-size: .84em;
+  font-weight: 700;
+}
+
+.estimate-option {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0 0 !important;
+  color: #5f6c76 !important;
+  font-size: .82rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.estimate-option input[type="checkbox"] {
+  width: auto !important;
+  min-height: 0 !important;
+  flex: 0 0 auto;
+  margin: 2px 0 0;
+  accent-color: var(--primary);
+}
+
+.offer-builder input[readonly][data-required-when-active] {
+  background: #f4f8fb !important;
+  color: #4f5d68;
+}
+
+.appointment-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.appointment-choice {
+  display: flex;
+  min-height: 118px;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #d4dde3;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.appointment-choice:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: 0 0 0 2px var(--primary-shadow-soft);
+}
+
+.appointment-choice input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--primary);
+}
+
+.appointment-choice span {
+  display: grid;
+  gap: 5px;
+}
+
+.appointment-choice small {
+  color: #5d6a75;
+  line-height: 1.45;
+}
+
+.exact-date-card {
+  margin-top: 18px;
+}
+
+.appointment-note-field {
+  margin-top: 22px;
+}
+
+.contact-hint {
+  margin: 7px 0 0;
+}
+
+.upload-preview-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.upload-preview-item {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px !important;
+  border: 1px solid #d9e2e8;
+  background: #fff !important;
+}
+
+.upload-preview-item img {
+  width: 64px;
+  height: 54px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.upload-preview-meta {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.upload-preview-meta b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-preview-meta small {
+  color: #687783;
+}
+
+.upload-remove,
+.review-edit {
+  padding: 6px 9px;
+  border: 1px solid #cbd5dc;
+  border-radius: 7px;
+  color: var(--primary-dark);
+  background: #fff;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.upload-remove:hover,
+.review-edit:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.review-section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.review-section-heading h3 {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .appointment-choice-grid,
+  .upload-preview-list {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-choice {
+    min-height: 0;
+  }
+
+  .upload-preview-item {
+    grid-template-columns: 56px minmax(0, 1fr) auto;
+  }
+
+  .upload-preview-item img {
+    width: 56px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .location-map-section iframe {
+    height: 310px;
+  }
+}
+

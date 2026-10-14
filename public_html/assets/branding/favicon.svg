@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Transparent background -->
+  <g transform="translate(20,22)">
+    <!-- main icon -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- left building -->
+      <path d="M36 182 V118 L66 100 V182" stroke="#0B5AA8" stroke-width="10"/>
+      <path d="M50 132 V170" stroke="#159CE4" stroke-width="8"/>
+
+      <!-- center building -->
+      <path d="M82 182 V70 L126 44 V182" stroke="#0B5AA8" stroke-width="10"/>
+      <path d="M101 84 V168" stroke="#0B5AA8" stroke-width="8"/>
+
+      <!-- right building -->
+      <path d="M142 182 V110 L182 132 V182" stroke="#0B5AA8" stroke-width="10"/>
+      <path d="M156 126 L156 173" stroke="#159CE4" stroke-width="8"/>
+
+      <!-- top wave -->
+      <path d="M18 204 C68 184, 116 224, 205 191" stroke="#0B5AA8" stroke-width="10"/>
+      <!-- bottom wave accent -->
+      <path d="M34 220 C88 203, 136 231, 194 209" stroke="#159CE4" stroke-width="10"/>
+    </g>
+
+    <!-- sparkle -->
+    <path d="M194 60 C194 78 203 87 221 87 C203 87 194 96 194 114 C194 96 185 87 167 87 C185 87 194 78 194 60 Z" fill="#159CE4"/>
+  </g>
+</svg>

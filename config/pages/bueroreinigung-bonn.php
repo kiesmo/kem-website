@@ -1,0 +1,61 @@
+<?php
+// Seitenkonfiguration für /bueroreinigung-bonn/
+return array (
+  'title' => 'Büroreinigung Bonn | KEM Gebäudereinigung',
+  'description' => 'Professionelle Büroreinigung in Bonn für Büros, Praxen, Verwaltungen und Gewerbeflächen. Flexible Intervalle, abgestimmte Zeiten und individuelles Angebot.',
+  'path' => '/bueroreinigung-bonn/',
+  'og_image' => '/assets/img/locations/bueroreinigung-bonn/bueroreinigung-bonn-hero.webp',
+  'breadcrumbs' => 
+  array (
+    0 => 
+    array (
+      'name' => 'Startseite',
+      'path' => '/',
+    ),
+    1 => 
+    array (
+      'name' => 'Büro- und Gewerberaumreinigung',
+      'path' => '/leistungen/buero-und-gewerberaumreinigung/',
+    ),
+    2 => 
+    array (
+      'name' => 'Büroreinigung Bonn',
+      'path' => '/bueroreinigung-bonn/',
+    ),
+  ),
+  'schema_extra' => 
+  array (
+    0 => 
+    array (
+      '@type' => 'Service',
+      '@id' => '/bueroreinigung-bonn/#service',
+      'name' => 'Büroreinigung Bonn',
+      'serviceType' => 'Büroreinigung',
+      'url' => '/bueroreinigung-bonn/',
+      'description' => 'Professionelle Büroreinigung in Bonn für Büros, Praxen, Verwaltungen und Gewerbeflächen. Flexible Intervalle, abgestimmte Zeiten und individuelles Angebot.',
+      'provider' => 
+      array (
+        '@id' => '/#business',
+      ),
+      'areaServed' => 
+      array (
+        '@type' => 'City',
+        'name' => 'Bonn',
+      ),
+    ),
+  ),
+  'hero' => 
+  array (
+    'src' => '/assets/img/locations/bueroreinigung-bonn/bueroreinigung-bonn-hero.webp',
+    'width' => 1920,
+    'height' => 870,
+    'alt' => '',
+    'tag' => 'Büroreinigung Bonn',
+    'class' => 'hero-focus-right',
+  ),
+  'cta' => 
+  array (
+    'class' => 'cta-band service-cta-band',
+    'content' => 'ctas/bueroreinigung-bonn.php',
+  ),
+);

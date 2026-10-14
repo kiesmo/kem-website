@@ -1,0 +1,72 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+ErrorDocument 404 /404.php
+ErrorDocument 410 /404.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Öffentliche index.php-URLs auf die saubere Verzeichnis-URL umleiten.
+# THE_REQUEST verhindert eine Schleife durch die interne DirectoryIndex-Auflösung.
+# Auf der echten Domain geht es direkt zur kanonischen HTTPS-www-URL, damit keine Redirect-Kette entsteht.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.php(?:[?\s]) [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?kem-gebaeudereinigung\.de$ [NC]
+RewriteRule ^(.*/)?index\.php$ https://www.kem-gebaeudereinigung.de/$1 [R=301,L,NE]
+
+# Lokale Entwicklungs-/Vorschau-Hosts ebenfalls bereinigen, ohne sie auf die Live-Domain umzulenken.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.php(?:[?\s]) [NC]
+RewriteRule ^(.*/)?index\.php$ /$1 [R=301,L,NE]
+# Einheitliche Hauptdomain: HTTPS + www.
+# Die Regel greift nur für die echte Domain; lokale Entwicklungs- und Vorschau-Hosts bleiben nutzbar.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?kem-gebaeudereinigung\.de$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.kem-gebaeudereinigung\.de$ [NC]
+RewriteRule ^ https://www.kem-gebaeudereinigung.de%{REQUEST_URI} [R=301,L]
+
+# Dauerhaft entfernte Ortsseite
+RewriteRule ^kerpen-bergheim/?$ - [G,L,NC]
+
+# Frühere Solar-/Photovoltaik-URLs auf eine gemeinsame Leistungsseite
+RewriteRule ^photovoltaikanlagen-reinigung-in-koeln/?$ /leistungen/solaranlagenreinigung/ [R=301,L,NC]
+RewriteRule ^reinigung-von-solaranlagen-in-koeln/?$ /leistungen/solaranlagenreinigung/ [R=301,L,NC]
+# Browser übertragen Umlaute in der Regel URL-codiert.
+RewriteCond %{THE_REQUEST} \s/+photovoltaikanlagen-reinigung-in-k%C3%B6ln(?:[/?\s]) [NC,OR]
+RewriteCond %{THE_REQUEST} \s/+reinigung-von-solaranlagen-in-k%C3%B6ln(?:[/?\s]) [NC]
+RewriteRule ^ /leistungen/solaranlagenreinigung/ [R=301,L]
+
+# Vereinheitlichte Leistungs-URLs: alte öffentliche Pfade dauerhaft weiterleiten
+RewriteRule ^teppichreinigung(?:/index\.html)?/?$ /leistungen/teppichreinigung/ [R=301,L,NC]
+RewriteRule ^polsterreinigung(?:/index\.html)?/?$ /leistungen/polsterreinigung/ [R=301,L,NC]
+RewriteRule ^fassadenreinigung(?:/index\.html)?/?$ /leistungen/fassadenreinigung/ [R=301,L,NC]
+
+# Alte URL-Varianten
+RewriteRule ^jobs/jobs\.aspx$ /jobs/ [R=301,L,NC]
+RewriteRule ^angebot-anfordern/angebot-anfordern\.aspx$ /angebotsanfrage/ [R=301,L,NC]
+RewriteRule ^angebot-anfordern/?$ /angebotsanfrage/ [R=301,L,NC]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on'"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+Header always set X-Frame-Options "DENY"
+Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: blob:; media-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; frame-src https://www.google.com https://maps.google.com; form-action 'self'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 30 days"
+ExpiresByType application/javascript "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+<FilesMatch "(^\.|contact\.php|composer\.(json|lock)|README-KEM\.txt|.*\.(env|ini|log|sql|bak|backup|zip|tar|gz))$">
+Require all denied
+</FilesMatch>

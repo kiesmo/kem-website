@@ -1,0 +1,1 @@
+<span class="eyebrow">Geplant und diskret</span><h2>Entrümpelung passend zum Auftrag</h2><ul class="service-facts"><li>Umfang vorab abstimmen</li><li>Besichtigung je nach Auftrag</li><li>Besenreine Übergabe nach Vereinbarung</li><li>Einsatz in Köln, Brühl, Bonn &amp; Umgebung</li></ul><a class="btn" href="/angebotsanfrage/">Entrümpelung anfragen</a>

@@ -1,0 +1,137 @@
+/* Base and accessibility */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--surface);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+body:not(.has-hero) main {
+  padding-top: var(--header-solid-height);
+}
+
+body.menu-lock {
+  overflow: hidden;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max));
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+:focus-visible {
+  outline: 3px solid #ffbf00;
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+h1,
+h2,
+h3,
+.eyebrow,
+.hero-label,
+.hero-tag {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.18;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -.025em;
+}
+
+h2 {
+  color: var(--primary);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+h3 {
+  font-size: 1.16rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: #41454a;
+}
+
+.narrow {
+  max-width: 870px;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-size: .83rem;
+  margin-bottom: 12px;
+}
+
