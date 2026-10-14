@@ -8,6 +8,8 @@
 
 **Arbeitsbranch:** `final3`, neu von dieser Basis erstellt
 
+**Quellcode-Gegenprüfung:** 15. Oktober 2026 gegen `final3` / Dokumentationscommit `48273b01ab4eba318c1a9083530caac930834904`. Der Website-Code ist gegenüber `00f1fe3` unverändert. Korrekturen und neue Präzisierungen stehen in Abschnitt 11; der detaillierte Folgeplan steht in [implementation-plan-final3.md](implementation-plan-final3.md).
+
 **Auftrag:** Detaillierte Prüfung von Design, visueller und inhaltlicher Hierarchie, Typografie, Farben, Layout, Seitenstruktur, Primary CTA und Final CTA. Ausschließlich Dokumentation; keine Änderungen an Website, Styles, Skripten oder Inhalten.
 
 ## 1. Gesamturteil
@@ -133,7 +135,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Bei 390, 768, 1024 und 1440 px stehen Aussage und primäre Aktion räumlich zusammen. Nach dem Lesen ist ein eindeutiger nächster Schritt erreichbar. Keine neue fixe Leiste ohne Prüfung der Inhaltsüberdeckung.
 
-**Quellen:** `public_html/index.php:9–12,44`; `content/ctas/startseite.php:1`; `app/templates/header.php:55–56`; `resources/css/04-responsive.css:30–60`.
+**Quellen:** `public_html/index.php:9–12,44`; `content/ctas/startseite.php:1`; `app/templates/header.php:53–56`; `resources/css/04-responsive.css:30–60`.
 
 ### A02 · P1 · Unterseiten beginnen mit zu viel Bild und zu wenig Aufgabe
 
@@ -147,7 +149,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Der erste Viewport beantwortet auf den wichtigsten Seitentypen Thema, Eignung und nächsten Schritt. Die H1 muss nicht auf jedem Gerät vollständig über der Falz liegen; dekorative Wiederholung darf sie jedoch nicht systematisch verdrängen.
 
-**Quellen:** `app/helpers/render-components.php:3–10`; `app/templates/service-template.php:14–16`; `app/templates/location-template.php:17–19`; `public_html/kontakt/index.php:8`; `resources/css/04-responsive.css:176–179,235–239`; `resources/css/09-local-pages.css:269–288`.
+**Quellen:** `app/helpers/render-components.php:3–10`; `app/templates/service-template.php:14–16`; `app/templates/location-template.php:17–19`; `public_html/kontakt/index.php:8`; `resources/css/04-responsive.css:176–179,233–240`; `resources/css/09-local-pages.css:269–288`.
 
 ### A03 · P1 · Der feste WhatsApp-Kreis überdeckt mobile Inhalte
 
@@ -181,13 +183,15 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Ändern:** Ausgewählte Leistung und gegebenenfalls den ausdrücklich gewählten Ort sichtbar und änderbar übernehmen. Der generische Header-Einstieg bleibt offen. Mehrfachauswahl erhalten; weder Adresse noch PLZ aus Vermutungen vorfüllen.
 
+**Implementierungspräzisierung:** Die Formularschlüssel sind nicht identisch mit den URL-Slugs: `general` steht für Grund-/Spezialreinigung, `graffiti` für Fassade/Graffiti, `window` für Glas/Fenster. Eine allgemeine Gebäudereinigungs-Ortsseite darf deshalb nicht automatisch `general` auswählen; dort nur den Ort übernehmen. Service-Summaries werden aktuell ohne dynamische Tokenersetzung gerendert. Kontextlinks benötigen einen expliziten gemeinsamen PHP-URL-Helper oder einen ausdrücklich erweiterten Rendervertrag, keine neuen Platzhalter allein.
+
 **Abnahme:** Einstieg von einer Service- und einer Ortsseite zeigt korrekten Kontext; direkter Formularaufruf funktioniert allgemein; falsche Vorwahl lässt sich ohne Neustart ändern.
 
-**Quellen:** `content/services/*/summary.php:1`; `content/ctas/leistungen-*.php`; `content/locations/bueroreinigung-koeln.php:8`; `public_html/angebotsanfrage/index.php:31–49`; `public_html/assets/js/forms/offer-form.js:79–103,144–167`.
+**Quellen:** `content/services/*/summary.php:1`; `content/ctas/leistungen-*.php`; `content/locations/bueroreinigung-koeln.php:8`; `app/templates/service-template.php:16`; `app/helpers/html.php:34–47`; `public_html/angebotsanfrage/index.php:31–49`; `public_html/assets/js/forms/offer-form.js:79–103,144–167`.
 
 ### A06 · P2 · Final CTA braucht einen klaren Abschluss und abgestufte Alternativen
 
-**Ist-Zustand:** Die Abschlussbänder sind als eigener Bereich gut erkennbar. Darin folgen jedoch häufig blauer Angebotsbutton, erneuter WhatsApp-Erklärungstext und ebenfalls gefüllter grüner Button. Danach kommt im Footer noch einmal „Kostenloses Angebot“. Auf Service-Seiten stehen sieben andere Leistungen vor dem Abschluss; auf Ortsseiten kommen weitere Ortswechsel hinzu.
+**Ist-Zustand:** Die Abschlussbänder sind als eigener Bereich gut erkennbar. Genau neun der 23 Bänder – Startseite und acht Leistungsdetails – enthalten blauen Angebotsbutton, erneuten WhatsApp-Erklärungstext und ebenfalls gefüllten grünen Button. Die neun Ortsseiten, Leistungsübersicht, Über uns, Galerie, FAQ und Jobs enthalten keinen zusätzlichen Inline-WhatsApp-Button im Abschlussband; ihre vorhandenen Alternativen und Ziele unterscheiden sich. Danach kommt global im Footer noch einmal „Kostenloses Angebot“ sowie der schwebende WhatsApp-Link. Auf Service-Seiten stehen sieben andere Leistungen vor dem Abschluss; auf Ortsseiten kommen weitere Ortswechsel hinzu.
 
 **Wirkung:** Nach dem Lesen wird erneut Auswahl angeboten. Der Abschluss wirkt wie ein weiterer Kontaktkatalog. Die kräftige Alternative kann stärker wirken als der beabsichtigte Hauptpfad.
 
@@ -197,11 +201,13 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Der Blick folgt Überschrift → kurzer Erwartung → einer dominanten Aktion. Auf verkaufsorientierten Service-/Ortsseiten führen Primary und Final CTA zum selben nachvollziehbaren Angebotsprozess; die Abschlussbotschaft greift die jeweilige Leistung auf. Auf FAQ und Jobs darf der Abschluss bewusst zur passenden Hilfe beziehungsweise Bewerbung führen.
 
-**Quellen:** `content/ctas/startseite.php:1`; servicebezogene CTA-Dateien; `app/templates/service-template.php:17–18`; `app/templates/location-template.php:20`; `resources/css/02-components.css:500–508`; `resources/css/09-local-pages.css:242–267`.
+**Quellen:** `content/ctas/startseite.php:1`; `content/ctas/leistungen-*.php:1`; `content/ctas/faq.php:1`; `content/ctas/jobs.php:1`; `app/templates/service-template.php:17–18`; `app/templates/location-template.php:20`; `content/locations/gebaeudereinigung-koeln.php:36–48`; `content/locations/bueroreinigung-koeln.php:9–10`; `config/pages/{kontakt,angebotsanfrage,impressum,datenschutz,404}.php` für die fünf `cta => NULL`-Fälle; `resources/css/02-components.css:500–508`; `resources/css/09-local-pages.css:242–267`.
 
 ### A07 · P2 · Die Startseiten-H1 ist mobil schwächer als nachfolgende H2
 
 **Ist-Zustand:** Bei 390 px ist die Hero-H1 21,6 px groß; reguläre H2 beginnen bei 24,8 px. Auf Desktop liegt die Start-H1 bei 34,56 px, während die reguläre H1 auf Unterseiten bis 52 px erreicht. Das Panel ist lesbar, die visuelle Einstiegsbotschaft aber relativ klein.
+
+**Ergänzung aus der Gegenprüfung:** Auch bei 1440 px ist die Start-H1 mit 34,56 px etwas kleiner als die reguläre H2 mit 36 px. Auffälliger ist die Grenze 980/981 px: Die Start-H1 fällt beim einen Pixel breiteren Layout von 31,2 auf 24,8 px, also um ungefähr 20,5 %. Ursache sind die unterschiedlich definierten `clamp()`-Rollen vor und nach Ende der 980-px-Ausnahme. Dieser Sprung ist ein konkreter Kaskadenbefund, keine Forderung, dass semantische Überschriftsebenen grundsätzlich überall dieselbe optische Reihenfolge haben müssen.
 
 **Wirkung:** Das Foto und der nachfolgende Unternehmensabschnitt können die erste Aussage überwiegen. Region, Leistung und Nutzen erhalten weniger Gewicht als ihre Bedeutung nahelegt. Semantische H1 und optische Hierarchie fallen auseinander.
 
@@ -223,11 +229,11 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Start, Service, Ort, Kontakt und Angebot zeigen dieselben erkennbaren Rollen. Lange deutsche Bezeichnungen bleiben bei 320 px und 200 % Vergrößerung verständlich.
 
-**Quellen:** `resources/css/00-tokens.css:22–24`; `01-base.css:11–18,94–118`; `02-components.css:12,187,215`; `05-offer-form.css:92,148`.
+**Quellen:** `resources/css/00-tokens.css:22–24`; `resources/css/01-base.css:11–18,94–118`; `resources/css/02-components.css:12,187,215`; `resources/css/05-offer-form.css:92,148`. Diese Werte bezeichnen die jeweiligen CSS-Rollen; die zusätzlich wirksame Label-Kaskade auf Auswahlkarten ist in A23 beschrieben.
 
 ### A09 · P2 · Gleich große Karten erzeugen wenig geschäftliche Priorität
 
-**Ist-Zustand:** Acht Startleistungen erhalten dasselbe Kartenformat, große Icons und ähnliche Mindesthöhen. Im mobilen Hauptbereich nehmen sie zusammen etwa 2851 px ein. Die drei Städte werden danach ebenfalls als gleichwertige Karten präsentiert. Introargumente erhalten nochmals eigene Boxen.
+**Ist-Zustand:** Acht Startleistungen erhalten dasselbe Kartenformat, große Icons und ähnliche Mindesthöhen. Bei 390 px ist das Kartenraster etwa 2568 px hoch; die gesamte Leistungssektion inklusive Überschrift, Abständen und „Alle Leistungen“-Aktion umfasst etwa 2851 px. Die drei Städte werden danach ebenfalls als gleichwertige Karten präsentiert. Introargumente erhalten nochmals eigene Boxen.
 
 **Wirkung:** Die Gestaltung vermittelt vor allem Angebotsbreite. Häufige Anliegen, passende Zielgruppen und der wichtigste nächste Schritt heben sich kaum ab. Viele Container erzeugen eine Folge gleicher visueller Einheiten.
 
@@ -235,7 +241,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Ein neuer Besucher kann die passende Leistungsgruppe schnell wählen. Alle acht Leistungen bleiben auffindbar. Keine fachliche Priorisierung allein aus Designgeschmack ableiten.
 
-**Quellen:** `public_html/index.php:10–40`; `resources/css/03-pages.css:40–54,135–161`; `04-responsive.css:305–328`.
+**Quellen:** `public_html/index.php:10–40`; `resources/css/03-pages.css:40–54,135–161`; `resources/css/04-responsive.css:305–328`.
 
 ### A10 · P1 · Links im Fließtext müssen ohne Hover erkennbar sein
 
@@ -265,7 +271,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Mit Tab vom Terminhinweis zum Upload ist vor Öffnen des Dateidialogs klar erkennbar, wo der Fokus liegt. Bei 100/200 % Zoom und auf heller Fläche prüfen.
 
-**Quellen:** `public_html/angebotsanfrage/index.php:171–180`; `resources/css/05-offer-form.css:355–367`; gezielter Keyboard-Browsertest.
+**Quellen:** `public_html/angebotsanfrage/index.php:171–180`; `resources/css/05-offer-form.css:341–367`; gezielter Keyboard-Browsertest.
 
 ### A13 · P1 · Eingabefelder benötigen stärkere funktionale Grenzen
 
@@ -281,19 +287,19 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 ### A14 · P2 · Lesebreite und Layoutbreite als getrennte Rollen behandeln
 
-**Ist-Zustand:** `.narrow` erlaubt bis 870 px und wird unter anderem für Rechtstexte verwendet. Der reguläre Contentcontainer ist bis 1240 px breit. In Leistungsartikeln ist die Lesespalte dank Sidebar enger und grundsätzlich angenehm; nach Ende der Sidebar bleibt rechts viel freie Fläche.
+**Ist-Zustand:** `.narrow` erlaubt bis 870 px und wird unter anderem für Rechtstexte verwendet. Der reguläre Contentcontainer ist bis 1240 px breit. Leistungsartikel sind teils länger als die Begleitkarte. Oberhalb 980 px folgt die Karte innerhalb des Grids sticky; bis 980 px ist sie statisch. Besonders zwischen 821 und 980 px sollte deshalb geprüft werden, ob die verbleibende zweispaltige Anordnung die Textlänge sinnvoll trägt.
 
-**Ändern:** Für lange Prosa einen eigenen Richtwert von etwa 60–75 Zeichen pro Zeile prüfen. Grid-/Bildcontainer können breiter bleiben. Das leere rechte Feld auf langen Artikeln durch sinnvolle Abschnittsstruktur oder einen gezielt nutzbaren Begleitbereich ausbalancieren; nicht mit dekorativen Karten füllen. Basistext perspektivisch relativ skalieren, da `body` derzeit fest 16 px nutzt.
+**Ändern:** Für lange Prosa einen eigenen Richtwert von etwa 60–75 Zeichen pro Zeile prüfen. Grid-/Bildcontainer können breiter bleiben. Vor Eingriffen in Begleitbereiche zuerst Stickyverhalten, Kartenhöhe und tatsächliche Scrollansicht prüfen; keinen neuen Inhalt allein zum Füllen von Weißraum ergänzen. Basistext perspektivisch relativ skalieren, da `body` derzeit fest 16 px nutzt.
 
 **Abnahme:** Rechtstext und lange Serviceabschnitte lassen sich ohne übermäßig weite Augensprünge lesen. Erhöhte Browser-Standardschrift und 200 % Textvergrößerung bleiben kohärent. Die Pixelbreite allein wird nicht als Nachweis einer unlesbaren Zeilenlänge gewertet.
 
-**Quellen:** `resources/css/01-base.css:16,121–123`; `resources/css/02-components.css:412–417`; `public_html/datenschutz/index.php:8`.
+**Quellen:** `resources/css/00-tokens.css:13`; `resources/css/01-base.css:16,121–123`; `resources/css/02-components.css:412–417`; `resources/css/06-service-pages.css:94–97,135–138`; `public_html/datenschutz/index.php:8`.
 
 ### A15 · P2 · Die Leistungsübersicht zeigt zwei Kataloge hintereinander
 
-**Ist-Zustand:** Vor den acht verlinkten Fotokarten stehen vier Gruppen mit insgesamt 30 Leistungsnennungen. Viele Begriffe sind reine Listenpunkte, keine unmittelbaren Zielseiten. Die Fotokarten folgen später mit H3, ohne eigenen klaren H2-Einstieg für diesen Auswahlbereich.
+**Ist-Zustand:** Vor den acht verlinkten Fotokarten stehen vier Gruppen mit insgesamt 30 Leistungsnennungen. Die 30 Begriffe sind reine Listenpunkte, keine unmittelbaren Links. Die Fotokarten folgen später mit H3, ohne eigenen klaren H2-Einstieg für diesen Auswahlbereich. Die globale Navigation bietet bereits Leistungsziele; dieser Befund betrifft die Auswahl im Hauptinhalt.
 
-**Wirkung:** Die Seite erklärt Breite, bevor sie Auswahl ermöglicht. Die Gruppen und tatsächlichen Detailziele passen nicht vollständig zusammen. Sehr spezielle Nennungen wie Reinraum- oder Wasserschadenreinigung wecken zusätzliche Erwartungen.
+**Wirkung:** Im Hauptinhalt steht der Breitenkatalog vor der verlinkten Hauptauswahl. Die Gruppen und tatsächlichen Detailziele passen nicht vollständig zusammen. Sehr spezielle Nennungen wie Reinraum- oder Wasserschadenreinigung wecken zusätzliche Erwartungen.
 
 **Ändern:** Die acht Hauptleistungen früh als primäre Navigation anbieten. Spezialarbeiten kompakt unter den passenden Gruppen erläutern oder bei Bedarf aufklappen. Leistungsumfang und Voraussetzungen spezieller Angebote fachlich bestätigen. Kartenbereich strukturell und sichtbar benennen.
 
@@ -351,7 +357,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Jede Ortsseite beantwortet mindestens eine konkrete örtliche Frage zusätzlich zur allgemeinen Service-Seite oder ist bewusst als kompakte lokale Einstiegsseite gestaltet. Keine neuen Standorte oder Leistungszusagen erfinden.
 
-**Quellen:** `app/templates/location-template.php:17–20`; `content/locations/bueroreinigung-{bruehl,koeln,bonn}.php`; entsprechende Fenster-/Gebäudereinigungsdateien.
+**Quellen:** `app/templates/location-template.php:17–20`; `content/locations/bueroreinigung-{bruehl,koeln,bonn}.php:2–10`; `content/locations/fensterreinigung-{bruehl,koeln,bonn}.php:2–10`; `content/locations/gebaeudereinigung-{bruehl,koeln,bonn}.php:4–46`.
 
 ### A20 · P2/P3 · Wiederholte Planungsformeln durch klare Nutzerfragen ersetzen
 
@@ -363,7 +369,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Jeder Abschnitt beantwortet eine neue Frage. Kein erfundener Einheitspreis und keine allgemeine Garantie aus einer bedingten Formulierung.
 
-**Quellen:** `public_html/index.php:10`; `content/services/*/body.php`; `content/services/*/summary.php`; allgemeine Preis-FAQ in `public_html/faq/index.php:8`.
+**Quellen:** `public_html/index.php:10`; `config/services/solaranlagenreinigung.php:17–20` als Beispiel eines Service-Leads; `content/services/*/body.php`; `content/services/*/summary.php`; allgemeine Preis-FAQ in `public_html/faq/index.php:8`.
 
 ### A21 · P2 · Die Anfrage soll ihr Versprechen „Nur relevante Angaben“ genauer einlösen
 
@@ -371,11 +377,13 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Ändern:** Etage/Möblierung nur bei passenden Leistungen zeigen; Zusatzfelder bei Bedarf anbieten. Auftraggeber und Objekt verständlich unterscheiden und Übereinstimmung einfach übernehmen lassen. Neun Servicekarten im ersten Schritt kompakter gestalten, ohne ihre großen Trefferflächen zu verlieren.
 
+**Implementierungspräzisierung:** `object_type` ist im Markup und im PHP-Handler für jede Angebotsanfrage verpflichtend; nicht allein per CSS verstecken. Sichtbarkeit, `disabled`/`required`, Schrittvalidierung, Review und E-Mail-Zeilen müssen zusammenpassen. Etage existiert aktuell als allgemeines `floor` und zusätzlich als `clearance_floor` im Entrümpelungsbereich. Eine spätere Zusammenlegung darf widersprüchliche Doppelangaben nicht nur optisch kaschieren. Bestehende POST-Feldnamen werden über eine Allowlist geprüft; neue Felder benötigen eine abgestimmte Schemaänderung.
+
 **Beibehalten:** Mehrfachauswahl, PLZ/Ort statt zwingender Volladresse, optionales Telefon, freiwillige Fotos und „Weiß ich nicht – bitte vor Ort einschätzen“.
 
 **Abnahme:** Szenarien Fenster privat, Büro regelmäßig, Polster und PV enthalten keine offensichtlich sachfremden Felder. Mehrfachaufträge bleiben vollständig erfassbar. Die Angabe „2–3 Minuten“ mit diesen Szenarien zeitlich prüfen; bisher wurde keine reale Bearbeitungszeit gemessen.
 
-**Quellen:** `public_html/angebotsanfrage/index.php:13–19,53–75,153–200`; `resources/css/05-offer-form.css`.
+**Quellen:** `public_html/angebotsanfrage/index.php:13–19,53–75,137–145,153–200`; `public_html/assets/js/forms/offer-form.js:149–167,304–310,361–390`; `app/forms/contact-handler.php:87–90,176–186,297–303,363–370`; `config/forms/schemas.php`; `resources/css/05-offer-form.css`.
 
 ### A22 · P2 · Der Stepper soll aktuell und erledigt unterscheiden
 
@@ -391,15 +399,19 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Ist-Zustand:** Labels, optionale Zusätze, Kartentitel und Datenschutztext verwenden viel Fettschrift. Bei 390 px kann der Pflichtstern der Leistungsfrage eine eigene Zeile bilden. Checkbox und lange Datenschutzerklärung wirken stellenweise vertikal getrennt. „Ändern“ und „Entfernen“ sind kleiner als die Hauptaktionen, mit ungefähr 35 px Höhe.
 
-**Ändern:** Frage → Option → Zusatz klar staffeln. Erläuterungen normal gewichten; Pflichtmarkierung an die Frage binden oder einmal zentral erklären. Checkbox und Erklärung optisch als zusammengehörige Einheit ausrichten. Für häufige Touch-Hilfsaktionen ungefähr 44 px komfortable Trefferfläche anstreben.
+**Bestätigte Ursache in der CSS-Kaskade:** `.field label` ist spezifischer als `.service-choice` und `.estimate-option`. Die generische Regel setzt daher auch auf den Auswahlkarten `display:block`, 13,76 px und Gewicht 800 durch, obwohl `.service-choice` ein Flexlayout vorsieht. Im aktuellen Chromium-Rendering wird der Kartentitel durch `<b>` sogar mit Gewicht 900 und der Zusatztext mit ungefähr 11,47 px/800 dargestellt. Beim Schätzlabel werden beabsichtigte `.82rem`/700 durch `.86rem`/800 ersetzt. Ein späteres Stylesheet allein gewinnt nicht gegen den spezifischeren Selektor. Die Privacyzeile verwendet außerdem umbrechendes Flexlayout ohne ausreichend geführte Labelbreite; Checkbox und Text stehen im geprüften Zustand auch auf Desktop untereinander.
+
+**Ändern:** Zuerst die Label-Regeln auf ihren tatsächlichen Zweck begrenzen beziehungsweise die Komponenten gezielt absichern, dann Frage → Option → Zusatz staffeln. Erläuterungen normal gewichten; Pflichtmarkierung an die Frage binden oder einmal zentral erklären. Checkbox und Erklärung optisch als zusammengehörige Einheit ausrichten. Für häufige Touch-Hilfsaktionen ungefähr 44 px komfortable Trefferfläche anstreben. Die ganzen Auswahlkarten bleiben anklickbare Labels.
 
 **Abnahme:** Bei 320/390 px keine alleinstehende Pflichtmarkierung und klare Zuordnung der Datenschutzbestätigung. Hilfsaktionen sind leicht treffbar. Die rund 35 px großen Aktionen werden hier nicht pauschal als Verstoß gegen das 24-px-AA-Mindestziel bewertet.
 
-**Quellen:** `resources/css/03-pages.css:215–230`; `resources/css/08-offer-conversion.css:10–24,133–143`; `public_html/angebotsanfrage/index.php:34,199–200`; mobile Formularansichten.
+**Quellen:** `resources/css/03-pages.css:215–230,245–260`; `resources/css/05-offer-form.css:164–166,221–266`; `resources/css/08-offer-conversion.css:10–24,133–143`; `public_html/angebotsanfrage/index.php:34,199–200`; erneute berechnete Browserstile bei der Gegenprüfung.
 
 ### A24 · P2 · Nach dem Versand sollte ein eigenständiger Erfolg sichtbar bleiben
 
 **Ist-Zustand aus Code:** Nach erfolgreicher Serverantwort setzt das Skript das Formular zurück, springt zu Schritt 1 und zeigt eine Statusmeldung. Es folgt kein eigener Abschlusszustand. Die Rückmeldeerwartung bleibt allgemein („in Kürze“). Dies wurde ohne echten Versand nur anhand des Codes geprüft.
+
+**Implementierungspräzisierung:** Drei Beteiligte bilden den aktuellen Resetvertrag: `main.js` ruft `form.reset()` auf und sendet `form:success`; der erste Block in `offer-form.js` springt auf Schritt 1 und fokussiert dessen H2; der zweite Block synchronisiert Schätzwerte, Panels, Termin, Upload und Review neu. Eine Angebots-Erfolgsansicht muss diese Reihenfolge bewusst ersetzen und bereinigen. Das separate Kontaktformular darf dabei seinen bestehenden Nachrichtenstatus behalten.
 
 **Ändern:** Klare Bestätigungsansicht mit gesendeter Anfrage, nächstem tatsächlichem Bearbeitungsschritt und Kontaktmöglichkeit bei Rückfragen. Eine neue Anfrage erst auf bewusste Aktion öffnen. Nur eine betrieblich zugesicherte Antwortfrist oder tatsächlich vorhandene Bestätigungsmail versprechen.
 
@@ -421,7 +433,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 ### A26 · P2 · Jobs braucht eine eigene primäre Bewerbungsaktion
 
-**Ist-Zustand:** Die Bewerbung per E-Mail steht erst im Abschlussband. Global dominieren Angebots-CTA und WhatsApp. Der eigentliche Jobtitel beginnt spät; ein kompakter Faktenblock zu Arbeitsumfang, Einsatzort, Start und Bewerbungsablauf fehlt. Die Seitenkarte fokussiert eher den Firmensitz.
+**Ist-Zustand:** Die Bewerbung per E-Mail steht erst im Abschlussband. Global dominieren Angebots-CTA und WhatsApp. Der eigentliche Jobtitel beginnt spät; ein kompakter Stellenfaktenblock fehlt. Der Start ist bereits als „zum nächstmöglichen Zeitpunkt“ genannt, ebenso ein unbefristeter Vertrag und übertarifliche Bezahlung. Vor allem Arbeitsumfang, konkrete Einsatzregion und Bewerbungsablauf sind nicht als rasch erfassbare Stellenfakten aufbereitet. Die Seitenkarte fokussiert eher den Firmensitz.
 
 **Ändern:** Bewerbung direkt nach Jobtitel/Kurzprofil und erneut am Ende anbieten. Freigegebene Stellenfakten und benötigte Unterlagen übersichtlich nennen. Sales-CTA auf dieser Seite zurücknehmen; allgemeine Navigation erhalten. Tatsächliches Team/Arbeitsumfeld als Arbeitgeberbeleg wäre hilfreicher als ein weiteres allgemeines Reinigungsmotiv.
 
@@ -449,11 +461,11 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Wirkung:** Die wichtigste Aktion und die Dichte der beiden Spalten verändern sich unabhängig voneinander. Das ist kein vollständiger Funktionsausfall, aber ein uneinheitlicher Lesepfad an Tabletbreiten.
 
-**Ändern:** Für Header, Inhaltsgrid und Handlungsplatzierung gemeinsam festlegen, welcher CTA an jeder Breite führt. Unterschiedliche Komponentenbreakpoints sind sinnvoll; sie sollten durch konkrete Inhaltsprobleme begründet sein. Nicht alle elf Breitenwerte pauschal auf einen reduzieren.
+**Ändern:** Für Header, Inhaltsgrid und Handlungsplatzierung gemeinsam festlegen, welcher CTA an jeder Breite führt. Den zusätzlich bestätigten H1-Sprung bei 980/981 px aus A07 im selben Durchgang beheben. Unterschiedliche Komponentenbreakpoints sind sinnvoll; sie sollten durch konkrete Inhaltsprobleme begründet sein. Nicht alle elf Breitenwerte pauschal auf einen reduzieren.
 
 **Abnahme:** 820/821, 980/981 und 1080/1081 px vergleichen. Kein plötzlicher Verlust des frühen Anfragewegs, keine unnötig doppelte CTA-Box in enger Spalte, weiterhin kein Seiten-Overflow.
 
-**Quellen:** `resources/css/04-responsive.css:27–60,176–213`; `resources/css/06-service-pages.css:94–100,135–164`; ergänzende Browsermessungen.
+**Quellen:** `resources/css/04-responsive.css:27–60,160–213`; `resources/css/06-service-pages.css:94–100,135–164`; `app/helpers/render-components.php:26–29`; `app/templates/service-template.php:16`; `content/locations/gebaeudereinigung-koeln.php:6,27–32`; ergänzende Browsermessungen.
 
 ### A29 · P3 · Bei 1921 px wechselt die Bildkomposition abrupt
 
@@ -471,19 +483,19 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Ändern:** Vor programmgesteuertem Scrollen `prefers-reduced-motion` berücksichtigen. Im reduzierten Modus sofort springen. Kurze Hoverbewegungen dürfen im Standardmodus bleiben.
 
-**Abnahme:** Bei aktivierter Bewegungsreduktion keine animierte Seitenfahrt durch die JS-Aktion; im Standardmodus kontrollierte Bewegung. Keine neue Animation einführen, um Hierarchieprobleme zu kompensieren.
+**Abnahme:** Bei aktivierter Bewegungsreduktion keine animierte Seitenfahrt durch die JS-Aktion; im Standardmodus kontrollierte Bewegung. Keine neue Animation einführen, um Hierarchieprobleme zu kompensieren. Bei der Gegenprüfung wurde die animierte Fahrt in Chromium mit emuliertem `prefers-reduced-motion: reduce` tatsächlich reproduziert; andere Browser und reale OS-Einstellungen bleiben zusätzlich zu prüfen.
 
-**Quellen:** `resources/css/04-responsive.css:382–390`; `public_html/assets/js/core/main.js:10`. Der mögliche Konflikt ist aus Code abgeleitet; kein OS-übergreifender Bewegungstest.
+**Quellen:** `resources/css/04-responsive.css:382–390`; `public_html/assets/js/core/main.js:10`; erneuter Chromium-Interaktionstest bei der Gegenprüfung.
 
 ### A31 · P2 · Formularhilfen auch semantisch mit ihren Feldern verbinden
 
-**Ist-Zustand:** Telefonhinweis, Uploadbegründung und Dateigrenzen sind sichtbar, aber nicht vollständig über `aria-describedby` am zugehörigen Input angebunden. Das globale Skript ergänzt Beschreibungen für Fehlermeldungen, nicht für diese bestehenden Hinweise.
+**Ist-Zustand:** Telefonhinweis, Uploadbegründung und Dateigrenzen sind sichtbar, aber nicht vollständig über `aria-describedby` am zugehörigen Input angebunden. Das globale Skript ergänzt Beschreibungen für Fehlermeldungen, nicht für diese bestehenden Hinweise. Zusätzlich ist die sichtbare Uploadhilfe unvollständig: Sie nennt fünf Dateien und je 5 MB, verschweigt aber die in JavaScript und PHP gleichermaßen durchgesetzte Gesamtgrenze von 15 MB.
 
-**Ändern:** Stabile IDs für notwendige Hilfstexte; Beschreibungsreferenzen zusätzlich zu den Fehlerreferenzen setzen. Vorhandene Labels, Live-Regionen und Fehlerverknüpfungen erhalten. Stepperzustand aus A22 ergänzen.
+**Ändern:** Vollständige Uploadvorgaben sichtbar machen, stabile IDs für notwendige Hilfstexte und Beschreibungsreferenzen zusätzlich zu den Fehlerreferenzen setzen. Vorhandene Labels, Live-Regionen und Fehlerverknüpfungen erhalten. Stepperzustand aus A22 ergänzen. Bestehende Dateigrenzen nicht als reine Designänderung lockern.
 
 **Abnahme:** Ein späterer Screenreadertest kündigt am Upload Format-/Anzahl-/Größenvorgaben und am Telefon den Zweck an, ohne doppelte Ansage. Relevante Hinweise bleiben auch visuell beim Feld.
 
-**Quellen:** `public_html/angebotsanfrage/index.php:171–180,192`; `public_html/assets/js/core/main.js:129–142`.
+**Quellen:** `public_html/angebotsanfrage/index.php:171–180,192`; `public_html/assets/js/core/main.js:129–142`; `public_html/assets/js/forms/offer-form.js:241–250`; `app/forms/photo-upload.php:10–25`.
 
 ### A32 · P3 · Footer verdichten, ohne seine Verlässlichkeit zu verlieren
 
@@ -495,7 +507,7 @@ Die folgenden y-Werte sind gerundete **Dokumentkoordinaten ab Seitenanfang bei E
 
 **Abnahme:** Wesentliche Angaben bleiben ohne Rätsel erreichbar; der Footer überlagert nicht die Bedeutung des Final CTA. Mobile wirken die Gruppen zusammengehörig und nicht wie weitere vollständige Sektionen.
 
-**Quellen:** `app/templates/footer.php:5–17`; `resources/css/04-responsive.css:339–354`; mobile Gesamtseitenansichten.
+**Quellen:** `app/templates/footer.php:5–17`; `resources/css/03-pages.css:332–395`; `resources/css/04-responsive.css:339–354`; mobile Gesamtseitenansichten.
 
 ## 6. Farben, Formen und Layoutsystem
 
@@ -513,7 +525,7 @@ Berechnet aus den definierten Farben nach relativer sRGB-Luminanz. Für normalen
 | `#6fa8d1` auf Navy – Footerüberschrift | 5,66:1 | Behalten |
 | Weiß auf `#147a3a` – WhatsApp | 5,42:1 | Behalten; Prominenz reduzieren, wenn sekundär |
 | `#9b001b` auf `#fff0f1` – Fehler | 7,88:1 | Behalten |
-| `#6a7681` auf Weiß – inaktives Stepperlabel | 4,65:1 | Nicht weiter aufhellen |
+| `#6a7681` auf Weiß – inaktives Stepperlabel | 4,64:1 | Nicht weiter aufhellen |
 | `#ffbf00` auf Weiß – Fokus | 1,65:1 | Ändern |
 | `#ffbf00` auf `#eef2f5` – Fokus | 1,47:1 | Ändern |
 | `#ffbf00` auf Navy – Fokus | 8,77:1 | Geeignet für dunkle Fläche |
@@ -527,7 +539,7 @@ Die vorhandenen Rollen sind sinnvoll: Kartenradius 16 px, Controls 10 px, pillen
 
 Deshalb zuerst **Reihenfolge, Anzahl und Informationswert** der Elemente korrigieren, anschließend Abstände anpassen. Nicht alle Sektionen pauschal enger setzen. Große Icons dürfen Leistungen erkennbar machen; bei acht gleichgewichtigen Karten benötigen sie mobil weniger Eigenfläche. Die ruhige Linie der Icons passt zur Marke und kann bleiben.
 
-Bei Interaktion konsequent zwischen Navigation, Aktion, Auswahl und Status unterscheiden: eine Servicekarte führt weiter; eine Formularkarte wählt aus; ein Stepper zeigt Zustand; ein Button löst die nächste Handlung aus. Ähnliche pillen-/kartenförmige Flächen sollten diese Unterschiede nicht verwischen.
+Bei Interaktion konsequent zwischen Navigation, Aktion, Auswahl und Status unterscheiden: eine Servicekarte enthält einen weiterführenden Link; eine Formularkarte wählt aus; ein Stepper zeigt Zustand; ein Button löst die nächste Handlung aus. Im aktuellen Code ist der Service-Artikel selbst kein vollflächiger Link. Ortskarten enthalten mehrere verschiedene Ziele und dürfen nicht pauschal zu einem einzigen Kartenlink werden. Ähnliche pillen-/kartenförmige Flächen sollten diese Unterschiede nicht verwischen.
 
 ## 7. Seitenbezogene Entscheidungen
 
@@ -566,7 +578,7 @@ Für alle acht gelten der frühe H1-/CTA-Einstieg, Kontextübernahme und ein kla
 
 | Ortsfamilie | Brühl | Köln | Bonn |
 |---|---|---|---|
-| Gebäudereinigung | Firmensitz als tatsächlichen lokalen Anker nutzen | Einsatzgebiet klar vom Firmensitz unterscheiden | Einsatzgebiet klar vom Firmensitz unterscheiden |
+| Gebäudereinigung | Bereits genannten Firmensitz als tatsächlichen lokalen Anker erhalten und stärker gewichten | Bereits korrekte Unterscheidung Einsatzgebiet/Firmensitz erhalten; zusätzliche lokale Information nur belegt | Bereits korrekte Unterscheidung Einsatzgebiet/Firmensitz erhalten; zusätzliche lokale Information nur belegt |
 | Büroreinigung | Standortbezug mit realem Büro-/Ablaufbeispiel prüfen | Konkreten lokalen Nutzwert ergänzen, wenn vorhanden | Konkreten lokalen Nutzwert ergänzen, wenn vorhanden |
 | Fensterreinigung | Leistung und Ort im Anfragekontext übernehmen | Umfang/Zugänglichkeit und bestätigte Ortsinformation bündeln | Umfang/Zugänglichkeit und bestätigte Ortsinformation bündeln |
 
@@ -601,35 +613,23 @@ Diese Abläufe sind Empfehlungen, keine bereits umgesetzten Änderungen. Beispie
 
 Nicht alle Beschriftungen müssen identisch sein. Entscheidend sind derselbe verständliche Angebotsprozess und stimmige Erwartung zwischen Button und Ziel. „Kostenlos/unverbindlich“ sollte dort stehen, wo es Unsicherheit reduziert; nicht als zusätzliche starke Textfläche in jedem Abschnitt.
 
-## 9. Priorisierter Umsetzungsfahrplan
+## 9. Verbindliche Planungsreihenfolge nach der Gegenprüfung
 
-### Paket 1: Erkennen und bedienen
+Die ursprünglichen vier Themenpakete waren eine grobe Prioritätsübersicht. Sie werden durch den [detaillierten, codebasierten Batchplan](implementation-plan-final3.md) ersetzt. Insbesondere gehören Schrift-/Leserollen vor die endgültige Layoutabnahme, Ultrawide in den Hero-Umbau und alle drei Resetbeteiligten in denselben Formularabschluss-Batch. Eine späte reine Systempolitur würde bereits abgenommene Layouts erneut verschieben.
 
-**Umfang:** A03 sowie A10–A13 und FAQ-Aktivmarkierung aus A27. Überdeckung, Linkmerkmale, Fokus, Upload und Feldkonturen lösen. Dies sind eng begrenzte Änderungen mit direkter Wirkung auf die Bedienbarkeit.
+| Batch | Zusammengehöriger Implementierungsinhalt |
+|---|---|
+| B1 | Zugängliche Bedienzustände, Inhaltslinks, Feldgrenzen, Uploadhilfe und Label-Kaskade |
+| B2 | Typografie-/Proserollen, gemeinsamer Seitenkopf, Hero- und Breakpointkomposition |
+| B3 | Primary-/Final-CTA, nicht überlagernde Kontaktflächen und Footerrollen |
+| B4 | Leistungswahl, Katalog und Reihenfolge der Leistungsantworten/Medien |
+| B5 | Leistungs-/Ortskontext durch sämtliche Anfragewege bis ins Formular |
+| B6 | Relevante Felder samt Frontend-, Server-, Review- und E-Mail-Vertrag |
+| B7 | Formulareinstieg, Stepper, Reviewbedienung und vollständiger Erfolgszustand |
+| B8 | Aufgabenbezogene Kontakt-, FAQ- und Jobsseiten |
+| B9 | Belegte Unternehmens-/Galerieinhalte und ehrliche lokale Differenzierung |
 
-**Fertig, wenn:** Kontakt-/Formularinhalte bei 320/390 px nicht verdeckt werden; Inhaltslinks ohne Hover erkennbar; Upload per Tab sichtbar; Felder/Fokus auf ihren jeweiligen Flächen klar abgegrenzt; FAQ hat genau eine aktuelle Hauptnav-Seite. Bestehende Labels und Fehlerlogik bleiben funktionsfähig.
-
-### Paket 2: Einstieg und Handlungsweg
-
-**Umfang:** A01–A08, A25–A28. Seitenkopf je Familie entwerfen, frühe Anfrage/Bewerbung zeigen, Formularintro kürzen, Kontext mitnehmen, Abschluss gewichten. Erst Desktop und Mobile je eines Start-, Service- und Anfragebeispiels abnehmen, dann auf die Templates übertragen.
-
-**Abhängigkeit:** Geschäftlich bestätigte Hauptleistungspfade und Kontakt-/Antworterwartung. Keine umfangreiche neue Bildproduktion nötig, um den ersten Schritt zu verbessern.
-
-**Fertig, wenn:** Aussage, Eignung und nächste Aktion früh zusammenhängen; Angebotswege über alle relevanten Breiten verfügbar; Service-/Ortskontext im Formular stimmt; Jobs führt zur Bewerbung; CTA-Alternative eindeutig sekundär.
-
-### Paket 3: Inhalt und Belege
-
-**Umfang:** A09, A15–A21. Doppelten Katalog kürzen, Videopositionen korrigieren, Galerie erschließbar machen, Wiederholungen bündeln, echte Unternehmens-/Projektbelege ergänzen, lokale Seiten profilieren und sachfremde Formularfelder vermeiden.
-
-**Abhängigkeit:** Freigabe tatsächlicher Referenzen, Personen-/Objektmedien und spezieller Leistungszusagen. Fehlende Belege nicht durch erfundene Platzhalter ersetzen.
-
-**Fertig, wenn:** Jede Sektion eine neue Nutzerfrage beantwortet; Hauptleistungen leicht wählbar; Medien ohne Abspielen verständlich eingeordnet; Ortsseiten ehrlich und hilfreich; vier realistische Anfrageszenarien ohne unnötige Angaben durchlaufen.
-
-### Paket 4: System und Abschlusszustände
-
-**Umfang:** A08, A14, A22–A24, A29–A32. Typografierollen konsolidieren, Stepper und Mikrotypografie verbessern, Erfolgssicht gestalten, Prose-/Ultrawide-Layout und Motion abschließen, Footer verdichten.
-
-**Fertig, wenn:** Zustände klar unterscheidbar; große und kleine Displays bewusst komponiert; Erfolg/Fehler in isolierter Umgebung verifiziert; zugängliche Hinweise und Motionverhalten geprüft. Anschließend keine zusätzliche Testserie ohne neue Änderung oder offenen Befund nötig.
+Die Aufteilung folgt gemeinsamen Komponenten und Datenverträgen, keinem gewünschten Dateiumfang. B5 → B6 → B7 werden aufeinander aufbauend umgesetzt; fehlende neue Unternehmensbelege blockieren keine unabhängigen Bedienkorrekturen. Jede Einheit enthält eigene Abnahmekriterien. Eine abschließende Integrationsprüfung ist ein Prüftor, kein künstlicher zusätzlicher Änderungsbatch. Dieser Auftrag setzt noch keinen Batch um.
 
 ### Verifikation nach einer späteren Umsetzung
 
@@ -665,3 +665,40 @@ Nicht alle Beschriftungen müssen identisch sein. Entscheidend sind derselbe ver
 | Performance | Dateigrößen betrachtet; kein Lighthouse-/Web-Vitals-/Mobilfunkbenchmark |
 
 Der Bericht ist als Entscheidungsgrundlage und Arbeitsliste für eine spätere Überarbeitung gedacht. **Die vorhandene Markenidentität, die ehrliche regionale Positionierung und die robuste Komponentenbasis sollten erhalten bleiben. Vorrang haben die Handlungsführung, die Relevanz der Inhalte und die sichtbar bedienbaren Zustände.**
+
+## 11. Gegenprüfung gegen den tatsächlichen Code
+
+Alle 32 Befunde wurden gegen die vorhandenen Templates, Inhaltsdateien, Konfigurationen und die aktive CSS-/JS-Kaskade gegengeprüft. Drei unabhängige Teilprüfungen wurden mit der Formular-/Serverprüfung zusammengeführt. Es gab keine Website-Codeänderung zwischen der ursprünglichen Messbasis `00f1fe3` und dem Dokumentationscommit `48273b0`. Die früheren 100 Layoutzustände wurden deshalb nicht vollständig erneut durchlaufen; gezielt wiederholt wurden unter anderem die Schrift-/Kartenmaße, Formular-Computed-Styles und der Reduced-Motion-Konflikt.
+
+### Korrekturen und Präzisierungen
+
+| Referenz | Aufgelöster Fehler / fehlende Abgrenzung | Jetzt dokumentierter Stand |
+|---|---|---|
+| A07/A28 | Zu enge Einordnung als mobiles Größenproblem | Auch Desktop-H1/H2-Verhältnis genannt; tatsächlicher 31,2→24,8-px-Sprung bei 980/981 px ergänzt |
+| A09 | 2851 px als gemeinsame Kartenhöhe bezeichnet | Raster ca. 2568 px; ganze Leistungssektion ca. 2851 px |
+| A14 | Rechts neben langen Artikeln pauschal Leerraum nach Kartenende angenommen | Oberhalb 980 px ist die Sidebar sticky; besonders die statische zweispaltige Zone 821–980 px beurteilen, keinen Füllinhalt planen |
+| Kontrasttabelle | Rundung von `#6a7681`/Weiß auf 4,65 | Präzise auf zwei Stellen 4,64:1; Bewertung bleibt ausreichend für normalen Text |
+| A23 | Mikrotypografie beschrieben, aber Ursache nicht erkannt | Spezifischere `.field label`-Regel überschreibt Auswahl-/Schätzkomponenten; reale Schriftwerte/Layout ergänzt |
+| A30 | Nur möglicher Codekonflikt | Animiertes Nach-oben-Verhalten trotz emulierter Bewegungsreduktion in Chromium reproduziert |
+| A31 | Sichtbare Uploadgrenzen implizit als vollständig behandelt | Fehlende 15-MB-Gesamtgrenze im Hilfstext ergänzt; JS und PHP setzen sie bereits durch |
+| A21 | Relevanzempfehlung ohne vollständigen Datenvertrag | Universelle Serverpflicht für Objektart, zwei Etagenfelder, Schema-/Review-/Mailkopplung ergänzt |
+| A24 | Erfolgssicht ohne vollständige Resetabhängigkeit | Globaler Submit und beide Formular-IIFEs müssen zusammen angepasst werden; Kontaktflow separat beachten |
+| A05 | Kontextempfehlung ohne Render-/Schlüsselabgrenzung | Echte Formularschlüssel und statische Summaries genannt; allgemeine Gebäudereinigung übernimmt nur Stadt |
+| A06 | Wiederholte WhatsApp-Aktion nur mit „häufig“ eingeordnet | Genau 9 von 23 Bändern betroffen; FAQ, Jobs und 5 bandlose Seiten als Ausnahmen erhalten |
+| A15 | Auswahlbehauptung konnte globale Navigation einschließen | Auf Hauptinhalt begrenzt; alle 30 Textpunkte sind unverlinkt, 8 Detailziele folgen danach |
+| A26 | Faktenblock konnte als fehlender Starttermin gelesen werden | Bereits vorhandenes „zum nächstmöglichen Zeitpunkt“, Vertrags- und Vergütungsaussage ausdrücklich erhalten |
+| Ortsmatrix | Schon korrekte Ortsunterscheidung als neue Arbeit lesbar | Brühl/Firmensitz versus Köln/Bonn/Einsatzgebiet als vorhandene Stärke gekennzeichnet |
+| Quellen/Rollen | Verkürzte CSS-Pfade, ungenaue Höhen-/Menü-/CTA-Belege; Kartenfläche mit Link gleichsetzbar | Pfade/Spannen ergänzt; vorhandene mehrzielige Karten nicht zu pauschalen Flächenlinks machen |
+| Alter Fahrplan | Schriftrollen/Prose und Ultrawide zu spät; Formverträge verteilt | Abschnitt 9 durch abhängigen Neun-Batch-Plan ersetzt |
+
+### Bestätigte Inventargrenzen
+
+28 Routen, 8 Service-Detailseiten, 9 Ortsseiten mit insgesamt 27 lokalen FAQs, 10 allgemeine FAQ-Fragen, 30 Leistungslistenpunkte, 8 Hauptleistungskarten, 6 vorgeschaltete Servicevideos und 8 Galerieeinträge wurden erneut bestätigt. Es gibt 23 separate Abschlussbänder: 21 Angebotsabschlüsse, einen FAQ-Kontaktabschluss und einen Jobs-Bewerbungsabschluss. Kontakt, Angebot, Impressum, Datenschutz und 404 haben kein separates Band. 24 Seiten besitzen tatsächlich einen Foto-Hero: 23 über Konfiguration plus der eigene Start-Hero, dessen `hero`-Konfiguration selbst `NULL` ist.
+
+Die Angaben zu 60 Bildern beziehen sich auf `public_html/assets/img`, ohne Branding-SVGs. Die acht Videodateien sind ein gemeinsamer Medienbestand, den Galerie und Leistungsseiten teilweise zusammen verwenden. Ihre Gesamtgröße ist weder Seitenanfangslast noch ein Nachweis langsamer Wiedergabe.
+
+Die allgemeine FAQ-Seite besitzt eine zweite Antwortquelle im `FAQPage`-Schema ihrer Seitenkonfiguration. Die neun Ortsseiten besitzen dagegen aktuell nur Service-Schema; ihre lokalen FAQs liegen allein im Content. Eine spätere Textkorrektur darf deshalb keine vermeintlich vorhandene lokale FAQ-Schemakopie voraussetzen. Der Batchplan berücksichtigt diese Unterscheidung und erhält vorhandene frühe Mobile-CTAs während des Seitenkopfumbaus, bis der neue Aktionsbereich sie im selben Änderungsschritt ersetzt.
+
+### Noch offene Abnahmen sind keine Code-Widersprüche
+
+Fehlende freigegebene Menschen-/Projektbelege, echte Nachfrageprioritäten, spezielle Ortsfakten, zusätzliche Stellenangaben, eine garantierte Antwortfrist und die gemessene Anfragedauer bleiben fachliche beziehungsweise redaktionelle Abnahmen. Der Folgeplan benennt für jeden solchen Punkt eine sichere Arbeit mit bestehendem Inhalt und die verbleibende Nachweispflicht. Er erklärt sie nicht durch erfundene Angaben für erledigt.
