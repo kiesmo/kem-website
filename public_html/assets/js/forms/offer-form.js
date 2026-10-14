@@ -410,6 +410,27 @@
     updateReview();
   });
 
+  const contextNote = form.querySelector('[data-offer-context-note]');
+  try {
+    const options = JSON.parse(form.dataset.offerOptions || '{}');
+    const initial = JSON.parse(form.dataset.offerContext || '{}');
+    const params = new URLSearchParams(location.search);
+    const candidate = key => params.has(key)
+      ? (params.getAll(key).length === 1 ? params.get(key) : null)
+      : initial[key];
+    const service = candidate('service');
+    const city = candidate('city');
+    const chosen = (options.services || []).includes(service) ? serviceChecks.find(check => check.dataset.cleaningType === service) : null;
+    if (chosen) chosen.checked = true;
+    const cityLabel = Object.prototype.hasOwnProperty.call(options.cities || {}, city) ? options.cities[city] : '';
+    if (cityLabel) form.elements.namedItem('cleaning_city').value = cityLabel;
+    if (contextNote && (chosen || cityLabel)) {
+      contextNote.textContent = `Vorschlag: ${[chosen ? serviceLabels[service] : '', cityLabel].filter(Boolean).join(' · ')}. Sie können Leistung und Ort jederzeit ändern.`;
+      contextNote.hidden = false;
+    }
+  } catch (_) { /* Ignore malformed hints; ordinary selection remains available. */ }
+  form.addEventListener('form:success', () => { if (contextNote) contextNote.hidden = true; });
+
   syncServicePanels();
   syncAppointment();
   syncFiles();

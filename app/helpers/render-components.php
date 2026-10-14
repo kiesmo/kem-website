@@ -12,7 +12,7 @@ if (!function_exists('kem_render_page_hero')) {
         $mobileTag = $hero['mobile_tag'] ?? $hero['tag'] ?? '';
         echo '<section ' . ($intro ? 'aria-labelledby="page-title"' : 'aria-label="Seitenmotiv"') . ' class="' . kem_h($heroClass) . '"><div class="container">';
         if ($intro) {
-            echo '<div class="page-hero-copy"><span class="eyebrow">' . kem_h($intro['eyebrow'] ?? '') . '</span><h1 id="page-title">' . kem_h($intro['title']) . '</h1><p class="lead">' . kem_h($intro['lead']) . '</p><a class="btn" href="/angebotsanfrage/">Kostenloses Angebot anfordern</a><p class="hero-assurance">Kostenlos und unverbindlich.</p></div>';
+            echo '<div class="page-hero-copy"><span class="eyebrow">' . kem_h($intro['eyebrow'] ?? '') . '</span><h1 id="page-title">' . kem_h($intro['title']) . '</h1><p class="lead">' . kem_h($intro['lead']) . '</p><a class="btn" href="' . kem_h(kem_offer_url(kem_offer_context($pageKey))) . '">Kostenloses Angebot anfordern</a><p class="hero-assurance">Kostenlos und unverbindlich.</p></div>';
         }
         echo '<div class="hero-picture">';
         echo '<img alt="' . kem_h($hero['alt'] ?? '') . '" fetchpriority="high" width="' . (int)$hero['width'] . '" height="' . (int)$hero['height'] . '" src="' . kem_h($hero['src']) . '">';
@@ -35,8 +35,8 @@ if (!function_exists('kem_render_breadcrumbs')) {
     }
 }
 if (!function_exists('kem_render_mobile_offer_cta')) {
-    function kem_render_mobile_offer_cta(string $label = 'Kostenloses Angebot anfordern'): void {
-        echo '<aside class="service-mobile-cta" aria-label="Angebot anfordern"><strong>Unverbindliches Angebot gewünscht?</strong><span>Schicken Sie uns kurz die wichtigsten Eckdaten zu Ihrem Objekt.</span><a class="btn" href="/angebotsanfrage/">' . kem_h($label) . '</a></aside>';
+    function kem_render_mobile_offer_cta(string $label = 'Kostenloses Angebot anfordern', ?string $pageKey = null): void {
+        echo '<aside class="service-mobile-cta" aria-label="Angebot anfordern"><strong>Unverbindliches Angebot gewünscht?</strong><span>Schicken Sie uns kurz die wichtigsten Eckdaten zu Ihrem Objekt.</span><a class="btn" href="' . kem_h(kem_offer_url($pageKey ? kem_offer_context($pageKey) : [])) . '">' . kem_h($label) . '</a></aside>';
     }
 }
 if (!function_exists('kem_render_page_cta')) {
@@ -44,7 +44,7 @@ if (!function_exists('kem_render_page_cta')) {
         $cta = kem_page_data($pageKey)['cta'] ?? null;
         if (!$cta) return;
         echo '<section class="' . kem_h($cta['class'] ?? 'cta-band') . '"><div class="container">';
-        if (!empty($cta['content'])) kem_render_content($cta['content'], true);
+        if (!empty($cta['content'])) kem_render_content($cta['content'], true, ['offer_url' => kem_offer_url(kem_offer_context($pageKey))]);
         echo '</div></section>';
     }
 }

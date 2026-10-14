@@ -530,3 +530,6 @@
     width: 100%;
   }
 }
+
+.offer-context-note { margin: 0 0 20px; padding: 12px 16px; border-left: 3px solid var(--primary); background: var(--surface-info); font-size: .95rem; }
+.offer-context-note[hidden] { display: none; }

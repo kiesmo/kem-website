@@ -10,9 +10,9 @@ if (!function_exists('kem_site_config')) {
     }
 }
 if (!function_exists('kem_dynamic_html')) {
-    function kem_dynamic_html(string $html): string {
+    function kem_dynamic_html(string $html, array $tokens = []): string {
         $kem = kem_site_config();
-        return strtr($html, [
+        $replacements = [
             '{{phone_display}}' => kem_h($kem['phone_display']),
             '{{phone_href}}' => kem_h($kem['phone_href']),
             '{{email}}' => kem_h($kem['email']),
@@ -20,7 +20,11 @@ if (!function_exists('kem_dynamic_html')) {
             '{{postal_code}}' => kem_h($kem['postal_code']),
             '{{city}}' => kem_h($kem['city']),
             '{{whatsapp_url}}' => kem_h($kem['whatsapp_url']),
-        ]);
+        ];
+        foreach ($tokens as $key => $value) {
+            if (preg_match('/^[a-z_]+$/', (string)$key)) $replacements['{{' . $key . '}}'] = kem_h((string)$value);
+        }
+        return strtr($html, $replacements);
     }
 }
 if (!function_exists('kem_render_image')) {
@@ -32,17 +36,17 @@ if (!function_exists('kem_render_image')) {
 }
 
 if (!function_exists('kem_content_html')) {
-    function kem_content_html(string $relativePath, bool $dynamic = false): string {
+    function kem_content_html(string $relativePath, bool $dynamic = false, array $tokens = []): string {
         $file = KEM_CONTENT_DIR . '/' . ltrim($relativePath, '/');
         if (!is_file($file)) throw new RuntimeException('Inhaltsdatei fehlt: ' . $relativePath);
         ob_start();
         require $file;
         $html = (string) ob_get_clean();
-        return $dynamic ? kem_dynamic_html($html) : $html;
+        return $dynamic || $tokens ? kem_dynamic_html($html, $tokens) : $html;
     }
 }
 if (!function_exists('kem_render_content')) {
-    function kem_render_content(string $relativePath, bool $dynamic = false): void {
-        echo kem_content_html($relativePath, $dynamic);
+    function kem_render_content(string $relativePath, bool $dynamic = false, array $tokens = []): void {
+        echo kem_content_html($relativePath, $dynamic, $tokens);
     }
 }

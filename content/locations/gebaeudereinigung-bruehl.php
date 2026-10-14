@@ -1,7 +1,7 @@
 <section class="section">
 <div class="container content-grid">
 <article class="service-detail">
-<?php kem_render_mobile_offer_cta(); ?>
+<?php kem_render_mobile_offer_cta('Kostenloses Angebot anfordern', $pageKey); ?>
 <h2>Reinigungsservice direkt aus Brühl</h2>
 <p>Als Gebäudereinigung mit Sitz in Brühl ist die Stadt ein zentrales Einsatzgebiet von KEM. Ob laufende Unterhaltsreinigung, Fensterreinigung oder ein einmaliger Auftrag: Vor Beginn klären wir, welche Bereiche gereinigt werden sollen, welche Anforderungen das Objekt stellt und welcher Termin beziehungsweise Turnus sinnvoll ist.</p>
 <p>Wir arbeiten für private und gewerbliche Kunden. Dadurch können sowohl einzelne Wohnungen und Häuser als auch Büros, Praxen, Ladenlokale, Treppenhäuser oder andere gewerblich genutzte Flächen angefragt werden.</p>
@@ -27,7 +27,7 @@
 <span class="eyebrow">KEM Gebäudereinigung</span>
 <h2>Reinigungsservice in Brühl</h2>
 <ul class="service-facts"><li>Firmensitz in Brühl</li><li>Private und gewerbliche Aufträge</li><li>Einmalige oder regelmäßige Reinigung</li><li>Leistungsumfang nach Vereinbarung</li></ul>
-<a class="btn" href="/angebotsanfrage/">Angebot für Brühl anfragen</a>
+<a class="btn" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot für Brühl anfragen</a>
 </aside>
 </div>
 </section>

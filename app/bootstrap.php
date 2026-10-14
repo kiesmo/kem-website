@@ -7,6 +7,7 @@ const KEM_CONTENT_DIR = KEM_ROOT . '/content';
 const KEM_TEMPLATES_DIR = __DIR__ . '/templates';
 
 require_once __DIR__ . '/helpers/html.php';
+require_once __DIR__ . '/helpers/offer-context.php';
 require_once __DIR__ . '/helpers/pages.php';
 require_once __DIR__ . '/helpers/services.php';
 require_once __DIR__ . '/helpers/schema.php';

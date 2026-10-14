@@ -13,7 +13,7 @@ require KEM_TEMPLATES_DIR . '/header.php';
 <main id="main">
 <?php kem_render_page_hero($pageKey, $service['article']); ?>
 <?php kem_render_breadcrumbs($pageKey); ?>
-<section class="section"><div class="container content-grid"><article class="service-detail"><?php kem_render_mobile_offer_cta(); ?><?php kem_render_content($service['article']['body_content']); ?></article><aside class="content-card service-summary-card"><?php kem_render_image($service['summary_image']); ?><?php kem_render_content($service['summary_content']); ?></aside></div></section>
+<section class="section"><div class="container content-grid"><article class="service-detail"><?php kem_render_mobile_offer_cta('Kostenloses Angebot anfordern', $pageKey); ?><?php kem_render_content($service['article']['body_content']); ?></article><aside class="content-card service-summary-card"><?php kem_render_image($service['summary_image']); ?><?php kem_render_content($service['summary_content'], true, ['offer_url' => kem_offer_url(kem_offer_context($pageKey))]); ?></aside></div></section>
 <section class="section service-more-section"><div class="container"><h2>Weitere Leistungen von KEM Gebäudereinigung</h2><nav aria-label="Weitere Leistungen" class="service-nav"><?php foreach ($serviceCatalog as $route => $item): if ($route === $pageKey) continue; ?><a href="<?= kem_h($route) ?>"><?= kem_h($item['label']) ?></a><?php endforeach; ?></nav></div></section>
 <?php kem_render_page_cta($pageKey); ?>
 </main>

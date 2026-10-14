@@ -50,9 +50,9 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'faq') ?> href="/faq/">FAQ</a></li>
 <li><a<?= kem_current_attr($navActive, 'jobs') ?> href="/jobs/">Jobs</a></li>
 <li><a<?= kem_current_attr($navActive, 'contact') ?> href="/kontakt/">Kontakt</a></li>
-<li class="mobile-offer-item"><a class="btn mobile-offer-cta" href="/angebotsanfrage/">Kostenloses Angebot anfordern</a></li>
+<li class="mobile-offer-item"><a class="btn mobile-offer-cta" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Kostenloses Angebot anfordern</a></li>
 </ul>
 </nav>
-<a<?= kem_current_attr($navActive, 'offer') ?> class="btn header-cta" href="/angebotsanfrage/">Angebot anfordern</a>
+<a<?= kem_current_attr($navActive, 'offer') ?> class="btn header-cta" href="<?= kem_h(kem_offer_url(kem_offer_context($pageKey))) ?>">Angebot anfordern</a>
 </div>
 </header>
