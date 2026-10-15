@@ -10,4 +10,5 @@ require_once __DIR__ . '/helpers/html.php';
 require_once __DIR__ . '/helpers/pages.php';
 require_once __DIR__ . '/helpers/services.php';
 require_once __DIR__ . '/helpers/schema.php';
+require_once __DIR__ . '/helpers/actions.php';
 require_once __DIR__ . '/helpers/render-components.php';

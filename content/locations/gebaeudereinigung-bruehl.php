@@ -26,7 +26,7 @@
 <span class="eyebrow">KEM Gebäudereinigung</span>
 <h2>Reinigungsservice in Brühl</h2>
 <ul class="service-facts"><li>Firmensitz in Brühl</li><li>Private und gewerbliche Aufträge</li><li>Einmalige oder regelmäßige Reinigung</li><li>Leistungsumfang nach Vereinbarung</li></ul>
-<a class="btn" href="/angebotsanfrage/">Angebot für Brühl anfragen</a>
+<?php kem_render_action(kem_offer_action('/gebaeudereinigung-bruehl/', 'Angebot für Brühl anfragen')); ?>
 </aside>
 </div>
 </section>

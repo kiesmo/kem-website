@@ -26,7 +26,7 @@
 <span class="eyebrow">KEM Gebäudereinigung</span>
 <h2>Reinigungsservice in Bonn</h2>
 <ul class="service-facts"><li>Private und gewerbliche Kunden</li><li>Regelmäßig oder einmalig</li><li>Termine nach Vereinbarung</li><li>Individuell abgestimmter Umfang</li></ul>
-<a class="btn" href="/angebotsanfrage/">Angebot für Bonn anfragen</a>
+<?php kem_render_action(kem_offer_action('/gebaeudereinigung-bonn/', 'Angebot für Bonn anfragen')); ?>
 </aside>
 </div>
 </section>

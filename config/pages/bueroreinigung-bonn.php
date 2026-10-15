@@ -50,7 +50,6 @@ return array (
     'eyebrow' => 'Büro- & Gewerbereinigung in Bonn',
     'title' => 'Büroreinigung in Bonn',
     'lead' => 'KEM hat seinen Firmensitz in Brühl und übernimmt auch Büroreinigung für Büro-, Praxis-, Verwaltungs- und Gewerbeflächen in Bonn. Der Reinigungsplan richtet sich nach Nutzung, Flächen, gewünschter Häufigkeit und den betrieblichen Abläufen vor Ort.',
-    'mobile_offer' => true,
   ),
   'hero' => 
   array (

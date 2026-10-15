@@ -45,7 +45,6 @@ return array (
     'eyebrow' => 'Einsatzgebiet Köln',
     'title' => 'Gebäudereinigung in Köln',
     'lead' => 'KEM hat seinen Firmensitz in Brühl und übernimmt Gebäudereinigung auch in Köln für Büros, Praxen, Gewerbeflächen, Wohnobjekte und weitere Immobilien. Leistungsumfang, Reinigungsintervall und Einsatzzeiten stimmen wir vorab passend zu Nutzung und Bedarf Ihres Objekts ab.',
-    'mobile_offer' => true,
   ),
   'hero' => 
   array (

@@ -37,7 +37,7 @@ a {
 
 /* Prose links remain recognisable without hover; actions and navigation
    keep their component-specific treatments. */
-main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .whatsapp-inline, .more, .gallery-card-link, nav a)) {
+main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .more, .gallery-card-link, nav a)) {
   text-decoration-line: underline;
   text-decoration-thickness: .08em;
   text-underline-offset: .18em;

@@ -20,17 +20,16 @@ if (!function_exists('kem_render_page_intro')) {
         echo '<h1 id="page-title">' . kem_h($intro['title']) . '</h1>';
         if (!empty($intro['lead'])) echo '<p class="lead">' . kem_h($intro['lead']) . '</p>';
 
-        $actions = $options['actions'] ?? $intro['actions'] ?? [];
+        $pageAction = kem_page_primary_action($pageKey);
+        $defaultActions = ($pageAction['intent'] ?? null) === 'offer' ? [kem_offer_action($pageKey)] : [];
+        $actions = $options['actions'] ?? $intro['actions'] ?? $defaultActions;
         if ($actions) {
             echo '<div class="page-intro__actions">';
-            foreach ($actions as $action) {
-                if (empty($action['href']) || empty($action['label'])) continue;
-                echo '<a class="btn' . (!empty($action['secondary']) ? ' secondary' : '') . '" href="' . kem_h($action['href']) . '">' . kem_h($action['label']) . '</a>';
+            foreach ($actions as $index => $action) {
+                kem_render_action($action, $index === 0 ? 'primary' : 'inline');
             }
             echo '</div>';
         }
-        // Preserve the existing mobile enquiry path until B3 replaces it.
-        if (!empty($options['mobile_offer'] ?? $intro['mobile_offer'] ?? false)) kem_render_mobile_offer_cta();
         echo '</div>';
         if ($hasMedia) {
             echo '<div class="page-intro__media"><img alt="' . kem_h($hero['alt'] ?? '') . '" fetchpriority="high" width="' . (int)$hero['width'] . '" height="' . (int)$hero['height'] . '" src="' . kem_h($hero['src']) . '"></div>';
@@ -49,11 +48,6 @@ if (!function_exists('kem_render_breadcrumbs')) {
             else echo '<li><a href="' . kem_h($crumb['path']) . '">' . kem_h($crumb['name']) . '</a></li>';
         }
         echo '</ol></div></nav>';
-    }
-}
-if (!function_exists('kem_render_mobile_offer_cta')) {
-    function kem_render_mobile_offer_cta(string $label = 'Kostenloses Angebot anfordern'): void {
-        echo '<aside class="service-mobile-cta" aria-label="Angebot anfordern"><strong>Unverbindliches Angebot gewünscht?</strong><span>Schicken Sie uns kurz die wichtigsten Eckdaten zu Ihrem Objekt.</span><a class="btn" href="/angebotsanfrage/">' . kem_h($label) . '</a></aside>';
     }
 }
 if (!function_exists('kem_render_page_cta')) {

@@ -100,10 +100,6 @@
   top: calc(var(--header-height) + 16px);
 }
 
-.service-mobile-cta {
-  display: none;
-}
-
 .service-summary-card .eyebrow {
   margin-top: 4px;
 }
@@ -141,30 +137,7 @@
     position: static;
   }
 
-  .service-mobile-cta {
-    display: grid;
-    gap: 8px;
-    margin: 24px 0 32px;
-    padding: 18px;
-    border: 1px solid #cfe0ec;
-    border-left: 4px solid var(--primary);
-    background: var(--primary-soft);
-  }
 
-  .service-mobile-cta strong {
-    color: var(--navy);
-    font-size: var(--text-body);
-  }
-
-  .service-mobile-cta span {
-    color: #45515c;
-    font-size: var(--text-meta);
-  }
-
-  .service-mobile-cta .btn {
-    justify-self: start;
-    margin-top: 4px;
-  }
 }
 
 @media (max-width: 720px) {

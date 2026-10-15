@@ -3,6 +3,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 $kem = kem_site_config();
 $navActive = $navActive ?? [];
 $servicesCurrent = $servicesCurrent ?? false;
+$headerAction = kem_page_primary_action($pageKey ?? '/');
 
 if (!is_array($navActive)) {
     $navActive = $navActive === null ? [] : [$navActive];
@@ -50,9 +51,11 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'faq') ?> href="/faq/">FAQ</a></li>
 <li><a<?= kem_current_attr($navActive, 'jobs') ?> href="/jobs/">Jobs</a></li>
 <li><a<?= kem_current_attr($navActive, 'contact') ?> href="/kontakt/">Kontakt</a></li>
-<li class="mobile-offer-item"><a class="btn mobile-offer-cta" href="/angebotsanfrage/">Kostenloses Angebot anfordern</a></li>
+<?php if ($headerAction !== null): ?>
+<li class="mobile-offer-item"><?php kem_render_action($headerAction, 'primary', 'mobile-offer-cta'); ?></li>
+<?php endif; ?>
 </ul>
 </nav>
-<a<?= kem_current_attr($navActive, 'offer') ?> class="btn header-cta" href="/angebotsanfrage/">Angebot anfordern</a>
+<?php if ($headerAction !== null) kem_render_action($headerAction, 'primary', 'header-cta'); ?>
 </div>
 </header>

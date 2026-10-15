@@ -166,33 +166,6 @@
   line-height: var(--line-body);
 }
 
-/* CTA helper text: keep the form as the primary action and offer WhatsApp as a low-friction alternative. */
-.cta-whatsapp-note {
-  max-width: 760px;
-  margin: 18px auto 0;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-.cta-whatsapp-note a {
-  color: #147a3a;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.cta-whatsapp-note a:hover,
-.cta-whatsapp-note a:focus-visible {
-  color: #0b6f33;
-}
-
-/* Embedded WhatsApp action below CTA explanatory notes. */
-.cta-whatsapp-action {
-  margin: 12px auto 0;
-  text-align: center;
-}
-
 .gallery-card-link {
   display: inline-block;
   margin-top: 10px;

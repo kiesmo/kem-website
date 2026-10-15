@@ -90,7 +90,7 @@ a {
 
 /* Prose links remain recognisable without hover; actions and navigation
    keep their component-specific treatments. */
-main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .whatsapp-inline, .more, .gallery-card-link, nav a)) {
+main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .more, .gallery-card-link, nav a)) {
   text-decoration-line: underline;
   text-decoration-thickness: .08em;
   text-underline-offset: .18em;
@@ -220,6 +220,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  text-align: center;
   gap: 8px;
   border: 0;
   border-radius: var(--radius-button);
@@ -248,6 +250,39 @@ h3 {
   color: var(--primary);
   border: 1px solid currentColor;
   box-shadow: none;
+}
+
+/* One filled primary action; optional alternatives stay quiet and recognisable. */
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 24px;
+}
+
+.action-link {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 24px;
+  color: var(--primary-dark);
+  font-size: var(--text-action);
+  font-weight: 700;
+  line-height: var(--line-action);
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.action-link:hover {
+  color: var(--primary);
+}
+
+.action-alternative {
+  margin: 16px auto 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 /* Header and navigation */
@@ -538,6 +573,7 @@ h3 {
 }
 
 .hero-panel {
+  --focus-ring: var(--focus-ring-on-dark);
   width: min(52%, 640px);
   min-width: 0;
   padding: clamp(20px, 2.4vw, 32px);
@@ -545,6 +581,19 @@ h3 {
   background: rgba(9, 105, 181, .96);
   color: #fff;
   box-shadow: 0 12px 30px rgba(10, 28, 44, .18);
+}
+
+.hero-panel .action-group > .btn {
+  background: var(--surface);
+  color: var(--primary-dark);
+}
+
+.hero-panel .action-group > .btn:hover {
+  background: var(--primary-soft);
+}
+
+.hero-panel .action-link {
+  color: #fff;
 }
 
 .hero-label {
@@ -1138,9 +1187,12 @@ h3 {
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, .95fr) minmax(0, 1fr);
-  gap: 45px;
-  padding: 56px 0;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 28px;
+  /* Reserve the trailing edge for Backtop while footer text scrolls past it. */
+  padding: 36px 64px 36px 0;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .footer-main > * {
@@ -1148,10 +1200,19 @@ h3 {
 }
 
 .footer-main h2 {
+  margin-bottom: 12px;
   font-size: var(--text-label);
   line-height: var(--line-label);
   color: var(--primary-light);
   letter-spacing: .08em;
+}
+
+.footer-main p {
+  margin: 12px 0 0;
+}
+
+.site-footer .action-link {
+  color: #fff;
 }
 
 .footer-main address {
@@ -1169,7 +1230,7 @@ h3 {
 }
 
 .footer-services li + li {
-  margin-top: 9px;
+  margin-top: 6px;
 }
 
 .footer-services a {
@@ -1182,20 +1243,21 @@ h3 {
 
 .footer-logo img {
   width: 100%;
-  max-width: 360px;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
 }
 
 .footer-meta {
   border-top: 1px solid rgba(255, 255, 255, .16);
-  padding: 19px 0;
+  padding: 16px 0;
   font-size: var(--text-meta);
   line-height: var(--line-meta);
   color: #d3d3d3;
 }
 
 .footer-meta .container {
+  padding-inline-end: 64px;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -1207,107 +1269,29 @@ h3 {
   gap: 18px;
 }
 
-/* Static WhatsApp contact option */
-.whatsapp-inline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 999px;
-  background: #147a3a;
-  color: #fff;
-  font-size: var(--text-action);
-  font-weight: 600;
-  line-height: var(--line-action);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
-  transition: transform .2s, box-shadow .2s, background .2s;
-}
-
-.whatsapp-inline:hover,
-.whatsapp-inline:focus-visible {
-  background: #0b6f33;
-  color: #fff;
-  transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, .18);
-}
-
-.whatsapp-inline__icon {
-  width: 22px;
-  height: 22px;
-  flex: 0 0 22px;
-  color: #fff;
-}
-
 .contact-whatsapp {
   margin: 22px 0 26px;
   padding-top: 20px;
   border-top: 1px solid rgba(16, 48, 75, .12);
 }
 
-.contact-whatsapp__text,
-.offer-whatsapp p {
+.contact-whatsapp__text {
   margin: 0 0 10px;
 }
 
-.offer-whatsapp {
-  margin-top: 24px;
+/* The offer form leads; this contact alternative follows the complete form. */
+.offer-contact-alternative {
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
-/* Floating controls */
-.whatsapp-chat {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 950;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-height: 56px;
-  padding: 0 18px 0 16px;
-  border-radius: 999px;
-  background: #147a3a;
-  color: #fff;
-  font-size: var(--text-action);
-  font-weight: 700;
-  line-height: var(--line-action);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
-  transition: transform .2s, box-shadow .2s, opacity .2s, visibility .2s;
-}
-
-.whatsapp-chat:hover,
-.whatsapp-chat:focus-visible {
-  background: #0b6f33;
-  transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, .26);
-}
-
-.whatsapp-chat__icon {
-  width: 24px;
-  height: 24px;
-  flex: 0 0 24px;
-  display: block;
-  color: #fff;
-}
-
-.whatsapp-chat__label {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-body.footer-visible .whatsapp-chat {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(14px);
-}
-
+/* Backtop */
 .backtop {
   position: fixed;
   right: 29px;
-  bottom: 91px;
+  bottom: 24px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1633,6 +1617,11 @@ body.footer-visible .whatsapp-chat {
     grid-column: auto;
   }
 
+  .footer-main,
+  .footer-meta .container {
+    padding-inline-end: 0;
+  }
+
   .footer-meta .container {
     display: block;
   }
@@ -1640,27 +1629,6 @@ body.footer-visible .whatsapp-chat {
   .footer-links {
     margin-top: 10px;
     flex-wrap: wrap;
-  }
-
-  .whatsapp-chat {
-    right: max(14px, env(safe-area-inset-right, 0px));
-    bottom: max(14px, env(safe-area-inset-bottom, 0px));
-    width: 56px;
-    height: 56px;
-    min-height: 56px;
-    padding: 0;
-    gap: 0;
-    border-radius: 50%;
-  }
-
-  .whatsapp-chat__icon {
-    width: 26px;
-    height: 26px;
-    flex-basis: 26px;
-  }
-
-  .whatsapp-chat__label {
-    display: none;
   }
 
   .backtop {
@@ -2333,10 +2301,6 @@ body.footer-visible .whatsapp-chat {
   top: calc(var(--header-height) + 16px);
 }
 
-.service-mobile-cta {
-  display: none;
-}
-
 .service-summary-card .eyebrow {
   margin-top: 4px;
 }
@@ -2374,30 +2338,7 @@ body.footer-visible .whatsapp-chat {
     position: static;
   }
 
-  .service-mobile-cta {
-    display: grid;
-    gap: 8px;
-    margin: 24px 0 32px;
-    padding: 18px;
-    border: 1px solid #cfe0ec;
-    border-left: 4px solid var(--primary);
-    background: var(--primary-soft);
-  }
 
-  .service-mobile-cta strong {
-    color: var(--navy);
-    font-size: var(--text-body);
-  }
-
-  .service-mobile-cta span {
-    color: #45515c;
-    font-size: var(--text-meta);
-  }
-
-  .service-mobile-cta .btn {
-    justify-self: start;
-    margin-top: 4px;
-  }
 }
 
 @media (max-width: 720px) {
@@ -2856,33 +2797,6 @@ body.footer-visible .whatsapp-chat {
   margin: 0;
   font-size: var(--text-body);
   line-height: var(--line-body);
-}
-
-/* CTA helper text: keep the form as the primary action and offer WhatsApp as a low-friction alternative. */
-.cta-whatsapp-note {
-  max-width: 760px;
-  margin: 18px auto 0;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-.cta-whatsapp-note a {
-  color: #147a3a;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.cta-whatsapp-note a:hover,
-.cta-whatsapp-note a:focus-visible {
-  color: #0b6f33;
-}
-
-/* Embedded WhatsApp action below CTA explanatory notes. */
-.cta-whatsapp-action {
-  margin: 12px auto 0;
-  text-align: center;
 }
 
 .gallery-card-link {

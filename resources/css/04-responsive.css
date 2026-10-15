@@ -308,6 +308,11 @@
     grid-column: auto;
   }
 
+  .footer-main,
+  .footer-meta .container {
+    padding-inline-end: 0;
+  }
+
   .footer-meta .container {
     display: block;
   }
@@ -315,27 +320,6 @@
   .footer-links {
     margin-top: 10px;
     flex-wrap: wrap;
-  }
-
-  .whatsapp-chat {
-    right: max(14px, env(safe-area-inset-right, 0px));
-    bottom: max(14px, env(safe-area-inset-bottom, 0px));
-    width: 56px;
-    height: 56px;
-    min-height: 56px;
-    padding: 0;
-    gap: 0;
-    border-radius: 50%;
-  }
-
-  .whatsapp-chat__icon {
-    width: 26px;
-    height: 26px;
-    flex-basis: 26px;
-  }
-
-  .whatsapp-chat__label {
-    display: none;
   }
 
   .backtop {

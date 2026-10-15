@@ -50,7 +50,6 @@ return array (
     'eyebrow' => 'Fenster- & Glasreinigung in Köln',
     'title' => 'Fensterreinigung in Köln',
     'lead' => 'KEM hat seinen Firmensitz in Brühl und bietet Fenster- und Glasreinigung auch für private und gewerbliche Objekte in Köln an. Welche Fenster, Rahmen, Falze, Fensterbänke oder größeren Glasflächen gereinigt werden, wird vorab passend zum Objekt und zur Zugänglichkeit festgelegt.',
-    'mobile_offer' => true,
   ),
   'hero' => 
   array (

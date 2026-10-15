@@ -1,1 +1,1 @@
-<h2>Haben Sie Fragen zu unseren Leistungen?</h2><p>Rufen Sie uns an: <a href="tel:{{phone_href}}"><strong>{{phone_display}}</strong></a>. Gern erstellen wir Ihnen ein kostenloses und individuelles Angebot.</p><a class="btn" href="/angebotsanfrage/">Angebot anfordern</a>
+<h2>Haben Sie Fragen zu unseren Leistungen?</h2><p>Rufen Sie uns an: <a href="tel:{{phone_href}}"><strong>{{phone_display}}</strong></a>. Gern erstellen wir Ihnen ein kostenloses und individuelles Angebot.</p><?php kem_render_action(kem_offer_action('/ueber-uns/', 'Angebot anfordern')); ?>

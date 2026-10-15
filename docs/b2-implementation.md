@@ -54,8 +54,8 @@ Generated CSS SHA-256: `a700ee72e1fbb728a6f64870726fad99e513a72d1898f142eb8fd544
 
 ## Remaining work
 
-B3–B9 remain unstarted. Primary/final CTA policy, the floating WhatsApp control, content/media ordering, contextual offer URLs, conditional form rules and progress/success behaviour remain assigned to their existing batches. No real contact message or offer was submitted during verification.
+At completion of B2, B3–B9 were unstarted. [B3 has since been implemented](b3-implementation.md), replacing the transitional mobile CTA and floating WhatsApp control. B4–B9 remain unstarted: content/media ordering, contextual offer URLs, conditional form rules and progress/success behaviour remain assigned to their existing batches. No real contact message or offer was submitted during verification.
 
-When B3 supplies replacement intro actions, explicitly disable `mobile_offer` in the same change; the action slot intentionally does not remove the legacy block automatically. Existing hero tag configuration is now unused display metadata and can be cleaned up with subsequent page-specific work.
+B2's handover required B3 to disable `mobile_offer` when replacing its intro actions; B3 removed the obsolete helper, configuration and styles together. Existing hero tag configuration remains unused display metadata and can be cleaned up with subsequent page-specific work.
 
 The audit continues to describe its original website baseline. This record describes the B2 changes rather than rewriting historical findings as though they were observations of the new implementation.

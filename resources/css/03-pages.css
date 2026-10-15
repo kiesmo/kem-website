@@ -344,9 +344,12 @@
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, .95fr) minmax(0, 1fr);
-  gap: 45px;
-  padding: 56px 0;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 28px;
+  /* Reserve the trailing edge for Backtop while footer text scrolls past it. */
+  padding: 36px 64px 36px 0;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .footer-main > * {
@@ -354,10 +357,19 @@
 }
 
 .footer-main h2 {
+  margin-bottom: 12px;
   font-size: var(--text-label);
   line-height: var(--line-label);
   color: var(--primary-light);
   letter-spacing: .08em;
+}
+
+.footer-main p {
+  margin: 12px 0 0;
+}
+
+.site-footer .action-link {
+  color: #fff;
 }
 
 .footer-main address {
@@ -375,7 +387,7 @@
 }
 
 .footer-services li + li {
-  margin-top: 9px;
+  margin-top: 6px;
 }
 
 .footer-services a {
@@ -388,20 +400,21 @@
 
 .footer-logo img {
   width: 100%;
-  max-width: 360px;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
 }
 
 .footer-meta {
   border-top: 1px solid rgba(255, 255, 255, .16);
-  padding: 19px 0;
+  padding: 16px 0;
   font-size: var(--text-meta);
   line-height: var(--line-meta);
   color: #d3d3d3;
 }
 
 .footer-meta .container {
+  padding-inline-end: 64px;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -413,107 +426,29 @@
   gap: 18px;
 }
 
-/* Static WhatsApp contact option */
-.whatsapp-inline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 999px;
-  background: #147a3a;
-  color: #fff;
-  font-size: var(--text-action);
-  font-weight: 600;
-  line-height: var(--line-action);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
-  transition: transform .2s, box-shadow .2s, background .2s;
-}
-
-.whatsapp-inline:hover,
-.whatsapp-inline:focus-visible {
-  background: #0b6f33;
-  color: #fff;
-  transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, .18);
-}
-
-.whatsapp-inline__icon {
-  width: 22px;
-  height: 22px;
-  flex: 0 0 22px;
-  color: #fff;
-}
-
 .contact-whatsapp {
   margin: 22px 0 26px;
   padding-top: 20px;
   border-top: 1px solid rgba(16, 48, 75, .12);
 }
 
-.contact-whatsapp__text,
-.offer-whatsapp p {
+.contact-whatsapp__text {
   margin: 0 0 10px;
 }
 
-.offer-whatsapp {
-  margin-top: 24px;
+/* The offer form leads; this contact alternative follows the complete form. */
+.offer-contact-alternative {
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
-/* Floating controls */
-.whatsapp-chat {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 950;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-height: 56px;
-  padding: 0 18px 0 16px;
-  border-radius: 999px;
-  background: #147a3a;
-  color: #fff;
-  font-size: var(--text-action);
-  font-weight: 700;
-  line-height: var(--line-action);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
-  transition: transform .2s, box-shadow .2s, opacity .2s, visibility .2s;
-}
-
-.whatsapp-chat:hover,
-.whatsapp-chat:focus-visible {
-  background: #0b6f33;
-  transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, .26);
-}
-
-.whatsapp-chat__icon {
-  width: 24px;
-  height: 24px;
-  flex: 0 0 24px;
-  display: block;
-  color: #fff;
-}
-
-.whatsapp-chat__label {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-body.footer-visible .whatsapp-chat {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(14px);
-}
-
+/* Backtop */
 .backtop {
   position: fixed;
   right: 29px;
-  bottom: 91px;
+  bottom: 24px;
   width: 44px;
   height: 44px;
   border-radius: 50%;

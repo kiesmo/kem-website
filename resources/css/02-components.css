@@ -3,6 +3,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  text-align: center;
   gap: 8px;
   border: 0;
   border-radius: var(--radius-button);
@@ -31,6 +33,39 @@
   color: var(--primary);
   border: 1px solid currentColor;
   box-shadow: none;
+}
+
+/* One filled primary action; optional alternatives stay quiet and recognisable. */
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 24px;
+}
+
+.action-link {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 24px;
+  color: var(--primary-dark);
+  font-size: var(--text-action);
+  font-weight: 700;
+  line-height: var(--line-action);
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.action-link:hover {
+  color: var(--primary);
+}
+
+.action-alternative {
+  margin: 16px auto 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 /* Header and navigation */
@@ -321,6 +356,7 @@
 }
 
 .hero-panel {
+  --focus-ring: var(--focus-ring-on-dark);
   width: min(52%, 640px);
   min-width: 0;
   padding: clamp(20px, 2.4vw, 32px);
@@ -328,6 +364,19 @@
   background: rgba(9, 105, 181, .96);
   color: #fff;
   box-shadow: 0 12px 30px rgba(10, 28, 44, .18);
+}
+
+.hero-panel .action-group > .btn {
+  background: var(--surface);
+  color: var(--primary-dark);
+}
+
+.hero-panel .action-group > .btn:hover {
+  background: var(--primary-soft);
+}
+
+.hero-panel .action-link {
+  color: #fff;
 }
 
 .hero-label {

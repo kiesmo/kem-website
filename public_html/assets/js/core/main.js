@@ -111,14 +111,6 @@
     input.min = localDate;
   });
 
-  const footer = document.querySelector('.site-footer');
-  if (footer && 'IntersectionObserver' in window) {
-    const footerObserver = new IntersectionObserver(entries => {
-      document.body.classList.toggle('footer-visible', entries.some(entry => entry.isIntersecting));
-    }, { threshold: 0.08 });
-    footerObserver.observe(footer);
-  }
-
   const ensureFieldError = field => {
     if (!field.name || field.type === 'hidden') return null;
     if (!field.id) {

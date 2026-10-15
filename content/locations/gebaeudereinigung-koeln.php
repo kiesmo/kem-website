@@ -26,7 +26,7 @@
 <span class="eyebrow">KEM Gebäudereinigung</span>
 <h2>Reinigungsservice in Köln</h2>
 <ul class="service-facts"><li>Private und gewerbliche Objekte</li><li>Flexible Reinigungsintervalle</li><li>Einmalige Einsätze möglich</li><li>Individuelle Angebotskalkulation</li></ul>
-<a class="btn" href="/angebotsanfrage/">Angebot für Köln anfragen</a>
+<?php kem_render_action(kem_offer_action('/gebaeudereinigung-koeln/', 'Angebot für Köln anfragen')); ?>
 </aside>
 </div>
 </section>

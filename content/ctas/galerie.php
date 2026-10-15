@@ -1,1 +1,1 @@
-<h2>Reinigung für Ihr Objekt anfragen</h2><p>Teilen Sie uns kurz mit, welche Flächen gereinigt werden sollen. Wir stimmen den passenden Leistungsumfang mit Ihnen ab.</p><a class="btn" href="/angebotsanfrage/">Kostenloses Angebot anfordern</a>
+<h2>Reinigung für Ihr Objekt anfragen</h2><p>Teilen Sie uns kurz mit, welche Flächen gereinigt werden sollen. Wir stimmen den passenden Leistungsumfang mit Ihnen ab.</p><?php kem_render_action(kem_offer_action('/galerie/', 'Kostenloses Angebot anfordern')); ?>
