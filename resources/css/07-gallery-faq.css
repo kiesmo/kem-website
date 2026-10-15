@@ -3,6 +3,17 @@
   max-width: 1040px;
 }
 
+/* Preserve the complete gallery collage at every shared intro breakpoint. */
+.page-intro.gallery-collage .page-intro__media {
+  aspect-ratio: auto;
+}
+
+.page-intro.gallery-collage .page-intro__media img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
 .video-gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
