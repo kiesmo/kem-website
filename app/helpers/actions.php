@@ -18,7 +18,7 @@ function kem_whatsapp_action(string $pageKey, string $label = 'Per WhatsApp schr
     ];
 }
 
-/** Header and footer use the same purpose-specific destination at every width. */
+/** Purpose-specific actions for page intros and the footer; the header uses the offer action. */
 function kem_page_primary_action(string $pageKey): ?array {
     if (in_array($pageKey, ['/angebotsanfrage/', '/kontakt/'], true)) return null;
     if ($pageKey === '/jobs/') return kem_application_action($pageKey, 'Jetzt bewerben');

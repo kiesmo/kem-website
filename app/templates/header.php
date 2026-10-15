@@ -3,7 +3,9 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 $kem = kem_site_config();
 $navActive = $navActive ?? [];
 $servicesCurrent = $servicesCurrent ?? false;
-$headerAction = kem_page_primary_action($pageKey ?? '/');
+$headerAction = ($pageKey ?? '/') === '/angebotsanfrage/'
+    ? null
+    : kem_offer_action($pageKey ?? '/', 'Angebot anfordern');
 
 if (!is_array($navActive)) {
     $navActive = $navActive === null ? [] : [$navActive];
