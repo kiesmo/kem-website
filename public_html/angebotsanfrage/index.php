@@ -170,12 +170,12 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <div class="field full appointment-note-field"><label for="appointment_notes">Hinweis zum Termin <span class="optional-label">(optional)</span></label><textarea id="appointment_notes" maxlength="1000" name="appointment_notes" placeholder="z. B. KW 34, werktags vormittags oder Zugang nur nach 17 Uhr"></textarea></div>
 <div class="field full upload-field">
 <label for="photos">Fotos hinzufügen <span class="optional-label">(optional)</span></label>
-<p class="field-hint">Fotos helfen uns, Fläche, Verschmutzung und Zugänglichkeit besser einzuschätzen.</p>
+<p class="field-hint" id="photos-help">Fotos helfen uns, Fläche, Verschmutzung und Zugänglichkeit besser einzuschätzen.</p>
 <div class="upload-dropzone" data-upload-dropzone="">
-<input accept="image/jpeg,image/png,image/webp" id="photos" multiple="" name="photos[]" type="file"/>
+<input accept="image/jpeg,image/png,image/webp" aria-describedby="photos-help photos-limits" id="photos" multiple="" name="photos[]" type="file"/>
 <span aria-hidden="true" class="upload-icon">＋</span>
 <b>Fotos aufnehmen oder auswählen</b>
-<small>JPG, PNG oder WebP · maximal 5 Dateien · je 5 MB</small>
+<small id="photos-limits">JPG, PNG oder WebP · maximal 5 Dateien · je 5 MB · insgesamt maximal 15 MB</small>
 </div>
 <ul aria-live="polite" class="upload-file-list upload-preview-list" data-upload-file-list=""></ul>
 </div>
@@ -189,7 +189,7 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <div class="field"><label for="first_name">Vorname *</label><input autocomplete="given-name" id="first_name" maxlength="80" name="first_name" required=""/></div>
 <div class="field"><label for="last_name">Nachname *</label><input autocomplete="family-name" id="last_name" maxlength="80" name="last_name" required=""/></div>
 <div class="field full"><label for="offer-email">E-Mail-Adresse *</label><input autocomplete="email" id="offer-email" maxlength="160" name="email" required="" type="email"/></div>
-<div class="field full"><label for="offer-phone">Telefon <span class="optional-label">(optional)</span></label><input autocomplete="tel" id="offer-phone" maxlength="30" name="phone" pattern="[0-9+\(\) /.\-]{6,30}" type="tel"/><p class="field-hint contact-hint">Praktisch für kurze Rückfragen – wir antworten sonst per E-Mail.</p></div>
+<div class="field full"><label for="offer-phone">Telefon <span class="optional-label">(optional)</span></label><input aria-describedby="offer-phone-hint" autocomplete="tel" id="offer-phone" maxlength="30" name="phone" pattern="[0-9+\(\) /.\-]{6,30}" type="tel"/><p class="field-hint contact-hint" id="offer-phone-hint">Praktisch für kurze Rückfragen – wir antworten sonst per E-Mail.</p></div>
 </div>
 <div class="form-actions"><button class="btn secondary" data-prev="" type="button">Zurück</button><button class="btn" data-next="" type="button">Angaben prüfen</button></div>
 </section>

@@ -82,7 +82,6 @@
 .location-card .location-services a {
     color: var(--primary);
     font-weight: 700;
-    text-decoration: none;
 }
 
 .location-card .location-services a:hover,

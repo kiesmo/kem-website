@@ -16,6 +16,9 @@
   --max: 1240px;
   --text-muted: #526372;
   --border: #dce5ec;
+  --field-border: #7c8995;
+  --focus-ring: var(--primary-dark);
+  --focus-ring-on-dark: #ffbf00;
   --radius-card: 16px;
   --radius-control: 10px;
   --radius-button: 999px;
@@ -70,6 +73,19 @@ a {
   text-decoration: none;
 }
 
+/* Prose links remain recognisable without hover; actions and navigation
+   keep their component-specific treatments. */
+main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .whatsapp-inline, .more, .gallery-card-link, nav a)) {
+  text-decoration-line: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+/* Legacy privacy markup already contains <u>; let the link draw one line. */
+main .field label a u {
+  text-decoration: none;
+}
+
 button,
 input,
 textarea,
@@ -98,8 +114,18 @@ select {
 }
 
 :focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
+}
+
+.site-header,
+.site-footer {
+  --focus-ring: var(--focus-ring-on-dark);
+}
+
+/* Dropdowns clip their contents, so keep keyboard focus inside each row. */
+.dropdown a:focus-visible {
+  outline-offset: -3px;
 }
 
 .sr-only {
@@ -893,19 +919,20 @@ h3 {
   grid-column: 1 / -1;
 }
 
-.field label {
+/* Selection cards and estimate options define their own label layout. */
+.field label:not(.service-choice):not(.estimate-option) {
   display: block;
   font-size: .86rem;
   font-weight: 800;
   margin-bottom: 5px;
 }
 
-.field input:not([type="checkbox"]):not([type="file"]),
+.field input:where(:not([type="checkbox"]):not([type="file"])),
 .field textarea,
 .field select {
   width: 100%;
   min-height: 50px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--field-border);
   border-radius: var(--radius-control);
   background: var(--surface);
   padding: 12px 14px;
@@ -916,9 +943,7 @@ h3 {
   resize: vertical;
 }
 
-.field input:focus,
-.field textarea:focus,
-.field select:focus {
+.field :where(input, textarea, select):focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px var(--primary-shadow-soft);
 }
@@ -1747,7 +1772,7 @@ body.footer-visible .whatsapp-chat {
   color: #5c6974;
 }
 
-.offer-builder .field label,
+.offer-builder .field label:not(.estimate-option),
 .offer-builder fieldset legend {
   color: var(--navy);
 }
@@ -1807,6 +1832,7 @@ body.footer-visible .whatsapp-chat {
 .service-choice {
   position: relative;
   display: flex;
+  min-width: 0;
   min-height: 104px;
   gap: 14px;
   align-items: flex-start;
@@ -1814,6 +1840,8 @@ body.footer-visible .whatsapp-chat {
   border: 1px solid #d4dde3;
   border-radius: var(--radius-control);
   background: #fff;
+  font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
   transition: transform .18s, border-color .18s, box-shadow .18s, background .18s;
 }
@@ -1840,15 +1868,20 @@ body.footer-visible .whatsapp-chat {
 
 .service-choice span {
   display: grid;
+  min-width: 0;
   gap: 5px;
+  overflow-wrap: anywhere;
 }
 
 .service-choice b {
+  font-weight: 700;
   line-height: 1.25;
 }
 
 .service-choice small {
   color: #5d6a75;
+  font-size: .875rem;
+  font-weight: 400;
   line-height: 1.45;
 }
 
@@ -1942,6 +1975,11 @@ body.footer-visible .whatsapp-chat {
 .upload-dropzone:hover {
   border-color: var(--primary);
   background: var(--primary-soft);
+}
+
+.upload-dropzone:focus-within {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
 }
 
 .upload-dropzone input[type="file"] {
@@ -2376,7 +2414,7 @@ body.footer-visible .whatsapp-chat {
 }
 
 .faq-item summary:focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus-ring);
   outline-offset: -3px;
 }
 
@@ -2649,7 +2687,6 @@ body.footer-visible .whatsapp-chat {
 .location-card .location-services a {
     color: var(--primary);
     font-weight: 700;
-    text-decoration: none;
 }
 
 .location-card .location-services a:hover,

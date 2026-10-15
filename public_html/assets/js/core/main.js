@@ -7,7 +7,10 @@
   addEventListener('scroll', syncBacktop, { passive: true });
   syncBacktop();
 
-  topBtn?.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+  topBtn?.addEventListener('click', () => scrollTo({
+    top: 0,
+    behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+  }));
 
   const menuBtn = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');

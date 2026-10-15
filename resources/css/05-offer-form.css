@@ -161,7 +161,7 @@
   color: #5c6974;
 }
 
-.offer-builder .field label,
+.offer-builder .field label:not(.estimate-option),
 .offer-builder fieldset legend {
   color: var(--navy);
 }
@@ -221,6 +221,7 @@
 .service-choice {
   position: relative;
   display: flex;
+  min-width: 0;
   min-height: 104px;
   gap: 14px;
   align-items: flex-start;
@@ -228,6 +229,8 @@
   border: 1px solid #d4dde3;
   border-radius: var(--radius-control);
   background: #fff;
+  font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
   transition: transform .18s, border-color .18s, box-shadow .18s, background .18s;
 }
@@ -254,15 +257,20 @@
 
 .service-choice span {
   display: grid;
+  min-width: 0;
   gap: 5px;
+  overflow-wrap: anywhere;
 }
 
 .service-choice b {
+  font-weight: 700;
   line-height: 1.25;
 }
 
 .service-choice small {
   color: #5d6a75;
+  font-size: .875rem;
+  font-weight: 400;
   line-height: 1.45;
 }
 
@@ -356,6 +364,11 @@
 .upload-dropzone:hover {
   border-color: var(--primary);
   background: var(--primary-soft);
+}
+
+.upload-dropzone:focus-within {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
 }
 
 .upload-dropzone input[type="file"] {

@@ -8,7 +8,7 @@
 
 **Input:** [Corrected design audit](design-audit-final3.md), findings A01–A32, checked against actual PHP, CSS, JavaScript, configuration and content. Audit section 11 records the corrections.
 
-**Status:** Verification and planning only. All implementation work below is future work. No website source, generated CSS, assets, runtime configuration or form behaviour is changed by this document.
+**Status:** B1 source implementation is complete and has passed the recorded Chromium checks; additional-browser validation remains open. See [the B1 implementation record](b1-implementation.md). B2–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
 
 ## 1. Implementation decisions
 
@@ -487,4 +487,4 @@ No implementation batch is “fully closed” if an evidence-dependent requireme
 9. **Content integrity:** no false branches, copied customer claims, unapproved people/images, invented job data or reply guarantees; visible claims agree with schema. Record any evidence-dependent remainder against its A-ID.
 10. **Delivery:** each completed batch has a concise change/validation record. A final review confirms the intended website diff, regenerated CSS and asset version. Deployment is a separate action when requested; this plan does not publish anything.
 
-The final integration gate is validation of the related changes, not a tenth arbitrary editing batch. No batch in this plan has been implemented during the verification/planning task.
+The final integration gate is validation of the related changes, not a tenth arbitrary editing batch. Current batch progress and validation limitations are recorded at the start of this plan and in the linked implementation record.

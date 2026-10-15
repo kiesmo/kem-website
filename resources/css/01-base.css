@@ -34,6 +34,19 @@ a {
   text-decoration: none;
 }
 
+/* Prose links remain recognisable without hover; actions and navigation
+   keep their component-specific treatments. */
+main :where(p, li, dd, address, label, figcaption) a[href]:not(:where(.btn, .whatsapp-inline, .more, .gallery-card-link, nav a)) {
+  text-decoration-line: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+/* Legacy privacy markup already contains <u>; let the link draw one line. */
+main .field label a u {
+  text-decoration: none;
+}
+
 button,
 input,
 textarea,
@@ -62,8 +75,18 @@ select {
 }
 
 :focus-visible {
-  outline: 3px solid #ffbf00;
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
+}
+
+.site-header,
+.site-footer {
+  --focus-ring: var(--focus-ring-on-dark);
+}
+
+/* Dropdowns clip their contents, so keep keyboard focus inside each row. */
+.dropdown a:focus-visible {
+  outline-offset: -3px;
 }
 
 .sr-only {

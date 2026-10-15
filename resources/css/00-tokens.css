@@ -13,6 +13,9 @@
   --max: 1240px;
   --text-muted: #526372;
   --border: #dce5ec;
+  --field-border: #7c8995;
+  --focus-ring: var(--primary-dark);
+  --focus-ring-on-dark: #ffbf00;
   --radius-card: 16px;
   --radius-control: 10px;
   --radius-button: 999px;
