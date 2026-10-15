@@ -8,7 +8,7 @@
 
 **Input:** [Corrected design audit](design-audit-final3.md), findings A01–A32, checked against actual PHP, CSS, JavaScript, configuration and content. Audit section 11 records the corrections.
 
-**Status:** B1–B7 source implementation is complete; see the [B1](b1-implementation.md), [B2](b2-implementation.md), [B3](b3-implementation.md), [B4](b4-implementation.md), [B5](b5-implementation.md), [B6](b6-implementation.md) and [B7 implementation records](b7-implementation.md) for changes and validation limits. Additional-browser validation remains open. B8–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
+**Status:** B1–B8 source implementation is complete; see the [B1](b1-implementation.md), [B2](b2-implementation.md), [B3](b3-implementation.md), [B4](b4-implementation.md), [B5](b5-implementation.md), [B6](b6-implementation.md), [B7](b7-implementation.md) and [B8 implementation records](b8-implementation.md) for changes and validation limits. Additional-browser validation remains open. B9 has not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
 
 ## 1. Implementation decisions
 
@@ -40,7 +40,7 @@ The cross-check confirmed the core findings but corrected or qualified the follo
 
 ## 2. Actual architecture and its implications
 
-This table records the verified pre-implementation baseline. B2 has since replaced the image-only hero helper and migrated visible intro fields; B3 introduced the action contract and replaced the transitional mobile enquiry block; B4 added shared discovery cards and local related-link configuration/rendering; B5 connected explicit service/city offer context to editable form initialisation; B6 added shared field relevance, normalisation and request preparation; B7 added distinct progress states, strict AJAX outcomes and the persistent offer-confirmation/new-request lifecycle. Current sources are documented in their implementation records.
+This table records the verified pre-implementation baseline. B2 has since replaced the image-only hero helper and migrated visible intro fields; B3 introduced the action contract and replaced the transitional mobile enquiry block; B4 added shared discovery cards and local related-link configuration/rendering; B5 connected explicit service/city offer context to editable form initialisation; B6 added shared field relevance, normalisation and request preparation; B7 added distinct progress states, strict AJAX outcomes and the persistent offer-confirmation/new-request lifecycle; B8 reorganised Contact, FAQ and Jobs around direct contact, answers and applications. Current sources are documented in their implementation records.
 
 | Area | Actual source of truth | Consequence for implementation |
 |---|---|---|

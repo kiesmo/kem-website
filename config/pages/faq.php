@@ -30,6 +30,26 @@ return array (
         0 => 
         array (
           '@type' => 'Question',
+          'name' => 'Was kostet eine Gebäudereinigung?',
+          'acceptedAnswer' => 
+          array (
+            '@type' => 'Answer',
+            'text' => 'Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe.',
+          ),
+        ),
+        1 => 
+        array (
+          '@type' => 'Question',
+          'name' => 'Ist die Angebotsanfrage kostenlos und unverbindlich?',
+          'acceptedAnswer' => 
+          array (
+            '@type' => 'Answer',
+            'text' => 'Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab.',
+          ),
+        ),
+        2 => 
+        array (
+          '@type' => 'Question',
           'name' => 'Wie läuft eine Anfrage bei KEM ab?',
           'acceptedAnswer' => 
           array (
@@ -37,34 +57,14 @@ return array (
             'text' => 'Sie senden uns telefonisch, per E-Mail oder über die Angebotsanfrage die wichtigsten Eckdaten zu Ihrem Objekt und der gewünschten Leistung. Anschließend klären wir die Anforderungen und den passenden Leistungsumfang. Wenn es für die Einschätzung sinnvoll ist, stimmen wir weitere Angaben oder eine Besichtigung mit Ihnen ab. Auf dieser Grundlage erhalten Sie ein individuelles Angebot.',
           ),
         ),
-        1 => 
-        array (
-          '@type' => 'Question',
-          'name' => 'Wie häufig kann eine regelmäßige Reinigung stattfinden?',
-          'acceptedAnswer' => 
-          array (
-            '@type' => 'Answer',
-            'text' => 'Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen.',
-          ),
-        ),
-        2 => 
-        array (
-          '@type' => 'Question',
-          'name' => 'Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?',
-          'acceptedAnswer' => 
-          array (
-            '@type' => 'Answer',
-            'text' => 'Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen.',
-          ),
-        ),
         3 => 
         array (
           '@type' => 'Question',
-          'name' => 'Kann der vereinbarte Leistungsumfang später angepasst werden?',
+          'name' => 'Welche Angaben helfen bei einer Angebotsanfrage?',
           'acceptedAnswer' => 
           array (
             '@type' => 'Answer',
-            'text' => 'Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden.',
+            'text' => 'Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären.',
           ),
         ),
         4 => 
@@ -80,11 +80,11 @@ return array (
         5 => 
         array (
           '@type' => 'Question',
-          'name' => 'Welche Angaben helfen bei einer Angebotsanfrage?',
+          'name' => 'Wie häufig kann eine regelmäßige Reinigung stattfinden?',
           'acceptedAnswer' => 
           array (
             '@type' => 'Answer',
-            'text' => 'Hilfreich sind Angaben zur gewünschten Leistung, zum Standort, zur Objektart und zum ungefähren Umfang. Je nach Auftrag können auch Fotos die erste Einschätzung erleichtern. Fehlende Details können wir anschließend gemeinsam klären.',
+            'text' => 'Der Reinigungsrhythmus wird passend zum Objekt und zur Nutzung vereinbart. Je nach Bedarf kann eine Reinigung zum Beispiel täglich, mehrmals pro Woche, wöchentlich oder in einem anderen abgestimmten Turnus erfolgen.',
           ),
         ),
         6 => 
@@ -100,21 +100,21 @@ return array (
         7 => 
         array (
           '@type' => 'Question',
-          'name' => 'Was kostet eine Gebäudereinigung?',
+          'name' => 'Kann die Reinigung außerhalb unserer Geschäftszeiten stattfinden?',
           'acceptedAnswer' => 
           array (
             '@type' => 'Answer',
-            'text' => 'Die Kosten hängen unter anderem von Objektart, Fläche beziehungsweise Umfang, gewünschter Leistung, Zustand oder Verschmutzung, Zugänglichkeit und – bei regelmäßiger Reinigung – vom vereinbarten Turnus ab. Deshalb kalkulieren wir den Preis passend zum konkreten Auftrag statt mit einer pauschalen Standardangabe.',
+            'text' => 'Je nach Objekt und Leistung können die Ausführungszeiten so abgestimmt werden, dass der laufende Betrieb möglichst wenig beeinträchtigt wird. Ob beispielsweise eine Reinigung vor oder nach Ihren Kernarbeitszeiten möglich ist, klären wir gemeinsam mit Ihnen.',
           ),
         ),
         8 => 
         array (
           '@type' => 'Question',
-          'name' => 'Ist die Angebotsanfrage kostenlos und unverbindlich?',
+          'name' => 'Kann der vereinbarte Leistungsumfang später angepasst werden?',
           'acceptedAnswer' => 
           array (
             '@type' => 'Answer',
-            'text' => 'Ja. Die Angebotsanfrage ist kostenlos und unverbindlich. Sie können uns die wichtigsten Eckdaten online übermitteln; je nach Auftrag klären wir anschließend offene Punkte oder stimmen bei Bedarf eine Besichtigung mit Ihnen ab.',
+            'text' => 'Ja. Wenn sich Nutzung, Anforderungen oder besonders beanspruchte Bereiche verändern, kann der vereinbarte Leistungsumfang gemeinsam überprüft und angepasst werden.',
           ),
         ),
         9 => 
@@ -133,9 +133,9 @@ return array (
   'intro' =>
   array (
     'container_class' => 'faq-container',
-    'eyebrow' => 'Fragen & Antworten',
-    'title' => 'Häufige Fragen zu Reinigung, Ablauf und Angebot',
-    'lead' => 'Hier finden Sie Antworten auf allgemeine Fragen rund um die Zusammenarbeit mit KEM Gebäudereinigung. Fragen zu einer bestimmten Leistung klären wir gern direkt mit Ihnen.',
+    'eyebrow' => 'FAQ',
+    'title' => 'Häufige Fragen',
+    'lead' => 'Antworten zu Kosten, Anfrage und Zusammenarbeit mit KEM.',
     'variant' => 'compact',
   ),
   'hero' => 

@@ -39,6 +39,10 @@
   margin-top: 32px;
 }
 
+.task-page--faq .faq-list {
+  margin-top: 0;
+}
+
 .faq-item {
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -56,6 +60,20 @@
   color: var(--navy);
 }
 
+.task-page--faq .faq-item summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.5rem;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 18px 22px;
+}
+
+.task-page--faq .faq-item summary > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .faq-item summary::-webkit-details-marker { display: none; }
 
 .faq-item summary::after {
@@ -67,6 +85,13 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--primary);
+}
+
+.task-page--faq .faq-item summary::after {
+  position: static;
+  transform: none;
+  line-height: 1;
+  text-align: center;
 }
 
 .faq-item[open] summary::after { content: "−"; }

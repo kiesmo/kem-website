@@ -1041,6 +1041,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
   gap: var(--layout-gap);
+  align-items: start;
 }
 
 /* Limit introductory prose without constraining the form or contact grid. */
@@ -1268,6 +1269,151 @@ h3 {
 
 .contact-whatsapp__text {
   margin: 0 0 10px;
+}
+
+/* Task pages share the intro contract and move directly into their task. */
+.task-page .page-intro--compact {
+  padding-block: clamp(24px, 3vw, 40px) 24px;
+}
+
+.task-page .page-intro .lead {
+  margin-top: 12px;
+}
+
+.task-page .task-content {
+  padding-top: 0;
+}
+
+.contact-direct {
+  padding: clamp(20px, 3vw, 28px);
+  margin-bottom: clamp(28px, 4vw, 44px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--primary-soft);
+}
+
+.contact-direct h2 {
+  margin: 0 0 16px;
+  font-size: var(--heading-3);
+}
+
+.contact-direct__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 16px 24px;
+  margin: 0;
+}
+
+.contact-direct__details > div {
+  min-width: 0;
+}
+
+.contact-direct__details dt {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  font-weight: 700;
+}
+
+.contact-direct__details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-direct__details a {
+  display: inline-block;
+  min-height: 24px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.contact-direct__note {
+  max-width: var(--measure-prose);
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
+}
+
+.contact-message > h2 {
+  margin: 0 0 12px;
+}
+
+.contact-message > p {
+  margin: 0 0 24px;
+}
+
+.contact-location address {
+  font-style: normal;
+}
+
+.contact-location h3 {
+  margin: 24px 0 12px;
+}
+
+.contact-location .contact-whatsapp {
+  margin: 24px 0 0;
+}
+
+.task-page--contact .checkbox {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+}
+
+.task-page--contact .checkbox > input {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  accent-color: var(--primary);
+}
+
+.task-page--contact .checkbox > label[for] {
+  margin: 0;
+  font-weight: 400;
+  line-height: var(--line-body);
+}
+
+.task-page--contact .checkbox > .field-error {
+  grid-column: 1 / -1;
+}
+
+.task-page--jobs .job-box {
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.job-box > h2,
+.job-box section > h2 {
+  margin-top: 0;
+}
+
+.job-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 16px;
+  margin: 0 0 28px;
+}
+
+.job-facts > div {
+  min-width: 0;
+}
+
+.job-facts dt {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  font-weight: 700;
+}
+
+.job-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.job-box section + section {
+  padding-top: 24px;
+  margin-top: 28px;
+  border-top: 1px solid var(--border);
 }
 
 /* The offer form leads; this contact alternative follows the complete form. */
@@ -2449,6 +2595,10 @@ h3 {
   margin-top: 32px;
 }
 
+.task-page--faq .faq-list {
+  margin-top: 0;
+}
+
 .faq-item {
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -2466,6 +2616,20 @@ h3 {
   color: var(--navy);
 }
 
+.task-page--faq .faq-item summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.5rem;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 18px 22px;
+}
+
+.task-page--faq .faq-item summary > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .faq-item summary::-webkit-details-marker { display: none; }
 
 .faq-item summary::after {
@@ -2477,6 +2641,13 @@ h3 {
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--primary);
+}
+
+.task-page--faq .faq-item summary::after {
+  position: static;
+  transform: none;
+  line-height: 1;
+  text-align: center;
 }
 
 .faq-item[open] summary::after { content: "−"; }

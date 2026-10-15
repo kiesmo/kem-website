@@ -33,10 +33,16 @@ return array (
   ),
   'intro' =>
   array (
-    'eyebrow' => 'Wir suchen zum nächstmöglichen Zeitpunkt',
+    'eyebrow' => 'Stellenangebot',
     'title' => 'Glas- und Gebäudereiniger (m/w/d)',
-    'lead' => 'Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich.',
+    'lead' => 'Wir suchen Verstärkung für die Gebäudereinigung im privaten und gewerblichen Bereich.',
     'variant' => 'compact',
+  ),
+  'job_facts' =>
+  array (
+    'Start' => 'Zum nächstmöglichen Zeitpunkt',
+    'Vertrag' => 'Unbefristeter Arbeitsvertrag',
+    'Vergütung' => 'Übertarifliche Bezahlung',
   ),
   'hero' => 
   array (
