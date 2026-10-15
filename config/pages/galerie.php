@@ -4,7 +4,7 @@ return array (
   'title' => 'Galerie | KEM Gebäudereinigung',
   'description' => 'Video-Einblicke in verschiedene Leistungen von KEM Gebäudereinigung – von Glas- und Fensterreinigung bis Solar-, Polster-, Fassaden-, Teppich- und Grundreinigung.',
   'path' => '/galerie/',
-  'og_image' => '/assets/img/pages/galerie/galerie-collage.webp',
+  'og_image' => '/assets/img/pages/galerie/galerie-collage-details.webp',
   'breadcrumbs' => 
   array (
     0 => 
@@ -31,7 +31,7 @@ return array (
   ),
   'hero' => 
   array (
-    'src' => '/assets/img/pages/galerie/galerie-collage.webp',
+    'src' => '/assets/img/pages/galerie/galerie-collage-details.webp',
     'width' => 1536,
     'height' => 1024,
     'alt' => 'Illustrative Collage zur Büro-, Fenster-, Polster- und Solarreinigung',
