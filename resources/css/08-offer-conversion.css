@@ -101,7 +101,7 @@
 
 .upload-file-list .upload-preview-item {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr) auto;
+  grid-template-columns: 64px minmax(0, 1fr);
   gap: 10px;
   align-items: center;
   padding: 8px;
@@ -110,6 +110,7 @@
 }
 
 .upload-preview-item img {
+  grid-row: 1 / span 2;
   width: 64px;
   height: 54px;
   border-radius: var(--radius-control);
@@ -117,6 +118,7 @@
 }
 
 .upload-preview-meta {
+  grid-column: 2;
   display: grid;
   min-width: 0;
   gap: 2px;
@@ -135,7 +137,10 @@
 
 .upload-remove,
 .review-edit {
-  padding: 6px 9px;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 10px 12px;
   border: 1px solid #cbd5dc;
   border-radius: var(--radius-control);
   color: var(--primary-dark);
@@ -144,7 +149,17 @@
   font-size: var(--text-action);
   font-weight: 700;
   line-height: var(--line-action);
+  overflow-wrap: anywhere;
   cursor: pointer;
+}
+
+.upload-remove {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.upload-preview-list > .field-error {
+  grid-column: 1 / -1;
 }
 
 .upload-remove:hover,
@@ -155,14 +170,18 @@
 
 .review-section-heading {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 12px;
 }
 
 .review-section-heading h3 {
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 760px) {
@@ -176,7 +195,7 @@
   }
 
   .upload-file-list .upload-preview-item {
-    grid-template-columns: 56px minmax(0, 1fr) auto;
+    grid-template-columns: 56px minmax(0, 1fr);
   }
 
   .upload-preview-item img {

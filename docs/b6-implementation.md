@@ -82,4 +82,4 @@ All browser submissions were intercepted and fulfilled locally. Isolated handler
 
 ## Remaining batches
 
-B7–B9 remain unstarted. Form presentation, progress and success lifecycle stay assigned to B7. B6 retains the existing success/reset behaviour. The original audit and prior implementation records describe their respective baselines; current progress is tracked in the implementation plan.
+At completion of B6, B7–B9 were unstarted. B6 kept the existing presentation/progress/success flow and left its redesign to B7. See the [implementation plan](implementation-plan-final3.md) for current progress and later implementation records. The original audit and prior records describe their respective baselines.

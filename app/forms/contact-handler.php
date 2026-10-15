@@ -222,7 +222,7 @@ try {
 }
 
 $successMessage = $formType === 'angebot'
-    ? 'Vielen Dank. Ihre Angebotsanfrage wurde erfolgreich gesendet. Jemand aus unserem Team meldet sich in Kürze bei Ihnen.'
+    ? 'Vielen Dank. Ihre Angebotsanfrage wurde erfolgreich gesendet.'
     : 'Vielen Dank. Ihre Nachricht wurde erfolgreich gesendet. Jemand aus unserem Team meldet sich in Kürze bei Ihnen.';
 
 respond(['ok' => true, 'message' => $successMessage]);

@@ -2,6 +2,7 @@
   document.querySelectorAll('[data-multistep]').forEach(form => {
     const steps = [...form.querySelectorAll('.form-step')];
     const dots = [...form.querySelectorAll('.step-dot')];
+    const currentStep = form.querySelector('[data-offer-current-step]');
     let index = 0;
 
     const stepStatus = document.createElement('p');
@@ -15,12 +16,26 @@
     });
 
     const paint = ({ focus = false } = {}) => {
+      if (form.dataset.offerState === 'success') return;
       steps.forEach((step, stepIndex) => {
         const active = stepIndex === index;
         step.classList.toggle('active', active);
         step.setAttribute('aria-hidden', String(!active));
       });
-      dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex <= index));
+      dots.forEach((dot, dotIndex) => {
+        const current = dotIndex === index;
+        const complete = dotIndex < index;
+        dot.classList.toggle('is-current', current);
+        dot.classList.toggle('is-complete', complete);
+        dot.classList.toggle('is-upcoming', dotIndex > index);
+        if (current) dot.setAttribute('aria-current', 'step');
+        else dot.removeAttribute('aria-current');
+        const number = dot.querySelector('.step-index');
+        if (number) number.textContent = complete ? '✓' : String(dotIndex + 1);
+        const state = dot.querySelector('[data-step-state]');
+        if (state) state.textContent = current ? 'Aktuell' : complete ? 'Abgeschlossen' : 'Noch offen';
+      });
+      if (currentStep) currentStep.textContent = `Schritt ${index + 1} von ${steps.length}: ${dots[index]?.dataset.stepLabel || ''}`;
 
       const heading = steps[index]?.querySelector('h2');
       const headingText = heading?.textContent?.trim() || `Schritt ${index + 1}`;
@@ -29,6 +44,7 @@
     };
 
     const showField = (field, focus = true) => {
+      if (form.dataset.offerState === 'success') return;
       const targetStep = field?.closest('.form-step');
       const targetIndex = targetStep ? steps.indexOf(targetStep) : -1;
       if (targetIndex >= 0) {
@@ -39,6 +55,7 @@
     };
 
     form.querySelectorAll('[data-next]').forEach(button => button.addEventListener('click', () => {
+      if (form.dataset.offerState === 'success') return;
       const fields = [...steps[index].querySelectorAll('input, select, textarea')].filter(field => field.willValidate);
       const firstInvalid = fields.find(field => !field.checkValidity());
       if (firstInvalid) {
@@ -51,18 +68,20 @@
     }));
 
     form.querySelectorAll('[data-prev]').forEach(button => button.addEventListener('click', () => {
+      if (form.dataset.offerState === 'success') return;
       index = Math.max(0, index - 1);
       paint({ focus: true });
     }));
 
     form.addEventListener('form:show-field', event => showField(event.detail?.field));
     form.addEventListener('form:go-step', event => {
+      if (form.dataset.offerState === 'success') return;
       const nextIndex = Number(event.detail?.index);
       if (!Number.isInteger(nextIndex) || nextIndex < 0 || nextIndex >= steps.length) return;
       index = nextIndex;
       paint({ focus: true });
     });
-    form.addEventListener('form:success', () => {
+    form.addEventListener('form:new-request', () => {
       index = 0;
       paint({ focus: true });
     });
@@ -83,6 +102,13 @@
     return;
   }
   const servicePolicy = policy.services || {};
+  const shell = form.closest('.offer-builder-shell');
+  const intro = shell?.querySelector('[data-offer-intro]');
+  const help = shell?.querySelector('[data-offer-help]');
+  const successPanel = shell?.querySelector('[data-offer-success]');
+  const successHeading = successPanel?.querySelector('#offer-success-title');
+  const successMessage = successPanel?.querySelector('[data-offer-success-message]');
+  const newRequest = successPanel?.querySelector('[data-offer-new-request]');
   const serviceChecks = [...form.querySelectorAll('[data-cleaning-type]')];
   const servicePanels = [...form.querySelectorAll('[data-service-panel]')];
   const serviceEmpty = form.querySelector('[data-service-detail-empty]');
@@ -102,6 +128,7 @@
   const fileInput = form.querySelector('#photos');
   const dropzone = form.querySelector('[data-upload-dropzone]');
   const fileList = form.querySelector('[data-upload-file-list]');
+  const previewUrls = new Set();
   const exactDateFields = form.querySelector('[data-exact-date-fields]');
   const appointmentRadios = [...form.querySelectorAll('input[name="appointment_preference"]')];
   const estimateChecks = [...form.querySelectorAll('[data-estimate-for]')];
@@ -292,17 +319,29 @@
   };
 
   const removeFileAt = index => {
-    if (!fileInput) return;
+    if (!fileInput || fileInput.disabled || form.getAttribute('aria-busy') === 'true') return;
     const transfer = new DataTransfer();
     [...fileInput.files].forEach((file, fileIndex) => {
       if (fileIndex !== index) transfer.items.add(file);
     });
     fileInput.files = transfer.files;
     syncFiles();
+    const remaining = [...fileList.querySelectorAll('.upload-remove')];
+    (remaining[Math.min(index, remaining.length - 1)] || fileInput).focus();
+  };
+
+  const releasePreviewUrl = url => {
+    if (!previewUrls.delete(url)) return;
+    URL.revokeObjectURL(url);
+  };
+
+  const clearPreviewUrls = () => {
+    [...previewUrls].forEach(releasePreviewUrl);
   };
 
   const syncFiles = () => {
     if (!fileInput || !fileList) return;
+    if (form.dataset.offerState === 'success') return;
     const files = [...fileInput.files];
     const allowed = ['image/jpeg', 'image/png', 'image/webp'];
     let error = '';
@@ -312,14 +351,18 @@
     if (!error && files.some(file => !allowed.includes(file.type))) error = 'Erlaubt sind ausschließlich JPG-, PNG- und WebP-Dateien.';
     fileInput.setCustomValidity(error);
 
+    clearPreviewUrls();
     fileList.replaceChildren();
     files.forEach((file, index) => {
       const item = document.createElement('li');
       item.className = 'upload-preview-item';
       const image = document.createElement('img');
       image.alt = '';
-      image.src = URL.createObjectURL(file);
-      image.addEventListener('load', () => URL.revokeObjectURL(image.src), { once: true });
+      const previewUrl = URL.createObjectURL(file);
+      previewUrls.add(previewUrl);
+      image.src = previewUrl;
+      image.addEventListener('load', () => releasePreviewUrl(previewUrl), { once: true });
+      image.addEventListener('error', () => releasePreviewUrl(previewUrl), { once: true });
       const meta = document.createElement('span');
       meta.className = 'upload-preview-meta';
       const name = document.createElement('b');
@@ -349,6 +392,7 @@
   if (dropzone && fileInput) {
     ['dragenter', 'dragover'].forEach(type => dropzone.addEventListener(type, event => {
       event.preventDefault();
+      if (fileInput.disabled || form.getAttribute('aria-busy') === 'true') return;
       dropzone.classList.add('is-dragging');
     }));
     ['dragleave', 'drop'].forEach(type => dropzone.addEventListener(type, event => {
@@ -356,6 +400,8 @@
       dropzone.classList.remove('is-dragging');
     }));
     dropzone.addEventListener('drop', event => {
+      event.preventDefault();
+      if (fileInput.disabled || form.getAttribute('aria-busy') === 'true') return;
       if (!event.dataTransfer?.files?.length) return;
       const transfer = new DataTransfer();
       [...event.dataTransfer.files].slice(0, 5).forEach(file => transfer.items.add(file));
@@ -391,6 +437,7 @@
   function updateReview() {
     if (!review) return;
     review.replaceChildren();
+    if (form.dataset.offerState === 'success') return;
 
     const addSection = (title, entries, stepIndex) => {
       const visibleEntries = entries.filter(([, value]) => value && value !== 'Bitte auswählen');
@@ -405,6 +452,7 @@
       edit.type = 'button';
       edit.className = 'review-edit';
       edit.textContent = 'Ändern';
+      edit.setAttribute('aria-label', `Abschnitt ${title} ändern`);
       edit.addEventListener('click', () => form.dispatchEvent(new CustomEvent('form:go-step', { detail: { index: stepIndex } })));
       header.append(heading, edit);
       const list = document.createElement('dl');
@@ -465,20 +513,88 @@
     setTimeout(updateReview, 0);
   }));
 
-  form.addEventListener('form:success', () => {
+  const scrubOfferData = () => {
+    clearPreviewUrls();
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+      if (field.name === 'form_type') return;
+      if (field instanceof HTMLSelectElement) {
+        [...field.options].forEach((option, index) => { option.defaultSelected = index === 0; });
+        field.selectedIndex = 0;
+      } else if (field instanceof HTMLInputElement && ['checkbox', 'radio'].includes(field.type)) {
+        field.defaultChecked = false;
+        field.checked = false;
+      } else {
+        field.defaultValue = '';
+        field.value = '';
+      }
+      if (field instanceof HTMLInputElement) {
+        field.readOnly = false;
+        field.removeAttribute('aria-readonly');
+      }
+      clearHiddenFieldError(field);
+    });
     estimateChecks.forEach(check => {
       delete check.dataset.previousValue;
-      setEstimateState(check, false);
     });
+    form.querySelectorAll('.field-error').forEach(error => { error.textContent = ''; });
+    form.querySelectorAll('.has-error').forEach(element => element.classList.remove('has-error'));
+    const status = form.querySelector('.form-status');
+    if (status) {
+      status.textContent = '';
+      status.className = 'form-status';
+    }
+    fileList?.replaceChildren();
+    dropzone?.classList.remove('is-dragging');
+    review?.replaceChildren();
+    if (contextCityValue) contextCityValue.textContent = '';
+    if (contextCityNote) contextCityNote.hidden = true;
+    if (objectCompanyValue) objectCompanyValue.textContent = '';
+    if (objectCompanyPreview) objectCompanyPreview.hidden = true;
+    if (copyCompanyButton) copyCompanyButton.hidden = true;
+  };
+
+  const showSuccess = ({ focus = false } = {}) => {
+    form.hidden = true;
+    if (intro) intro.hidden = true;
+    if (help) help.hidden = true;
+    if (successPanel) successPanel.hidden = false;
+    if (focus) successHeading?.focus();
+  };
+
+  form.addEventListener('form:success', event => {
+    form.dataset.offerState = 'success';
+    scrubOfferData();
+    if (successMessage) successMessage.textContent = event.detail?.message || 'Vielen Dank. Ihre Angebotsanfrage wurde erfolgreich gesendet.';
+    showSuccess({ focus: true });
+  });
+
+  newRequest?.addEventListener('click', () => {
+    if (form.dataset.offerState !== 'success') return;
+    form.reset();
+    scrubOfferData();
+    form.dataset.offerState = 'editing';
+    form.hidden = false;
+    if (intro) intro.hidden = false;
+    if (help) help.hidden = false;
+    if (successPanel) successPanel.hidden = true;
+    if (successMessage) successMessage.textContent = '';
     syncServicePanels();
+    estimateChecks.forEach(check => setEstimateState(check, false, false));
     syncAppointment();
     syncFiles();
     syncContextCity();
     syncCompanyCopy();
     updateReview();
+    form.dispatchEvent(new CustomEvent('form:new-request'));
   });
 
   window.addEventListener('pageshow', () => {
+    if (form.dataset.offerState === 'success') {
+      scrubOfferData();
+      showSuccess();
+      return;
+    }
+    if (form.getAttribute('aria-busy') === 'true') return;
     syncServicePanels();
     estimateChecks.forEach(check => setEstimateState(check, false, false));
     syncAppointment();

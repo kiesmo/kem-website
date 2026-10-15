@@ -111,36 +111,47 @@
     input.min = localDate;
   });
 
+  const radioGroup = field => {
+    if (!(field instanceof HTMLInputElement) || field.type !== 'radio' || !field.name || !field.form) return [field];
+    const item = field.form.elements.namedItem(field.name);
+    return item instanceof RadioNodeList ? [...item].filter(input => input instanceof HTMLInputElement && input.type === 'radio') : [field];
+  };
+
   const ensureFieldError = field => {
     if (!field.name || field.type === 'hidden') return null;
-    if (!field.id) {
-      const baseId = `field-${field.name.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+    const group = radioGroup(field);
+    const owner = group[0];
+    if (!owner.id) {
+      const baseId = `field-${owner.name.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
       let fieldId = baseId;
       let suffix = 2;
       while (document.getElementById(fieldId)) fieldId = `${baseId}-${suffix++}`;
-      field.id = fieldId;
+      owner.id = fieldId;
     }
 
-    const errorId = `${field.id}-error`;
+    const errorId = `${owner.id}-error`;
     let error = document.getElementById(errorId);
     if (!error) {
       error = document.createElement('p');
       error.id = errorId;
       error.className = 'field-error';
       error.setAttribute('aria-live', 'polite');
-      const wrapper = field.closest('.field');
-      (wrapper || field.parentElement)?.append(error);
+      const wrapper = owner.type === 'radio' ? owner.closest('fieldset') || owner.closest('.appointment-choice-grid') || owner.closest('.field') : owner.closest('.field');
+      (wrapper || owner.parentElement)?.append(error);
     }
 
-    const describedBy = new Set((field.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean));
-    describedBy.add(errorId);
-    field.setAttribute('aria-describedby', [...describedBy].join(' '));
+    group.forEach(input => {
+      const describedBy = new Set((input.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean));
+      describedBy.add(errorId);
+      input.setAttribute('aria-describedby', [...describedBy].join(' '));
+    });
     return error;
   };
 
   const clearFieldError = field => {
-    field.removeAttribute('aria-invalid');
-    const error = field.id ? document.getElementById(`${field.id}-error`) : null;
+    const group = radioGroup(field);
+    group.forEach(input => input.removeAttribute('aria-invalid'));
+    const error = group[0]?.id ? document.getElementById(`${group[0].id}-error`) : null;
     if (error) error.textContent = '';
   };
 
@@ -151,7 +162,7 @@
 
   const showFieldError = (field, message) => {
     const error = ensureFieldError(field);
-    field.setAttribute('aria-invalid', 'true');
+    radioGroup(field).forEach(input => input.setAttribute('aria-invalid', 'true'));
     if (error) error.textContent = message;
   };
 
@@ -163,75 +174,135 @@
     status.setAttribute('tabindex', '-1');
   };
 
+  const errorControl = field => (field instanceof HTMLInputElement || field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement)
+    && !field.matches(':disabled') && field.type !== 'hidden' && !field.hidden;
+
+  const resolveErrorField = (form, name) => {
+    let item = form.elements.namedItem(name);
+    if (!item && (name === 'photos' || name === 'photos[]')) item = form.elements.namedItem(name === 'photos' ? 'photos[]' : 'photos');
+    const fields = (item instanceof RadioNodeList ? [...item] : [item]).filter(errorControl);
+    return fields.find(field => field instanceof HTMLInputElement && field.type === 'radio' && field.checked) || fields[0] || null;
+  };
+
+  const focusField = (form, field) => {
+    form.dispatchEvent(new CustomEvent('form:show-field', { detail: { field } }));
+    field.focus();
+  };
+  const unexpectedResponse = 'Der Server hat eine unerwartete Antwort geliefert. Bitte versuchen Sie es später erneut.';
+  const inFlight = new WeakSet();
+  const completedOffers = new WeakSet();
+
   document.querySelectorAll('form[data-ajax] input, form[data-ajax] select, form[data-ajax] textarea').forEach(field => {
     ensureFieldError(field);
     field.addEventListener('input', () => clearFieldError(field));
     field.addEventListener('change', () => clearFieldError(field));
   });
 
-  document.querySelectorAll('form[data-ajax]').forEach(form => form.addEventListener('submit', async event => {
-    event.preventDefault();
-    clearFormErrors(form);
+  document.querySelectorAll('form[data-ajax]').forEach(form => {
+    const isOffer = form.hasAttribute('data-offer-form');
+    form.addEventListener('form:new-request', () => {
+      if (!isOffer || inFlight.has(form)) return;
+      completedOffers.delete(form);
+      clearFormErrors(form);
+      setStatus(form, '');
+    });
 
-    if (!form.checkValidity()) {
-      const firstInvalid = form.querySelector(':invalid');
-      if (firstInvalid) {
-        form.dispatchEvent(new CustomEvent('form:show-field', { detail: { field: firstInvalid } }));
-        firstInvalid.reportValidity();
-      }
-      setStatus(form, 'Bitte prüfen Sie die markierten Pflichtfelder.', 'error');
-      return;
-    }
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (inFlight.has(form) || (isOffer && (completedOffers.has(form) || form.dataset.offerState === 'success'))) return;
+      clearFormErrors(form);
 
-    const submit = form.querySelector('[type="submit"]');
-    const originalLabel = submit?.textContent || '';
-    if (submit) {
-      submit.disabled = true;
-      submit.textContent = 'Wird gesendet …';
-    }
-    setStatus(form, 'Ihre Anfrage wird gesendet …');
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-      });
-
-      const contentType = response.headers.get('content-type') || '';
-      if (!contentType.includes('application/json')) {
-        throw new Error('Der Server hat eine unerwartete Antwort geliefert. Bitte versuchen Sie es später erneut.');
-      }
-
-      const data = await response.json();
-      if (!response.ok || !data.ok) {
-        const errors = data.errors && typeof data.errors === 'object' ? data.errors : {};
-        let firstField = null;
-        Object.entries(errors).forEach(([name, message]) => {
-          const field = form.elements.namedItem(name);
-          if (field instanceof HTMLElement) {
-            showFieldError(field, String(message));
-            if (!firstField) firstField = field;
-          }
-        });
-        if (firstField) {
-          form.dispatchEvent(new CustomEvent('form:show-field', { detail: { field: firstField } }));
+      if (!form.checkValidity()) {
+        const firstInvalid = [...form.elements].find(field => field.willValidate && !field.checkValidity());
+        setStatus(form, 'Bitte prüfen Sie die markierten Pflichtfelder.', 'error');
+        if (firstInvalid) {
+          focusField(form, firstInvalid);
+          firstInvalid.reportValidity();
+        } else {
+          form.querySelector('.form-status')?.focus();
         }
-        throw new Error(data.message || 'Die Anfrage konnte nicht gesendet werden.');
+        return;
       }
 
-      form.reset();
-      form.dispatchEvent(new CustomEvent('form:success'));
-      setStatus(form, data.message, 'ok');
-      form.querySelector('.form-status')?.focus();
-    } catch (error) {
-      setStatus(form, error instanceof Error ? error.message : 'Beim Senden ist ein Fehler aufgetreten.', 'error');
-    } finally {
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = originalLabel;
+      const submit = form.querySelector('[type="submit"]');
+      const originalLabel = submit instanceof HTMLInputElement ? submit.value : submit?.textContent || '';
+      const setSubmitLabel = label => {
+        if (submit instanceof HTMLInputElement) submit.value = label;
+        else if (submit) submit.textContent = label;
+      };
+      let restoreControls = () => {};
+      let firstField = null;
+      inFlight.add(form);
+
+      try {
+        // Disabled controls are omitted from FormData, so capture before freezing.
+        const body = new FormData(form);
+        const states = [...form.elements].filter(field => 'disabled' in field).map(field => [field, field.disabled]);
+        const originalBusy = form.getAttribute('aria-busy');
+        let restored = false;
+        restoreControls = () => {
+          if (restored) return;
+          restored = true;
+          states.forEach(([field, disabled]) => { field.disabled = disabled; });
+          setSubmitLabel(originalLabel);
+          if (originalBusy === null) form.removeAttribute('aria-busy');
+          else form.setAttribute('aria-busy', originalBusy);
+        };
+        states.forEach(([field]) => { field.disabled = true; });
+        form.setAttribute('aria-busy', 'true');
+        setSubmitLabel('Wird gesendet …');
+        setStatus(form, 'Ihre Anfrage wird gesendet …');
+
+        let response;
+        try {
+          response = await fetch(form.action, { method: 'POST', body, headers: { Accept: 'application/json' } });
+        } catch {
+          throw new Error('Die Verbindung ist fehlgeschlagen. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
+        }
+        const contentType = response.headers.get('content-type') || '';
+        if (!contentType.toLowerCase().includes('application/json')) throw new Error(unexpectedResponse);
+        let data;
+        try {
+          data = await response.json();
+        } catch {
+          throw new Error(unexpectedResponse);
+        }
+        if (!data || typeof data !== 'object' || Array.isArray(data) || typeof data.ok !== 'boolean') throw new Error(unexpectedResponse);
+
+        // Presentation and offer cleanup must see the real relevance/disabled state.
+        restoreControls();
+        if (!response.ok || data.ok !== true) {
+          const errors = data.errors && typeof data.errors === 'object' && !Array.isArray(data.errors) ? data.errors : {};
+          Object.entries(errors).forEach(([name, message]) => {
+            if (typeof message !== 'string') return;
+            const field = resolveErrorField(form, name);
+            if (!field) return;
+            showFieldError(field, message);
+            if (!firstField) firstField = field;
+          });
+          if (firstField) focusField(form, firstField);
+          throw new Error(typeof data.message === 'string' && data.message.trim() ? data.message : 'Die Anfrage konnte nicht gesendet werden.');
+        }
+
+        const message = typeof data.message === 'string' && data.message.trim() ? data.message : 'Vielen Dank. Ihre Anfrage wurde übermittelt.';
+        if (isOffer) {
+          completedOffers.add(form);
+          setStatus(form, '');
+          form.dispatchEvent(new CustomEvent('form:success', { detail: { message } }));
+        } else {
+          form.reset();
+          form.dispatchEvent(new CustomEvent('form:success', { detail: { message } }));
+          setStatus(form, message, 'ok');
+          form.querySelector('.form-status')?.focus();
+        }
+      } catch (error) {
+        restoreControls();
+        setStatus(form, error instanceof Error ? error.message : 'Beim Senden ist ein Fehler aufgetreten.', 'error');
+        if (!firstField) form.querySelector('.form-status')?.focus();
+      } finally {
+        restoreControls();
+        inFlight.delete(form);
       }
-    }
-  }));
+    });
+  });
 })();
-
