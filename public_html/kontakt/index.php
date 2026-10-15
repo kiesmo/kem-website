@@ -17,9 +17,8 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <dl class="contact-direct__details">
 <div><dt>Telefon</dt><dd><a href="tel:<?= kem_h($kem['phone_href']) ?>"><?= kem_h($kem['phone_display']) ?></a></dd></div>
 <div><dt>E-Mail</dt><dd><a href="mailto:<?= kem_h($kem['email']) ?>"><?= kem_h($kem['email']) ?></a></dd></div>
-<div><dt>Telefonisch erreichbar</dt><dd><?= kem_h($kem['opening_hours']['days_display']) ?>: <?= kem_h($kem['opening_hours']['opens']) ?> bis <?= kem_h($kem['opening_hours']['closes']) ?> Uhr</dd></div>
+<div><dt>Telefonisch erreichbar</dt><dd><?= kem_h($kem['opening_hours']['days_display']) ?>: <?= kem_h($kem['opening_hours']['opens']) ?> bis <?= kem_h($kem['opening_hours']['closes']) ?> Uhr<p class="contact-direct__note">Reinigungstermine nach Vereinbarung; Einsatzzeiten sind auch außerhalb dieser Zeiten möglich.</p></dd></div>
 </dl>
-<p class="contact-direct__note">Reinigungstermine nach Vereinbarung; Einsatzzeiten sind auch außerhalb dieser Zeiten möglich.</p>
 </section>
 <div class="contact-layout">
 <div class="contact-message">

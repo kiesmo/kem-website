@@ -47,7 +47,7 @@
   --measure-prose: 64ch;
   --shadow-card: 0 8px 26px rgba(13, 43, 69, .06);
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
-  --header-solid-height: 84px;
+  --header-solid-height: max(84px, calc(2.625rem + 42px));
   --header-topbar-height: 2.125rem;
   --header-height: calc(var(--header-solid-height) + var(--header-topbar-height));
 }
@@ -501,15 +501,36 @@ h3 {
   color: #fff;
 }
 
-.mobile-offer-item {
+.mobile-offer-item,
+.mobile-whatsapp-item {
   display: none;
 }
 
-.header-cta {
+.header-actions {
+  display: grid;
+  grid-auto-rows: 1fr;
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+.header-actions .btn {
+  min-height: 36px;
   white-space: nowrap;
-  padding-inline: 25px;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, .55);
   font-size: var(--text-action);
   font-weight: 700;
+}
+
+.header-actions .btn:hover,
+.header-actions .btn:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
+.header-actions .whatsapp-button__icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .menu-toggle {
@@ -1376,7 +1397,7 @@ h3 {
 
 .contact-direct__note {
   max-width: var(--measure-prose);
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   color: var(--text-muted);
   font-size: var(--text-meta);
   line-height: var(--line-meta);
@@ -1510,11 +1531,6 @@ h3 {
     font-size: var(--text-label);
   }
 
-  .header-cta {
-    padding-inline: 18px;
-    font-size: var(--text-action);
-  }
-
 }
 
 /* 1080px at the default font size; follows an enlarged browser default.
@@ -1547,7 +1563,7 @@ h3 {
     margin-left: auto;
   }
 
-  .header-cta {
+  .header-actions {
     display: none;
   }
 
@@ -1564,7 +1580,8 @@ h3 {
     transform: translateY(-120%);
     opacity: 0;
     visibility: hidden;
-    transition: transform .23s, opacity .23s, visibility .23s;
+    /* Make links focusable as soon as the opening animation starts. */
+    transition: transform .23s, opacity .23s;
   }
 
   .nav.open {
@@ -1578,34 +1595,10 @@ h3 {
     padding: 12px 24px 25px;
   }
 
-  .mobile-offer-item {
+  .mobile-offer-item,
+  .mobile-whatsapp-item {
     display: block;
     margin-top: 10px;
-  }
-
-  .nav .mobile-offer-cta,
-  .site-header .nav .mobile-offer-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 14px 18px;
-    border-radius: 999px;
-    background: var(--primary);
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: none;
-  }
-
-  .nav .mobile-offer-cta:hover,
-  .nav .mobile-offer-cta:focus-visible {
-    background: var(--primary-dark);
-    color: #fff;
-  }
-
-  .nav .mobile-offer-cta::after {
-    display: none;
   }
 
   .nav a,
@@ -1625,6 +1618,42 @@ h3 {
   .drop-toggle::after {
     bottom: 8px;
     background: var(--primary);
+  }
+
+  .site-header .nav .mobile-header-action {
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: var(--radius-button);
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .site-header .nav .mobile-offer-cta {
+    background: var(--primary);
+  }
+
+  .site-header .nav .mobile-offer-cta:hover,
+  .site-header .nav .mobile-offer-cta:focus-visible {
+    background: var(--primary-dark);
+  }
+
+  .site-header .nav .mobile-whatsapp-cta {
+    background: var(--whatsapp);
+  }
+
+  .site-header .nav .mobile-whatsapp-cta:hover,
+  .site-header .nav .mobile-whatsapp-cta:focus-visible {
+    background: var(--whatsapp-hover);
+  }
+
+  .site-header .nav .mobile-header-action::after {
+    display: none;
   }
 
   .dropdown {
@@ -1798,6 +1827,12 @@ h3 {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
+  }
+
+  /* Inherited visibility must not animate while focus enters the menu. */
+  .nav,
+  .nav * {
+    transition: none !important;
   }
 }
 

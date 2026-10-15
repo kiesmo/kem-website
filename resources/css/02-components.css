@@ -282,15 +282,36 @@
   color: #fff;
 }
 
-.mobile-offer-item {
+.mobile-offer-item,
+.mobile-whatsapp-item {
   display: none;
 }
 
-.header-cta {
+.header-actions {
+  display: grid;
+  grid-auto-rows: 1fr;
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+.header-actions .btn {
+  min-height: 36px;
   white-space: nowrap;
-  padding-inline: 25px;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, .55);
   font-size: var(--text-action);
   font-weight: 700;
+}
+
+.header-actions .btn:hover,
+.header-actions .btn:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
+.header-actions .whatsapp-button__icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .menu-toggle {

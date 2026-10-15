@@ -44,7 +44,7 @@
   --measure-prose: 64ch;
   --shadow-card: 0 8px 26px rgba(13, 43, 69, .06);
   --shadow: 0 16px 40px rgba(31, 35, 40, .10);
-  --header-solid-height: 84px;
+  --header-solid-height: max(84px, calc(2.625rem + 42px));
   --header-topbar-height: 2.125rem;
   --header-height: calc(var(--header-solid-height) + var(--header-topbar-height));
 }

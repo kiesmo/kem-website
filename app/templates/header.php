@@ -52,10 +52,14 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'jobs') ?> href="/jobs/">Jobs</a></li>
 <li><a<?= kem_current_attr($navActive, 'contact') ?> href="/kontakt/">Kontakt</a></li>
 <?php if ($headerAction !== null): ?>
-<li class="mobile-offer-item"><?php kem_render_action($headerAction, 'primary', 'mobile-offer-cta'); ?></li>
+<li class="mobile-offer-item"><?php kem_render_action($headerAction, 'primary', 'mobile-offer-cta mobile-header-action'); ?></li>
 <?php endif; ?>
+<li class="mobile-whatsapp-item"><?php kem_render_action(kem_whatsapp_action($pageKey ?? '/', 'WhatsApp'), 'primary', 'mobile-whatsapp-cta mobile-header-action'); ?></li>
 </ul>
 </nav>
+<div class="header-actions">
 <?php if ($headerAction !== null) kem_render_action($headerAction, 'primary', 'header-cta'); ?>
+<?php kem_render_action(kem_whatsapp_action($pageKey ?? '/', 'WhatsApp'), 'primary', 'header-whatsapp'); ?>
+</div>
 </div>
 </header>
