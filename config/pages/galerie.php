@@ -21,6 +21,14 @@ return array (
   'schema_extra' => 
   array (
   ),
+  'intro' =>
+  array (
+    'container_class' => 'gallery-container',
+    'eyebrow' => 'Einblicke in unsere Arbeit',
+    'title' => 'Galerie',
+    'lead' => 'Videoeinblicke aus verschiedenen Reinigungsleistungen von KEM. Die Aufnahmen zeigen beispielhafte Arbeitssituationen; das konkrete Vorgehen stimmen wir immer auf Objekt, Oberfläche, Verschmutzung und Zugänglichkeit ab.',
+    'variant' => 'media',
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/pages/galerie/galerie-hero.webp',

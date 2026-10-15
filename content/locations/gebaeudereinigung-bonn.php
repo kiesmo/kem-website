@@ -1,9 +1,6 @@
 <section class="section">
 <div class="container content-grid">
-<article class="service-detail">
-<span class="eyebrow">Einsatzgebiet Bonn</span>
-<h1>Gebäudereinigung in Bonn</h1>
-<p class="lead">KEM hat seinen Firmensitz in Brühl und bietet Gebäudereinigung auch für private und gewerbliche Objekte in Bonn an. Entscheidend sind dabei nicht pauschale Pakete, sondern Nutzung, Flächen, Verschmutzung und der tatsächlich gewünschte Leistungsumfang.</p><?php kem_render_mobile_offer_cta(); ?>
+<article class="service-detail prose">
 <h2>Reinigungsservice für Büros, Praxen, Wohnobjekte und Gewerbeflächen</h2>
 <p>Je nach Objekt unterscheiden sich Anforderungen deutlich. In einem Büro können regelmäßige Boden-, Sanitär- und Oberflächenreinigungen im Vordergrund stehen, während bei einem privaten Auftrag beispielsweise Fenster, Polster oder eine intensive Grundreinigung gefragt sind. Deshalb wird jede Anfrage zunächst nach dem konkreten Bedarf eingeordnet.</p>
 <p>Auch bei einmaligen Einsätzen legen wir vorab fest, welche Bereiche zum Auftrag gehören. So bleiben Leistungsumfang, Termin und Kalkulation nachvollziehbar und lassen sich an die tatsächliche Situation im Objekt anpassen.</p>

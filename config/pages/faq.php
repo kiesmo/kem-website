@@ -130,6 +130,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'container_class' => 'faq-container',
+    'eyebrow' => 'Fragen & Antworten',
+    'title' => 'Häufige Fragen zu Reinigung, Ablauf und Angebot',
+    'lead' => 'Hier finden Sie Antworten auf allgemeine Fragen rund um die Zusammenarbeit mit KEM Gebäudereinigung. Fragen zu einer bestimmten Leistung klären wir gern direkt mit Ihnen.',
+    'variant' => 'compact',
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/pages/faq/faq-hero.webp',

@@ -14,8 +14,8 @@ $servicesCurrent = !str_starts_with($pageKey, '/gebaeudereinigung-');
 require KEM_TEMPLATES_DIR . '/header.php';
 ?>
 <main id="main">
-<?php kem_render_page_hero($pageKey); ?>
 <?php kem_render_breadcrumbs($pageKey); ?>
+<?php kem_render_page_intro($pageKey); ?>
 <?php require $contentFile; ?>
 <?php kem_render_page_cta($pageKey); ?>
 </main><?php require KEM_TEMPLATES_DIR . '/footer.php'; ?></body></html>

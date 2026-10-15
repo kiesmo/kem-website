@@ -21,6 +21,13 @@ return array (
   'schema_extra' => 
   array (
   ),
+  'intro' =>
+  array (
+    'eyebrow' => 'Über uns',
+    'title' => 'KEM Gebäudereinigung aus Brühl',
+    'lead' => 'KEM Gebäudereinigung betreut private und gewerbliche Kunden in Brühl, Köln, Bonn und Umgebung. Je nach Objekt übernehmen wir regelmäßige oder einmalige Reinigungsarbeiten – unter anderem Büro-, Glas-, Grund-, Teppich- und Polsterreinigung.',
+    'variant' => 'media',
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/pages/ueber-uns/ueber-uns-hero.webp',

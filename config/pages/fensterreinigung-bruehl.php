@@ -44,6 +44,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'variant' => 'media',
+    'eyebrow' => 'Fenster- & Glasreinigung in Brühl',
+    'title' => 'Fensterreinigung in Brühl',
+    'lead' => 'Mit Firmensitz in Brühl bietet KEM Fenster- und Glasreinigung für private und gewerbliche Objekte in der Stadt an. Umfang und Ausführung richten sich nach den vorhandenen Glasflächen, der Zugänglichkeit und den zusätzlich gewünschten Bereichen.',
+    'mobile_offer' => true,
+  ),
   'hero' => 
   array (
     'class' => 'hero-focus-left',

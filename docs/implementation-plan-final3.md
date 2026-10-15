@@ -8,7 +8,7 @@
 
 **Input:** [Corrected design audit](design-audit-final3.md), findings A01–A32, checked against actual PHP, CSS, JavaScript, configuration and content. Audit section 11 records the corrections.
 
-**Status:** B1 source implementation is complete and has passed the recorded Chromium checks; additional-browser validation remains open. See [the B1 implementation record](b1-implementation.md). B2–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
+**Status:** B1 and B2 source implementation is complete; see the [B1 implementation record](b1-implementation.md) and [B2 implementation record](b2-implementation.md) for changes and validation limits. Additional-browser validation remains open. B3–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
 
 ## 1. Implementation decisions
 
@@ -39,6 +39,8 @@ The cross-check confirmed the core findings but corrected or qualified the follo
 - Source references, main-content versus global-navigation claims, card-link semantics and the earlier four-package roadmap were clarified.
 
 ## 2. Actual architecture and its implications
+
+This table records the verified pre-implementation baseline. B2 has since replaced the image-only hero helper and migrated visible intro fields; the current sources are documented in its implementation record.
 
 | Area | Actual source of truth | Consequence for implementation |
 |---|---|---|

@@ -80,12 +80,11 @@ $galleryVideos = [
   ],
 ];
 ?>
-<main id="main"><?php kem_render_page_hero($pageKey); ?><?php kem_render_breadcrumbs($pageKey); ?>
+<main id="main"><?php kem_render_breadcrumbs($pageKey); ?>
+<?php kem_render_page_intro($pageKey); ?>
 <section class="section">
 <div class="container gallery-container">
-<span class="eyebrow">Einblicke in unsere Arbeit</span>
-<h1>Galerie</h1>
-<p class="lead narrow">Videoeinblicke aus verschiedenen Reinigungsleistungen von KEM. Die Aufnahmen zeigen beispielhafte Arbeitssituationen; das konkrete Vorgehen stimmen wir immer auf Objekt, Oberfläche, Verschmutzung und Zugänglichkeit ab.</p>
+
 <div class="video-gallery-grid" aria-label="Video-Galerie mit Einblicken in verschiedene Reinigungsleistungen">
 <?php foreach ($galleryVideos as $video): ?>
 <figure class="service-video-card gallery-video-card">

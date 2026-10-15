@@ -21,6 +21,13 @@ return array (
   'schema_extra' => 
   array (
   ),
+  'intro' =>
+  array (
+    'eyebrow' => 'Kontakt',
+    'title' => 'Kontakt zu KEM Gebäudereinigung',
+    'lead' => 'Sie haben Fragen zu einer Reinigungsleistung oder möchten Ihr Objekt unverbindlich anfragen? Schreiben Sie uns über das Kontaktformular oder kontaktieren Sie uns telefonisch, per E-Mail oder WhatsApp.',
+    'variant' => 'compact',
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/pages/kontakt/kontakt-hero.webp',

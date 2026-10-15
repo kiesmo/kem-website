@@ -44,6 +44,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'variant' => 'media',
+    'eyebrow' => 'Büro- & Gewerbereinigung in Köln',
+    'title' => 'Büroreinigung in Köln',
+    'lead' => 'Vom Firmensitz in Brühl aus betreut KEM auch Büros, Praxen, Kanzleien, Verwaltungen und andere Gewerbeflächen in Köln. Die Büroreinigung wird passend zu Nutzung, Flächengröße und gewünschtem Turnus geplant; Leistungsumfang und Ausführungszeiten stimmen wir vorab klar ab.',
+    'mobile_offer' => true,
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/locations/bueroreinigung-koeln/bueroreinigung-koeln-hero.webp',

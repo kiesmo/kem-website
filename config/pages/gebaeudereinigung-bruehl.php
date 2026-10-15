@@ -39,6 +39,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'variant' => 'media',
+    'eyebrow' => 'Einsatzgebiet Brühl',
+    'title' => 'Gebäudereinigung in Brühl',
+    'lead' => 'KEM Gebäudereinigung hat seinen Firmensitz in Brühl. Für private Haushalte, Büros, Praxen, Gewerbeflächen und gemeinschaftlich genutzte Bereiche planen wir Reinigungsleistungen nach Objekt, Umfang und gewünschtem Turnus.',
+    'mobile_offer' => true,
+  ),
   'hero' => 
   array (
     'class' => 'hero-focus-right',

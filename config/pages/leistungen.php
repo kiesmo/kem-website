@@ -21,6 +21,13 @@ return array (
   'schema_extra' => 
   array (
   ),
+  'intro' =>
+  array (
+    'eyebrow' => 'Unsere Leistungen',
+    'title' => 'Reinigungsleistungen in Köln, Brühl, Bonn & Umgebung',
+    'lead' => 'KEM übernimmt regelmäßige und einmalige Reinigungsarbeiten für Gewerbe und Privat – von Büro-, Glas- und Grundreinigung bis zu Teppich-, Polster-, Fassaden- und PV-Reinigung sowie Entrümpelung.',
+    'variant' => 'media',
+  ),
   'hero' => 
   array (
     'class' => 'hero-focus-right',

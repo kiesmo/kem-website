@@ -14,7 +14,7 @@
 
   const menuBtn = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
-  const compactNavQuery = matchMedia('(max-width: 1080px)');
+  const compactNavQuery = matchMedia('(max-width: 67.5em)');
   const navDropdowns = [...nav?.querySelectorAll('.nav-dropdown') || []];
   let menuRestoreFocus = null;
 

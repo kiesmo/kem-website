@@ -28,6 +28,10 @@
   object-fit: cover;
 }
 
+.intro-showcase > * {
+  min-width: 0;
+}
+
 .intro-copy {
   padding-top: 2px;
 }
@@ -95,15 +99,17 @@
 }
 
 .service-card p {
-  font-size: .92rem;
+  font-size: var(--text-body);
+  line-height: var(--line-body);
   color: #45515c;
 }
 
 .service-card .more {
   margin-top: auto;
   color: var(--primary);
-  font-weight: 800;
-  font-size: .82rem;
+  font-weight: 700;
+  font-size: var(--text-action);
+  line-height: var(--line-action);
 }
 
 .photo-card img {
@@ -122,7 +128,7 @@
 }
 
 .services-heading .eyebrow {
-  font-size: .9rem;
+  font-size: var(--text-meta);
   margin-bottom: 8px;
 }
 
@@ -154,8 +160,8 @@
 }
 
 .services-kem .service-card p {
-  font-size: .98rem;
-  line-height: 1.72;
+  font-size: var(--text-body);
+  line-height: var(--line-body);
   color: #273746;
   max-width: 420px;
   margin: 0 auto 24px;
@@ -174,7 +180,8 @@
 }
 
 .service-nav a {
-  font-size: .78rem;
+  font-size: var(--text-label);
+  line-height: var(--line-label);
   border: 1px solid #c8d0d7;
   padding: 8px 12px;
 }
@@ -202,9 +209,14 @@
   gap: var(--layout-gap);
 }
 
+/* Limit introductory prose without constraining the form or contact grid. */
+.contact-layout > div > p {
+  max-width: var(--measure-prose);
+}
+
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -215,8 +227,9 @@
 /* Selection cards and estimate options define their own label layout. */
 .field label:not(.service-choice):not(.estimate-option) {
   display: block;
-  font-size: .86rem;
-  font-weight: 800;
+  font-size: var(--text-label);
+  font-weight: 700;
+  line-height: var(--line-label);
   margin-bottom: 5px;
 }
 
@@ -246,7 +259,7 @@
   flex-wrap: wrap;
   gap: 10px;
   align-items: flex-start;
-  font-size: .88rem;
+  font-size: var(--text-label);
 }
 
 .checkbox input {
@@ -289,8 +302,9 @@
 .field-error {
   margin: 6px 0 0;
   color: #9b001b;
-  font-size: .82rem;
+  font-size: var(--text-meta);
   font-weight: 700;
+  line-height: var(--line-meta);
 }
 
 .field-error:empty {
@@ -318,7 +332,7 @@
 }
 
 .legal h2 {
-  font-size: 1.35rem;
+  font-size: var(--heading-3);
   margin-top: 40px;
 }
 
@@ -330,13 +344,18 @@
 
 .footer-main {
   display: grid;
-  grid-template-columns: 1.2fr 1fr .95fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, .95fr) minmax(0, 1fr);
   gap: 45px;
   padding: 56px 0;
 }
 
+.footer-main > * {
+  min-width: 0;
+}
+
 .footer-main h2 {
-  font-size: .88rem;
+  font-size: var(--text-label);
+  line-height: var(--line-label);
   color: var(--primary-light);
   letter-spacing: .08em;
 }
@@ -377,7 +396,8 @@
 .footer-meta {
   border-top: 1px solid rgba(255, 255, 255, .16);
   padding: 19px 0;
-  font-size: .82rem;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
   color: #d3d3d3;
 }
 
@@ -404,9 +424,9 @@
   border-radius: 999px;
   background: #147a3a;
   color: #fff;
-  font-size: .95rem;
+  font-size: var(--text-action);
   font-weight: 600;
-  line-height: 1;
+  line-height: var(--line-action);
   box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
   transition: transform .2s, box-shadow .2s, background .2s;
 }
@@ -456,9 +476,9 @@
   border-radius: 999px;
   background: #147a3a;
   color: #fff;
-  font-size: .92rem;
+  font-size: var(--text-action);
   font-weight: 700;
-  line-height: 1;
+  line-height: var(--line-action);
   box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
   transition: transform .2s, box-shadow .2s, opacity .2s, visibility .2s;
 }

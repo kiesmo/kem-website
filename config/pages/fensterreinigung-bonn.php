@@ -44,6 +44,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'variant' => 'media',
+    'eyebrow' => 'Fenster- & Glasreinigung in Bonn',
+    'title' => 'Fensterreinigung in Bonn',
+    'lead' => 'Vom Firmensitz in Brühl aus übernimmt KEM auch Fenster- und Glasreinigung für private und gewerbliche Objekte in Bonn. Der vereinbarte Umfang richtet sich nach Größe und Anzahl der Glasflächen, ihrer Zugänglichkeit und den zusätzlich gewünschten Bereichen.',
+    'mobile_offer' => true,
+  ),
   'hero' => 
   array (
     'class' => 'hero-focus-left',

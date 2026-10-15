@@ -1,9 +1,6 @@
 <section class="section">
 <div class="container content-grid">
-<article class="service-detail">
-<span class="eyebrow">Einsatzgebiet Köln</span>
-<h1>Gebäudereinigung in Köln</h1>
-<p class="lead">KEM hat seinen Firmensitz in Brühl und übernimmt Gebäudereinigung auch in Köln für Büros, Praxen, Gewerbeflächen, Wohnobjekte und weitere Immobilien. Leistungsumfang, Reinigungsintervall und Einsatzzeiten stimmen wir vorab passend zu Nutzung und Bedarf Ihres Objekts ab.</p><?php kem_render_mobile_offer_cta(); ?>
+<article class="service-detail prose">
 <h2>Gebäudereinigung für unterschiedlich genutzte Objekte in Köln</h2>
 <p>Bei gewerblich genutzten Räumen stehen häufig wiederkehrende Abläufe, sensible Arbeitszeiten und stark beanspruchte Bereiche im Mittelpunkt. In privaten Objekten sind dagegen oft einzelne Leistungen oder konkrete Räume gefragt. Vor Beginn stimmen wir deshalb ab, welche Flächen berücksichtigt werden und zu welchem Zeitpunkt die Reinigung sinnvoll ausgeführt werden kann.</p>
 <p>Für Büros und Gewerberäume können regelmäßige Reinigungsintervalle vereinbart werden. Ebenso sind je nach Leistung einmalige Einsätze möglich, beispielsweise für eine Grundreinigung, Glasreinigung, Polster- oder Teppichreinigung oder eine Entrümpelung.</p>

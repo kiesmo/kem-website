@@ -10,7 +10,7 @@
 
 **Quellcode-Gegenprüfung:** 15. Oktober 2026 gegen `final3` / Dokumentationscommit `48273b01ab4eba318c1a9083530caac930834904`. Der Website-Code ist gegenüber `00f1fe3` unverändert. Korrekturen und neue Präzisierungen stehen in Abschnitt 11; der detaillierte Folgeplan steht in [implementation-plan-final3.md](implementation-plan-final3.md).
 
-**Umsetzungsstand:** Die folgenden Befunde dokumentieren die ursprüngliche Basis. Die inzwischen umgesetzten B1-Korrekturen und ihre Prüfgrenzen sind separat in [b1-implementation.md](b1-implementation.md) festgehalten; B2–B9 sind noch nicht begonnen.
+**Umsetzungsstand:** Die folgenden Befunde dokumentieren die ursprüngliche Basis. Die inzwischen umgesetzten B1- und B2-Korrekturen und ihre Prüfgrenzen sind separat in [b1-implementation.md](b1-implementation.md) und [b2-implementation.md](b2-implementation.md) festgehalten; B3–B9 sind noch nicht begonnen.
 
 **Ursprünglicher Audit-Auftrag:** Detaillierte Prüfung von Design, visueller und inhaltlicher Hierarchie, Typografie, Farben, Layout, Seitenstruktur, Primary CTA und Final CTA. Diese Auditphase war ausschließlich Dokumentation ohne Websiteänderungen; spätere Umsetzung ist separat verzeichnet.
 

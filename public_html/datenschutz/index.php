@@ -5,7 +5,7 @@ $navActive = [];
 $servicesCurrent = false;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
-<main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section legal"><div class="container narrow">
+<main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section legal"><div class="container prose">
 <h1>Datenschutzerklärung</h1>
 <p><strong>Stand: August 2026</strong></p>
 <h2>1. Verantwortlicher</h2>

@@ -39,6 +39,14 @@ return array (
       ),
     ),
   ),
+  'intro' =>
+  array (
+    'variant' => 'media',
+    'eyebrow' => 'Einsatzgebiet Bonn',
+    'title' => 'Gebäudereinigung in Bonn',
+    'lead' => 'KEM hat seinen Firmensitz in Brühl und bietet Gebäudereinigung auch für private und gewerbliche Objekte in Bonn an. Entscheidend sind dabei nicht pauschale Pakete, sondern Nutzung, Flächen, Verschmutzung und der tatsächlich gewünschte Leistungsumfang.',
+    'mobile_offer' => true,
+  ),
   'hero' => 
   array (
     'class' => 'hero-focus-right',

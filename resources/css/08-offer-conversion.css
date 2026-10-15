@@ -9,7 +9,7 @@
 
 .optional-label {
   color: #6a7681;
-  font-size: .84em;
+  font-size: var(--text-meta);
   font-weight: 700;
 }
 
@@ -19,9 +19,9 @@
   gap: 8px;
   margin: 8px 0 0;
   color: #5f6c76;
-  font-size: .82rem;
+  font-size: var(--text-label);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: var(--line-label);
   cursor: pointer;
 }
 
@@ -77,7 +77,9 @@
 
 .appointment-choice small {
   color: #5d6a75;
-  line-height: 1.45;
+  font-size: var(--text-meta);
+  font-weight: 400;
+  line-height: var(--line-meta);
 }
 
 .exact-date-card {
@@ -128,6 +130,7 @@
 
 .upload-preview-meta small {
   color: #687783;
+  font-size: var(--text-meta);
 }
 
 .upload-remove,
@@ -138,8 +141,9 @@
   color: var(--primary-dark);
   background: #fff;
   font: inherit;
-  font-size: .78rem;
-  font-weight: 800;
+  font-size: var(--text-action);
+  font-weight: 700;
+  line-height: var(--line-action);
   cursor: pointer;
 }
 

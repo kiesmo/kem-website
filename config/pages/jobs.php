@@ -31,6 +31,13 @@ return array (
       'url' => '/jobs/',
     ),
   ),
+  'intro' =>
+  array (
+    'eyebrow' => 'Wir suchen zum nächstmöglichen Zeitpunkt',
+    'title' => 'Glas- und Gebäudereiniger (m/w/d)',
+    'lead' => 'Zur Verstärkung unseres Teams suchen wir engagierte Mitarbeitende für die Gebäudereinigung im privaten und gewerblichen Bereich.',
+    'variant' => 'compact',
+  ),
   'hero' => 
   array (
     'src' => '/assets/img/pages/jobs/jobs-hero.webp',

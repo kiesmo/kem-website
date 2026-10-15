@@ -1,13 +1,41 @@
 <?php
-if (!function_exists('kem_render_page_hero')) {
-    function kem_render_page_hero(string $pageKey): void {
-        $hero = kem_page_data($pageKey)['hero'] ?? null;
-        if (!$hero) return;
-        $heroClass = trim('page-hero ' . ($hero['class'] ?? ''));
-        $mobileTag = $hero['mobile_tag'] ?? $hero['tag'] ?? '';
-        echo '<section aria-label="Seitenmotiv" class="' . kem_h($heroClass) . '"><div class="hero-picture">';
-        echo '<img alt="' . kem_h($hero['alt'] ?? '') . '" fetchpriority="high" width="' . (int)$hero['width'] . '" height="' . (int)$hero['height'] . '" src="' . kem_h($hero['src']) . '">';
-        echo '</div><div class="container"><div class="hero-tag"><span class="hero-tag-desktop">' . kem_h($hero['tag'] ?? '') . '</span><span class="hero-tag-mobile">' . kem_h($mobileTag) . '</span></div></div></section>';
+if (!function_exists('kem_render_page_intro')) {
+    /** Visible page content stays separate from browser/SEO titles. */
+    function kem_render_page_intro(string $pageKey, array $intro = [], array $options = []): void {
+        $page = kem_page_data($pageKey);
+        $intro = $intro ?: ($page['intro'] ?? []);
+        if (empty($intro['title'])) {
+            throw new RuntimeException('Seitenintro ohne Überschrift: ' . $pageKey);
+        }
+        $hero = $page['hero'] ?? null;
+        $hasMedia = ($options['variant'] ?? $intro['variant'] ?? 'media') === 'media'
+            && is_array($hero) && !empty($hero['src']);
+        $classes = 'page-intro page-intro--' . ($hasMedia ? 'media' : 'compact');
+        if ($hasMedia && !empty($hero['class'])) $classes .= ' ' . $hero['class'];
+        $containerClass = $intro['container_class'] ?? '';
+        if (!in_array($containerClass, ['faq-container', 'gallery-container'], true)) $containerClass = '';
+
+        echo '<section aria-labelledby="page-title" class="' . kem_h($classes) . '"><div class="container ' . kem_h($containerClass) . '"><div class="page-intro__layout"><div class="page-intro__copy">';
+        if (!empty($intro['eyebrow'])) echo '<span class="eyebrow">' . kem_h($intro['eyebrow']) . '</span>';
+        echo '<h1 id="page-title">' . kem_h($intro['title']) . '</h1>';
+        if (!empty($intro['lead'])) echo '<p class="lead">' . kem_h($intro['lead']) . '</p>';
+
+        $actions = $options['actions'] ?? $intro['actions'] ?? [];
+        if ($actions) {
+            echo '<div class="page-intro__actions">';
+            foreach ($actions as $action) {
+                if (empty($action['href']) || empty($action['label'])) continue;
+                echo '<a class="btn' . (!empty($action['secondary']) ? ' secondary' : '') . '" href="' . kem_h($action['href']) . '">' . kem_h($action['label']) . '</a>';
+            }
+            echo '</div>';
+        }
+        // Preserve the existing mobile enquiry path until B3 replaces it.
+        if (!empty($options['mobile_offer'] ?? $intro['mobile_offer'] ?? false)) kem_render_mobile_offer_cta();
+        echo '</div>';
+        if ($hasMedia) {
+            echo '<div class="page-intro__media"><img alt="' . kem_h($hero['alt'] ?? '') . '" fetchpriority="high" width="' . (int)$hero['width'] . '" height="' . (int)$hero['height'] . '" src="' . kem_h($hero['src']) . '"></div>';
+        }
+        echo '</div></div></section>';
     }
 }
 if (!function_exists('kem_render_breadcrumbs')) {

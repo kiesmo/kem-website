@@ -3,7 +3,7 @@
 return [
     'name' => 'KEM Gebäudereinigung',
     'base_url' => 'https://www.kem-gebaeudereinigung.de',
-    'asset_version' => '1.1.1',
+    'asset_version' => '1.1.2',
     'phone_display' => '02232 9488929',
     'phone_href' => '+4922329488929',
     'email' => 'info@kem-gebaeudereinigung.de',

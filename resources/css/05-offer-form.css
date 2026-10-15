@@ -23,7 +23,8 @@
   padding: 0;
   margin: 24px 0 0;
   list-style: none;
-  font-size: .9rem;
+  font-size: var(--text-label);
+  line-height: var(--line-label);
   font-weight: 700;
 }
 
@@ -54,7 +55,8 @@
   background: #fff;
   color: var(--navy);
   box-shadow: 0 8px 22px rgba(31, 52, 68, .07);
-  font-size: .9rem;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .offer-duration > span {
@@ -89,8 +91,9 @@
   color: #6a7681;
   background: none;
   text-align: center;
-  font-size: .73rem;
+  font-size: var(--text-meta);
   font-weight: 700;
+  line-height: var(--line-meta);
 }
 
 .offer-steps .step-dot::before {
@@ -145,15 +148,16 @@
   display: block;
   margin-bottom: 5px;
   color: var(--primary);
-  font-size: .76rem;
+  font-size: var(--text-meta);
   font-weight: 700;
+  line-height: var(--line-label);
   letter-spacing: .08em;
   text-transform: uppercase;
 }
 
 .step-heading h2 {
   margin-bottom: 8px;
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-size: var(--heading-2);
 }
 
 .step-heading p {
@@ -169,7 +173,8 @@
 .field-hint {
   margin: -2px 0 16px;
   color: #66737e;
-  font-size: .86rem;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .conditional-card,
@@ -189,7 +194,7 @@
 
 .conditional-card h3 {
   margin-bottom: 18px;
-  font-size: 1.12rem;
+  font-size: var(--heading-3);
 }
 
 .conditional-card[hidden],
@@ -208,8 +213,9 @@
 .service-choice-fieldset legend {
   padding: 0;
   margin-bottom: 4px;
-  font-size: 1rem;
+  font-size: var(--text-body);
   font-weight: 700;
+  line-height: var(--line-label);
 }
 
 .service-choice-grid {
@@ -229,7 +235,7 @@
   border: 1px solid #d4dde3;
   border-radius: var(--radius-control);
   background: #fff;
-  font-size: 1rem;
+  font-size: var(--text-body);
   font-weight: 400;
   cursor: pointer;
   transition: transform .18s, border-color .18s, box-shadow .18s, background .18s;
@@ -264,14 +270,14 @@
 
 .service-choice b {
   font-weight: 700;
-  line-height: 1.25;
+  line-height: var(--line-label);
 }
 
 .service-choice small {
   color: #5d6a75;
-  font-size: .875rem;
+  font-size: var(--text-meta);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: var(--line-meta);
 }
 
 .service-choice-fieldset.has-error .service-choice-grid {
@@ -312,19 +318,20 @@
   border-radius: 10px;
   color: #fff;
   background: var(--primary);
-  font-size: .78rem;
+  font-size: var(--text-meta);
   font-weight: 700;
 }
 
 .detail-panel-heading h3 {
   margin-bottom: 3px;
-  font-size: 1.25rem;
+  font-size: var(--heading-3);
 }
 
 .detail-panel-heading p {
   margin: 0;
   color: #63707b;
-  font-size: .9rem;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .compact-grid {
@@ -395,6 +402,8 @@
 
 .upload-dropzone small {
   color: #66737e;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .upload-file-list {
@@ -403,7 +412,8 @@
   padding: 0;
   margin: 10px 0 0;
   list-style: none;
-  font-size: .86rem;
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
 }
 
 .upload-file-list li {
@@ -430,7 +440,7 @@
 
 .review-section h3 {
   margin-bottom: 12px;
-  font-size: 1rem;
+  font-size: var(--text-body);
 }
 
 .review-list {
@@ -438,7 +448,8 @@
   grid-template-columns: minmax(130px, .38fr) 1fr;
   gap: 6px 18px;
   margin: 0;
-  font-size: .9rem;
+  font-size: var(--text-label);
+  line-height: var(--line-meta);
 }
 
 .review-list dt {
