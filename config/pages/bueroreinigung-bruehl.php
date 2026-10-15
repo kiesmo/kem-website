@@ -44,6 +44,11 @@ return array (
       ),
     ),
   ),
+  'offer_context' =>
+  array (
+    'city' => 'bruehl',
+    'service' => 'office',
+  ),
   'intro' =>
   array (
     'variant' => 'media',

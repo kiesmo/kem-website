@@ -39,6 +39,10 @@ return array (
       ),
     ),
   ),
+  'offer_context' =>
+  array (
+    'city' => 'koeln',
+  ),
   'intro' =>
   array (
     'variant' => 'media',

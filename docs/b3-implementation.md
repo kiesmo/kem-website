@@ -35,7 +35,7 @@
 
 `kem_offer_action($pageKey, $label)` is the shared offer destination boundary. Every early, sidebar, final and global offer action supplies the actual originating route explicitly. Content fragments use explicit routes because their include scope does not inherit the page template's `$pageKey`.
 
-For now the destination intentionally remains `/angebotsanfrage/`. B3 does **not** claim service/city preselection. B5 must resolve allowlisted service/city context at this boundary and implement matching visible form initialisation in the same batch. Generic building-cleaning city routes must not imply the form's `general` cleaning type. No unsupported dynamic placeholder was introduced.
+At completion of B3, the destination intentionally remained `/angebotsanfrage/`; B3 did **not** implement service/city preselection. [B5](b5-implementation.md) has since resolved allowlisted service/city context at this boundary together with visible form initialisation. Generic building-cleaning city routes do not imply the form's `general` cleaning type. No unsupported dynamic placeholder was introduced.
 
 ## Verification
 
@@ -68,6 +68,6 @@ Generated CSS SHA-256: `4ca77b4045aa217e1c03e200103e16f89b0e9f4b730950b0eec562f4
 
 ## Remaining batches
 
-At completion of B3, B4–B9 were unstarted. [B4 has since been implemented](b4-implementation.md); B5–B9 remain unstarted. B3 itself preserved content/media/related-link order, form relevance rules, progress/success behaviour and existing business claims. Additional-browser validation remains open because only Chromium is installed; the configured package source for another browser remains blocked by network policy.
+At completion of B3, B4–B9 were unstarted. See the [implementation plan](implementation-plan-final3.md) for current progress and later implementation records. B3 itself preserved content/media/related-link order, form relevance rules, progress/success behaviour and existing business claims. Additional-browser validation remains open because only Chromium is installed; the configured package source for another browser remains blocked by network policy.
 
 The original audit and earlier implementation records retain their historical baseline observations; current changes and validation belong to this record.

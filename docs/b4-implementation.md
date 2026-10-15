@@ -75,6 +75,6 @@ Generated CSS SHA-256: `3b93d63ed75d0c83e9edb879d66085a5d13681bf9eb3ace519e64587
 
 ## Remaining batches
 
-B5–B9 remain unstarted. Offer destinations remain generic; B5 will implement service/city context together with visible form initialisation. Form relevance, progress/success behaviour and the remaining company/gallery/task content stay in their planned batches. Additional-browser validation remains open because only Chromium is installed and the configured second-browser package source is blocked by network policy.
+At completion of B4, B5–B9 were unstarted. B4 kept offer destinations generic and left service/city context, form relevance, progress/success behaviour and the remaining company/gallery/task content to their planned batches. See the [implementation plan](implementation-plan-final3.md) for current progress and later implementation records. Additional-browser validation remains open because only Chromium is installed and the configured second-browser package source is blocked by network policy.
 
 The original audit remains a record of its original website baseline. Earlier implementation records describe their own completed batches; this record documents B4.

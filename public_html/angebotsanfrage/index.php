@@ -4,6 +4,8 @@
 $navActive = ['offer'];
 $servicesCurrent = false;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
+$offerContext = kem_offer_context_from_query($_GET);
+$offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 ?>
 <main id="main"><?php kem_render_breadcrumbs($pageKey); ?><section class="section soft offer-builder-section">
 <div class="container offer-builder-shell">
@@ -33,15 +35,16 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <fieldset class="field full service-choice-fieldset" data-service-choice-group="">
 <legend>Welche Art der Reinigung wünschen Sie? *</legend>
 <p class="field-hint">Sie können mehrere Leistungen miteinander kombinieren.</p>
+<p class="field-hint" data-offer-context-city=""<?= $offerCity === '' ? ' hidden' : '' ?>>Einsatzort: <span data-offer-context-city-value=""><?= kem_h($offerCity) ?></span>. Im nächsten Schritt änderbar.</p>
 <div class="service-choice-grid">
-<label class="service-choice"><input data-cleaning-type="office" name="type_office" type="checkbox" value="1"/><span><b>Büro- und Gewerberaumreinigung</b><small>Regelmäßige oder einmalige Reinigung von Arbeitsflächen</small></span></label>
-<label class="service-choice"><input data-cleaning-type="window" name="type_window" type="checkbox" value="1"/><span><b>Glas- und Fensterreinigung</b><small>Glasflächen, Rahmen und Falze</small></span></label>
-<label class="service-choice"><input data-cleaning-type="general" name="type_general" type="checkbox" value="1"/><span><b>Grund- und Spezialreinigung</b><small>Intensive Reinigung für besondere Anlässe</small></span></label>
-<label class="service-choice"><input data-cleaning-type="carpet" name="type_carpet" type="checkbox" value="1"/><span><b>Teppichreinigung</b><small>Lose und festverlegte Teppiche</small></span></label>
-<label class="service-choice"><input data-cleaning-type="upholstery" name="type_upholstery" type="checkbox" value="1"/><span><b>Polsterreinigung</b><small>Sofas, Sessel, Stühle und Hocker</small></span></label>
-<label class="service-choice"><input data-cleaning-type="clearance" name="type_clearance" type="checkbox" value="1"/><span><b>Entrümpelung</b><small>Wohnungen, Keller, Büros und Lager</small></span></label>
-<label class="service-choice"><input data-cleaning-type="graffiti" name="type_graffiti" type="checkbox" value="1"/><span><b>Fassaden- und Graffitireinigung</b><small>Graffitientfernung und Außenflächen</small></span></label>
-<label class="service-choice"><input data-cleaning-type="solar" name="type_solar" type="checkbox" value="1"/><span><b>Solar- und Photovoltaikanlagenreinigung</b><small>Module und Solaranlagen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="office" name="type_office" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'office' ? ' checked' : '' ?>/><span><b>Büro- und Gewerberaumreinigung</b><small>Regelmäßige oder einmalige Reinigung von Arbeitsflächen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="window" name="type_window" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'window' ? ' checked' : '' ?>/><span><b>Glas- und Fensterreinigung</b><small>Glasflächen, Rahmen und Falze</small></span></label>
+<label class="service-choice"><input data-cleaning-type="general" name="type_general" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'general' ? ' checked' : '' ?>/><span><b>Grund- und Spezialreinigung</b><small>Intensive Reinigung für besondere Anlässe</small></span></label>
+<label class="service-choice"><input data-cleaning-type="carpet" name="type_carpet" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'carpet' ? ' checked' : '' ?>/><span><b>Teppichreinigung</b><small>Lose und festverlegte Teppiche</small></span></label>
+<label class="service-choice"><input data-cleaning-type="upholstery" name="type_upholstery" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'upholstery' ? ' checked' : '' ?>/><span><b>Polsterreinigung</b><small>Sofas, Sessel, Stühle und Hocker</small></span></label>
+<label class="service-choice"><input data-cleaning-type="clearance" name="type_clearance" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'clearance' ? ' checked' : '' ?>/><span><b>Entrümpelung</b><small>Wohnungen, Keller, Büros und Lager</small></span></label>
+<label class="service-choice"><input data-cleaning-type="graffiti" name="type_graffiti" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'graffiti' ? ' checked' : '' ?>/><span><b>Fassaden- und Graffitireinigung</b><small>Graffitientfernung und Außenflächen</small></span></label>
+<label class="service-choice"><input data-cleaning-type="solar" name="type_solar" type="checkbox" value="1"<?= ($offerContext['service'] ?? null) === 'solar' ? ' checked' : '' ?>/><span><b>Solar- und Photovoltaikanlagenreinigung</b><small>Module und Solaranlagen</small></span></label>
 <label class="service-choice"><input data-cleaning-type="other" name="type_other" type="checkbox" value="1"/><span><b>Sonstige Leistung</b><small>Individuelle Reinigungsanfrage</small></span></label>
 </div>
 <p aria-live="polite" class="field-error" data-service-choice-error=""></p>
@@ -56,7 +59,7 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <div class="field full"><label for="cleaning_company">Firma / Objektbezeichnung <span class="optional-label">(optional)</span></label><input autocomplete="organization" id="cleaning_company" maxlength="120" name="cleaning_company" placeholder="z. B. Büro Köln"/></div>
 <div class="field full"><label for="cleaning_street">Straße und Hausnummer <span class="optional-label">(optional)</span></label><input autocomplete="street-address" id="cleaning_street" maxlength="160" name="cleaning_street" placeholder="z. B. Musterstraße 12"/></div>
 <div class="field"><label for="cleaning_postcode">PLZ *</label><input autocomplete="postal-code" id="cleaning_postcode" inputmode="numeric" maxlength="5" name="cleaning_postcode" pattern="[0-9]{5}" required=""/></div>
-<div class="field"><label for="cleaning_city">Ort *</label><input autocomplete="address-level2" id="cleaning_city" maxlength="100" name="cleaning_city" required=""/></div>
+<div class="field"><label for="cleaning_city">Ort *</label><input autocomplete="address-level2" id="cleaning_city" maxlength="100" name="cleaning_city" required="" value="<?= kem_h($offerCity) ?>"/></div>
 </div>
 </div>
 <div class="form-grid object-basics-new">

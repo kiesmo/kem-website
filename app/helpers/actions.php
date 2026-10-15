@@ -1,10 +1,7 @@
 <?php
-/**
- * Keep the originating route with every action. B5 can resolve offer context
- * here; until that end-to-end work ships, offer URLs deliberately stay generic.
- */
+/** Keep the originating route and resolve its explicit service/city context. */
 function kem_offer_action(string $pageKey, string $label = 'Kostenloses Angebot anfordern'): array {
-    return ['intent' => 'offer', 'page_key' => $pageKey, 'label' => $label, 'href' => '/angebotsanfrage/'];
+    return ['intent' => 'offer', 'page_key' => $pageKey, 'label' => $label, 'href' => kem_offer_url($pageKey)];
 }
 
 function kem_application_action(string $pageKey = '/jobs/', string $label = 'Bewerbung per E-Mail senden'): array {

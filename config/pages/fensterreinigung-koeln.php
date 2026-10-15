@@ -44,6 +44,11 @@ return array (
       ),
     ),
   ),
+  'offer_context' =>
+  array (
+    'city' => 'koeln',
+    'service' => 'window',
+  ),
   'intro' =>
   array (
     'variant' => 'media',

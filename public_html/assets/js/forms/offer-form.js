@@ -82,6 +82,9 @@
   const serviceFieldset = form.querySelector('[data-service-choice-group]');
   const serviceError = form.querySelector('[data-service-choice-error]');
   const serviceValue = form.querySelector('#cleaning_types');
+  const cleaningCity = form.querySelector('#cleaning_city');
+  const contextCityNote = form.querySelector('[data-offer-context-city]');
+  const contextCityValue = form.querySelector('[data-offer-context-city-value]');
   const review = form.querySelector('[data-offer-review]');
   const fileInput = form.querySelector('#photos');
   const dropzone = form.querySelector('[data-upload-dropzone]');
@@ -145,6 +148,15 @@
     .filter(field => field.checked)
     .map(field => field.dataset.cleaningType)
     .filter(Boolean);
+
+  const syncContextCity = () => {
+    const city = cleaningCity?.value.trim() || '';
+    if (contextCityValue) contextCityValue.textContent = city;
+    if (contextCityNote) contextCityNote.hidden = !city;
+  };
+
+  cleaningCity?.addEventListener('input', syncContextCity);
+  cleaningCity?.addEventListener('change', syncContextCity);
 
   const syncServicePanels = () => {
     const selected = selectedServiceKeys();
@@ -407,11 +419,22 @@
     syncServicePanels();
     syncAppointment();
     syncFiles();
+    syncContextCity();
+    updateReview();
+  });
+
+  window.addEventListener('pageshow', () => {
+    syncServicePanels();
+    estimateChecks.forEach(check => setEstimateState(check, false, false));
+    syncAppointment();
+    syncFiles();
+    syncContextCity();
     updateReview();
   });
 
   syncServicePanels();
   syncAppointment();
   syncFiles();
+  syncContextCity();
   updateReview();
 })();
