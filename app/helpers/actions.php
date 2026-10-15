@@ -30,12 +30,22 @@ function kem_page_primary_action(string $pageKey): ?array {
 
 function kem_render_action(array $action, string $style = 'primary', string $extraClass = ''): void {
     if (empty($action['href']) || empty($action['label'])) return;
-    $classes = $style === 'inline' ? 'action-link' : 'btn' . ($style === 'secondary' ? ' secondary' : '');
+    $isWhatsApp = ($action['intent'] ?? '') === 'whatsapp';
+    $classes = $isWhatsApp
+        ? 'btn btn--whatsapp'
+        : ($style === 'inline' ? 'action-link' : 'btn' . ($style === 'secondary' ? ' secondary' : ''));
     if ($extraClass !== '') $classes .= ' ' . $extraClass;
     echo '<a class="' . kem_h($classes) . '" href="' . kem_h($action['href']) . '"';
     echo ' data-action-intent="' . kem_h($action['intent'] ?? 'navigation') . '" data-action-page="' . kem_h($action['page_key'] ?? '') . '"';
     if (!empty($action['external'])) echo ' target="_blank" rel="noopener noreferrer"';
-    echo '>' . kem_h($action['label']) . '</a>';
+    echo '>';
+    if ($isWhatsApp) {
+        echo '<img class="whatsapp-button__icon" src="/assets/icons/whatsapp.svg" alt="" aria-hidden="true" width="24" height="24">';
+        echo '<span class="whatsapp-button__label">' . kem_h($action['label']) . '</span>';
+    } else {
+        echo kem_h($action['label']);
+    }
+    echo '</a>';
 }
 
 function kem_render_action_group(array $primary, ?array $secondary = null, string $extraClass = ''): void {

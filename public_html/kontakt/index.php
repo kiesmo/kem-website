@@ -32,7 +32,7 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <address><strong><?= kem_h($kem['name']) ?></strong><br><?= kem_h($kem['street']) ?><br><?= kem_h($kem['postal_code']) ?> <?= kem_h($kem['city']) ?><br><?= kem_h($kem['country']) ?></address>
 <h3>Einsatzgebiet</h3>
 <p>Wir sind in <a href="/gebaeudereinigung-koeln/">Köln</a>, <a href="/gebaeudereinigung-bruehl/">Brühl</a>, <a href="/gebaeudereinigung-bonn/">Bonn</a> und der umliegenden Region für Sie im Einsatz.</p>
-<p class="contact-whatsapp">Alternativ können Sie uns <?php kem_render_action(kem_whatsapp_action($pageKey, 'per WhatsApp schreiben'), 'inline'); ?>.</p>
+<div class="contact-whatsapp"><p class="contact-whatsapp__text">Alternativ direkt schreiben:</p><?php kem_render_action(kem_whatsapp_action($pageKey)); ?></div>
 </aside>
 </div>
 </div>

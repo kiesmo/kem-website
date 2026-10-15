@@ -206,6 +206,6 @@ $offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 <p>Ein angegebener Wunschtermin ist noch keine Terminbestätigung.</p>
 <div class="offer-success-actions"><button class="btn" data-offer-new-request="" type="button">Neue Anfrage beginnen</button><a class="action-link" href="/kontakt/">Kontakt für Rückfragen</a></div>
 </section>
-<p class="offer-contact-alternative" data-offer-help="">Fragen zur Anfrage? Alternativ können Sie uns <?php kem_render_action(kem_whatsapp_action($pageKey, 'per WhatsApp schreiben'), 'inline'); ?>.</p>
+<div class="offer-contact-alternative" data-offer-help=""><p>Fragen zur Anfrage? Alternativ direkt schreiben:</p><?php kem_render_action(kem_whatsapp_action($pageKey)); ?></div>
 </div>
 </section></main><?php require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/footer.php'; ?><script defer="" src="/assets/js/forms/offer-form.js?v=<?= kem_h($kem['asset_version']) ?>"></script></body></html>

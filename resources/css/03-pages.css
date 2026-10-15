@@ -616,6 +616,10 @@
   line-height: var(--line-meta);
 }
 
+.offer-contact-alternative > p {
+  margin: 0 0 10px;
+}
+
 /* Backtop */
 .backtop {
   position: fixed;

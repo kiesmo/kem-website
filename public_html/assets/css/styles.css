@@ -9,6 +9,8 @@
   --primary-soft: #edf5fa;
   --primary-shadow: rgba(9, 105, 181, .22);
   --primary-shadow-soft: rgba(9, 105, 181, .10);
+  --whatsapp: #0a7c3b;
+  --whatsapp-hover: #086630;
   --navy: #0d2b45;
   --text: #172534;
   --surface: #fff;
@@ -252,6 +254,36 @@ h3 {
   box-shadow: none;
 }
 
+.btn.btn--whatsapp {
+  min-height: 44px;
+  padding: 12px 16px;
+  background: var(--whatsapp);
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn.btn--whatsapp:hover,
+.btn.btn--whatsapp:focus-visible {
+  background: var(--whatsapp-hover);
+  color: #fff;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn--whatsapp .whatsapp-button__icon {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.whatsapp-button__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 /* One filled primary action; optional alternatives stay quiet and recognisable. */
 .action-group {
   display: flex;
@@ -283,6 +315,12 @@ h3 {
   color: var(--text-muted);
   font-size: var(--text-meta);
   line-height: var(--line-meta);
+}
+
+.action-alternative .btn--whatsapp {
+  display: flex;
+  width: fit-content;
+  margin: 8px auto 0;
 }
 
 /* Header and navigation */
@@ -1431,6 +1469,10 @@ h3 {
   color: var(--text-muted);
   font-size: var(--text-meta);
   line-height: var(--line-meta);
+}
+
+.offer-contact-alternative > p {
+  margin: 0 0 10px;
 }
 
 /* Backtop */
