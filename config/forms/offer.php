@@ -55,7 +55,7 @@ return [
     ],
     'optional_fields' => [
         'floor' => ['office', 'window', 'general', 'carpet', 'upholstery', 'clearance', 'graffiti', 'solar', 'other'],
-        'furnishing' => ['office', 'window', 'general', 'carpet', 'upholstery', 'clearance', 'graffiti', 'other'],
+        'furnishing' => ['office', 'general', 'carpet', 'clearance', 'other'],
     ],
     'salutations' => ['', 'Frau', 'Herr', 'Divers', 'Keine Angabe'],
     'object_types' => ['Wohnung', 'Einfamilienhaus', 'Mehrfamilienhaus', 'Büro / Gewerbe', 'Praxis / Kanzlei', 'Gastronomie / Hotel', 'Öffentliche Einrichtung', 'Industrie / Lager', 'Sonstiges Objekt'],

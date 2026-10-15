@@ -8,19 +8,19 @@
 
 ## Field-relevance decisions
 
-This matrix was defined before changing field visibility. Required object type remains unchanged because no operational confirmation authorises removing it. Postcode/city and the existing contact identity requirements also remain unchanged. Optional location/object and customer details remain distinct.
+The initial matrix was defined before B6's visibility changes; the current matrix incorporates the confirmed furnishing follow-up below. Required object type remains unchanged because no operational confirmation authorises removing it. Postcode/city and the existing contact identity requirements also remain unchanged. Optional location/object and customer details remain distinct.
 
-The conservative optional policy retains floor/access for every service, including window, facade and solar work. Room furnishing remains available for every non-solar service; a solar-only request omits it. These are optional-question defaults, not a claim that a particular job can never need further access information. Multiple services use the union of applicable fields.
+Floor/access remains optional for every service, including window, facade and solar work. The user confirmed that room furnishing should appear only for office, general, carpet, clearance or “other” cleaning. Window, upholstery, facade and solar requests omit it unless combined with one of those five services. Multiple services use the union of applicable fields.
 
 | Service | Optional floor/access | Optional room furnishing | Existing required service answers |
 |---|---|---|---|
 | Office / commercial | Yes | Yes | Area or estimate; frequency |
-| Window | Yes | Yes | Sash count or estimate; cleaning scope |
+| Window | Yes | No | Sash count or estimate; cleaning scope |
 | General / specialist | Yes | Yes | Area or estimate; reason |
 | Carpet | Yes | Yes | Cleaning scope; soiling |
-| Upholstery | Yes | Yes | Cleaning scope; soiling |
+| Upholstery | Yes | No | Cleaning scope; soiling |
 | Clearance | Yes, once | Yes | Area or estimate; scope |
-| Facade / graffiti | Yes | Yes | Area or estimate; surface |
+| Facade / graffiti | Yes | No | Area or estimate; surface |
 | Solar / PV | Yes | No | Access; soiling |
 | Other | Yes | Yes | Description, preserving the existing server minimum |
 
@@ -46,7 +46,9 @@ With no selected service, service panels and the two optional operational fields
 - Added `tools/check-offer-request.php` for repeatable pure-policy/preparation checks. The existing B5 GET-render checks remain in place. No POST schema names or upload policies changed.
 - Added scoped hidden-group rules and a quiet, wrapping copy button with a 44 px minimum height. Gave help text below inputs enough clearance for the keyboard focus ring. Generated CSS with the actual PHP builder from all ten ordered source modules. Incremented asset version to `1.1.6`.
 
-## Verification
+## Initial B6 verification (`4a8ca2b`)
+
+These results record the initial B6 release, which used the broader optional furnishing default. The confirmed follow-up policy and its verification are recorded below; the current matrix above describes the implemented policy.
 
 | Check | Result |
 |---|---|
@@ -64,6 +66,17 @@ With no selected service, service panels and the two optional operational fields
 | Visual and keyboard focus | Floor/help text, distinct company fields, optional-group visibility and copy action accepted at 320/390/768/1440 px. After the spacing fix, all four input/help pairs have 8 px clearance for the 6 px focus-ring extent at actual 16/20/32 px defaults. Copy action remains at least 44 px high, wraps at enlarged text and moves keyboard focus to the filled field |
 | Site/source boundaries | All 28 routes rendered; 131 B5 offer destinations, page identity, H1/H2, substantive content, media and CTA order retained. All 29 protected sources unchanged, including Contact markup, the API wrapper, shared AJAX script, upload validator, request utilities, schema, catalogue and local page configurations |
 | CSS | PHP-generated bundle matches the ten ordered source modules; SHA-256 `4031d30821f33961381563effeb2bc0b01943d2eb2f76e49c39d7c8e251c50c5` |
+
+## Confirmed furnishing follow-up
+
+After the initial B6 push, the user selected the five-service furnishing rule on 15 October 2026. Updated the shared policy and its regression expectations. Browser visibility, disabled state, review and server validation/mail inclusion all consume that policy; no separate JavaScript or markup condition was added. Floor/access and required object type retain their existing rules.
+
+| Follow-up check | Result |
+|---|---|
+| Syntax and pure policy | Both changed PHP files lint; `php tools/check-offer-request.php` passes 604 checks, including upholstery count validation independently of inactive room furnishing and furnishing validation after adding office |
+| Browser relevance and state | All 511 nonempty service combinations apply the five-service union correctly and retain floor/access. Seven full tasks and ten locally intercepted POSTs passed; valid/invalid stale furnishing is omitted when inactive and restored on reselecting an applicable service. Estimates, company copying, hidden error clearing and real BFCache return remain correct |
+| Actual handler and mail | 29 isolated cases passed: 22 targeted individual/combined-service furnishing cases plus seven fresh browser payloads. All 109 nonempty review/mail values match; the three removed furnishing rows account for the difference from the initial 112. Each captured mail has one floor/access answer |
+| Scope | Eleven independent source checks confirm the sole production change is the explicit furnishing-service list. Frontend scripts, markup, CSS, handler, normalisation helper, schema, uploads and API wrapper are unchanged. Tests and this record reflect the confirmed choice |
 
 All browser submissions were intercepted and fulfilled locally. Isolated handler checks used synthetic configuration and a recording transport; they did not read production private/vendor files, call the real endpoint or send SMTP. Browser QA uses Chromium; a second browser remains unavailable. Handler fixtures cover validation/upload error paths, but not successful HTTP file-upload parsing, response headers or real mail delivery.
 
