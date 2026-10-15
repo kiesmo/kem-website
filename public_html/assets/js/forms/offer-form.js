@@ -76,6 +76,13 @@
   const form = document.querySelector('[data-offer-form]');
   if (!form) return;
 
+  let policy;
+  try {
+    policy = JSON.parse(form.dataset.offerPolicy || '{}');
+  } catch {
+    return;
+  }
+  const servicePolicy = policy.services || {};
   const serviceChecks = [...form.querySelectorAll('[data-cleaning-type]')];
   const servicePanels = [...form.querySelectorAll('[data-service-panel]')];
   const serviceEmpty = form.querySelector('[data-service-detail-empty]');
@@ -85,6 +92,12 @@
   const cleaningCity = form.querySelector('#cleaning_city');
   const contextCityNote = form.querySelector('[data-offer-context-city]');
   const contextCityValue = form.querySelector('[data-offer-context-city-value]');
+  const optionalGroups = [...form.querySelectorAll('[data-offer-optional-field]')];
+  const objectCompany = form.querySelector('#cleaning_company');
+  const customerCompany = form.querySelector('#company');
+  const copyCompanyButton = form.querySelector('[data-copy-object-company]');
+  const objectCompanyPreview = form.querySelector('[data-object-company-preview]');
+  const objectCompanyValue = form.querySelector('[data-object-company-value]');
   const review = form.querySelector('[data-offer-review]');
   const fileInput = form.querySelector('#photos');
   const dropzone = form.querySelector('[data-upload-dropzone]');
@@ -94,17 +107,7 @@
   const estimateChecks = [...form.querySelectorAll('[data-estimate-for]')];
   const estimateValue = 'Bitte vor Ort einschätzen';
 
-  const serviceLabels = {
-    office: 'Büro- und Gewerberaumreinigung',
-    window: 'Glas- und Fensterreinigung',
-    general: 'Grund- und Spezialreinigung',
-    carpet: 'Teppichreinigung',
-    upholstery: 'Polsterreinigung',
-    clearance: 'Entrümpelung',
-    graffiti: 'Fassaden- und Graffitireinigung',
-    solar: 'Solar- und Photovoltaikanlagenreinigung',
-    other: 'Sonstige Leistung',
-  };
+  const serviceLabels = Object.fromEntries(Object.entries(servicePolicy).map(([key, service]) => [key, service.label]));
 
   const detailFields = {
     office: [
@@ -138,7 +141,7 @@
       ['Verschmutzung', 'solar_soiling'], ['Hinweise', 'solar_notes'],
     ],
     clearance: [
-      ['Objektfläche', 'clearance_area', ' m²'], ['Volumen', 'clearance_volume'], ['Etage / Zugang', 'clearance_floor'],
+      ['Objektfläche', 'clearance_area', ' m²'], ['Volumen', 'clearance_volume'],
       ['Aufzug', 'clearance_elevator'], ['Umfang', 'clearance_scope'], ['Hinweise', 'clearance_notes'],
     ],
     other: [['Beschreibung', 'other_details']],
@@ -158,22 +161,69 @@
   cleaningCity?.addEventListener('input', syncContextCity);
   cleaningCity?.addEventListener('change', syncContextCity);
 
+  const syncCompanyCopy = () => {
+    const source = objectCompany?.value.trim() || '';
+    const available = Boolean(source) && !customerCompany?.value.trim();
+    if (objectCompanyValue) objectCompanyValue.textContent = source;
+    if (objectCompanyPreview) objectCompanyPreview.hidden = !available;
+    if (copyCompanyButton) copyCompanyButton.hidden = !available;
+  };
+
+  [objectCompany, customerCompany].forEach(field => {
+    field?.addEventListener('input', syncCompanyCopy);
+    field?.addEventListener('change', syncCompanyCopy);
+  });
+  copyCompanyButton?.addEventListener('click', () => {
+    const source = objectCompany?.value.trim() || '';
+    if (!source || !customerCompany || customerCompany.value.trim()) return;
+    customerCompany.value = source;
+    customerCompany.dispatchEvent(new Event('input', { bubbles: true }));
+    customerCompany.focus();
+  });
+
+  const clearHiddenFieldError = field => {
+    field.removeAttribute('aria-invalid');
+    field.setCustomValidity('');
+    const error = field.id ? document.getElementById(`${field.id}-error`) : null;
+    if (error) error.textContent = '';
+  };
+
   const syncServicePanels = () => {
     const selected = selectedServiceKeys();
     const hasSelection = selected.length > 0;
     const first = serviceChecks[0];
 
     if (first) first.setCustomValidity(hasSelection ? '' : 'Bitte wählen Sie mindestens eine Reinigungsart aus.');
-    if (hasSelection && serviceError) serviceError.textContent = '';
+    if (hasSelection) {
+      if (serviceError) serviceError.textContent = '';
+      serviceFieldset?.classList.remove('has-error');
+      if (first) clearHiddenFieldError(first);
+    }
     if (serviceValue) serviceValue.value = selected.map(key => serviceLabels[key] || key).join(' | ');
     if (serviceEmpty) serviceEmpty.hidden = hasSelection;
 
     servicePanels.forEach(panel => {
-      const active = selected.includes(panel.dataset.servicePanel);
+      const key = panel.dataset.servicePanel;
+      const active = selected.includes(key);
+      const fields = new Set(servicePolicy[key]?.fields || []);
+      const required = new Set(Object.keys(servicePolicy[key]?.required || {}));
       panel.hidden = !active;
       panel.querySelectorAll('input, select, textarea').forEach(field => {
-        field.disabled = !active;
-        if (field.hasAttribute('data-required-when-active')) field.required = active;
+        const applicable = active && fields.has(field.name || field.dataset.estimateFor);
+        field.disabled = !applicable;
+        field.required = applicable && required.has(field.name);
+        if (!applicable) clearHiddenFieldError(field);
+      });
+    });
+
+    optionalGroups.forEach(group => {
+      const name = group.dataset.offerOptionalField;
+      const applicable = (policy.optional_fields?.[name] || []).some(key => selected.includes(key));
+      group.hidden = !applicable;
+      group.querySelectorAll('input, select, textarea').forEach(field => {
+        field.disabled = !applicable;
+        field.required = false;
+        if (!applicable) clearHiddenFieldError(field);
       });
     });
   };
@@ -228,6 +278,7 @@
     exactDateFields.querySelectorAll('input, select, textarea').forEach(field => {
       field.disabled = !visible;
       if (field.hasAttribute('data-required-when-visible')) field.required = visible;
+      if (!visible) clearHiddenFieldError(field);
     });
   };
   appointmentRadios.forEach(radio => radio.addEventListener('change', () => {
@@ -315,8 +366,11 @@
 
   const getValue = name => {
     const field = form.elements.namedItem(name);
-    if (field instanceof RadioNodeList) return String(field.value || '').trim();
-    if (!(field instanceof HTMLElement)) return '';
+    if (field instanceof RadioNodeList) {
+      const selected = [...field].find(input => !input.disabled && input.checked);
+      return String(selected?.value || '').trim();
+    }
+    if (!(field instanceof HTMLElement) || field.matches(':disabled')) return '';
     if (field instanceof HTMLSelectElement) return field.value ? field.selectedOptions[0]?.textContent?.trim() || '' : '';
     if (field instanceof HTMLInputElement && field.type === 'checkbox') return field.checked ? 'Ja' : '';
     return 'value' in field ? String(field.value).trim() : '';
@@ -371,10 +425,10 @@
     ], 0);
 
     addSection('Objekt und Einsatzort', [
-      ['Objekt / Firma', getValue('cleaning_company')],
+      ['Firma / Objektbezeichnung am Einsatzort', getValue('cleaning_company')],
       ['Adresse', [getValue('cleaning_street'), `${getValue('cleaning_postcode')} ${getValue('cleaning_city')}`.trim()].filter(Boolean).join(', ')],
       ['Objektart', getValue('object_type')],
-      ['Etage', getValue('floor')],
+      ['Etage / Zugang zum Einsatzort', getValue('floor')],
       ['Möblierung', getValue('furnishing')],
     ], 1);
 
@@ -396,7 +450,7 @@
     const fullName = [getValue('salutation'), getValue('first_name'), getValue('last_name')].filter(Boolean).join(' ');
     addSection('Kontakt', [
       ['Name', fullName],
-      ['Firma', getValue('company')],
+      ['Firma des Auftraggebers', getValue('company')],
       ['E-Mail', getValue('email')],
       ['Telefon', getValue('phone')],
     ], 3);
@@ -420,6 +474,7 @@
     syncAppointment();
     syncFiles();
     syncContextCity();
+    syncCompanyCopy();
     updateReview();
   });
 
@@ -429,6 +484,7 @@
     syncAppointment();
     syncFiles();
     syncContextCity();
+    syncCompanyCopy();
     updateReview();
   });
 
@@ -436,5 +492,6 @@
   syncAppointment();
   syncFiles();
   syncContextCity();
+  syncCompanyCopy();
   updateReview();
 })();

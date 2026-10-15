@@ -1,8 +1,6 @@
 <?php
 function kem_offer_cities(): array {
-    static $cities = null;
-    if ($cities === null) $cities = (require KEM_CONFIG_DIR . '/forms/offer.php')['cities'];
-    return $cities;
+    return kem_offer_form_config()['cities'];
 }
 
 /** Accept only known scalar tokens; an invalid part does not discard a valid one. */

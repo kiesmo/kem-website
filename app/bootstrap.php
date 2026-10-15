@@ -11,6 +11,7 @@ require_once __DIR__ . '/helpers/pages.php';
 require_once __DIR__ . '/helpers/services.php';
 require_once __DIR__ . '/helpers/service-discovery.php';
 require_once __DIR__ . '/helpers/schema.php';
+require_once __DIR__ . '/forms/offer-request.php';
 require_once __DIR__ . '/helpers/offers.php';
 require_once __DIR__ . '/helpers/actions.php';
 require_once __DIR__ . '/helpers/render-components.php';

@@ -8,7 +8,7 @@
 
 **Input:** [Corrected design audit](design-audit-final3.md), findings A01–A32, checked against actual PHP, CSS, JavaScript, configuration and content. Audit section 11 records the corrections.
 
-**Status:** B1–B5 source implementation is complete; see the [B1](b1-implementation.md), [B2](b2-implementation.md), [B3](b3-implementation.md), [B4](b4-implementation.md) and [B5 implementation records](b5-implementation.md) for changes and validation limits. Additional-browser validation remains open. B6–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
+**Status:** B1–B6 source implementation is complete; see the [B1](b1-implementation.md), [B2](b2-implementation.md), [B3](b3-implementation.md), [B4](b4-implementation.md), [B5](b5-implementation.md) and [B6 implementation records](b6-implementation.md) for changes and validation limits. Additional-browser validation remains open. B7–B9 have not started. This plan was originally created during the verification-only stage; sections below describe the intended work and acceptance criteria.
 
 ## 1. Implementation decisions
 
@@ -40,7 +40,7 @@ The cross-check confirmed the core findings but corrected or qualified the follo
 
 ## 2. Actual architecture and its implications
 
-This table records the verified pre-implementation baseline. B2 has since replaced the image-only hero helper and migrated visible intro fields; B3 introduced the action contract and replaced the transitional mobile enquiry block; B4 added shared discovery cards and local related-link configuration/rendering; B5 connected explicit service/city offer context to editable form initialisation. Current sources are documented in their implementation records.
+This table records the verified pre-implementation baseline. B2 has since replaced the image-only hero helper and migrated visible intro fields; B3 introduced the action contract and replaced the transitional mobile enquiry block; B4 added shared discovery cards and local related-link configuration/rendering; B5 connected explicit service/city offer context to editable form initialisation; B6 added shared field relevance, normalisation and request preparation. Current sources are documented in their implementation records.
 
 | Area | Actual source of truth | Consequence for implementation |
 |---|---|---|

@@ -177,6 +177,32 @@
   line-height: var(--line-meta);
 }
 
+.offer-builder .field > input + .field-hint {
+  margin-top: 8px;
+}
+
+[data-offer-optional-field][hidden],
+[data-copy-object-company][hidden] {
+  display: none !important;
+}
+
+.offer-company-copy {
+  align-self: flex-start;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: var(--primary-dark);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
 .conditional-card,
 .service-detail-panel,
 .appointment-card,

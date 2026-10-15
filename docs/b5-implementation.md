@@ -67,6 +67,6 @@ Generated CSS is unchanged from B4: `3b93d63ed75d0c83e9edb879d66085a5d13681bf9eb
 
 ## Remaining batches
 
-B6–B9 remain unstarted. Field relevance, floor/company consolidation, progress/success behaviour and remaining task/evidence content stay in their planned batches. B5 does not change required object type or suppress existing questions for a preselected service.
+At completion of B5, B6–B9 were unstarted. B5 left field relevance, floor/company consolidation, progress/success behaviour and remaining task/evidence content to their planned batches; it did not change required object type or suppress existing questions for a preselected service. See the [implementation plan](implementation-plan-final3.md) for current progress and later implementation records.
 
 Additional-browser validation remains open because only Chromium is installed and the configured second-browser package source is blocked by network policy. Earlier audit/implementation records retain their own baseline observations; this record documents B5.

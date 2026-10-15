@@ -19,7 +19,7 @@ $offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 </ul>
 </div>
 <p class="offer-duration"><span aria-hidden="true">◷</span><strong>Dauert ca. 2–3 Minuten</strong></p>
-<form action="/api/kontakt.php" class="offer-builder" data-ajax="" data-multistep="" data-offer-form="" enctype="multipart/form-data" method="post" novalidate="">
+<form action="/api/kontakt.php" class="offer-builder" data-ajax="" data-multistep="" data-offer-form="" data-offer-policy="<?= kem_h(json_encode(kem_offer_client_policy(), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)) ?>" enctype="multipart/form-data" method="post" novalidate="">
 <input name="form_type" type="hidden" value="angebot"/>
 <input id="cleaning_types" name="cleaning_types" type="hidden" value=""/>
 <div aria-hidden="true" class="hp"><label>Website<input autocomplete="off" name="website" tabindex="-1"/></label></div>
@@ -56,16 +56,16 @@ $offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 <div class="conditional-card object-location-card">
 <h3>Einsatzort</h3>
 <div class="form-grid">
-<div class="field full"><label for="cleaning_company">Firma / Objektbezeichnung <span class="optional-label">(optional)</span></label><input autocomplete="organization" id="cleaning_company" maxlength="120" name="cleaning_company" placeholder="z. B. Büro Köln"/></div>
-<div class="field full"><label for="cleaning_street">Straße und Hausnummer <span class="optional-label">(optional)</span></label><input autocomplete="street-address" id="cleaning_street" maxlength="160" name="cleaning_street" placeholder="z. B. Musterstraße 12"/></div>
-<div class="field"><label for="cleaning_postcode">PLZ *</label><input autocomplete="postal-code" id="cleaning_postcode" inputmode="numeric" maxlength="5" name="cleaning_postcode" pattern="[0-9]{5}" required=""/></div>
-<div class="field"><label for="cleaning_city">Ort *</label><input autocomplete="address-level2" id="cleaning_city" maxlength="100" name="cleaning_city" required="" value="<?= kem_h($offerCity) ?>"/></div>
+<div class="field full"><label for="cleaning_company">Firma / Objektbezeichnung am Einsatzort <span class="optional-label">(optional)</span></label><input aria-describedby="cleaning-company-hint" autocomplete="section-object organization" id="cleaning_company" maxlength="120" name="cleaning_company" placeholder="z. B. Büro Köln"/><p class="field-hint" id="cleaning-company-hint">Bezeichnung des zu reinigenden Objekts; der Auftraggeber kann davon abweichen.</p></div>
+<div class="field full"><label for="cleaning_street">Straße und Hausnummer <span class="optional-label">(optional)</span></label><input autocomplete="section-object street-address" id="cleaning_street" maxlength="160" name="cleaning_street" placeholder="z. B. Musterstraße 12"/></div>
+<div class="field"><label for="cleaning_postcode">PLZ *</label><input autocomplete="section-object postal-code" id="cleaning_postcode" inputmode="numeric" maxlength="5" name="cleaning_postcode" pattern="[0-9]{5}" required=""/></div>
+<div class="field"><label for="cleaning_city">Ort *</label><input autocomplete="section-object address-level2" id="cleaning_city" maxlength="100" name="cleaning_city" required="" value="<?= kem_h($offerCity) ?>"/></div>
 </div>
 </div>
 <div class="form-grid object-basics-new">
 <div class="field"><label for="object_type">Objektart *</label><select id="object_type" name="object_type" required=""><option value="">Bitte auswählen</option><option>Wohnung</option><option>Einfamilienhaus</option><option>Mehrfamilienhaus</option><option>Büro / Gewerbe</option><option>Praxis / Kanzlei</option><option>Gastronomie / Hotel</option><option>Öffentliche Einrichtung</option><option>Industrie / Lager</option><option>Sonstiges Objekt</option></select></div>
-<div class="field"><label for="floor">Stockwerk / Etage <span class="optional-label">(optional)</span></label><input id="floor" maxlength="60" name="floor" placeholder="z. B. EG oder 4. OG"/></div>
-<div class="field full"><label for="furnishing">Art der Möblierung <span class="optional-label">(optional)</span></label><select id="furnishing" name="furnishing"><option value="">Bitte auswählen</option><option>Unmöbliert / leer</option><option>Teilweise möbliert</option><option>Voll möbliert</option><option>Nicht relevant</option></select></div>
+<div class="field" data-offer-optional-field="floor"><label for="floor">Etage / Zugang zum Einsatzort <span class="optional-label">(optional)</span></label><input aria-describedby="floor-hint" id="floor" maxlength="180" name="floor" placeholder="z. B. EG, 3. OG oder Zugang über den Hof"/><p class="field-hint" id="floor-hint">Gilt für alle gewählten Leistungen am selben Einsatzort. Mehrere Etagen oder Zugänge können Sie gemeinsam angeben.</p></div>
+<div class="field full" data-offer-optional-field="furnishing"><label for="furnishing">Art der Möblierung <span class="optional-label">(optional)</span></label><select id="furnishing" name="furnishing"><option value="">Bitte auswählen</option><option>Unmöbliert / leer</option><option>Teilweise möbliert</option><option>Voll möbliert</option><option>Nicht relevant</option></select></div>
 </div>
 <div class="service-detail-empty" data-service-detail-empty="">Bitte wählen Sie im vorherigen Schritt mindestens eine Reinigungsart aus.</div>
 <section class="service-detail-panel" data-service-panel="office" hidden="">
@@ -138,11 +138,10 @@ $offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 <div class="field full"><label for="solar_notes">Zusätzliche Informationen <span class="optional-label">(optional)</span></label><textarea id="solar_notes" maxlength="2000" name="solar_notes" placeholder="Dachhöhe, Wasseranschluss, Wechselrichter oder besondere Zugangsbedingungen"></textarea></div>
 </div>
 </section><section class="service-detail-panel" data-service-panel="clearance" hidden="">
-<div class="detail-panel-heading"><span>07</span><div><h3>Entrümpelung</h3><p>Angaben zum Umfang, zur Etage und zur Entsorgung.</p></div></div>
+<div class="detail-panel-heading"><span>07</span><div><h3>Entrümpelung</h3><p>Angaben zum Umfang und zur Entsorgung. Etage und Zugang können Sie oben für den Einsatzort angeben.</p></div></div>
 <div class="form-grid">
 <div class="field"><label for="clearance_area">Objektfläche *</label><input data-required-when-active="" id="clearance_area" inputmode="decimal" maxlength="20" name="clearance_area" placeholder="in m²"/><label class="estimate-option" for="clearance_area_estimate"><input aria-controls="clearance_area" data-estimate-for="clearance_area" id="clearance_area_estimate" type="checkbox"/><span>Weiß ich nicht – bitte vor Ort einschätzen</span></label></div>
 <div class="field"><label for="clearance_volume">Geschätztes Volumen <span class="optional-label">(optional)</span></label><input id="clearance_volume" maxlength="80" name="clearance_volume" placeholder="z. B. 1 Kellerraum oder 20 m³"/></div>
-<div class="field"><label for="clearance_floor">Etage / Zugang <span class="optional-label">(optional)</span></label><input id="clearance_floor" maxlength="80" name="clearance_floor" placeholder="z. B. 3. OG"/></div>
 <div class="field"><label for="clearance_elevator">Aufzug vorhanden? <span class="optional-label">(optional)</span></label><select id="clearance_elevator" name="clearance_elevator"><option value="">Bitte auswählen</option><option>Ja</option><option>Nein</option><option>Nicht erforderlich</option></select></div>
 <div class="field"><label for="clearance_scope">Gewünschter Umfang *</label><select data-required-when-active="" id="clearance_scope" name="clearance_scope"><option value="">Bitte auswählen</option><option>Abtransport und Entsorgung</option><option>Entrümpelung besenrein</option><option>Entrümpelung mit Endreinigung</option><option>Nur Transport / Räumung</option></select></div>
 <div class="field full"><label for="clearance_notes">Zusätzliche Informationen <span class="optional-label">(optional)</span></label><textarea id="clearance_notes" maxlength="2000" name="clearance_notes" placeholder="Sperrige Gegenstände, Sondermüll, Parkmöglichkeit oder sonstige Hinweise"></textarea></div>
@@ -187,12 +186,12 @@ $offerCity = kem_offer_cities()[$offerContext['city'] ?? ''] ?? '';
 <section class="form-step" data-step-name="Kontaktdaten">
 <div class="step-heading"><span>Schritt 4 von 5</span><h2>Wie dürfen wir Sie erreichen?</h2><p>Wir benötigen nur die Kontaktdaten, die wir für Rückfragen und die Zusendung Ihres unverbindlichen Angebots brauchen.</p></div>
 <div class="form-grid">
-<div class="field"><label for="salutation">Anrede <span class="optional-label">(optional)</span></label><select autocomplete="honorific-prefix" id="salutation" name="salutation"><option value="">Bitte auswählen</option><option>Frau</option><option>Herr</option><option>Divers</option><option>Keine Angabe</option></select></div>
-<div class="field"><label for="company">Firma <span class="optional-label">(optional)</span></label><input autocomplete="organization" id="company" maxlength="120" name="company" placeholder="z. B. Muster GmbH"/></div>
-<div class="field"><label for="first_name">Vorname *</label><input autocomplete="given-name" id="first_name" maxlength="80" name="first_name" required=""/></div>
-<div class="field"><label for="last_name">Nachname *</label><input autocomplete="family-name" id="last_name" maxlength="80" name="last_name" required=""/></div>
-<div class="field full"><label for="offer-email">E-Mail-Adresse *</label><input autocomplete="email" id="offer-email" maxlength="160" name="email" required="" type="email"/></div>
-<div class="field full"><label for="offer-phone">Telefon <span class="optional-label">(optional)</span></label><input aria-describedby="offer-phone-hint" autocomplete="tel" id="offer-phone" maxlength="30" name="phone" pattern="[0-9+\(\) /.\-]{6,30}" type="tel"/><p class="field-hint contact-hint" id="offer-phone-hint">Praktisch für kurze Rückfragen – wir antworten sonst per E-Mail.</p></div>
+<div class="field"><label for="salutation">Anrede <span class="optional-label">(optional)</span></label><select autocomplete="section-customer honorific-prefix" id="salutation" name="salutation"><option value="">Bitte auswählen</option><option>Frau</option><option>Herr</option><option>Divers</option><option>Keine Angabe</option></select></div>
+<div class="field"><label for="company">Firma des Auftraggebers <span class="optional-label">(optional)</span></label><input aria-describedby="company-hint" autocomplete="section-customer organization" id="company" maxlength="120" name="company" placeholder="z. B. Muster GmbH"/><p class="field-hint" id="company-hint">Nur falls Sie im Namen eines Unternehmens anfragen.</p><p class="field-hint" data-object-company-preview="" hidden="">Angabe am Einsatzort: <span data-object-company-value=""></span></p><button class="offer-company-copy" data-copy-object-company="" hidden="" type="button">Angabe vom Einsatzort übernehmen</button></div>
+<div class="field"><label for="first_name">Vorname *</label><input autocomplete="section-customer given-name" id="first_name" maxlength="80" name="first_name" required=""/></div>
+<div class="field"><label for="last_name">Nachname *</label><input autocomplete="section-customer family-name" id="last_name" maxlength="80" name="last_name" required=""/></div>
+<div class="field full"><label for="offer-email">E-Mail-Adresse *</label><input autocomplete="section-customer email" id="offer-email" maxlength="160" name="email" required="" type="email"/></div>
+<div class="field full"><label for="offer-phone">Telefon <span class="optional-label">(optional)</span></label><input aria-describedby="offer-phone-hint" autocomplete="section-customer tel" id="offer-phone" maxlength="30" name="phone" pattern="[0-9+\(\) /.\-]{6,30}" type="tel"/><p class="field-hint contact-hint" id="offer-phone-hint">Praktisch für kurze Rückfragen – wir antworten sonst per E-Mail.</p></div>
 </div>
 <div class="form-actions"><button class="btn secondary" data-prev="" type="button">Zurück</button><button class="btn" data-next="" type="button">Angaben prüfen</button></div>
 </section>
