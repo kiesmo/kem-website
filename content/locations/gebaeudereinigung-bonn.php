@@ -37,9 +37,3 @@
 <div class="faq-list"><details class="faq-item"><summary>Ist KEM auch für private Reinigungsaufträge in Bonn verfügbar?</summary><p>Ja. Neben gewerblichen Aufträgen können je nach Leistung auch private Objekte in Bonn angefragt werden.</p></details><details class="faq-item"><summary>Welche Angaben braucht KEM für ein Angebot in Bonn?</summary><p>Am wichtigsten sind Standort, Objektart, gewünschte Leistung und ungefährer Umfang. Je nach Auftrag können ergänzende Fotos oder weitere Angaben hilfreich sein.</p></details><details class="faq-item"><summary>Kann ich mehrere Reinigungsleistungen kombinieren?</summary><p>Je nach Objekt können mehrere Leistungen gemeinsam geplant werden. Welche Kombination sinnvoll ist und wie der Umfang abgegrenzt wird, klären wir bei der Anfrage.</p></details></div>
 </div>
 </section>
-<section class="section service-more-section">
-<div class="container">
-<h2>Weitere Einsatzgebiete</h2>
-<nav aria-label="Weitere Einsatzgebiete" class="service-nav"><a href="/gebaeudereinigung-bruehl/">Gebäudereinigung Brühl</a><a href="/gebaeudereinigung-koeln/">Gebäudereinigung Köln</a></nav>
-</div>
-</section>

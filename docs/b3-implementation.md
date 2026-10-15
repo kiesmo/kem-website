@@ -68,6 +68,6 @@ Generated CSS SHA-256: `4ca77b4045aa217e1c03e200103e16f89b0e9f4b730950b0eec562f4
 
 ## Remaining batches
 
-B4–B9 remain unstarted. This change preserves content/media/related-link order, form relevance rules, progress/success behaviour and existing business claims. Additional-browser validation remains open because only Chromium is installed; the configured package source for another browser remains blocked by network policy.
+At completion of B3, B4–B9 were unstarted. [B4 has since been implemented](b4-implementation.md); B5–B9 remain unstarted. B3 itself preserved content/media/related-link order, form relevance rules, progress/success behaviour and existing business claims. Additional-browser validation remains open because only Chromium is installed; the configured package source for another browser remains blocked by network policy.
 
 The original audit and earlier implementation records retain their historical baseline observations; current changes and validation belong to this record.

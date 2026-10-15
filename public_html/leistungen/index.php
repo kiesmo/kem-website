@@ -6,12 +6,70 @@ $servicesCurrent = true;
 require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 ?>
 <main id="main"><?php kem_render_breadcrumbs($pageKey); ?>
-<?php kem_render_page_intro($pageKey); ?><section class="section"><div class="container"><p class="narrow">Welche Leistungen sinnvoll sind, hängt von Ihrem Objekt, der Nutzung und dem gewünschten Umfang ab. Reinigungsintervalle und Einsatzzeiten stimmen wir vorab mit Ihnen ab. Bei Bedarf sind nach Abstimmung auch kurzfristige Termine möglich.</p><h2>Leistungen auf einen Blick</h2><div class="service-overview-groups">
-<article class="service-overview-group"><h3>Objekt- &amp; Gewerbereinigung</h3><ul class="check-grid check-grid--single"><li>Büroreinigung aller Art und Größen</li><li>Gewerbliche Flächen, Lager und Ladenlokale</li><li>Treppenhäuser</li><li>Reinigung von Sanitäranlagen</li><li>Praxis- und Gastronomiereinigung</li><li>Messe- und Eventreinigung</li><li>Industriereinigung</li></ul></article>
-<article class="service-overview-group"><h3>Glas, Fassade &amp; Außenbereiche</h3><ul class="check-grid check-grid--single"><li>Glas- und Fensterreinigung</li><li>Fensterrahmen- und Fensterbretterreinigung</li><li>Dachfenster und Oberlichter</li><li>Jalousien- und Lamellenreinigung</li><li>Wintergartenreinigung</li><li>Fassadenreinigung</li><li>Graffiti-Entfernung</li><li>Terrassen- und Steinreinigung</li><li>Eingangsbereiche und Außentreppen</li><li>Reinigung moosbefallener Flächen</li><li>Solar- und Photovoltaikanlagenreinigung</li></ul></article>
-<article class="service-overview-group"><h3>Grund-, Bau- &amp; Spezialreinigung</h3><ul class="check-grid check-grid--single"><li>Grundreinigung</li><li>Endreinigung</li><li>Bau- und Umzugsreinigung</li><li>EDV-Anlagenreinigung</li><li>Hygiene-, Desinfektions- und Reinraumreinigung</li><li>Nikotinreinigung</li><li>Reinigung nach Wasserschäden</li><li>Messie-Reinigung</li></ul></article>
-<article class="service-overview-group"><h3>Textilien, Haushalt &amp; Räumung</h3><ul class="check-grid check-grid--single"><li>Teppichreinigung</li><li>Polsterreinigung</li><li>Haushalts-, Haus- und Wohnungsreinigung</li><li>Entrümpelungen</li></ul></article>
-</div></div></section><section class="section soft"><div class="container"><div class="service-grid"><article class="service-card photo-card"><img alt="Büro- und Gewerberaumreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content.webp" width="1200"><div class="body"><h3>Büro- und Gewerberaumreinigung</h3><p>Regelmäßige Sauberkeit für Büros, Verkaufsflächen, Lager und gemeinsam genutzte Bereiche – abgestimmt auf Ihre Abläufe.</p><a class="more" href="/leistungen/buero-und-gewerberaumreinigung/">Zur Büro- &amp; Gewerbereinigung ›</a></div></article><article class="service-card photo-card"><img alt="Glas- und Fensterreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-02.webp" width="1200"><div class="body"><h3>Glas- und Fensterreinigung</h3><p>Streifenfreie Reinigung von Glasflächen, Rahmen und schwer erreichbaren Verglasungen – sorgfältig und objektspezifisch geplant.</p><a class="more" href="/leistungen/glas-und-fensterreinigung/">Zur Glas- &amp; Fensterreinigung ›</a></div></article><article class="service-card photo-card"><img alt="Grund- und Spezialreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-03.webp" width="1200"><div class="body"><h3>Grund- und Spezialreinigung</h3><p>Intensive Reinigung nach Bauarbeiten, bei Übergaben oder bei besonders hartnäckigen und anspruchsvollen Verschmutzungen.</p><a class="more" href="/leistungen/grundreinigung/">Zur Grund- &amp; Spezialreinigung ›</a></div></article><article class="service-card photo-card"><img alt="Teppichreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-04.webp" width="1200"><div class="body"><h3>Teppichreinigung</h3><p>Materialgerechte Reinigung von Teppichböden und textilen Flächen zur Entfernung von Schmutz, Flecken und Laufspuren.</p><a class="more" href="/leistungen/teppichreinigung/">Zur Teppichreinigung ›</a></div></article><article class="service-card photo-card"><img alt="Polsterreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-05.webp" width="1200"><div class="body"><h3>Polsterreinigung</h3><p>Schonende Tiefenreinigung für Sofas, Sessel, Stühle und weitere Polstermöbel – passend zu Material und Nutzung.</p><a class="more" href="/leistungen/polsterreinigung/">Zur Polsterreinigung ›</a></div></article><article class="service-card photo-card"><img alt="Entrümpelung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-06.webp" width="1200"><div class="body"><h3>Entrümpelung</h3><p>Geplante Räumung von Wohnungen, Kellern, Büros und Gewerbeflächen einschließlich besenreiner Übergabe nach Absprache.</p><a class="more" href="/leistungen/entruempelung/">Zur Entrümpelung ›</a></div></article><article class="service-card photo-card"><img alt="Fassaden- und Graffitireinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-07.webp" width="1200"><div class="body"><h3>Fassaden- und Graffitireinigung</h3><p>Fachgerechte Reinigung von Fassaden und Außenflächen sowie Entfernung störender Graffiti nach Prüfung des Untergrunds.</p><a class="more" href="/leistungen/fassadenreinigung/">Zur Fassaden- &amp; Graffitireinigung ›</a></div></article><article class="service-card photo-card"><img alt="Solar- und Photovoltaikanlagenreinigung" height="800" loading="lazy" src="/assets/img/pages/leistungen/leistungen-content-08.webp" width="1200"><div class="body"><h3>Solar- und Photovoltaikanlagenreinigung</h3><p>Schonende Reinigung von Solar- und Photovoltaikmodulen zur Entfernung von Staub, Pollen und organischen Ablagerungen.</p><a class="more" href="/leistungen/solaranlagenreinigung/">Zur Solar- &amp; PV-Reinigung ›</a></div></article></div></div></section><section class="section soft">
+<?php kem_render_page_intro($pageKey); ?><section class="section service-discovery-section" aria-labelledby="leistungen-auswahl">
+<div class="container">
+<h2 id="leistungen-auswahl">Leistungen auf einen Blick</h2>
+<?php kem_render_service_discovery('overview'); ?>
+</div>
+</section>
+<section class="section soft service-discovery-extras" aria-labelledby="weitere-reinigungsarbeiten">
+<div class="container">
+<h2 id="weitere-reinigungsarbeiten">Weitere Reinigungsarbeiten</h2>
+<p class="prose">Welche Leistungen sinnvoll sind, hängt von Ihrem Objekt, der Nutzung und dem gewünschten Umfang ab. Reinigungsintervalle und Einsatzzeiten stimmen wir vorab mit Ihnen ab. Bei Bedarf sind nach Abstimmung auch kurzfristige Termine möglich.</p>
+<div class="service-discovery-groups">
+<details class="service-discovery-group">
+<summary class="service-discovery-group__summary">Objekt- &amp; Gewerbereinigung</summary>
+<ul class="service-discovery-group__terms">
+<li>Büroreinigung aller Art und Größen</li>
+<li>Gewerbliche Flächen, Lager und Ladenlokale</li>
+<li>Treppenhäuser</li>
+<li>Reinigung von Sanitäranlagen</li>
+<li>Praxis- und Gastronomiereinigung</li>
+<li>Messe- und Eventreinigung</li>
+<li>Industriereinigung</li>
+</ul>
+</details>
+<details class="service-discovery-group">
+<summary class="service-discovery-group__summary">Glas, Fassade &amp; Außenbereiche</summary>
+<ul class="service-discovery-group__terms">
+<li>Glas- und Fensterreinigung</li>
+<li>Fensterrahmen- und Fensterbretterreinigung</li>
+<li>Dachfenster und Oberlichter</li>
+<li>Jalousien- und Lamellenreinigung</li>
+<li>Wintergartenreinigung</li>
+<li>Fassadenreinigung</li>
+<li>Graffiti-Entfernung</li>
+<li>Terrassen- und Steinreinigung</li>
+<li>Eingangsbereiche und Außentreppen</li>
+<li>Reinigung moosbefallener Flächen</li>
+<li>Solar- und Photovoltaikanlagenreinigung</li>
+</ul>
+</details>
+<details class="service-discovery-group">
+<summary class="service-discovery-group__summary">Grund-, Bau- &amp; Spezialreinigung</summary>
+<ul class="service-discovery-group__terms">
+<li>Grundreinigung</li>
+<li>Endreinigung</li>
+<li>Bau- und Umzugsreinigung</li>
+<li>EDV-Anlagenreinigung</li>
+<li>Hygiene-, Desinfektions- und Reinraumreinigung</li>
+<li>Nikotinreinigung</li>
+<li>Reinigung nach Wasserschäden</li>
+<li>Messie-Reinigung</li>
+</ul>
+</details>
+<details class="service-discovery-group">
+<summary class="service-discovery-group__summary">Textilien, Haushalt &amp; Räumung</summary>
+<ul class="service-discovery-group__terms">
+<li>Teppichreinigung</li>
+<li>Polsterreinigung</li>
+<li>Haushalts-, Haus- und Wohnungsreinigung</li>
+<li>Entrümpelungen</li>
+</ul>
+</details>
+</div>
+</div>
+</section><section class="section soft">
 <div class="container">
 <span class="eyebrow">Einsatzgebiete</span>
 <h2>Reinigungsservice in Brühl, Köln und Bonn</h2>

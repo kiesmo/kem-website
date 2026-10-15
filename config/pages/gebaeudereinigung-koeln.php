@@ -60,4 +60,13 @@ return array (
     'class' => 'cta-band service-cta-band',
     'content' => 'ctas/gebaeudereinigung-koeln.php',
   ),
+  'related_links' =>
+  array (
+    'heading' => 'Weitere Einsatzgebiete',
+    'links' =>
+    array (
+      array ('label' => 'Gebäudereinigung Brühl', 'href' => '/gebaeudereinigung-bruehl/'),
+      array ('label' => 'Gebäudereinigung Bonn', 'href' => '/gebaeudereinigung-bonn/'),
+    ),
+  ),
 );

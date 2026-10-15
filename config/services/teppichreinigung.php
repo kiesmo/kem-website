@@ -16,7 +16,7 @@ return array (
   array (
     'eyebrow' => 'Teppichreinigung',
     'title' => 'Teppichreinigung in Köln, Brühl, Bonn & Umgebung',
-    'lead' => 'Teppichböden und textile Flächen nehmen mit der Zeit Schmutz, Staub und Flecken auf. KEM reinigt fest verlegte und lose Teppiche materialgerecht für private und gewerbliche Kunden.',
+    'lead' => 'KEM reinigt fest verlegte Teppichböden und geeignete lose Teppiche für private und gewerbliche Kunden. Material, Zustand und Flecken bestimmen, welche Behandlung infrage kommt.',
     'body_content' => 'services/teppichreinigung/body.php',
   ),
   'summary_content' => 'services/teppichreinigung/summary.php',

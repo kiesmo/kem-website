@@ -37,9 +37,3 @@
 <div class="faq-list"><details class="faq-item"><summary>Welche Reinigungsleistungen bietet KEM in Köln an?</summary><p>Zu den zentralen Leistungen gehören unter anderem Büro- und Gewerbereinigung, Glas- und Fensterreinigung, Grundreinigung, Teppich- und Polsterreinigung, Fassadenreinigung, PV-Reinigung und Entrümpelung.</p></details><details class="faq-item"><summary>Kann die Büroreinigung in Köln regelmäßig stattfinden?</summary><p>Ja. Der Turnus kann passend zu Nutzung und Anforderungen des Objekts vereinbart werden. Auch die Ausführungszeiten werden vorab abgestimmt.</p></details><details class="faq-item"><summary>Wie wird der Preis für eine Gebäudereinigung in Köln bestimmt?</summary><p>Der Preis hängt vom konkreten Auftrag ab. Berücksichtigt werden beispielsweise Objektart, Fläche beziehungsweise Umfang, Verschmutzung, Zugänglichkeit, Leistungsumfang und bei regelmäßigen Arbeiten der vereinbarte Turnus.</p></details></div>
 </div>
 </section>
-<section class="section service-more-section">
-<div class="container">
-<h2>Weitere Einsatzgebiete</h2>
-<nav aria-label="Weitere Einsatzgebiete" class="service-nav"><a href="/gebaeudereinigung-bruehl/">Gebäudereinigung Brühl</a><a href="/gebaeudereinigung-bonn/">Gebäudereinigung Bonn</a></nav>
-</div>
-</section>

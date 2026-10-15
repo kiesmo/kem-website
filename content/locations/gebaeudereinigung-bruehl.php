@@ -37,9 +37,3 @@
 <div class="faq-list"><details class="faq-item"><summary>Reinigt KEM private und gewerbliche Objekte in Brühl?</summary><p>Ja. Je nach Leistung können sowohl private als auch gewerblich genutzte Objekte in Brühl angefragt werden. Den konkreten Umfang klären wir vorab.</p></details><details class="faq-item"><summary>Sind regelmäßige Reinigungstermine in Brühl möglich?</summary><p>Ja. Bei geeigneten Leistungen kann ein wiederkehrender Turnus vereinbart werden. Häufigkeit und Ausführungszeiten richten sich nach Objekt und Absprache.</p></details><details class="faq-item"><summary>Wie erhalte ich ein Angebot für eine Reinigung in Brühl?</summary><p>Senden Sie uns die wichtigsten Eckdaten über die Angebotsanfrage oder kontaktieren Sie uns telefonisch beziehungsweise per E-Mail. Danach klären wir die noch benötigten Angaben und erstellen ein individuelles Angebot.</p></details></div>
 </div>
 </section>
-<section class="section service-more-section">
-<div class="container">
-<h2>Weitere Einsatzgebiete</h2>
-<nav aria-label="Weitere Einsatzgebiete" class="service-nav"><a href="/gebaeudereinigung-koeln/">Gebäudereinigung Köln</a><a href="/gebaeudereinigung-bonn/">Gebäudereinigung Bonn</a></nav>
-</div>
-</section>

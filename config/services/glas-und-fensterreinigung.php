@@ -16,7 +16,7 @@ return array (
   array (
     'eyebrow' => 'Glas- und Fensterreinigung',
     'title' => 'Glas-, Fenster- und Rahmenreinigung',
-    'lead' => 'KEM reinigt Fenster, Rahmen und weitere Glasflächen für private und gewerbliche Objekte. Welche Flächen einbezogen werden, stimmen wir vorab passend zu Ihrem Objekt und der jeweiligen Zugänglichkeit ab.',
+    'lead' => 'KEM reinigt Fenster und weitere Glasflächen für private und gewerbliche Objekte. Rahmen, Falze und angrenzende Bereiche können in den vereinbarten Leistungsumfang einbezogen werden.',
     'body_content' => 'services/glas-und-fensterreinigung/body.php',
   ),
   'summary_content' => 'services/glas-und-fensterreinigung/summary.php',

@@ -1,9 +1,5 @@
 /* Tablet */
 @media (max-width: 1180px) {
-  .service-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .header-inner {
     gap: 18px;
   }
@@ -261,43 +257,13 @@
     height: 280px;
   }
 
-  .service-overview-groups {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-  }
-
-  .service-grid,
   .check-grid,
   .form-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .services-kem .service-card {
-    min-height: 300px;
-    padding-top: 22px;
-  }
-
-  .services-kem .service-icon {
-    height: 82px;
-  }
-
-  .services-kem .service-icon svg {
-    width: 72px;
-    height: 72px;
-  }
-
-  .services-kem .service-card p {
-    margin-bottom: 18px;
-    font-size: var(--text-body);
-    line-height: var(--line-body);
-  }
-
   .field.full {
     grid-column: auto;
-  }
-
-  .service-card {
-    min-height: 0;
   }
 
   .footer-main {

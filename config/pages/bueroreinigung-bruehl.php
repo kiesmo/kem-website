@@ -65,4 +65,13 @@ return array (
     'class' => 'cta-band service-cta-band',
     'content' => 'ctas/bueroreinigung-bruehl.php',
   ),
+  'related_links' =>
+  array (
+    'heading' => 'Büroreinigung in weiteren Einsatzgebieten',
+    'links' =>
+    array (
+      array ('label' => 'Büroreinigung Köln', 'href' => '/bueroreinigung-koeln/'),
+      array ('label' => 'Büroreinigung Bonn', 'href' => '/bueroreinigung-bonn/'),
+    ),
+  ),
 );

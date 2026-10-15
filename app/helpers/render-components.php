@@ -59,3 +59,18 @@ if (!function_exists('kem_render_page_cta')) {
         echo '</div></section>';
     }
 }
+if (!function_exists('kem_render_related_links')) {
+    function kem_render_related_links(string $pageKey): void {
+        $related = kem_page_data($pageKey)['related_links'] ?? [];
+        if (empty($related['heading']) || empty($related['links'])) return;
+
+        $heading = kem_h($related['heading']);
+        echo '<section class="section related-links-section"><div class="container"><h2>' . $heading . '</h2>';
+        echo '<nav class="service-nav" aria-label="' . $heading . '">';
+        foreach ($related['links'] as $link) {
+            if (empty($link['href']) || empty($link['label'])) continue;
+            echo '<a href="' . kem_h($link['href']) . '">' . kem_h($link['label']) . '</a>';
+        }
+        echo '</nav></div></section>';
+    }
+}

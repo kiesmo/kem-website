@@ -43,4 +43,4 @@ Generated CSS SHA-256: `2a14fd817746c8a995123b499e6f0335442590cf89a632b91515887f
 
 ## Remaining batches
 
-At completion of B1, B2–B9 had not started. B2 and B3 have since been implemented; see [B2](b2-implementation.md) and [B3](b3-implementation.md). B4–B9 remain unstarted. B1 itself did not redesign page heads, remove the existing floating WhatsApp control, change form-field relevance, alter progress/success behaviour, reorder service content or add business claims. The audit remains a record of the original baseline, with the implementation records describing subsequent changes.
+At completion of B1, B2–B9 had not started. B2–B4 have since been implemented; see [B2](b2-implementation.md), [B3](b3-implementation.md) and [B4](b4-implementation.md). B5–B9 remain unstarted. B1 itself did not redesign page heads, remove the existing floating WhatsApp control, change form-field relevance, alter progress/success behaviour, reorder service content or add business claims. The audit remains a record of the original baseline, with the implementation records describing subsequent changes.

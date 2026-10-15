@@ -18,4 +18,5 @@ require KEM_TEMPLATES_DIR . '/header.php';
 <?php kem_render_page_intro($pageKey); ?>
 <?php require $contentFile; ?>
 <?php kem_render_page_cta($pageKey); ?>
+<?php kem_render_related_links($pageKey); ?>
 </main><?php require KEM_TEMPLATES_DIR . '/footer.php'; ?></body></html>

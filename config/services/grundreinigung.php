@@ -16,7 +16,7 @@ return array (
   array (
     'eyebrow' => 'Grund- und Spezialreinigung',
     'title' => 'Grundreinigung in Köln, Brühl, Bonn & Umgebung',
-    'lead' => 'KEM übernimmt intensive Grundreinigungen für private und gewerbliche Objekte. Den Reinigungsumfang stimmen wir auf Zustand, Materialien und Anlass ab – zum Beispiel vor Übergaben, nach Renovierungen oder bei besonders hartnäckigen Verschmutzungen.',
+    'lead' => 'KEM übernimmt intensive Grundreinigungen für private und gewerbliche Objekte – etwa nach Bau- oder Renovierungsarbeiten, vor Übergaben oder bei hartnäckigen Verschmutzungen.',
     'body_content' => 'services/grundreinigung/body.php',
   ),
   'summary_content' => 'services/grundreinigung/summary.php',

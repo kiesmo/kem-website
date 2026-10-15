@@ -16,7 +16,7 @@ return array (
   array (
     'eyebrow' => 'Fassaden- und Graffitireinigung',
     'title' => 'Fassaden- und Graffitireinigung in Köln, Brühl, Bonn & Umgebung',
-    'lead' => 'Eine gepflegte Fassade prägt den ersten Eindruck eines Gebäudes. KEM reinigt geeignete Fassaden und Außenflächen und stimmt das Verfahren auf Oberfläche, Verschmutzung und Zugänglichkeit ab.',
+    'lead' => 'KEM übernimmt die Reinigung geeigneter Fassaden- und Außenflächen sowie die Behandlung geeigneter Graffiti für private und gewerbliche Immobilien.',
     'body_content' => 'services/fassadenreinigung/body.php',
   ),
   'summary_content' => 'services/fassadenreinigung/summary.php',

@@ -587,32 +587,6 @@
   font-weight: 900;
 }
 
-.service-overview-groups {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px;
-  margin-top: 24px;
-}
-
-.service-overview-group {
-  min-width: 0;
-  padding: var(--card-space);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-}
-
-.service-overview-group h3 {
-  margin: 0 0 10px;
-  color: var(--primary);
-  font-size: var(--heading-3);
-}
-
-.service-overview-group .check-grid {
-  margin: 0;
-}
-
 .cta-band {
   text-align: center;
   background: #f7f9fb;

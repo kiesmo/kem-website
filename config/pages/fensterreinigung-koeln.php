@@ -65,4 +65,13 @@ return array (
     'class' => 'cta-band service-cta-band',
     'content' => 'ctas/fensterreinigung-koeln.php',
   ),
+  'related_links' =>
+  array (
+    'heading' => 'Fensterreinigung in weiteren Einsatzgebieten',
+    'links' =>
+    array (
+      array ('label' => 'Fensterreinigung Brühl', 'href' => '/fensterreinigung-bruehl/'),
+      array ('label' => 'Fensterreinigung Bonn', 'href' => '/fensterreinigung-bonn/'),
+    ),
+  ),
 );

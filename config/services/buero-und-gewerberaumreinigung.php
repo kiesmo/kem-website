@@ -16,7 +16,7 @@ return array (
   array (
     'eyebrow' => 'Büro- und Gewerbe­raumreinigung',
     'title' => 'Büro- und Gewerbe­raumreinigung',
-    'lead' => 'Für Büros und Gewerbeflächen übernehmen wir die laufende Unterhaltsreinigung ebenso wie individuell vereinbarte Reinigungseinsätze. Leistungsumfang, Reinigungsintervall und Ausführungszeiten stimmen wir auf Ihr Objekt und Ihre betrieblichen Abläufe ab.',
+    'lead' => 'KEM übernimmt laufende Unterhaltsreinigung und einzelne Reinigungseinsätze für Büros und Gewerbeflächen. Dazu können Böden, frei zugängliche Oberflächen sowie Sanitär- und Küchenbereiche gehören.',
     'body_content' => 'services/buero-und-gewerberaumreinigung/body.php',
   ),
   'summary_content' => 'services/buero-und-gewerberaumreinigung/summary.php',
