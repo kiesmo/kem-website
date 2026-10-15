@@ -914,6 +914,15 @@ h3 {
   padding: 20px;
 }
 
+.service-discovery--home .service-discovery__icon {
+  display: block;
+  width: 4rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 18px;
+  color: var(--primary);
+}
+
 .service-discovery__title {
   margin: 0;
   color: var(--primary-dark);
