@@ -2,5 +2,5 @@
 declare(strict_types=1);
 
 return [
-    'password' => 'PASSWORD',
+    'password' => 'TMP_PASS!',
 ];
