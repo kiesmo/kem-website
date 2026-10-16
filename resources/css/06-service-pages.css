@@ -95,11 +95,6 @@
   font-weight: 700;
 }
 
-.service-summary-card {
-  position: sticky;
-  top: calc(var(--header-height) + 16px);
-}
-
 .service-summary-card .eyebrow {
   margin-top: 4px;
 }
@@ -136,12 +131,6 @@
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (max-width: 61.25em) {
-  .service-summary-card {
-    position: static;
-  }
 }
 
 @media (max-width: 720px) {
