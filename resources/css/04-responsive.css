@@ -232,6 +232,35 @@
     width: min(calc(100% - 28px), var(--max));
   }
 
+  .service-discovery--home {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .service-discovery--home .service-discovery__body {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 8px 12px;
+    align-items: start;
+    padding: 16px;
+  }
+
+  .service-discovery--home .service-discovery__icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 40px;
+    margin: 0;
+  }
+
+  .service-discovery--home .service-discovery__title,
+  .service-discovery--home .service-discovery__description {
+    grid-column: 2;
+  }
+
+  .service-discovery--home .service-discovery__description {
+    margin: 0;
+  }
+
   .hero {
     min-height: clamp(350px, calc(80svh - var(--header-height)), 470px);
   }
