@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/grundreinigung/
 return array (
-  'title' => 'Grundreinigung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Grundreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Professionelle Grundreinigung in Köln, Brühl und Bonn für Übergaben, Renovierungen, Umzüge und intensive Reinigungsarbeiten nach individuellem Bedarf.',
   'path' => '/leistungen/grundreinigung/',
   'og_image' => '/assets/img/services/grundreinigung/grundreinigung-hero.webp',

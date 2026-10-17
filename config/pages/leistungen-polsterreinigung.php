@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/polsterreinigung/
 return array (
-  'title' => 'Polsterreinigung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Polsterreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Polsterreinigung in Köln, Brühl und Bonn für Sofas, Sessel, Stühle und weitere geeignete Polstermöbel – materialgerecht und individuell geplant.',
   'path' => '/leistungen/polsterreinigung/',
   'og_image' => '/assets/img/services/polsterreinigung/polsterreinigung-hero.webp',

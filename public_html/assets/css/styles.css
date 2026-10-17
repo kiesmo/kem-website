@@ -695,6 +695,14 @@ h3 {
   text-wrap: balance;
 }
 
+.page-intro__service-area {
+  margin: 12px 0 0;
+  color: var(--primary-dark);
+  font-size: var(--text-body);
+  font-weight: 600;
+  line-height: var(--line-lead);
+}
+
 .page-intro .lead {
   margin: 18px 0 0;
   max-width: var(--measure-prose);

@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/solaranlagenreinigung/
 return array (
-  'title' => 'PV-Reinigung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Solaranlagenreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Solar- und PV-Reinigung in Köln, Brühl und Bonn. Materialschonende Reinigung geeigneter Photovoltaikanlagen nach Zustand und Zugänglichkeit.',
   'path' => '/leistungen/solaranlagenreinigung/',
   'og_image' => '/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-hero.webp',

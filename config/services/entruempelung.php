@@ -15,7 +15,8 @@ return array (
   'article' => 
   array (
     'eyebrow' => 'Entrümpelung',
-    'title' => 'Entrümpelung und Haushaltsauflösung in Köln, Brühl, Bonn & Umgebung',
+    'title' => 'Entrümpelung und Haushaltsauflösung',
+    'show_service_area' => true,
     'lead' => 'KEM räumt Wohnungen, Keller, Garagen und Gewerberäume nach vereinbartem Umfang. Eine besenreine Übergabe und weitergehende Reinigung werden vorab getrennt abgestimmt.',
     'body_content' => 'services/entruempelung/body.php',
   ),

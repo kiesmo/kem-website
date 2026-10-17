@@ -16,6 +16,7 @@ return array (
   array (
     'eyebrow' => 'Büro- und Gewerbe­raumreinigung',
     'title' => 'Büro- und Gewerbe­raumreinigung',
+    'show_service_area' => true,
     'lead' => 'KEM übernimmt laufende Unterhaltsreinigung und einzelne Reinigungseinsätze für Büros und Gewerbeflächen. Dazu können Böden, frei zugängliche Oberflächen sowie Sanitär- und Küchenbereiche gehören.',
     'body_content' => 'services/buero-und-gewerberaumreinigung/body.php',
   ),

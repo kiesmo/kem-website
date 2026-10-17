@@ -15,7 +15,8 @@ return array (
   'article' => 
   array (
     'eyebrow' => 'Polsterreinigung',
-    'title' => 'Polsterreinigung in Köln, Brühl, Bonn & Umgebung',
+    'title' => 'Polsterreinigung',
+    'show_service_area' => true,
     'lead' => 'KEM reinigt geeignete Polstermöbel für private und gewerbliche Kunden – vom einzelnen Sofa bis zu mehreren Sitzbereichen. Die Behandlung richtet sich nach Bezug, Material und Zustand.',
     'body_content' => 'services/polsterreinigung/body.php',
   ),

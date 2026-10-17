@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/teppichreinigung/
 return array (
-  'title' => 'Teppichreinigung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Teppichreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Teppichreinigung in Köln, Brühl und Bonn für private und gewerbliche Räume. Materialgerechte Behandlung von Teppichböden, Flecken und Laufspuren.',
   'path' => '/leistungen/teppichreinigung/',
   'og_image' => '/assets/img/services/teppichreinigung/teppichreinigung-hero.webp',

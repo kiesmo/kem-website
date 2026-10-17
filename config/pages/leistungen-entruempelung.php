@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/entruempelung/
 return array (
-  'title' => 'Entrümpelung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Entrümpelung Köln, Brühl & Bonn | KEM',
   'description' => 'Entrümpelung und Haushaltsauflösung in Köln, Brühl und Bonn für Wohnungen, Keller, Garagen, Büros und Gewerbeflächen – individuell geplant.',
   'path' => '/leistungen/entruempelung/',
   'og_image' => '/assets/img/services/entruempelung/entruempelung-hero.webp',

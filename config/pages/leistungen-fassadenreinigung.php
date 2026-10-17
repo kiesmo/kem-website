@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/fassadenreinigung/
 return array (
-  'title' => 'Fassadenreinigung Köln, Brühl & Bonn | KEM Gebäudereinigung',
+  'title' => 'Fassadenreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Fassaden- und Graffitireinigung in Köln, Brühl und Bonn. Verfahren und Reinigungsumfang werden auf Untergrund, Verschmutzung und Zugang abgestimmt.',
   'path' => '/leistungen/fassadenreinigung/',
   'og_image' => '/assets/img/services/fassadenreinigung/fassadenreinigung-hero.webp',

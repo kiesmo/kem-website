@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/glas-und-fensterreinigung/
 return array (
-  'title' => 'Glas- & Fensterreinigung | KEM Gebäudereinigung',
+  'title' => 'Glas- & Fensterreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Professionelle Glas- und Fensterreinigung von KEM für private und gewerbliche Objekte in Köln, Brühl und Bonn. Umfang, Rahmen und Falze nach Vereinbarung.',
   'path' => '/leistungen/glas-und-fensterreinigung/',
   'og_image' => '/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-hero.webp',

@@ -15,7 +15,8 @@ return array (
   'article' => 
   array (
     'eyebrow' => 'Solar- und Photovoltaik­anlagenreinigung',
-    'title' => 'Solar- und Photovoltaik­anlagenreinigung in Köln, Brühl, Bonn & Umgebung',
+    'title' => 'Solar- und Photovoltaik­anlagenreinigung',
+    'show_service_area' => true,
     'lead' => 'Auf Solar- und Photovoltaikmodulen können sich Staub, Pollen, Blätter und Vogelkot ablagern. KEM reinigt geeignete Anlagen für private und gewerbliche Nutzer.',
     'body_content' => 'services/solaranlagenreinigung/body.php',
   ),

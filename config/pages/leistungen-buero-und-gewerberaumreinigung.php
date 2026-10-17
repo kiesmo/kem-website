@@ -1,7 +1,7 @@
 <?php
 // Seitenkonfiguration für /leistungen/buero-und-gewerberaumreinigung/
 return array (
-  'title' => 'Büro- & Gewerberaumreinigung | KEM Gebäudereinigung',
+  'title' => 'Büroreinigung Köln, Brühl & Bonn | KEM',
   'description' => 'Büro- und Gewerberaumreinigung von KEM in Köln, Brühl und Bonn: abgestimmte Reinigungsintervalle, Einsatzzeiten und Leistungsumfänge.',
   'path' => '/leistungen/buero-und-gewerberaumreinigung/',
   'og_image' => '/assets/img/services/buero-und-gewerberaumreinigung/buero-und-gewerberaumreinigung-hero.webp',

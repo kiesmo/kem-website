@@ -18,6 +18,7 @@ if (!function_exists('kem_render_page_intro')) {
         echo '<section aria-labelledby="page-title" class="' . kem_h($classes) . '"><div class="container ' . kem_h($containerClass) . '"><div class="page-intro__layout"><div class="page-intro__copy">';
         if (!empty($intro['eyebrow'])) echo '<span class="eyebrow">' . kem_h($intro['eyebrow']) . '</span>';
         echo '<h1 id="page-title">' . kem_h($intro['title']) . '</h1>';
+        if (!empty($intro['show_service_area'])) echo '<p class="page-intro__service-area">In ' . kem_h(kem_site_config()['service_area']) . '.</p>';
         if (!empty($intro['lead'])) echo '<p class="lead">' . kem_h($intro['lead']) . '</p>';
 
         $pageAction = kem_page_primary_action($pageKey);
