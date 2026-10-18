@@ -949,7 +949,7 @@ h3 {
   margin: 34px 0 0;
 }
 
-/* Compact discovery: each title is a link; the surrounding article is content. */
+/* Compact discovery: one link covers each card and is named by its heading. */
 .service-discovery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
@@ -963,10 +963,26 @@ h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
   background: var(--surface);
+  transition: border-color .18s, box-shadow .18s;
 }
 
+.service-discovery__card:hover,
 .service-discovery__card:focus-within {
   border-color: var(--primary);
+  box-shadow: 0 8px 20px var(--primary-shadow);
+}
+
+.service-discovery__link {
+  min-width: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: inherit;
+  text-decoration: none;
+}
+
+.service-discovery__link:active {
+  background: var(--primary-soft);
 }
 
 .service-discovery__image {
@@ -996,7 +1012,7 @@ h3 {
   font-size: var(--heading-3);
 }
 
-.service-discovery__link {
+.service-discovery__label {
   display: inline-block;
   max-width: 100%;
   text-decoration: underline;
@@ -1004,11 +1020,9 @@ h3 {
   text-underline-offset: .18em;
 }
 
-.service-discovery__link::after {
-  content: " ›";
-}
-
-.service-discovery__link:hover {
+.service-discovery__link:hover .service-discovery__label,
+.service-discovery__link:focus-visible .service-discovery__label,
+.service-discovery__link:active .service-discovery__label {
   color: var(--primary);
 }
 

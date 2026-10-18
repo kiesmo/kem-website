@@ -47,15 +47,17 @@ function kem_render_service_discovery(string $variant = 'home'): void {
         if (!isset($cards[$route])) throw new RuntimeException('Auswahlkarte fehlt: ' . $route);
         $card = $cards[$route];
         $label = $card['link_label'] ?? $service['label'];
+        $titleId = 'service-discovery-' . $variant . '-' . $service['offer_service'] . '-title';
         echo '<article class="service-discovery__card">';
+        echo '<a class="service-discovery__link" href="' . kem_h($route) . '" aria-labelledby="' . kem_h($titleId) . '">';
         if ($withMedia) {
             $image = $card['image'];
             echo '<img class="service-discovery__image" alt="' . kem_h($image['alt']) . '" width="' . (int)$image['width'] . '" height="' . (int)$image['height'] . '" loading="lazy" src="' . kem_h($image['src']) . '">';
         }
         echo '<div class="service-discovery__body">';
         if (!$withMedia) echo kem_service_discovery_icon($service['offer_service']);
-        echo '<h3 class="service-discovery__title"><a class="service-discovery__link" href="' . kem_h($route) . '">' . kem_h($label) . '</a></h3>';
-        echo '<p class="service-discovery__description">' . kem_h($card[$descriptionKey]) . '</p></div></article>';
+        echo '<h3 class="service-discovery__title" id="' . kem_h($titleId) . '"><span class="service-discovery__label">' . kem_h($label) . '<span aria-hidden="true"> ›</span></span></h3>';
+        echo '<p class="service-discovery__description">' . kem_h($card[$descriptionKey]) . '</p></div></a></article>';
     }
     echo '</div>';
 }
