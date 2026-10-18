@@ -77,6 +77,7 @@
     padding: 12px 24px 25px;
   }
 
+  .mobile-call-item,
   .mobile-offer-item,
   .mobile-whatsapp-item {
     display: block;
@@ -114,6 +115,11 @@
     text-align: center;
     text-transform: none;
     letter-spacing: 0;
+  }
+
+  .site-header .nav .mobile-call-cta {
+    flex-direction: column;
+    gap: 2px;
   }
 
   .site-header .nav .mobile-offer-cta {

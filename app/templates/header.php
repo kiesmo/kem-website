@@ -53,6 +53,7 @@ if (!function_exists('kem_current_attr')) {
 <li><a<?= kem_current_attr($navActive, 'faq') ?> href="/faq/">FAQ</a></li>
 <li><a<?= kem_current_attr($navActive, 'jobs') ?> href="/jobs/">Jobs</a></li>
 <li><a<?= kem_current_attr($navActive, 'contact') ?> href="/kontakt/">Kontakt</a></li>
+<li class="mobile-call-item"><a class="mobile-call-cta mobile-header-action" href="tel:<?= htmlspecialchars($kem['phone_href'], ENT_QUOTES, 'UTF-8') ?>"><span>Jetzt anrufen</span> <span><?= htmlspecialchars($kem['phone_display'], ENT_QUOTES, 'UTF-8') ?></span></a></li>
 <?php if ($headerAction !== null): ?>
 <li class="mobile-offer-item"><?php kem_render_action($headerAction, 'primary', 'mobile-offer-cta mobile-header-action'); ?></li>
 <?php endif; ?>
