@@ -6,7 +6,11 @@
 <ul class="service-check-list"><li>Reinigung von Sofas und Sesseln</li><li>Reinigung gepolsterter Stühle und Sitzmöbel</li><li>Behandlung geeigneter Flecken nach vorheriger Prüfung</li><li>Materialgerechte Auswahl von Reinigungsmitteln und Verfahren</li><li>Reinigung einzelner Möbelstücke oder mehrerer Sitzbereiche</li><li>Polsterpflege in privaten und gewerblichen Räumen</li><li>Weitere gepolsterte Flächen nach Abstimmung</li></ul>
 <div class="service-seo-extra">
 <h2>Wie werden Bezug und Flecken geprüft?</h2>
-<p>Bei Polstermöbeln entscheidet das Material darüber, welche Behandlung sinnvoll ist. Bezug, Zustand und Art der Verschmutzung werden vorab berücksichtigt. Bei Flecken lässt sich erst nach Prüfung einschätzen, welche Behandlung materialgerecht möglich ist.</p>
+<p>Bei Polstermöbeln entscheidet das Material darüber, welche Behandlung sinnvoll ist. Bezug, Zustand und Art der Verschmutzung werden vorab berücksichtigt. Bei Flecken lässt sich erst nach Prüfung einschätzen, welche Behandlung materialgerecht möglich ist. Nicht jeder Fleck lässt sich vollständig entfernen: Verfärbungen oder Materialveränderungen können auch nach der Reinigung sichtbar bleiben.</p>
+<h2>Wie bereiten Sie die Polsterreinigung vor?</h2>
+<p>Bitte entfernen Sie lose Gegenstände aus dem Arbeitsbereich und machen Sie die vereinbarten Polstermöbel zugänglich. Ob und durch wen Möbel bewegt werden, stimmen wir vor dem Termin ab. Weisen Sie uns bitte auf bekannte Flecken, empfindliche Bezüge und vorhandene Schäden hin.</p>
+<h2>Wann können Sie die Polster wieder benutzen?</h2>
+<p>Nach einer feuchten Reinigung sollten Sie Polster erst wieder benutzen, wenn Bezug und Polsterung vollständig trocken sind. Die Trocknungsdauer hängt unter anderem von Material, Reinigungsverfahren, Raumtemperatur und Luftaustausch ab. Bitte beachten Sie bei Lüftung und Wiederbenutzung die zum Material und Reinigungsverfahren passenden Pflegehinweise.</p>
 </div>
 <figure class="service-video-card"><div class="service-video-frame"><video controls playsinline preload="none" poster="/assets/img/services/polsterreinigung/polsterreinigung-praxis-poster.webp" aria-label="Video einer Polsterreinigung"><source src="/assets/video/services/polsterreinigung/polsterreinigung-praxis.mp4" type="video/mp4">Ihr Browser unterstützt die Videowiedergabe nicht.</video></div><figcaption><strong>Polsterreinigung in der Praxis</strong><span>Kurzer Einblick in die professionelle Reinigung eines Polsters.</span></figcaption></figure>
 <div class="service-area-links">
