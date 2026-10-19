@@ -22,7 +22,7 @@ if (!function_exists('kem_current_attr')) {
 <div class="topbar">
 <div class="container topbar-inner">
 <span>WIR BERATEN SIE GERNE!</span>
-<a aria-label="KEM Gebäudereinigung anrufen" href="tel:<?= htmlspecialchars($kem['phone_href'], ENT_QUOTES, 'UTF-8') ?>"><span aria-hidden="true">☎</span>&nbsp; <span><?= htmlspecialchars($kem['phone_display'], ENT_QUOTES, 'UTF-8') ?></span></a>
+<a aria-label="KEM Gebäudereinigung anrufen" href="tel:<?= htmlspecialchars($kem['phone_href'], ENT_QUOTES, 'UTF-8') ?>"><svg class="topbar-phone-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3.5l-5-2-2 3a15 15 0 0 1-7.5-7.5l3-2-2-5Z"/></svg><span><?= htmlspecialchars($kem['phone_display'], ENT_QUOTES, 'UTF-8') ?></span></a>
 </div>
 </div>
 <div class="container header-inner">

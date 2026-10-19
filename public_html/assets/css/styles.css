@@ -351,6 +351,18 @@ h3 {
   letter-spacing: .03em;
 }
 
+.topbar a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.topbar-phone-icon {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
 .topbar a:hover {
   text-decoration: underline;
 }
