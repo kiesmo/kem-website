@@ -3,7 +3,20 @@
     const steps = [...form.querySelectorAll('.form-step')];
     const dots = [...form.querySelectorAll('.step-dot')];
     const currentStep = form.querySelector('[data-offer-current-step]');
+    const reviewIndex = steps.findIndex(step => step.querySelector('[data-offer-review]'));
+    const nextButtonLabels = new Map([...form.querySelectorAll('[data-next]')]
+      .map(button => [button, button.textContent]));
     let index = 0;
+    let returnToReview = false;
+
+    const syncNextLabels = () => nextButtonLabels.forEach((label, button) => {
+      button.textContent = returnToReview ? 'Änderung übernehmen und zur Übersicht' : label;
+    });
+
+    const resetReviewEdit = () => {
+      returnToReview = false;
+      syncNextLabels();
+    };
 
     const stepStatus = document.createElement('p');
     stepStatus.className = 'sr-only';
@@ -17,6 +30,8 @@
 
     const paint = ({ focus = false } = {}) => {
       if (form.dataset.offerState === 'success') return;
+      if (index === reviewIndex) returnToReview = false;
+      syncNextLabels();
       steps.forEach((step, stepIndex) => {
         const active = stepIndex === index;
         step.classList.toggle('active', active);
@@ -48,24 +63,37 @@
       const targetStep = field?.closest('.form-step');
       const targetIndex = targetStep ? steps.indexOf(targetStep) : -1;
       if (targetIndex >= 0) {
+        if (index === reviewIndex && targetIndex < reviewIndex) returnToReview = true;
         index = targetIndex;
         paint();
       }
       if (focus) field?.focus();
     };
 
-    form.querySelectorAll('[data-next]').forEach(button => button.addEventListener('click', () => {
+    const advance = () => {
       if (form.dataset.offerState === 'success') return;
-      const fields = [...steps[index].querySelectorAll('input, select, textarea')].filter(field => field.willValidate);
+      const validationSteps = returnToReview ? steps.slice(0, reviewIndex) : [steps[index]];
+      const fields = validationSteps.flatMap(step => [...step.querySelectorAll('input, select, textarea')])
+        .filter(field => field.willValidate);
       const firstInvalid = fields.find(field => !field.checkValidity());
       if (firstInvalid) {
         showField(firstInvalid);
         firstInvalid.reportValidity();
         return;
       }
-      index = Math.min(index + 1, steps.length - 1);
+      index = returnToReview ? reviewIndex : Math.min(index + 1, steps.length - 1);
       paint({ focus: true });
-    }));
+    };
+
+    nextButtonLabels.forEach((label, button) => button.addEventListener('click', advance));
+
+    // Enter while editing must return to the review before a separate send action.
+    form.addEventListener('submit', event => {
+      if (!returnToReview) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      advance();
+    }, true);
 
     form.querySelectorAll('[data-prev]').forEach(button => button.addEventListener('click', () => {
       if (form.dataset.offerState === 'success') return;
@@ -78,13 +106,19 @@
       if (form.dataset.offerState === 'success') return;
       const nextIndex = Number(event.detail?.index);
       if (!Number.isInteger(nextIndex) || nextIndex < 0 || nextIndex >= steps.length) return;
+      if (event.detail?.returnToReview === true && index === reviewIndex && nextIndex < reviewIndex) {
+        returnToReview = true;
+      }
       index = nextIndex;
       paint({ focus: true });
     });
     form.addEventListener('form:new-request', () => {
+      resetReviewEdit();
       index = 0;
       paint({ focus: true });
     });
+    form.addEventListener('reset', resetReviewEdit);
+    form.addEventListener('form:success', resetReviewEdit);
 
     paint();
   });
@@ -453,7 +487,7 @@
       edit.className = 'review-edit';
       edit.textContent = 'Ändern';
       edit.setAttribute('aria-label', `Abschnitt ${title} ändern`);
-      edit.addEventListener('click', () => form.dispatchEvent(new CustomEvent('form:go-step', { detail: { index: stepIndex } })));
+      edit.addEventListener('click', () => form.dispatchEvent(new CustomEvent('form:go-step', { detail: { index: stepIndex, returnToReview: true } })));
       header.append(heading, edit);
       const list = document.createElement('dl');
       list.className = 'review-list';
