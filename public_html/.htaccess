@@ -6,6 +6,11 @@ ErrorDocument 410 /404.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# Versteckte Dateien und Verzeichnisse sperren. Nur ein einzelner ACME-Token
+# darf diese Pfadsperre passieren; alle weiteren Regeln gelten weiterhin.
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[A-Za-z0-9_-]+$
+RewriteRule (^|/)\. - [F,L]
+
 # Öffentliche index.php-URLs auf die saubere Verzeichnis-URL umleiten.
 # THE_REQUEST verhindert eine Schleife durch die interne DirectoryIndex-Auflösung.
 # Auf der echten Domain geht es direkt zur kanonischen HTTPS-www-URL, damit keine Redirect-Kette entsteht.
@@ -67,6 +72,7 @@ ExpiresByType image/svg+xml "access plus 1 year"
 AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
 </IfModule>
 
-<FilesMatch "(^\.|contact\.php|composer\.(json|lock)|README-KEM\.txt|.*\.(env|ini|log|sql|bak|backup|zip|tar|gz))$">
+# Konfigurations- und Backupdateien auch bei gemischter Schreibweise sperren.
+<FilesMatch "(?i)^(?:\..*|contact\.php|composer\.(?:json|lock)|README-KEM\.txt|.*\.(?:env|ini|log|sql|bak|backup|zip|tar|gz|old|orig|save|swp|swo)|.*~)$">
 Require all denied
 </FilesMatch>
