@@ -5,8 +5,14 @@
 <p>Welche Bereiche und Arbeiten sinnvoll sind, richtet sich nach Verschmutzung, Oberflächen und Anlass. Zum abgestimmten Leistungsumfang können beispielsweise gehören:</p>
 <ul class="service-check-list"><li>Intensive Reinigung geeigneter Bodenflächen</li><li>Gründliche Reinigung von Oberflächen und schwer erreichbaren Bereichen</li><li>Entfernung geeigneter Rückstände nach Renovierungs- oder Handwerksarbeiten</li><li>Reinigung von Fugen und Detailbereichen nach Bedarf</li><li>Reinigung vor oder nach einem Mieter- beziehungsweise Nutzerwechsel</li><li>Frühjahrs- oder Herbstreinigung nach individuellem Umfang</li><li>Weitere intensive Reinigungsarbeiten nach vorheriger Abstimmung</li></ul>
 <div class="service-seo-extra">
+<h2>Welche Spezialreinigungen bietet KEM an?</h2>
+<h3>Desinfektionsreinigung</h3>
+<p>Desinfektion vereinbarter Flächen und Bereiche. Umfang und Verfahren stimmen wir auf die Nutzung des Objekts und die jeweiligen Hygieneanforderungen ab.</p>
+<h3>Reinraumreinigung</h3>
+<p>Reinigung von Reinräumen nach den objektspezifischen Vorgaben. Reinigungsumfang, freigegebene Mittel und Arbeitsabläufe werden vorab abgestimmt.</p>
 <h2>Was wird vor der Grundreinigung geprüft?</h2>
-<p>Oberflächen, Bodenbeläge und die Art der Rückstände bestimmen, welche Mittel und Verfahren geeignet sind. Vor der Kalkulation werden der Zustand des Objekts und die gewünschten Bereiche geklärt.</p>
+<p>Oberflächen, Bodenbeläge und die Art der Rückstände bestimmen, welche Mittel und Verfahren geeignet sind.</p>
+<p>Bei besonderen Reinigungsaufgaben klären wir vorab den Zustand des Objekts, die betroffenen Flächen und den gewünschten Umfang. Fotos oder eine Besichtigung helfen uns festzulegen, welche Arbeiten wir übernehmen können und welche Verfahren geeignet sind.</p>
 </div>
 <figure class="service-video-card"><div class="service-video-frame"><video controls playsinline preload="none" poster="/assets/img/services/grundreinigung/grundreinigung-praxis-poster.webp" aria-label="Video einer Bauendreinigung"><source src="/assets/video/services/grundreinigung/grundreinigung-praxis.mp4" type="video/mp4">Ihr Browser unterstützt die Videowiedergabe nicht.</video></div><figcaption><strong>Bauendreinigung in der Praxis</strong><span>Kurzer Einblick in eine gründliche Reinigung nach Bau- oder Renovierungsarbeiten.</span></figcaption></figure>
 <div class="service-area-links">

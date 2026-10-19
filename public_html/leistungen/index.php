@@ -21,12 +21,12 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <summary class="service-discovery-group__summary">Objekt- &amp; Gewerbereinigung</summary>
 <ul class="service-discovery-group__terms">
 <li>Büroreinigung aller Art und Größen</li>
-<li>Gewerbliche Flächen, Lager und Ladenlokale</li>
+<li>Reinigung frei zugänglicher Arbeitsplatzoberflächen</li>
+<li>Reinigung von Gewerbeflächen, Lagern und Ladenlokalen</li>
 <li>Treppenhäuser</li>
 <li>Reinigung von Sanitäranlagen</li>
 <li>Praxis- und Gastronomiereinigung</li>
 <li>Messe- und Eventreinigung</li>
-<li>Industriereinigung</li>
 </ul>
 </details>
 <details class="service-discovery-group">
@@ -51,11 +51,12 @@ require dirname($_SERVER['DOCUMENT_ROOT']) . '/app/templates/header.php';
 <li>Grundreinigung</li>
 <li>Endreinigung</li>
 <li>Bau- und Umzugsreinigung</li>
-<li>EDV-Anlagenreinigung</li>
-<li>Hygiene-, Desinfektions- und Reinraumreinigung</li>
+<li>Hygienische Reinigung von Sanitär- und Gemeinschaftsbereichen</li>
+<li><strong>Desinfektionsreinigung:</strong> Desinfektion vereinbarter Flächen und Bereiche nach den jeweiligen Hygieneanforderungen.</li>
+<li><strong>Reinraumreinigung:</strong> Reinigung nach objektspezifischen Vorgaben und vorab abgestimmten Reinigungsmitteln und Arbeitsabläufen.</li>
 <li>Nikotinreinigung</li>
-<li>Reinigung nach Wasserschäden</li>
-<li>Messie-Reinigung</li>
+<li>Reinigungsarbeiten nach Wasserschäden – Umfang nach Besichtigung</li>
+<li>Räumung und intensive Reinigung stark verschmutzter Räume – nach Besichtigung</li>
 </ul>
 </details>
 <details class="service-discovery-group">
