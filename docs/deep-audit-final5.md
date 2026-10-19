@@ -6,7 +6,7 @@
 
 **Repository:** kiesmo/kem-website · **Website:** https://www.kem-gebaeudereinigung.de/
 
-**56 priorisierte Punkte:** 15 zu Design/Layout/Visuals, 7 zu Formularen, 4 zur Barrierefreiheit, 6 zur Performance, 9 zu Sicherheit/Datenschutz, 10 zu SEO/Inhalten und 5 zu Pflege/Betrieb. Bestätigte Fehler, Empfehlungen und offene Abnahmen sind jeweils gekennzeichnet.
+**55 verbleibende Auditpunkte:** 15 zu Design/Layout/Visuals, 7 zu Formularen, 4 zur Barrierefreiheit, 6 zur Performance, 9 zu Sicherheit/Datenschutz, 9 zu SEO/Inhalten und 5 zu Pflege/Betrieb. Bestätigte Fehler, Empfehlungen und offene Abnahmen sind jeweils gekennzeichnet.
 
 ## Ergebnis und Einordnung
 
@@ -352,13 +352,6 @@ PerformanceObserver/Performance API; Transfer zählt Navigation und im Messfenst
 
 ## 6. SEO, Inhalte, Vertrauen und Informationsarchitektur
 
-### C01 — Der vorgesehene HTTP-410-Status wird zur 404 überschrieben
-
-- **P2 · Lokal bestätigte Statusinkonsistenz · Aufwand: klein.** /kerpen-bergheim und /kerpen-bergheim/ sollen mit Gone entfernt werden, liefern aber 404.
-- **Beleg:** `public_html/.htaccess:4,26–27` verwendet [G] und ErrorDocument 410 /404.php; `public_html/404.php:1` setzt stets http_response_code(404). GET/HEAD bestätigen 404.
-- **Empfehlung:** Ursprünglichen Fehlerstatus erhalten oder 410 getrennt rendern. Unbekannte URL → 404, dauerhaft entfernte Ortsseite → gewünschte 410, jeweils mit brauchbarer Fehlerseite.
-- **Einordnung:** 404 ist für entfernte Inhalte grundsätzlich zulässig. Keine gravierende Rankingwirkung aus dieser Inkonsistenz behaupten.
-
 ### C02 — Ortsseiten brauchen mehr konkreten lokalen Mehrwert
 
 - **P2 · Inhalts-/Vertrauensempfehlung · Aufwand: mittel.** Büro-/Fenster-Ortsseiten unterscheiden sich vor allem durch Stadtbezug/Einleitung; mehrere Leistungslisten sind identisch.
@@ -453,7 +446,7 @@ PerformanceObserver/Performance API; Transfer zählt Navigation und im Messfenst
 
 - Alle 27 regulären Routen lokal HTTP 200; Fehlerseite und erfundener Pfad korrekt 404. Kein defekter interner Link oder Fragmentanker im Crawl. Keine reguläre Seite verwaist.
 - Jede HTML-Seite genau eine H1; eindeutige Titel/Descriptions, passende HTTPS-www-Canonicals, gültiges JSON-LD. Sitemap deckt exakt die 27 regulären Seiten ab; Fehlerseite ist noindex. FAQ-Text und FAQ-Schema stimmen überein.
-- Geprüfte Altpfade und explizite index.php-URLs leiten korrekt per 301. HTTPS-/www-Regel funktioniert lokal mit passendem Host-Header. C01 ist die gesonderte 410-Ausnahme.
+- Geprüfte Altpfade und explizite index.php-URLs leiten korrekt per 301. HTTPS-/www-Regel funktioniert lokal mit passendem Host-Header.
 - Keine sichtbaren horizontalen Überläufe in den 144 Breitenkombinationen. Automatisch markierte Offscreen-Honeypots sind absichtlich versteckt und wurden nicht als Layoutfehler gezählt. Keine abgeschnittenen normalen Inhalte in den vollständigen Desktop-/Mobilaufnahmen festgestellt; D01 betrifft gezielt geringe Höhe.
 - Lesbare Typografie, zentrale Basistokens, wiederkehrende Komponenten, ruhige Oberflächen und gute Kontraste in vielen Standardzuständen. Hauptinhalte sind serverseitig verfügbar. Bilder besitzen Maßangaben; Systemschriften vermeiden zusätzliche Fontdownloads.
 - Skip-Link, sichtbarer Fokus, eigene Fokusfarbe auf dunklen Flächen, native FAQ/Dropdowns, Reduced Motion, kein Autoplay. Mobiles Menü bei 320/390 px mit Escape/Fokus-Rückgabe und Tab-Verhalten bedienbar.
@@ -486,7 +479,7 @@ Alle folgenden regulären Routen wurden als vollständige Seite bei 1440/390 px 
 | Gebäudereinigung lokal | /gebaeudereinigung-bruehl/ · /gebaeudereinigung-koeln/ · /gebaeudereinigung-bonn/ |
 | Büroreinigung lokal | /bueroreinigung-bruehl/ · /bueroreinigung-koeln/ · /bueroreinigung-bonn/ |
 | Fensterreinigung lokal | /fensterreinigung-bruehl/ · /fensterreinigung-koeln/ · /fensterreinigung-bonn/ |
-| Fehlerfälle | /404.php und erfundene URL → 404/noindex; /kerpen-bergheim/ → aktuell 404, siehe C01 |
+| Fehlerfälle | /404.php und erfundene URL → 404/noindex |
 
 Zusätzlich geprüft: /index.php, /kontakt/index.php, /kontakt ohne Slash, /teppichreinigung/, /polsterreinigung/index.html, alte Solar-/Photovoltaikpfade einschließlich codiertem Umlaut, /jobs/jobs.aspx und /angebot-anfordern/angebot-anfordern.aspx. Diese leiten lokal zum vorgesehenen Ziel um.
 
