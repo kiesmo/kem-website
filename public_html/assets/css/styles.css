@@ -1116,10 +1116,34 @@ h3 {
 }
 
 .service-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
   font-size: var(--text-label);
+  font-weight: 600;
   line-height: var(--line-label);
+  color: var(--primary-dark);
   border: 1px solid #c8d0d7;
-  padding: 8px 12px;
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  padding: 10px 12px;
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.service-nav a::after {
+  content: "";
+  flex: none;
+  width: .45em;
+  height: .45em;
+  margin-right: .15em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .service-nav a:hover,
@@ -2624,17 +2648,19 @@ h3 {
 .service-object-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 6px 8px;
   margin-top: 22px;
 }
 
 .service-object-tags span {
-  padding: 9px 13px;
-  border: 1px solid #d4dce3;
-  background: #f7f9fb;
-  color: var(--primary-dark);
+  max-width: 100%;
+  padding: 5px 9px;
+  border-radius: 4px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
   font-size: var(--text-label);
-  font-weight: 700;
+  font-weight: 500;
+  line-height: var(--line-label);
 }
 
 .service-summary-card .eyebrow {

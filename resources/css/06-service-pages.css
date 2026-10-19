@@ -82,17 +82,19 @@
 .service-object-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 6px 8px;
   margin-top: 22px;
 }
 
 .service-object-tags span {
-  padding: 9px 13px;
-  border: 1px solid #d4dce3;
-  background: #f7f9fb;
-  color: var(--primary-dark);
+  max-width: 100%;
+  padding: 5px 9px;
+  border-radius: 4px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
   font-size: var(--text-label);
-  font-weight: 700;
+  font-weight: 500;
+  line-height: var(--line-label);
 }
 
 .service-summary-card .eyebrow {

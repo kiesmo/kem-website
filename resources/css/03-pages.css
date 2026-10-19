@@ -220,10 +220,34 @@
 }
 
 .service-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
   font-size: var(--text-label);
+  font-weight: 600;
   line-height: var(--line-label);
+  color: var(--primary-dark);
   border: 1px solid #c8d0d7;
-  padding: 8px 12px;
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  padding: 10px 12px;
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.service-nav a::after {
+  content: "";
+  flex: none;
+  width: .45em;
+  height: .45em;
+  margin-right: .15em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .service-nav a:hover,
