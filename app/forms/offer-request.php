@@ -43,15 +43,6 @@ function kem_prepare_offer_request(array $cleanOffer, string $email, string $pho
         if (array_intersect(array_keys($selected), $services) === []) $offer[$field] = '';
     }
 
-    // Accept old cached forms, but never silently choose between conflicting answers.
-    if (isset($selected['clearance']) && $offer['clearance_floor'] !== '') {
-        if ($offer['floor'] === '') {
-            $offer['floor'] = $offer['clearance_floor'];
-        } elseif ($offer['floor'] !== $offer['clearance_floor']) {
-            $errors['floor'] = 'Die Angaben zu Etage / Zugang widersprechen sich. Bitte prüfen Sie beide bisherigen Angaben und tragen Sie eine gemeinsame Angabe ein.';
-        }
-    }
-    $offer['clearance_floor'] = '';
     if ($offer['appointment_preference'] !== 'Konkreter Termin') {
         $offer['desired_date'] = '';
         $offer['desired_time'] = '';

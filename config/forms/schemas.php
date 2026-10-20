@@ -14,7 +14,7 @@ $offerFields = [
     'upholstery_custom_seats', 'upholstery_scope', 'upholstery_soiling', 'upholstery_notes',
     'graffiti_area', 'graffiti_surface', 'graffiti_scope', 'graffiti_notes',
     'solar_modules', 'solar_area', 'solar_access', 'solar_soiling', 'solar_notes',
-    'clearance_area', 'clearance_volume', 'clearance_floor', 'clearance_elevator', 'clearance_scope', 'clearance_notes',
+    'clearance_area', 'clearance_volume', 'clearance_elevator', 'clearance_scope', 'clearance_notes',
     'other_details',
     'appointment_preference', 'desired_date', 'desired_time', 'appointment_notes',
     'privacy',
