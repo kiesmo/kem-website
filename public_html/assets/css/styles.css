@@ -1,6 +1,5 @@
-/* Generated from resources/css by tools/build-css.php. */
+/* KEM Gebäudereinigung — Version 1.0.0 */
 
-/* Source: 00-tokens.css */
 /* Design tokens */
 :root {
   --primary: #0969b5;
@@ -52,7 +51,6 @@
   --header-height: calc(var(--header-solid-height) + var(--header-topbar-height));
 }
 
-/* Source: 01-base.css */
 /* Base and accessibility */
 * {
   box-sizing: border-box;
@@ -216,7 +214,6 @@ h3 {
   margin-bottom: 12px;
 }
 
-/* Source: 02-components.css */
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -893,7 +890,6 @@ h3 {
   font-size: var(--heading-2);
 }
 
-/* Source: 03-pages.css */
 /* Home page */
 .intro-section {
   background: var(--surface);
@@ -1421,7 +1417,6 @@ h3 {
   display: block;
 }
 
-/* Source: 04-responsive.css */
 /* Tablet */
 @media (max-width: 1180px) {
   .header-inner {
@@ -1766,7 +1761,6 @@ h3 {
   }
 }
 
-/* Source: 05-forms.css */
 /* Forms: shared controls -> contact -> base responsive -> wizard -> offer details. */
 
 /* Shared controls, validation states and form actions. */
@@ -2779,7 +2773,6 @@ h3 {
   }
 }
 
-/* Source: 06-service-pages.css */
 /* Detailed service landing pages */
 .service-video-card {
   margin: 30px 0 38px;
@@ -2933,7 +2926,6 @@ h3 {
 
 }
 
-/* Source: 07-gallery-faq.css */
 /* Gallery */
 .gallery-container {
   max-width: 1040px;
@@ -3054,7 +3046,6 @@ h3 {
   outline-offset: -3px;
 }
 
-/* Source: 09-local-pages.css */
 /* Local SEO landing pages */
 .local-seo-section {
     background: #fff;
