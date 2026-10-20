@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/polsterreinigung/',
   'nav_key' => 'service-upholstery',
-  'label' => 'Polsterreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/polsterreinigung/polsterreinigung-content.webp',

@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/solaranlagenreinigung/',
   'nav_key' => 'service-solar',
-  'label' => 'Solar- und Photovoltaikanlagenreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/solaranlagenreinigung/solaranlagenreinigung-content.webp',

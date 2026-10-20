@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/fassadenreinigung/',
   'nav_key' => 'service-facade',
-  'label' => 'Fassaden- und Graffitireinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/fassadenreinigung/fassadenreinigung-content.webp',

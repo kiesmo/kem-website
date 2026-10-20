@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/entruempelung/',
   'nav_key' => 'service-clearance',
-  'label' => 'Entrümpelung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/entruempelung/entruempelung-content.webp',

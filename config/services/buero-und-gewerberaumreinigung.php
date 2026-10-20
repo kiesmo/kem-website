@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/buero-und-gewerberaumreinigung/',
   'nav_key' => 'service-office',
-  'label' => 'Büro- und Gewerberaumreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/buero-und-gewerberaumreinigung/buero-und-gewerberaumreinigung-content.webp',

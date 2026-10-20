@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/glas-und-fensterreinigung/',
   'nav_key' => 'service-glass',
-  'label' => 'Glas- und Fensterreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/glas-und-fensterreinigung/glas-und-fensterreinigung-content.webp',

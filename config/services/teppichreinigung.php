@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/teppichreinigung/',
   'nav_key' => 'service-carpet',
-  'label' => 'Teppichreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/teppichreinigung/teppichreinigung-content.webp',

@@ -3,7 +3,6 @@
 return array (
   'route' => '/leistungen/grundreinigung/',
   'nav_key' => 'service-basic',
-  'label' => 'Grund- und Spezialreinigung',
   'summary_image' => 
   array (
     'src' => '/assets/img/services/grundreinigung/grundreinigung-content.webp',
