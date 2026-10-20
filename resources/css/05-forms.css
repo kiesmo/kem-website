@@ -1,3 +1,170 @@
+/* Forms: shared controls -> contact -> base responsive -> wizard -> offer details. */
+
+/* Shared controls, validation states and form actions. */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+/* Selection cards and estimate options define their own label layout. */
+.field label:not(.service-choice):not(.estimate-option) {
+  display: block;
+  font-size: var(--text-label);
+  font-weight: 700;
+  line-height: var(--line-label);
+  margin-bottom: 5px;
+}
+
+.field input:where(:not([type="checkbox"]):not([type="file"])),
+.field textarea,
+.field select {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid var(--field-border);
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  padding: 12px 14px;
+}
+
+.field textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+
+.field :where(input, textarea, select):focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-shadow-soft);
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: var(--text-label);
+}
+
+.checkbox input {
+  width: auto;
+  margin-top: 5px;
+}
+
+.checkbox .field-error {
+  flex-basis: 100%;
+  margin-left: 0;
+}
+
+.hp {
+  position: absolute !important;
+  left: -10000px !important;
+}
+
+.form-status {
+  margin-top: 14px;
+  padding: 12px 14px;
+  display: none;
+}
+
+.form-status.is-visible {
+  display: block;
+}
+
+.form-status.ok {
+  display: block;
+  background: #e7f7eb;
+  color: #145c26;
+}
+
+.form-status.error {
+  display: block;
+  background: #fff0f1;
+  color: #9b001b;
+}
+
+.field-error {
+  margin: 6px 0 0;
+  color: #9b001b;
+  font-size: var(--text-meta);
+  font-weight: 700;
+  line-height: var(--line-meta);
+}
+
+.field-error:empty {
+  display: none;
+}
+
+.field [aria-invalid="true"] {
+  border-color: #9b001b;
+  box-shadow: 0 2px 0 #9b001b;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* Contact form checkbox layout overrides the shared field label. */
+.task-page--contact .checkbox {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+}
+
+.task-page--contact .checkbox > input {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  accent-color: var(--primary);
+}
+
+.task-page--contact .checkbox > label[for] {
+  margin: 0;
+  font-weight: 400;
+  line-height: var(--line-body);
+}
+
+.task-page--contact .checkbox > .field-error {
+  grid-column: 1 / -1;
+}
+
+/* The offer form leads; this contact alternative follows the complete form. */
+.offer-contact-alternative {
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: var(--text-meta);
+  line-height: var(--line-meta);
+}
+
+.offer-contact-alternative > p {
+  margin: 0 0 10px;
+}
+
+/* Shared form layout stays before the more specific offer wizard rules. */
+@media (max-width: 35em) {
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .field.full {
+    grid-column: auto;
+  }
+}
+
 /* Detailed conditional offer form */
 .offer-builder-section {
   padding-block: clamp(28px, 4vw, 48px);
@@ -634,5 +801,211 @@
   .offer-builder .form-actions .btn,
   .offer-builder .form-actions > span {
     width: 100%;
+  }
+}
+
+/* Offer form conversion improvements */
+.object-location-card {
+  margin: 0 0 26px;
+}
+
+.object-basics-new {
+  margin-bottom: 28px;
+}
+
+.optional-label {
+  color: #6a7681;
+  font-size: var(--text-meta);
+  font-weight: 700;
+}
+
+.estimate-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0 0;
+  color: #5f6c76;
+  font-size: var(--text-label);
+  font-weight: 700;
+  line-height: var(--line-label);
+  cursor: pointer;
+}
+
+.estimate-option input[type="checkbox"] {
+  width: auto;
+  min-height: 0;
+  flex: 0 0 auto;
+  margin: 2px 0 0;
+  accent-color: var(--primary);
+}
+
+.offer-builder input[readonly][data-required-when-active] {
+  background: #f4f8fb;
+  color: #4f5d68;
+}
+
+.appointment-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.appointment-choice {
+  display: flex;
+  min-height: 118px;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #d4dde3;
+  border-radius: var(--radius-control);
+  background: #fff;
+  cursor: pointer;
+}
+
+.appointment-choice:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: 0 0 0 2px var(--primary-shadow-soft);
+}
+
+.appointment-choice input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--primary);
+}
+
+.appointment-choice span {
+  display: grid;
+  gap: 5px;
+}
+
+.appointment-choice small {
+  color: #5d6a75;
+  font-size: var(--text-meta);
+  font-weight: 400;
+  line-height: var(--line-meta);
+}
+
+.exact-date-card {
+  margin-top: 18px;
+}
+
+.appointment-note-field {
+  margin-top: 22px;
+}
+
+.contact-hint {
+  margin: 7px 0 0;
+}
+
+.upload-preview-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.upload-file-list .upload-preview-item {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #d9e2e8;
+  background: #fff;
+}
+
+.upload-preview-item img {
+  grid-row: 1 / span 2;
+  width: 64px;
+  height: 54px;
+  border-radius: var(--radius-control);
+  object-fit: cover;
+}
+
+.upload-preview-meta {
+  grid-column: 2;
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.upload-preview-meta b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-preview-meta small {
+  color: #687783;
+  font-size: var(--text-meta);
+}
+
+.upload-remove,
+.review-edit {
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5dc;
+  border-radius: var(--radius-control);
+  color: var(--primary-dark);
+  background: #fff;
+  font: inherit;
+  font-size: var(--text-action);
+  font-weight: 700;
+  line-height: var(--line-action);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.upload-remove {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.upload-preview-list > .field-error {
+  grid-column: 1 / -1;
+}
+
+.upload-remove:hover,
+.review-edit:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.review-section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.review-section-heading h3 {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .appointment-choice-grid,
+  .upload-preview-list {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-choice {
+    min-height: 0;
+  }
+
+  .upload-file-list .upload-preview-item {
+    grid-template-columns: 56px minmax(0, 1fr);
+  }
+
+  .upload-preview-item img {
+    width: 56px;
+    height: 50px;
   }
 }
