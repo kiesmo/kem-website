@@ -20,7 +20,6 @@ if (!extension_loaded('openssl')) {
 }
 
 $domainRoot = dirname(__DIR__, 2);
-$publicRoot = $domainRoot . '/public_html';
 $configFile = $domainRoot . '/private/contact.php';
 $autoloadFile = $domainRoot . '/vendor/autoload.php';
 
@@ -155,7 +154,6 @@ if ($formType === 'angebot') {
             : $post($field, str_contains($field, 'notes') || $field === 'other_details' ? 3000 : 180);
     }
     $prepared = kem_prepare_offer_request($cleanOffer, (string) $email, $phone);
-    $offer = $prepared['offer'];
     $errors = array_merge($errors, $prepared['errors']);
     $mailRows = $prepared['mail_rows'];
     $mailName = $prepared['mail_name'];
