@@ -17,10 +17,3 @@ if (!function_exists('kem_page_data')) {
         return $cache[$pageKey] = require $file;
     }
 }
-if (!function_exists('kem_all_pages')) {
-    function kem_all_pages(): array {
-        $pages = [];
-        foreach (array_keys(kem_page_map()) as $route) $pages[$route] = kem_page_data($route);
-        return $pages;
-    }
-}
