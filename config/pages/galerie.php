@@ -35,7 +35,6 @@ return array (
     'width' => 1536,
     'height' => 1024,
     'alt' => 'Illustrative Collage zur Büro-, Fenster-, Polster- und Solarreinigung',
-    'tag' => 'Galerie',
     'class' => 'gallery-collage',
   ),
   'cta' => 

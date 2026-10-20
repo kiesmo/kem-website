@@ -52,8 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Glas- und Fensterreinigung',
-    'mobile_tag' => 'Glas- & Fensterreinigung',
   ),
   'cta' => 
   array (

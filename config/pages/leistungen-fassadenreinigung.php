@@ -52,8 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Fassaden- und Graffitireinigung',
-    'mobile_tag' => 'Fassade & Graffiti',
   ),
   'cta' => 
   array (

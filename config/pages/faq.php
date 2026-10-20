@@ -51,7 +51,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'FAQ',
     'class' => 'hero-focus-high',
   ),
   'cta' => 

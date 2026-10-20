@@ -52,8 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Grund- und Spezialreinigung',
-    'mobile_tag' => 'Grund- & Spezialreinigung',
   ),
   'cta' => 
   array (

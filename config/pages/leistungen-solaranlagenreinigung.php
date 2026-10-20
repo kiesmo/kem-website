@@ -52,8 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Solar- und Photovoltaikanlagenreinigung',
-    'mobile_tag' => 'Solar- & PV-Reinigung',
   ),
   'cta' => 
   array (

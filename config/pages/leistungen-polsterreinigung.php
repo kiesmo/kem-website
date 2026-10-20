@@ -52,7 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Polsterreinigung',
   ),
   'cta' => 
   array (

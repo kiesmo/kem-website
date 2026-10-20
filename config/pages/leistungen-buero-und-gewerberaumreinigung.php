@@ -52,8 +52,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büro- und Gewerberaumreinigung',
-    'mobile_tag' => 'Büro- & Gewerbereinigung',
   ),
   'cta' => 
   array (

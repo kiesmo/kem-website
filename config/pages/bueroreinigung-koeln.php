@@ -62,7 +62,6 @@ return array (
     'width' => 1920,
     'height' => 870,
     'alt' => '',
-    'tag' => 'Büroreinigung Köln',
     'class' => 'hero-focus-left',
   ),
   'cta' => 
