@@ -8,9 +8,11 @@
 <h2>Wie werden Räumung und Übergabe geplant?</h2>
 <p>Vor Beginn klären wir, welche Räume geräumt werden sollen und welche Leistungen ausdrücklich zum Auftrag gehören. Bei größeren oder schwer einzuschätzenden Objekten kann eine Besichtigung sinnvoll sein.</p>
 <p>Eine besenreine Übergabe kann vereinbart werden. Weitergehende Reinigungsarbeiten werden getrennt abgestimmt, damit klar ist, welche Arbeiten nach der Räumung ausgeführt werden sollen.</p>
+<h2>Was gehört zu Abtransport und Entsorgung?</h2>
+<p>Ob Abtransport und Entsorgung zum Auftrag gehören, stimmen wir vorab anhand der Gegenstände, Materialien und Mengen ab. Der vereinbarte Umfang wird im Angebot festgehalten.</p>
 </div>
 <div class="service-area-links">
 <h2>Welche Angaben helfen bei der Anfrage?</h2>
-<p>Geben Sie an, welche Räume geräumt werden sollen und ob eine besenreine Übergabe gewünscht ist. Fläche, Räumungsmenge und Zugangswege helfen dabei, den Auftrag einzuschätzen.</p>
+<p>Geben Sie an, welche Räume geräumt werden sollen und ob Abtransport, Entsorgung oder eine besenreine Übergabe gewünscht sind. Fläche, Räumungsmenge, Materialarten und Zugangswege helfen dabei, den Auftrag einzuschätzen.</p>
 <p>Weitere Informationen zu unseren Einsatzgebieten: <a href="/gebaeudereinigung-koeln/">Köln</a>, <a href="/gebaeudereinigung-bruehl/">Brühl</a> und <a href="/gebaeudereinigung-bonn/">Bonn</a>.</p>
 </div>
