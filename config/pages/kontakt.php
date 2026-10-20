@@ -28,13 +28,5 @@ return array (
     'lead' => 'Für allgemeine Fragen erreichen Sie uns telefonisch, per E-Mail oder über das Kontaktformular.',
     'variant' => 'compact',
   ),
-  'hero' => 
-  array (
-    'src' => '/assets/img/pages/kontakt/kontakt-hero.webp',
-    'width' => 1920,
-    'height' => 870,
-    'alt' => '',
-    'class' => 'hero-focus-high',
-  ),
   'cta' => NULL,
 );

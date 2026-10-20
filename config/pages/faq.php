@@ -45,14 +45,6 @@ return array (
     'lead' => 'Antworten zu Kosten, Anfrage und Zusammenarbeit mit KEM.',
     'variant' => 'compact',
   ),
-  'hero' => 
-  array (
-    'src' => '/assets/img/pages/faq/faq-hero.webp',
-    'width' => 1920,
-    'height' => 870,
-    'alt' => '',
-    'class' => 'hero-focus-high',
-  ),
   'cta' => 
   array (
     'class' => 'cta-band',

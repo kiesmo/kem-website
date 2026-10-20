@@ -44,13 +44,6 @@ return array (
     'Vertrag' => 'Unbefristeter Arbeitsvertrag',
     'Vergütung' => 'Übertarifliche Bezahlung',
   ),
-  'hero' => 
-  array (
-    'src' => '/assets/img/pages/jobs/jobs-hero.webp',
-    'width' => 1920,
-    'height' => 870,
-    'alt' => '',
-  ),
   'cta' => 
   array (
     'class' => 'cta-band',
